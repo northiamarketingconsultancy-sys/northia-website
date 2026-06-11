@@ -26,6 +26,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 header.scrolled{padding:10px 0;background:rgba(248,249,250,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--line)}
 .logo{font-weight:800;font-size:19px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
 .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.logo-img{height:32px;width:auto}
 nav{display:flex;align-items:center;gap:30px}
 nav a.nl{font-size:14.5px;font-weight:500;color:var(--ink-soft);position:relative;transition:color .2s}
 nav a.nl::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--accent);transition:width .25s var(--ease)}
@@ -74,10 +75,10 @@ footer p{font-size:13px;color:var(--ink-soft)}
 
 <header id="hdr">
   <div class="wrap">
-    <a class="logo" href="index.html"><span class="dot"></span>Northia<span style="color:var(--ink-soft);font-weight:600;font-size:.78em;letter-spacing:.02em">&nbsp;Marketing Consultancy</span></a>
+    <a class="logo" href="index.html"><img src="assets/logo-icon.png" alt="Northia" class="logo-img">Northia<span style="color:var(--ink-soft);font-weight:600;font-size:.78em;letter-spacing:.02em">&nbsp;Marketing Consultancy</span></a>
     <nav>
       <a class="nl" href="index.html#services">Services</a>
-      <a class="nl" href="index.html#case">Case studies</a>
+      <a class="nl" href="case-studies.html">Case studies</a>
       <a class="nl" href="insights.html" style="color:var(--ink)">Insights</a>
       <a class="btn" href="index.html#contact">Book a session</a>
     </nav>
@@ -104,33 +105,53 @@ footer p{font-size:13px;color:var(--ink-soft)}
        summary, date and reading time. Newest articles go first. -->
   <div class="grid">
 
-    <a class="card jp" href="article-template.html">
+    <a class="card" href="article-asia-market-entry-strategy.html">
       <div class="card-band"></div>
       <div class="card-body">
-        <div class="cat">Market Entry · Japan</div>
-        <h2>How to Enter the Japanese Market: A 90-Day Playbook</h2>
-        <p>Distributor strategy, localization, and the trust signals Japanese buyers expect — week by week.</p>
-        <div class="meta"><span>Jun 10, 2026 · 8 min</span><span class="read">Read →</span></div>
+        <div class="cat">Market Entry · Pillar Guide</div>
+        <h2>Asia Market Entry Strategy for North American Companies: The Complete Roadmap</h2>
+        <p>Market selection, localization, channels, and the three-phase first year — plus the mistakes that cost twelve months.</p>
+        <div class="meta"><span>Jun 11, 2026 · 9 min</span><span class="read">Read →</span></div>
       </div>
     </a>
 
-    <a class="card" href="#">
+    <a class="card jp" href="article-brand-localization-vs-translation.html">
       <div class="card-band"></div>
       <div class="card-body">
-        <div class="cat">Rebranding</div>
-        <h2>Why "Translation" Fails: Rebranding for a Market That Doesn't Know You</h2>
-        <p>Placeholder card — duplicate this block when you publish your second article.</p>
-        <div class="meta"><span>Coming soon</span><span class="read">Read →</span></div>
+        <div class="cat">Rebranding · Localization</div>
+        <h2>Brand Localization vs. Translation: Why Word-for-Word Fails in Asia</h2>
+        <p>Naming, tone, visuals, and pricing pages — what changes when you stop translating and start localizing.</p>
+        <div class="meta"><span>Jun 11, 2026 · 7 min</span><span class="read">Read →</span></div>
       </div>
     </a>
 
-    <a class="card loc" href="#">
+    <a class="card" href="article-xiaohongshu-marketing-western-brands.html">
       <div class="card-band"></div>
       <div class="card-body">
-        <div class="cat">Localization</div>
-        <h2>Pricing Pages in Asia: What Changes and What Never Should</h2>
-        <p>Placeholder card — duplicate this block when you publish your third article.</p>
-        <div class="meta"><span>Coming soon</span><span class="read">Read →</span></div>
+        <div class="cat">Channels · Greater China</div>
+        <h2>Xiaohongshu Marketing for Western Brands: How RED Actually Works</h2>
+        <p>RED is a search engine disguised as social media. Note-style content, KOC seeding, and what gets foreign brands ignored.</p>
+        <div class="meta"><span>Jun 11, 2026 · 8 min</span><span class="read">Read →</span></div>
+      </div>
+    </a>
+
+    <a class="card loc" href="article-kol-influencer-marketing-asia.html">
+      <div class="card-band"></div>
+      <div class="card-body">
+        <div class="cat">Influencer Marketing</div>
+        <h2>KOL Marketing in Asia: How Influencer Campaigns Differ from the West</h2>
+        <p>Why Western influencer playbooks fail in China, Japan, and Korea — and the KOC seeding strategy that works for new entrants.</p>
+        <div class="meta"><span>Jun 11, 2026 · 7 min</span><span class="read">Read →</span></div>
+      </div>
+    </a>
+
+    <a class="card jp" href="article-choosing-social-platforms-asia.html">
+      <div class="card-band"></div>
+      <div class="card-body">
+        <div class="cat">Channels · Platform Strategy</div>
+        <h2>WeChat, LINE, or Naver? Choosing the Right Platform for Each Asian Market</h2>
+        <p>A market-by-market platform map — and how to choose where to invest based on how your buyers actually research and transact.</p>
+        <div class="meta"><span>Jun 11, 2026 · 8 min</span><span class="read">Read →</span></div>
       </div>
     </a>
 
@@ -139,8 +160,8 @@ footer p{font-size:13px;color:var(--ink-soft)}
 
 <footer>
   <div class="wrap">
-    <a class="logo" href="index.html" style="font-size:16px"><span class="dot"></span>Northia<span style="color:var(--ink-soft);font-weight:600;font-size:.8em">&nbsp;Marketing Consultancy</span></a>
-    <p>© 2026 Northia Marketing Consultancy Ltd. · Vancouver, BC, Canada · hello@northia.ca</p>
+    <a class="logo" href="index.html"><img src="assets/logo-full.png" alt="Northia Marketing Consultancy" style="height:72px;width:auto"></a>
+    <p>© 2026 Northia Marketing Consultancy Ltd. · Canada · northiamarketingconsultancy@gmail.com · +1 778-998-5022</p>
   </div>
 </footer>
 

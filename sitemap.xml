@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.YOURDOMAIN.com/</loc></url>
+  <url><loc>https://www.YOURDOMAIN.com/case-studies.html</loc></url>
   <url><loc>https://www.YOURDOMAIN.com/insights.html</loc></url>
-  <url><loc>https://www.YOURDOMAIN.com/article-template.html</loc></url>
+  <url><loc>https://www.YOURDOMAIN.com/article-asia-market-entry-strategy.html</loc></url>
+  <url><loc>https://www.YOURDOMAIN.com/article-brand-localization-vs-translation.html</loc></url>
+  <url><loc>https://www.YOURDOMAIN.com/article-xiaohongshu-marketing-western-brands.html</loc></url>
+  <url><loc>https://www.YOURDOMAIN.com/article-kol-influencer-marketing-asia.html</loc></url>
+  <url><loc>https://www.YOURDOMAIN.com/article-choosing-social-platforms-asia.html</loc></url>
   <!-- Add one <url> line per new article -->
 </urlset>

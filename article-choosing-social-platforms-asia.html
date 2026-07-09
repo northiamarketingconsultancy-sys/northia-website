@@ -135,11 +135,11 @@ body.panel-open{overflow:hidden}
 
 <header id="hdr">
   <div class="wrap">
-    <a class="logo" href="index.html"><img src="assets/logo-icon.png" alt="Northia" class="logo-img">Northia<span style="color:var(--ink-soft);font-weight:600;font-size:.78em;letter-spacing:.02em">&nbsp;Marketing Consultancy</span></a>
+    <a class="logo" href="index.html"><img src="assets/logo-icon.png" alt="Northia" class="logo-img">Northia</a>
     <nav>
-      <a class="nl" href="index.html#services">Services</a>
+      <a class="nl" href="community.html">Community Building</a>
+      <a class="nl" href="rebranding.html">Rebranding</a>
       <a class="nl" href="index.html#case">Case studies</a>
-      <a class="nl" href="insights.html">Insights</a>
       <button class="btn" data-open-panel style="padding:11px 20px;font-size:13.5px">Book a session<span class="arr">→</span></button>
     </nav>
   </div>
@@ -151,7 +151,6 @@ body.panel-open{overflow:hidden}
   <h1>WeChat, LINE, or Naver? Choosing the Right Platform for Each Asian Market</h1>
   <div class="meta">
     <span><b>Northia Team</b></span>
-    <span>June 11, 2026</span>
     <span>8 min read</span>
   </div>
 </div>
@@ -221,9 +220,8 @@ body.panel-open{overflow:hidden}
   </div>
   <div class="panel-body">
     <!-- ✏️ EDIT 6/6 — Replace with your Calendly inline embed snippet (same as homepage) -->
-    <div class="cal-embed">
-      <div><b>Calendar goes here</b><span>Paste your Calendly or SavvyCal inline embed code in this block.</span></div>
-    </div>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/northiamarketingconsultancy/30min?hide_gdpr_banner=1&amp;primary_color=ff3b30" style="min-width:300px;height:620px"></div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 </aside>
 
@@ -233,6 +231,60 @@ addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>24),{passi
 document.querySelectorAll('[data-open-panel]').forEach(b=>b.addEventListener('click',()=>document.body.classList.add('panel-open')));
 document.querySelectorAll('[data-close-panel]').forEach(b=>b.addEventListener('click',()=>document.body.classList.remove('panel-open')));
 addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remove('panel-open')});
+</script>
+
+<!-- ===== Lead capture popup ===== -->
+<style>
+.np-scrim{position:fixed;inset:0;background:rgba(16,24,40,.5);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:90;display:none;align-items:center;justify-content:center;padding:20px}
+.np-scrim.on{display:flex}
+.np-card{background:#fff;border-radius:16px;max-width:430px;width:100%;padding:38px 32px 30px;position:relative;box-shadow:0 30px 80px rgba(16,24,40,.35);animation:npIn .35s cubic-bezier(.22,.8,.3,1)}
+@keyframes npIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.np-x{position:absolute;top:14px;right:14px;border:0;background:#F8F9FA;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:14px;color:#101828;transition:all .2s}
+.np-x:hover{background:#FF3B30;color:#fff;transform:rotate(90deg)}
+.np-eb{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#475467;margin-bottom:12px}
+.np-eb::before{content:"";width:22px;height:2px;background:#FF3B30}
+.np-t{font-size:22px;font-weight:800;letter-spacing:-.02em;color:#101828;line-height:1.25;margin-bottom:10px}
+.np-p{font-size:13.5px;color:#475467;line-height:1.6;margin-bottom:18px}
+.np-f input[type=email]{width:100%;padding:13px 15px;border:1px solid #E4E7EC;border-radius:10px;font:inherit;font-size:14px;background:#F8F9FA;margin-bottom:10px}
+.np-f input[type=email]:focus{outline:none;border-color:#FF3B30}
+.np-f button{width:100%;border:0;cursor:pointer;background:#FF3B30;color:#fff;font:inherit;font-size:14.5px;font-weight:700;padding:13px;border-radius:99px;transition:all .25s}
+.np-f button:hover{background:#101828;transform:translateY(-2px)}
+.np-s{font-size:11.5px;color:#98A2B3;text-align:center;margin-top:12px}
+@media (prefers-reduced-motion:reduce){.np-card{animation:none}}
+</style>
+<div class="np-scrim" id="npScrim" role="dialog" aria-modal="true" aria-label="Newsletter signup">
+  <div class="np-card">
+    <button class="np-x" id="npX" aria-label="Close">✕</button>
+    <div class="np-eb" data-i18n="pp.eb">Free teardown</div>
+    <h3 class="np-t" data-i18n="pp.t">Want a community that sells with you?</h3>
+    <p class="np-p" data-i18n="pp.p">Leave your email and we'll send a short, free teardown: how to sharpen your business model and launch a dedicated community around your brand.</p>
+    <form class="np-f" action="https://formsubmit.co/hello@northiamarketing.com" method="POST">
+      <input type="hidden" name="_subject" value="Community teardown request — website popup">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" required placeholder="Work email" data-i18n-ph="pp.e">
+      <button type="submit" data-i18n="pp.b">Show me how</button>
+    </form>
+    <p class="np-s" data-i18n="pp.s">One useful email. No spam, ever.</p>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='npPopSeen';
+  try{ var t=localStorage.getItem(KEY); if(t && Date.now()-(+t) < 7*86400000) return; }catch(e){}
+  var el=document.getElementById('npScrim'), shown=false;
+  function mark(){ try{ localStorage.setItem(KEY, String(Date.now())); }catch(e){} }
+  function show(){ if(shown||document.body.classList.contains('panel-open')) return; shown=true; el.classList.add('on'); mark(); }
+  function hide(){ el.classList.remove('on'); }
+  setTimeout(show, 9000);
+  window.addEventListener('scroll', function(){
+    var h=document.documentElement;
+    if(h.scrollHeight>h.clientHeight && h.scrollTop/(h.scrollHeight-h.clientHeight) > .45) show();
+  }, {passive:true});
+  document.getElementById('npX').addEventListener('click', hide);
+  el.addEventListener('click', function(e){ if(e.target===el) hide(); });
+  window.addEventListener('keydown', function(e){ if(e.key==='Escape') hide(); });
+})();
 </script>
 </body>
 </html>

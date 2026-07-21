@@ -257,17 +257,18 @@ addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remov
 <div class="np-scrim" id="npScrim" role="dialog" aria-modal="true" aria-label="Newsletter signup">
   <div class="np-card">
     <button class="np-x" id="npX" aria-label="Close">✕</button>
-    <div class="np-eb" data-i18n="pp.eb">Free teardown</div>
-    <h3 class="np-t" data-i18n="pp.t">Want a community that sells with you?</h3>
-    <p class="np-p" data-i18n="pp.p">Leave your email and we'll send a short, free teardown: how to sharpen your business model and launch a dedicated community around your brand.</p>
+    <div class="np-eb" data-i18n="pp.eb">Free custom audit</div>
+    <h3 class="np-t" data-i18n="pp.t">Where is your brand losing the market?</h3>
+    <p class="np-p" data-i18n="pp.p">Leave your details and we'll personally audit your brand: a customized report on the problems we find, with free data analysis and insights — before you spend a dollar with us.</p>
     <form class="np-f" action="https://formsubmit.co/hello@northiamarketing.com" method="POST">
-      <input type="hidden" name="_subject" value="Community teardown request — website popup">
+      <input type="hidden" name="_subject" value="Custom audit request — website popup">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_honey" style="display:none">
+      <input type="text" name="website" required placeholder="Your website or brand name" data-i18n-ph="pp.w" style="width:100%;padding:13px 15px;border:1px solid #E4E7EC;border-radius:10px;font:inherit;font-size:14px;background:#F8F9FA;margin-bottom:10px">
       <input type="email" name="email" required placeholder="Work email" data-i18n-ph="pp.e">
-      <button type="submit" data-i18n="pp.b">Show me how</button>
+      <button type="submit" data-i18n="pp.b">Audit my brand</button>
     </form>
-    <p class="np-s" data-i18n="pp.s">One useful email. No spam, ever.</p>
+    <p class="np-s" data-i18n="pp.s">Hand-built by our team, usually within 3 business days. No spam, ever.</p>
   </div>
 </div>
 <script>

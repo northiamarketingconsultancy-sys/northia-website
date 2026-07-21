@@ -255,20 +255,16 @@ addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>24),{passi
 </div>
 <script>
 (function(){
-  var KEY='npPopSeen';
+  var KEY='npAuditDone';
   try{ var t=localStorage.getItem(KEY); if(t && Date.now()-(+t) < 7*86400000) return; }catch(e){}
-  var el=document.getElementById('npScrim'), shown=false;
-  function mark(){ try{ localStorage.setItem(KEY, String(Date.now())); }catch(e){} }
-  function show(){ if(shown||document.body.classList.contains('panel-open')) return; shown=true; el.classList.add('on'); mark(); }
+  var el=document.getElementById('npScrim');
+  function show(){ if(document.body.classList.contains('panel-open')) return; el.classList.add('on'); }
   function hide(){ el.classList.remove('on'); }
-  setTimeout(show, 9000);
-  window.addEventListener('scroll', function(){
-    var h=document.documentElement;
-    if(h.scrollHeight>h.clientHeight && h.scrollTop/(h.scrollHeight-h.clientHeight) > .45) show();
-  }, {passive:true});
+  setTimeout(show, 3000);
   document.getElementById('npX').addEventListener('click', hide);
   el.addEventListener('click', function(e){ if(e.target===el) hide(); });
   window.addEventListener('keydown', function(e){ if(e.key==='Escape') hide(); });
+  el.querySelector('form').addEventListener('submit', function(){ try{ localStorage.setItem(KEY, String(Date.now())); }catch(e){} });
 })();
 </script>
 </body>

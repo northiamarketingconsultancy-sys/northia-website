@@ -361,6 +361,20 @@ body.panel-open{overflow:hidden}
 .reveal{opacity:0;transform:translateY(26px);transition:all .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}
 
+/* ============ THE NORTHIA SYSTEM + RESONANCE AUDIT ============ */
+.ns-intro{max-width:740px}.ns-intro .sub{color:var(--ink-soft);font-size:17px;margin-top:16px}
+.ns-stepper{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px;margin:42px 0 34px;position:relative;max-width:760px}
+.ns-stepper button{flex:1;position:relative;z-index:2;border:0;background:transparent;cursor:pointer;font:inherit;font-size:13px;font-weight:700;color:var(--ink-soft);padding:12px 8px;border-radius:99px;transition:color .3s var(--ease)}
+.ns-stepper button .ns-num{font-size:10px;font-weight:800;letter-spacing:.1em;display:block;color:var(--accent);margin-bottom:2px}.ns-stepper button.on{color:#fff}.ns-stepper button.on .ns-num{color:#FFD1CE}
+.ns-stepper .ns-pill{position:absolute;top:6px;bottom:6px;border-radius:99px;background:var(--ink);z-index:1;transition:left .45s var(--ease),width .45s var(--ease)}
+.ns-stage{display:none}.ns-stage.on{display:block;animation:ns-in .45s var(--ease)}@keyframes ns-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.ns-head{background:var(--ink);color:#fff;border-radius:18px;padding:32px 36px;margin-bottom:22px}.ns-head .ns-kicker{font-size:14px;font-weight:800;letter-spacing:.14em;color:var(--accent)}.ns-head h3{font-size:clamp(20px,2.4vw,27px);font-weight:800;letter-spacing:-.015em;margin:6px 0 9px}.ns-head p{font-size:14px;color:#98A2B3;max-width:700px}.ns-head .ns-q{margin-top:12px;padding-top:12px;border-top:1px solid #344054;font-size:14.5px;font-style:italic}.ns-head .ns-q b{color:var(--accent);font-style:normal;font-size:10px;letter-spacing:.12em;display:block;margin-bottom:3px}
+.ns-dims{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.ns-dim,.ns-phase{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);transition:all .3s var(--ease)}.ns-dim{padding:19px 17px}.ns-dim:hover,.ns-phase:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 16px 38px rgba(16,24,40,.07)}.ns-dim .d{font-size:11px;font-weight:800;color:var(--accent);margin-bottom:8px}.ns-dim h4,.ns-phase h4{font-size:14px;font-weight:800;line-height:1.3;margin-bottom:6px}.ns-dim p,.ns-phase .q{font-size:11.5px;color:var(--ink-soft)}
+.ns-route{margin-top:16px;background:#FFF0EF;border:1px solid var(--accent);border-radius:var(--radius);padding:17px 20px;font-size:13.5px}.ns-route b{color:var(--accent)}
+.ns-phases{display:grid;gap:13px}.ns-phase{padding:22px 24px;display:grid;grid-template-columns:42px 1.1fr 1fr 1fr;gap:18px;align-items:start}.ns-phase .num{width:38px;height:38px;border:1.5px solid var(--accent);border-radius:50%;display:grid;place-items:center;color:var(--accent);font-size:12px;font-weight:800}.ns-label{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px}.ns-tools,.ns-deliverable{font-size:12px;color:#344054;line-height:1.65}.ns-tag{display:inline-block;background:#FFF0EF;color:var(--accent);font-weight:700;font-size:11px;padding:2px 8px;border-radius:99px;margin:2px 2px 2px 0}.ns-gate{grid-column:1 / -1;padding-top:13px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ns-gate-badge{display:inline-flex;gap:7px;align-items:center;background:var(--ink);color:#fff;padding:6px 12px;border-radius:99px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;transition:all .25s var(--ease)}.ns-gate-badge::before{content:"◆";color:var(--accent-2);font-size:8px}.ns-gate-badge:hover{background:var(--accent);transform:scale(1.04)}.ns-gate span{font-size:12.5px;color:var(--ink-soft)}.ns-gate strong{color:var(--ink)}
+.ra-wrap{padding-top:0}.ra-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:40px 42px;box-shadow:0 24px 60px rgba(16,24,40,.06);margin-top:34px}.ra-row{display:grid;grid-template-columns:1.4fr auto;gap:20px;align-items:center;padding:17px 0;border-bottom:1px dashed var(--line)}.ra-row:last-of-type{border-bottom:0}.ra-title{font-size:15px;font-weight:700}.ra-question{font-size:12.5px;color:var(--ink-soft);margin-top:2px}.ra-seg{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--bg)}.ra-seg button{border:0;background:transparent;cursor:pointer;font:inherit;font-size:12.5px;font-weight:700;color:var(--ink-soft);padding:9px 16px;transition:all .25s var(--ease)}.ra-seg button:hover{color:var(--accent)}.ra-seg .strong{background:var(--accent-2);color:#fff}.ra-seg .mixed{background:#F2C744;color:var(--ink)}.ra-seg .weak{background:var(--accent);color:#fff}
+.ra-verdict{margin-top:26px;border:1.5px dashed var(--line);border-radius:var(--radius);padding:25px 28px;text-align:center;color:var(--ink-soft);font-size:14px}.ra-verdict.ready{background:var(--ink);border-color:var(--ink);color:#fff;text-align:left;animation:ns-in .45s var(--ease)}.ra-verdict .v-kicker{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:7px}.ra-verdict h4{font-size:20px;font-weight:800;letter-spacing:-.01em;margin-bottom:7px}.ra-verdict p{font-size:13.5px;color:#98A2B3;max-width:650px}.ra-scores{display:flex;gap:8px;margin:14px 0 18px;flex-wrap:wrap}.ra-score{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:99px;background:#1D2939;color:#98A2B3}.ra-score b{color:#fff}.ra-verdict .btn{margin-top:18px;background:var(--accent);font-size:13px;padding:11px 20px}.ra-reset{background:transparent;border:0;cursor:pointer;font:inherit;font-size:12px;font-weight:700;color:#98A2B3;margin-left:12px;text-decoration:underline}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 980px){
   .hero-grid,.case-grid{grid-template-columns:1fr}
@@ -370,11 +384,13 @@ body.panel-open{overflow:hidden}
   .netmap-wrap{padding:34px 22px}
   section{padding:80px 0}
   .hero{padding:150px 0 90px}
+  .ns-dims{grid-template-columns:1fr 1fr}.ns-phase{grid-template-columns:40px 1fr}.ns-phase>div:nth-child(3),.ns-phase>div:nth-child(4){grid-column:2}.ra-row{grid-template-columns:1fr}
 }
 @media (max-width: 600px){
   .market-grid,.counters{grid-template-columns:1fr}
   .wrap{padding:0 20px}
   .contact .inner{padding:50px 26px}
+  .ns-stepper{overflow-x:auto}.ns-stepper button{min-width:154px}.ra-card{padding:28px 22px}.ra-seg button{padding:8px 11px}
 }
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -562,6 +578,57 @@ body.panel-open{overflow:hidden}
   </div>
 </section>
 
+<!-- ================= THE NORTHIA SYSTEM ================= -->
+<section id="system">
+  <div class="wrap">
+    <div class="ns-intro reveal">
+      <div class="eyebrow" data-i18n="sys.eb">The Northia System</div>
+      <h2 data-i18n="sys.title">One method. Three stages.<br>Diagnose → Rebrand → Activate.</h2>
+      <p class="sub" data-i18n="sys.sub">A brand wins a new market in three moves: understand what it means there, rebuild what it should mean, then make the market say it for you. Every engagement has explicit decision gates, so nothing advances on vibes.</p>
+    </div>
+    <div class="ns-stepper reveal" id="nsStepper" role="tablist" aria-label="Northia System stages">
+      <div class="ns-pill" id="nsPill"></div>
+      <button class="on" data-ns-stage="0" role="tab" aria-selected="true"><span class="ns-num" data-i18n="sys.tab0num">PHASE 0 · DIAGNOSE</span><span data-i18n="sys.tab0">The Resonance Audit</span></button>
+      <button data-ns-stage="1" role="tab" aria-selected="false"><span class="ns-num" data-i18n="sys.tab1num">STAGE 1 · TRANSFORM</span><span data-i18n="sys.tab1">The Rebrand</span></button>
+      <button data-ns-stage="2" role="tab" aria-selected="false"><span class="ns-num" data-i18n="sys.tab2num">STAGE 2 · MOMENTUM</span><span data-i18n="sys.tab2">The Community Engine</span></button>
+    </div>
+    <div class="ns-stage on" id="nsStage0">
+      <div class="ns-head"><div class="ns-kicker" data-i18n="sys.audit.kicker">00 · DIAGNOSE — FREE</div><h3 data-i18n="sys.audit.title">The Resonance Audit</h3><p data-i18n="sys.audit.sub">Five MECE dimensions, scored against your target market — the diagnostic that tells you where your budget should go before you spend it.</p><div class="ns-q"><b data-i18n="sys.question">GOVERNING QUESTION</b><span data-i18n="sys.audit.q">What does your brand currently mean in this market — and to whom?</span></div></div>
+      <div class="ns-dims">
+        <div class="ns-dim"><div class="d">D1</div><h4 data-i18n="sys.d1.t">Positioning Fit</h4><p data-i18n="sys.d1.p">Does it solve a problem this market actually has?</p></div>
+        <div class="ns-dim"><div class="d">D2</div><h4 data-i18n="sys.d2.t">Language &amp; Message Fit</h4><p data-i18n="sys.d2.p">Does it read native — or imported?</p></div>
+        <div class="ns-dim"><div class="d">D3</div><h4 data-i18n="sys.d3.t">Trust Signals</h4><p data-i18n="sys.d3.p">Does it show what this market checks before buying?</p></div>
+        <div class="ns-dim"><div class="d">D4</div><h4 data-i18n="sys.d4.t">Channel–Buyer Fit</h4><p data-i18n="sys.d4.p">Is it present where these buyers research?</p></div>
+        <div class="ns-dim"><div class="d">D5</div><h4 data-i18n="sys.d5.t">Community Ownership</h4><p data-i18n="sys.d5.p">Does anyone advocate for it — unpaid?</p></div>
+      </div>
+      <div class="ns-route" data-i18n="sys.route"><b>Routing logic:</b> weak on D1–D3 → start with <b>The Rebrand</b>. Weak on D4–D5 → start with <b>The Community Activation Engine</b>. Weak on both → the full system, in sequence. Strong across all five → you don't need us yet, and we'll say so.</div>
+    </div>
+    <div class="ns-stage" id="nsStage1">
+      <div class="ns-head"><div class="ns-kicker" data-i18n="sys.rebrand.kicker">01 · TRANSFORM</div><h3 data-i18n="sys.rebrand.title">The Rebrand — four phases, four gates</h3><p data-i18n="sys.rebrand.sub">Positioning, messaging and identity rebuilt natively for the market you are entering. No creative work advances before an agreed problem statement.</p><div class="ns-q"><b data-i18n="sys.question">GOVERNING QUESTION</b><span data-i18n="sys.rebrand.q">What should this brand mean here — and can every asset carry that meaning?</span></div></div>
+      <div class="ns-route"><strong data-i18n="sys.rebrand.route">Audit → Positioning → Native identity → Launch. Each phase has a leadership-approved gate; Gate 3 is a Native Blind Test: if it reads as foreign, we revise.</strong> <a href="rebranding.html" style="color:var(--accent);font-weight:800;margin-left:8px" data-i18n="sys.explore">Explore the full method →</a></div>
+    </div>
+    <div class="ns-stage" id="nsStage2">
+      <div class="ns-head"><div class="ns-kicker" data-i18n="sys.engine.kicker">02 · MOMENTUM</div><h3 data-i18n="sys.engine.title">The Community Activation Engine</h3><p data-i18n="sys.engine.sub">Creator marketing turned into community infrastructure. Selection uses a weighted Resonance Score, and every channel faces a Day-90 Scale / Kill decision.</p><div class="ns-q"><b data-i18n="sys.question">GOVERNING QUESTION</b><span data-i18n="sys.engine.q">Who will say it for you — and will they still be saying it next year?</span></div></div>
+      <div class="ns-route"><strong data-i18n="sys.engine.route">Map culture → source for fit → form the inner circle → activate → measure. Reach is a tiebreaker, never a criterion.</strong> <a href="community.html" style="color:var(--accent);font-weight:800;margin-left:8px" data-i18n="sys.explore">Explore the full method →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESONANCE AUDIT ================= -->
+<section class="ra-wrap" id="resonance-audit">
+  <div class="wrap">
+    <div class="ns-intro reveal"><div class="eyebrow" data-i18n="audit.eb">Try it yourself</div><h2 data-i18n="audit.title">Where would the audit route you?</h2><p class="sub" data-i18n="audit.sub">Rate your brand honestly for the market you want next. Sixty seconds — the routing logic below is the same one we use.</p></div>
+    <div class="ra-card reveal">
+      <div class="ra-row" data-ra-dim="1" data-ra-group="rebrand"><div><div class="ra-title" data-i18n="audit.d1.t">D1 · Positioning Fit</div><div class="ra-question" data-i18n="audit.d1.q">Does your offer solve a problem this market actually has?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
+      <div class="ra-row" data-ra-dim="2" data-ra-group="rebrand"><div><div class="ra-title" data-i18n="audit.d2.t">D2 · Language &amp; Message Fit</div><div class="ra-question" data-i18n="audit.d2.q">Would a native professional read your materials as written locally?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
+      <div class="ra-row" data-ra-dim="3" data-ra-group="rebrand"><div><div class="ra-title" data-i18n="audit.d3.t">D3 · Trust Signals</div><div class="ra-question" data-i18n="audit.d3.q">Do you show the proof this market checks before buying?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
+      <div class="ra-row" data-ra-dim="4" data-ra-group="engine"><div><div class="ra-title" data-i18n="audit.d4.t">D4 · Channel–Buyer Fit</div><div class="ra-question" data-i18n="audit.d4.q">Are you native on the platforms where these buyers research?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
+      <div class="ra-row" data-ra-dim="5" data-ra-group="engine"><div><div class="ra-title" data-i18n="audit.d5.t">D5 · Community Ownership</div><div class="ra-question" data-i18n="audit.d5.q">Does anyone advocate for your brand there without being paid?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
+      <div class="ra-verdict" id="raVerdict" data-i18n="audit.pending">Answer all five dimensions to see your routing.</div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
   <div class="wrap">
@@ -646,7 +713,7 @@ const I18N = {
     "svc.2.tag":"The Rebrand",
     "svc.2.list":"· Global → Asia: bilingual naming & market-specific trust<br>· Asia → Global: global-ready voice & positioning (launching 2026)<br>· Identity, naming & legal protection before launch",
     "pp.eb":"Free custom audit",
-    "pp.t":"Free custom audit",
+    "pp.t":"Where is your brand losing the market?",
     "pp.p":"Leave your details and we'll personally audit your brand: a customized report on the problems we find, with free data analysis and insights — before you spend a dollar with us.",
     "pp.e":"Work email",
     "pp.w":"Your website or brand name",
@@ -792,6 +859,16 @@ const I18N = {
   }
 };
 
+Object.assign(I18N.en, {
+  "sys.eb":"The Northia System","sys.title":"One method. Three stages.<br>Diagnose → Rebrand → Activate.","sys.sub":"A brand wins a new market in three moves: understand what it means there, rebuild what it should mean, then make the market say it for you. Every engagement has explicit decision gates, so nothing advances on vibes.","sys.tab0num":"PHASE 0 · DIAGNOSE","sys.tab0":"The Resonance Audit","sys.tab1num":"STAGE 1 · TRANSFORM","sys.tab1":"The Rebrand","sys.tab2num":"STAGE 2 · MOMENTUM","sys.tab2":"The Community Engine","sys.question":"GOVERNING QUESTION","sys.audit.kicker":"00 · DIAGNOSE — FREE","sys.audit.title":"The Resonance Audit","sys.audit.sub":"Five MECE dimensions, scored against your target market — the diagnostic that tells you where your budget should go before you spend it.","sys.audit.q":"What does your brand currently mean in this market — and to whom?","sys.d1.t":"Positioning Fit","sys.d1.p":"Does it solve a problem this market actually has?","sys.d2.t":"Language & Message Fit","sys.d2.p":"Does it read native — or imported?","sys.d3.t":"Trust Signals","sys.d3.p":"Does it show what this market checks before buying?","sys.d4.t":"Channel–Buyer Fit","sys.d4.p":"Is it present where these buyers research?","sys.d5.t":"Community Ownership","sys.d5.p":"Does anyone advocate for it — unpaid?","sys.route":"<b>Routing logic:</b> weak on D1–D3 → start with <b>The Rebrand</b>. Weak on D4–D5 → start with <b>The Community Activation Engine</b>. Weak on both → the full system, in sequence. Strong across all five → you don't need us yet, and we'll say so.","sys.rebrand.kicker":"01 · TRANSFORM","sys.rebrand.title":"The Rebrand — four phases, four gates","sys.rebrand.sub":"Positioning, messaging and identity rebuilt natively for the market you are entering. No creative work advances before an agreed problem statement.","sys.rebrand.q":"What should this brand mean here — and can every asset carry that meaning?","sys.rebrand.route":"Audit → Positioning → Native identity → Launch. Each phase has a leadership-approved gate; Gate 3 is a Native Blind Test: if it reads as foreign, we revise.","sys.engine.kicker":"02 · MOMENTUM","sys.engine.title":"The Community Activation Engine","sys.engine.sub":"Creator marketing turned into community infrastructure. Selection uses a weighted Resonance Score, and every channel faces a Day-90 Scale / Kill decision.","sys.engine.q":"Who will say it for you — and will they still be saying it next year?","sys.engine.route":"Map culture → source for fit → form the inner circle → activate → measure. Reach is a tiebreaker, never a criterion.","sys.explore":"Explore the full method →","audit.eb":"Try it yourself","audit.title":"Where would the audit route you?","audit.sub":"Rate your brand honestly for the market you want next. Sixty seconds — the routing logic below is the same one we use.","audit.d1.t":"D1 · Positioning Fit","audit.d1.q":"Does your offer solve a problem this market actually has?","audit.d2.t":"D2 · Language & Message Fit","audit.d2.q":"Would a native professional read your materials as written locally?","audit.d3.t":"D3 · Trust Signals","audit.d3.q":"Do you show the proof this market checks before buying?","audit.d4.t":"D4 · Channel–Buyer Fit","audit.d4.q":"Are you native on the platforms where these buyers research?","audit.d5.t":"D5 · Community Ownership","audit.d5.q":"Does anyone advocate for your brand there without being paid?","audit.strong":"Strong","audit.unsure":"Unsure","audit.weak":"Weak","audit.pending":"Answer all five dimensions to see your routing.","audit.kicker":"Your resonance routing","audit.score1":"Brand meaning (D1–D3)","audit.score2":"Market carry (D4–D5)","audit.full.title":"Routing: the full Northia System.","audit.full.body":"The brand needs new meaning before the market can carry it. Sequence matters: activating a weak brand only amplifies the weakness.","audit.rebrand.title":"Routing: start with The Rebrand.","audit.rebrand.body":"Fix positioning, language and trust signals first; the audit will pinpoint what is costing you most.","audit.engine.title":"Routing: start with the Community Activation Engine.","audit.engine.body":"The brand holds up — but nobody is saying it for you where buyers research. That is a distribution and advocacy problem.","audit.ready.title":"Routing: you may not need us yet.","audit.ready.body":"Strong across all five is rare — and worth verifying against data rather than self-assessment. We will tell you plainly.","audit.cta":"Start with the free audit","audit.verify":"Verify with a free audit","audit.reset":"Reset","audit.remaining":" to go."
+});
+Object.assign(I18N.hant, {
+  "sys.eb":"Northia 系統","sys.title":"一套方法，三個階段。<br>診斷 → 重塑 → 啟動。","sys.sub":"品牌要在新市場勝出，只有三步：先理解它現在代表甚麼，再重建它應有的意義，最後讓市場替你說出來。每一個環節都有清晰的決策關卡，不憑感覺推進。","sys.tab0num":"階段 0 · 診斷","sys.tab0":"共鳴審計","sys.tab1num":"階段 1 · 重塑","sys.tab1":"品牌重塑","sys.tab2num":"階段 2 · 動能","sys.tab2":"社群啟動引擎","sys.question":"核心問題","sys.audit.kicker":"00 · 診斷 — 免費","sys.audit.title":"共鳴審計","sys.audit.sub":"以五個互不重疊的維度，對照你的目標市場評分；在你投入預算前，先判斷該花在哪裡。","sys.audit.q":"你的品牌目前在這個市場代表甚麼？又是對誰而言？","sys.d1.t":"定位契合度","sys.d1.p":"它是否解決了這個市場真正存在的問題？","sys.d2.t":"語言與訊息契合度","sys.d2.p":"讀起來是原生，還是外來？","sys.d3.t":"信任訊號","sys.d3.p":"它有展示這個市場購買前會查證的東西嗎？","sys.d4.t":"渠道與買家契合度","sys.d4.p":"它是否出現在買家真正會研究的地方？","sys.d5.t":"社群擁有度","sys.d5.p":"有人會不收費地為它倡議嗎？","sys.route":"<b>路由邏輯：</b>D1–D3 偏弱 → 先做<b>品牌重塑</b>；D4–D5 偏弱 → 先做<b>社群啟動引擎</b>；兩者都弱 → 按次序走完整系統。五項都強 → 你暫時未必需要我們，我們會直說。","sys.rebrand.kicker":"01 · 重塑","sys.rebrand.title":"品牌重塑 — 四個階段，四道關卡","sys.rebrand.sub":"為你將進入的市場，原生重建定位、訊息和品牌識別；未有共同確認問題前，不開始創意工作。","sys.rebrand.q":"這個品牌在這裡應代表甚麼？每一項資產都承載得到嗎？","sys.rebrand.route":"審計 → 定位 → 原生識別 → 上市。每個階段都要管理層通過；Gate 3 是原生盲測：讀起來像外來品牌，就修改。","sys.engine.kicker":"02 · 動能","sys.engine.title":"社群啟動引擎","sys.engine.sub":"把創作者行銷變成社群基建。選人用加權共鳴分數；每個渠道都要在 90 日面對擴大或停止的決定。","sys.engine.q":"誰會替你說話？明年還會繼續嗎？","sys.engine.route":"繪製文化 → 按契合度尋找 → 組成核心圈 → 啟動 → 衡量。觸及率只用來打破平手，從不是標準。","sys.explore":"查看完整方法 →","audit.eb":"自己試一次","audit.title":"審計會把你帶往哪裡？","audit.sub":"以你下一個目標市場為準，誠實評估品牌。只需一分鐘，以下就是我們同一套路由邏輯。","audit.d1.t":"D1 · 定位契合度","audit.d1.q":"你的方案是否解決了這個市場真正存在的問題？","audit.d2.t":"D2 · 語言與訊息契合度","audit.d2.q":"原生專業人士會覺得你的素材是本地寫成的嗎？","audit.d3.t":"D3 · 信任訊號","audit.d3.q":"你展示的是這個市場購買前會查證的證據嗎？","audit.d4.t":"D4 · 渠道與買家契合度","audit.d4.q":"你是否原生地出現在買家會研究的平台？","audit.d5.t":"D5 · 社群擁有度","audit.d5.q":"有人會不收費地在當地為你的品牌倡議嗎？","audit.strong":"強","audit.unsure":"未確定","audit.weak":"弱","audit.pending":"完成五項評估，即可查看路由結果。","audit.kicker":"你的共鳴路由","audit.score1":"品牌意義（D1–D3）","audit.score2":"市場承載力（D4–D5）","audit.full.title":"路由：完整 Northia 系統。","audit.full.body":"品牌要先有新的意義，市場才承載得起；啟動弱品牌，只會放大弱點。","audit.rebrand.title":"路由：先做品牌重塑。","audit.rebrand.body":"先處理定位、語言和信任訊號；審計會找出最拖後腿的一項。","audit.engine.title":"路由：先做社群啟動引擎。","audit.engine.body":"品牌本身站得住，但買家研究時沒有人替你說話；這是分發與倡議問題。","audit.ready.title":"路由：你暫時未必需要我們。","audit.ready.body":"五項全強很罕見，也值得用數據而非自評驗證；我們會直說結果。","audit.cta":"先做免費審計","audit.verify":"以免費審計驗證","audit.reset":"重設","audit.remaining":" 項未完成。"
+});
+Object.assign(I18N.hans, {
+  "sys.eb":"Northia 系统","sys.title":"一套方法，三个阶段。<br>诊断 → 重塑 → 启动。","sys.sub":"品牌要在新市场胜出，只有三步：先理解它现在代表什么，再重建它应有的意义，最后让市场替你说出来。每个环节都有清晰的决策关卡，不凭感觉推进。","sys.tab0num":"阶段 0 · 诊断","sys.tab0":"共鸣审计","sys.tab1num":"阶段 1 · 重塑","sys.tab1":"品牌重塑","sys.tab2num":"阶段 2 · 动能","sys.tab2":"社群启动引擎","sys.question":"核心问题","sys.audit.kicker":"00 · 诊断 — 免费","sys.audit.title":"共鸣审计","sys.audit.sub":"以五个互不重叠的维度，对照你的目标市场评分；在你投入预算前，先判断该花在哪里。","sys.audit.q":"你的品牌目前在这个市场代表什么？又是对谁而言？","sys.d1.t":"定位契合度","sys.d1.p":"它是否解决了这个市场真正存在的问题？","sys.d2.t":"语言与信息契合度","sys.d2.p":"读起来是原生，还是外来？","sys.d3.t":"信任信号","sys.d3.p":"它展示了这个市场购买前会查证的东西吗？","sys.d4.t":"渠道与买家契合度","sys.d4.p":"它是否出现在买家真正会研究的地方？","sys.d5.t":"社群拥有度","sys.d5.p":"有人会不收费地为它倡议吗？","sys.route":"<b>路由逻辑：</b>D1–D3 偏弱 → 先做<b>品牌重塑</b>；D4–D5 偏弱 → 先做<b>社群启动引擎</b>；两者都弱 → 按顺序走完整系统。五项都强 → 你暂时未必需要我们，我们会直说。","sys.rebrand.kicker":"01 · 重塑","sys.rebrand.title":"品牌重塑 — 四个阶段，四道关卡","sys.rebrand.sub":"为你将进入的市场，原生重建定位、信息和品牌识别；未共同确认问题前，不开始创意工作。","sys.rebrand.q":"这个品牌在这里应代表什么？每一项资产都承载得到吗？","sys.rebrand.route":"审计 → 定位 → 原生识别 → 上市。每个阶段都要管理层通过；Gate 3 是原生盲测：读起来像外来品牌，就修改。","sys.engine.kicker":"02 · 动能","sys.engine.title":"社群启动引擎","sys.engine.sub":"把创作者营销变成社群基建。选人用加权共鸣分数；每个渠道都要在 90 日面对扩大或停止的决定。","sys.engine.q":"谁会替你说话？明年还会继续吗？","sys.engine.route":"绘制文化 → 按契合度寻找 → 组成核心圈 → 启动 → 衡量。触及率只用来打破平手，从不是标准。","sys.explore":"查看完整方法 →","audit.eb":"自己试一次","audit.title":"审计会把你带往哪里？","audit.sub":"以你下一个目标市场为准，诚实评估品牌。只需一分钟，以下就是我们同一套路由逻辑。","audit.d1.t":"D1 · 定位契合度","audit.d1.q":"你的方案是否解决了这个市场真正存在的问题？","audit.d2.t":"D2 · 语言与信息契合度","audit.d2.q":"原生专业人士会觉得你的素材是本地写成的吗？","audit.d3.t":"D3 · 信任信号","audit.d3.q":"你展示的是这个市场购买前会查证的证据吗？","audit.d4.t":"D4 · 渠道与买家契合度","audit.d4.q":"你是否原生地出现在买家会研究的平台？","audit.d5.t":"D5 · 社群拥有度","audit.d5.q":"有人会不收费地在当地为你的品牌倡议吗？","audit.strong":"强","audit.unsure":"不确定","audit.weak":"弱","audit.pending":"完成五项评估，即可查看路由结果。","audit.kicker":"你的共鸣路由","audit.score1":"品牌意义（D1–D3）","audit.score2":"市场承载力（D4–D5）","audit.full.title":"路由：完整 Northia 系统。","audit.full.body":"品牌要先有新的意义，市场才承载得起；启动弱品牌，只会放大弱点。","audit.rebrand.title":"路由：先做品牌重塑。","audit.rebrand.body":"先处理定位、语言和信任信号；审计会找出最拖后腿的一项。","audit.engine.title":"路由：先做社群启动引擎。","audit.engine.body":"品牌本身站得住，但买家研究时没有人替你说话；这是分发与倡议问题。","audit.ready.title":"路由：你暂时未必需要我们。","audit.ready.body":"五项全强很罕见，也值得用数据而非自评验证；我们会直说结果。","audit.cta":"先做免费审计","audit.verify":"以免费审计验证","audit.reset":"重设","audit.remaining":" 项未完成。"
+});
+
 let currentTipKey = null;
 function setLang(lang){
   const dict = I18N[lang];
@@ -810,6 +887,7 @@ function setLang(lang){
     document.querySelectorAll('[data-setlang]').forEach(b =>
       b.classList.toggle('active', b.getAttribute('data-setlang') === lang));
     if (currentTipKey) tip.innerHTML = dict[currentTipKey] || '';
+    if (typeof raAnswers !== 'undefined' && Object.keys(raAnswers).length) renderRaVerdict();
     document.body.classList.remove('lang-fading');
   }, 280);
 }
@@ -872,6 +950,44 @@ const io = new IntersectionObserver(entries => {
 }, {threshold:.18});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+/* ================= system stepper ================= */
+const nsStepper = document.getElementById('nsStepper');
+const nsPill = document.getElementById('nsPill');
+const nsTabs = [...nsStepper.querySelectorAll('button')];
+function placeNsPill(button){ nsPill.style.left = button.offsetLeft + 'px'; nsPill.style.width = button.offsetWidth + 'px'; }
+nsTabs.forEach(button => button.addEventListener('click', () => {
+  nsTabs.forEach(tab => { tab.classList.remove('on'); tab.setAttribute('aria-selected','false'); });
+  document.querySelectorAll('.ns-stage').forEach(stage => stage.classList.remove('on'));
+  button.classList.add('on'); button.setAttribute('aria-selected','true');
+  document.getElementById('nsStage' + button.dataset.nsStage).classList.add('on');
+  placeNsPill(button);
+}));
+addEventListener('load', () => placeNsPill(nsTabs[0]));
+addEventListener('resize', () => placeNsPill(nsStepper.querySelector('button.on')));
+
+/* ================= resonance audit ================= */
+const raAnswers = {};
+const raVerdict = document.getElementById('raVerdict');
+document.querySelectorAll('.ra-row').forEach(row => row.querySelectorAll('.ra-seg button').forEach(button => button.addEventListener('click', () => {
+  row.querySelectorAll('.ra-seg button').forEach(item => item.className = '');
+  button.classList.add(button.dataset.raValue === '2' ? 'strong' : button.dataset.raValue === '1' ? 'mixed' : 'weak');
+  raAnswers[row.dataset.raDim] = {value:+button.dataset.raValue, group:row.dataset.raGroup};
+  renderRaVerdict();
+})));
+function renderRaVerdict(){
+  const dict = I18N[document.body.dataset.lang];
+  const dims = Object.values(raAnswers);
+  if(dims.length < 5){ raVerdict.classList.remove('ready'); raVerdict.textContent = dict['audit.pending'] + ' ' + (5 - dims.length) + dict['audit.remaining']; return; }
+  const brand = dims.filter(item => item.group === 'rebrand'); const market = dims.filter(item => item.group === 'engine');
+  const brandScore = brand.reduce((sum,item) => sum + item.value,0); const marketScore = market.reduce((sum,item) => sum + item.value,0);
+  const brandWeak = brandScore <= 3 || brand.some(item => item.value === 0); const marketWeak = marketScore <= 2 || market.some(item => item.value === 0);
+  let route = 'ready'; if(brandWeak && marketWeak) route = 'full'; else if(brandWeak) route = 'rebrand'; else if(marketWeak) route = 'engine';
+  const cta = route === 'ready' ? dict['audit.verify'] : dict['audit.cta'];
+  raVerdict.classList.add('ready');
+  raVerdict.innerHTML = '<div class="v-kicker">' + dict['audit.kicker'] + '</div><h4>' + dict['audit.' + route + '.title'] + '</h4><div class="ra-scores"><span class="ra-score">' + dict['audit.score1'] + ': <b>' + brandScore + ' / 6</b></span><span class="ra-score">' + dict['audit.score2'] + ': <b>' + marketScore + ' / 4</b></span></div><p>' + dict['audit.' + route + '.body'] + '</p><a class="btn" href="https://calendly.com/northiamarketingconsultancy/30min" target="_blank" rel="noopener">' + cta + '<span class="arr">→</span></a><button class="ra-reset" id="raReset">' + dict['audit.reset'] + '</button>';
+  document.getElementById('raReset').addEventListener('click', () => { Object.keys(raAnswers).forEach(key => delete raAnswers[key]); document.querySelectorAll('.ra-seg button').forEach(button => button.className = ''); raVerdict.classList.remove('ready'); raVerdict.textContent = I18N[document.body.dataset.lang]['audit.pending']; });
+}
+
 </script>
 
 <!-- ===== Lead capture popup ===== -->
@@ -897,7 +1013,7 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   <div class="np-card">
     <button class="np-x" id="npX" aria-label="Close">✕</button>
     <div class="np-eb" data-i18n="pp.eb">Free custom audit</div>
-    <h3 class="np-t" data-i18n="pp.t">Free custom audit</h3>
+    <h3 class="np-t" data-i18n="pp.t">Where is your brand losing the market?</h3>
     <p class="np-p" data-i18n="pp.p">Leave your details and we'll personally audit your brand: a customized report on the problems we find, with free data analysis and insights — before you spend a dollar with us.</p>
     <form class="np-f" action="https://formsubmit.co/hello@northiamarketing.com" method="POST">
       <input type="hidden" name="_subject" value="Custom audit request — website popup">

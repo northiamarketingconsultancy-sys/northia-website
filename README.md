@@ -1,51 +1,115 @@
-# Northia Marketing Consultancy — Website
+# Northia — Website
 
-純 HTML/CSS/JS 靜態網站，無需任何建置工具。
+Interactive, trilingual (EN / 繁體中文 / 简体中文) marketing site for **Northia Marketing Consultancy**.
+Static HTML/CSS/JS — no build step, no framework, no dependencies. Ready to host on GitHub Pages.
 
-## 檔案結構
+**Tagline:** Asia ⇄ Overseas | Branding & Community Consultancy that Helps Expanding New Markets & Communities
 
-| 檔案 | 用途 |
-|---|---|
-| `index.html` | 主頁（三語 EN / 繁 / 简，含聯絡表格） |
-| `case-studies.html` | 案例頁（4 個案例） |
-| `insights.html` | 文章列表頁 |
-| `article-*.html` × 5 | SEO 文章 |
-| `article-template.html` | 文章模板（發新文時複製，唔好刪） |
-| `assets/` | Logo 圖檔 |
-| `sitemap.xml` / `robots.txt` | Google 收錄用 |
-| `.nojekyll` | 防止 GitHub Pages 用 Jekyll 處理 |
+---
 
-## GitHub Pages 上線（一次過設定）
+## What's in here
 
-1. GitHub → **+** → **New repository** → 名 `northia-site` → **Public** → Create
-2. **Add file → Upload files** → 全部檔案連 `assets` 資料夾拖入去 → **Commit changes**
-3. **Settings → Pages** → Source 揀 `Deploy from a branch` → Branch `main` / `(root)` → Save
-4. 等 1–2 分鐘：`https://你嘅用戶名.github.io/northia-site/`
+```
+northia-website/
+├── index.html              The whole site (HTML + CSS + JS in one file)
+├── content.json            All wording, loaded by the site at runtime
+├── content.xlsx            Editable copy deck → regenerates content.json
+├── assets/
+│   └── northia-mark.png     Compass logo mark
+├── scripts/
+│   └── build_content.py     Turns content.xlsx into content.json
+├── .gitignore
+└── README.md
+```
 
-## 重要：聯絡表格啟動（一次過）
+The page renders from the copy **embedded in `index.html`** as a fallback, and — when
+served over HTTP (GitHub Pages or a local server) — it loads `content.json` and uses that
+instead. So you change wording by editing `content.xlsx`, not the code.
 
-表格用 FormSubmit 直接寄去 northiamarketingconsultancy@gmail.com。
-網站上線後，**自己先填一次表格送出** → FormSubmit 會寄一封確認信去你 Gmail → 撳 **Activate**。之後所有訪客留言就會自動寄到你信箱。
+---
 
-## 發佈新文章（10 分鐘）
+## Edit the wording (no coding)
 
-1. 複製 `article-template.html` → 改名 `article-你嘅主題.html`
-2. 跟檔案入面 6 個 ✏️ EDIT 標記改內容
-3. `insights.html` 複製一張卡片，改標題／摘要／連結，放最前
-4. `sitemap.xml` 加一行 `<url>`
-5. Commit
+1. Open **`content.xlsx`** and edit the text in the `EN`, `繁體中文`, `简体中文` columns.
+   The **How to edit** sheet explains each sheet and the rules.
+2. Regenerate the site copy:
+   ```bash
+   pip install openpyxl        # first time only
+   python scripts/build_content.py
+   ```
+   This rewrites `content.json`.
+3. Commit both `content.xlsx` and `content.json`.
 
-## 駁自己網域
+Do **not** change the `Key`, `id`, `Variant`, `x`, `y`, or `slug` values — those wire copy
+to the page. Only edit the text columns. Keep tags like `<br>` and `&amp;` intact.
 
-1. Settings → Pages → Custom domain 填 `www.你嘅域名.com`
-2. 域名商 DNS 加：CNAME `www` → `你嘅用戶名.github.io`，同四條 A 記錄：
-   `185.199.108.153` / `185.199.109.153` / `185.199.110.153` / `185.199.111.153`
-3. 開 Enforce HTTPS
-4. 全部檔案入面 `YOURDOMAIN.com` 全部取代做真域名
+> The `Variant` column: blank = one version shown everywhere. `a2w` = shown in the
+> **Asia → World** view, `w2a` = shown in the **World → Asia** view.
 
-## 上線前清單
+---
 
-- [ ] 換 Calendly 嵌入碼（index + 各 article 檔有 ✏️ 標記）
-- [ ] 案例數字（主頁 +340% 等）換真實數據
-- [ ] 自己填一次聯絡表格，啟動 FormSubmit
-- [ ] Google Search Console 驗證 + 提交 sitemap
+## Preview locally
+
+`content.json` only loads over HTTP (browsers block `fetch` from `file://`), so:
+
+```bash
+python -m http.server 8000
+# open http://localhost:8000
+```
+
+Double-clicking `index.html` still works, but it will show the embedded fallback copy
+rather than your latest `content.json` edits.
+
+---
+
+## Publish on GitHub Pages
+
+1. Create a repo and push this folder:
+   ```bash
+   git init
+   git add .
+   git commit -m "Northia website"
+   git branch -M main
+   git remote add origin https://github.com/<you>/<repo>.git
+   git push -u origin main
+   ```
+2. On GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
+   pick **main** / **/ (root)**, Save.
+3. Your site goes live at `https://<you>.github.io/<repo>/` in a minute or two.
+
+For a custom domain (e.g. `northiamarketing.com`), add it under Settings → Pages and set
+the DNS records GitHub shows you.
+
+---
+
+## Forms (audit / consultation / KOL / service request)
+
+All form submissions post to **hello@northiamarketing.com** via
+[FormSubmit](https://formsubmit.co) — a no-backend relay that works on static hosting.
+
+**One-time activation:** the *first* time any form is submitted, FormSubmit emails
+hello@northiamarketing.com a confirmation link. Click it once and submissions flow
+automatically after that.
+
+To change the destination address, edit this line near the top of the `<script>` in
+`index.html`:
+
+```js
+const ENDPOINT='https://formsubmit.co/ajax/hello@northiamarketing.com';
+```
+
+**Want submissions in a Google Sheet instead?** Replace that endpoint with a Google
+Apps Script Web App URL (deployed as “Anyone”) that appends the posted fields to a sheet.
+
+---
+
+## Notes
+
+- Fonts (Plus Jakarta Sans + Noto Sans TC/SC) load from Google Fonts.
+- The world map is a stylised SVG (positions are illustrative, not to scale).
+- Placeholder frames — logo slots, `[ Photo ]`, `[ Asset slot ]`, and bracketed quotes —
+  are intentional. Replace them with approved logos, portraits, results and quotes only.
+- Logo lockup note: the supplied stacked lockup art reads “Marke**r**ting” (a typo in the
+  source artwork) — worth fixing that file before print/production use.
+
+© 2026 Northia Marketing Consultancy Ltd.

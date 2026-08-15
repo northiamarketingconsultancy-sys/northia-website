@@ -3,1041 +3,931 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Northia Marketing Consultancy — Rebranding & Community Activation for Asia</title>
-<meta name="description" content="Northia Marketing Consultancy — a North American consultancy helping B2B companies expand into Asian markets through strategic rebranding and community activation built on resonance, not reach.">
-<link rel="canonical" href="https://northiamarketing.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Northia Marketing Consultancy — Rebranding & Community Activation for Asia">
-<meta property="og:description" content="Helping North American companies win Asian B2C & B2B markets through strategic rebranding and community activation.">
-<meta property="og:url" content="https://northiamarketing.com/">
-<meta property="og:image" content="https://northiamarketing.com/assets/logo-full.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Northia Marketing Consultancy Ltd.",
-  "url": "https://northiamarketing.com/",
-  "logo": "https://northiamarketing.com/assets/logo-full.png",
-  "email": "hello@northiamarketing.com",
-  "telephone": "+1-778-998-5022",
-  "description": "North America ↔ Asia growth consultancy — strategic rebranding and community activation."
-}
-</script>
+<title>Northia — Asia ⇄ Overseas | Branding & Community Consultancy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   BRIDGEHEAD ASIA — design tokens
-   60% white/tech-gray · 30% midnight ink · 10% vermilion accent
-   ============================================================ */
+/* ============ BRAND TOKENS (Northia Brand Guidelines v2.0) ============ */
 :root{
-  --bg:        #F8F9FA;
-  --surface:   #FFFFFF;
-  --ink:       #101828;
-  --ink-soft:  #475467;
-  --line:      #E4E7EC;
-  --accent:    #FF3B30;   /* 東方曜紅 — interaction only */
-  --accent-2:  #00D4B2;   /* 數位極光綠 — data / live signals */
-  --radius:    14px;
-  --max:       1180px;
-  --font-en:   "Plus Jakarta Sans", sans-serif;
-  --font-tc:   "Noto Sans TC", sans-serif;
-  --font-sc:   "Noto Sans SC", sans-serif;
-  --ease:      cubic-bezier(.22,.8,.3,1);
+  --bone:#F4F1E9;--ink:#000000;--red:#E6251D;--blush:#F1CEC6;
+  --body:#55524B;--line:#D5D2CB;--muted:#9D9B96;--white:#FFFFFF;--card:#FFFFFF;
+  --radius:3px;--maxw:1180px;
+  --font:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-cjk:'Plus Jakarta Sans','Noto Sans TC','Noto Sans SC',system-ui,sans-serif;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family:var(--font-en), var(--font-tc), sans-serif;
-  font-weight:400;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
-body[data-lang="hant"]{font-family:var(--font-tc), var(--font-en), sans-serif}
-body[data-lang="hans"]{font-family:var(--font-sc), var(--font-en), sans-serif}
+html[lang="tc"] body{font-family:'Plus Jakarta Sans','Noto Sans TC',system-ui,sans-serif;}
+html[lang="sc"] body{font-family:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);background:var(--bone);color:var(--body);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+body.lock{overflow:hidden;}
+h1,h2,h3,h4{color:var(--ink);font-weight:800;line-height:1.08;letter-spacing:-0.025em;}
+h1{font-size:clamp(2.3rem,5.4vw,4.3rem);}
+h2{font-size:clamp(1.85rem,3.8vw,2.9rem);}
+h3{font-size:clamp(1.2rem,2.3vw,1.55rem);}
+a{color:inherit;text-decoration:none;}
+.red{color:var(--red);}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,52px);}
+section{position:relative;}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ink);}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--red);display:inline-block;}
+html[lang="tc"] .eyebrow,html[lang="sc"] .eyebrow{letter-spacing:.06em;}
+.blush-wash{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;}
+.blush-wash::after{content:"";position:absolute;width:60vw;height:60vw;max-width:720px;max-height:720px;border-radius:50%;background:radial-gradient(circle,var(--blush) 0%,rgba(241,206,198,0) 68%);opacity:.5;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-cjk);font-weight:800;font-size:.95rem;padding:15px 30px;border-radius:var(--radius);cursor:pointer;border:1px solid var(--ink);transition:transform .18s ease,background .18s ease,color .18s ease;letter-spacing:-.01em;}
+.btn-primary{background:var(--ink);color:var(--white);}
+.btn-primary:hover{transform:translateY(-2px);background:var(--red);border-color:var(--red);}
+.btn-ghost{background:transparent;color:var(--ink);}
+.btn-ghost:hover{background:var(--ink);color:var(--white);transform:translateY(-2px);}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff;}
+.btn-red:hover{background:#c81f18;border-color:#c81f18;transform:translateY(-2px);}
+.btn-red:disabled{background:var(--line);border-color:var(--line);color:var(--muted);cursor:not-allowed;transform:none;}
+.sec-pad{padding:clamp(64px,9vw,120px) 0;}
 
-::selection{background:var(--accent);color:#fff}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-ul{list-style:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
-section{padding:110px 0}
+/* ENTRANCE */
+#entrance{position:fixed;inset:0;z-index:1000;background:var(--bone);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;transition:opacity .6s ease,visibility .6s ease;}
+#entrance.hidden{opacity:0;visibility:hidden;}
+.ent-lang{position:absolute;top:26px;right:clamp(20px,5vw,48px);display:flex;gap:4px;z-index:2;}
+.ent-mark{width:88px;height:88px;margin-bottom:22px;}
+.ent-mark img{width:100%;height:100%;object-fit:contain;}
+.ent-eyebrow{margin-bottom:18px;}
+#entrance h1{max-width:15ch;margin:0 auto 16px;}
+.ent-tagline{font-size:clamp(1rem,1.9vw,1.14rem);color:var(--body);max-width:50ch;margin:0 auto 44px;}
+.ent-cta-row{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;max-width:760px;}
+.ent-cta{position:relative;flex:1 1 300px;max-width:340px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;cursor:pointer;text-align:left;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;}
+.ent-cta:hover{transform:translateY(-4px);border-color:var(--ink);box-shadow:0 18px 40px -24px rgba(0,0,0,.4);}
+.ent-cta .arrow{font-size:1.5rem;color:var(--red);font-weight:800;}
+.ent-cta h3{margin:12px 0 8px;font-size:1.42rem;}
+.ent-cta .tip{font-size:.82rem;color:var(--muted);line-height:1.55;}
+.ent-cta .go{margin-top:16px;font-weight:800;font-size:.85rem;display:inline-flex;align-items:center;gap:8px;color:var(--ink);}
+.ent-cta:hover .go{color:var(--red);}
+.ent-foot{margin-top:40px;font-size:.78rem;color:var(--muted);}
+.lang-switch{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.lang-switch button{font-family:var(--font-cjk);border:0;background:transparent;padding:7px 12px;font-size:.8rem;font-weight:700;color:var(--muted);cursor:pointer;transition:background .15s,color .15s;}
+.lang-switch button.on{background:var(--ink);color:var(--white);}
 
-/* ---- language fade (i18n swap) ---- */
-[data-i18n]{transition:opacity .28s var(--ease), transform .28s var(--ease)}
-.lang-fading [data-i18n]{opacity:0;transform:translateY(6px)}
+/* HEADER */
+#site{opacity:0;transition:opacity .5s ease .2s;}
+#site.shown{opacity:1;}
+header{position:sticky;top:0;z-index:80;background:rgba(244,241,233,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.hd{display:flex;align-items:center;gap:18px;height:72px;}
+.hd-logo{display:flex;align-items:center;gap:11px;cursor:pointer;}
+.hd-logo img{width:38px;height:38px;}
+.hd-logo .wm{font-weight:800;font-size:1.26rem;letter-spacing:-.02em;color:var(--ink);}
+.hd-logo .wm b{color:var(--red);font-weight:800;}
+.hd-eyebrow{font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;line-height:1;margin-top:2px;}
+nav.hd-nav{display:flex;gap:24px;margin-left:auto;align-items:center;}
+nav.hd-nav a{font-weight:600;font-size:.9rem;color:var(--body);transition:color .15s;position:relative;white-space:nowrap;}
+nav.hd-nav a:hover{color:var(--ink);}
+nav.hd-nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--red);transition:width .2s;}
+nav.hd-nav a:hover::after{width:100%;}
+.hd-tools{display:flex;align-items:center;gap:9px;}
+.persp-switch{display:inline-flex;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);}
+.persp-switch button{font-family:var(--font-cjk);border:0;background:transparent;padding:7px 11px;font-size:.72rem;font-weight:800;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.15s;}
+.persp-switch button.on{background:var(--red);color:var(--white);}
+.hd-menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:var(--radius);width:40px;height:40px;cursor:pointer;font-size:1.2rem;}
+.mobile-nav{display:none;}
+.mobile-nav a{display:block;padding:8px 0;font-weight:600;border-top:1px solid var(--line);}
 
-/* ============ STICKY HEADER ============ */
-header{
-  position:fixed;inset:0 0 auto 0;z-index:50;
-  transition:all .35s var(--ease);
-  padding:22px 0;
-}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-header.scrolled{
-  padding:10px 0;
-  background:rgba(248,249,250,.72);
-  backdrop-filter:blur(14px) saturate(1.4);
-  -webkit-backdrop-filter:blur(14px) saturate(1.4);
-  border-bottom:1px solid var(--line);
-}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
-.logo .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block}
-.logo-img{height:32px;width:auto}
-nav{display:flex;align-items:center;gap:30px}
-nav a{font-size:14.5px;font-weight:500;color:var(--ink-soft);position:relative;transition:color .2s}
-nav a::after{
-  content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;
-  background:var(--accent);transition:width .25s var(--ease);
-}
-nav a:hover{color:var(--ink)}
-nav a:hover::after{width:100%}
+/* HERO */
+.hero{padding:clamp(64px,9vw,116px) 0 clamp(56px,8vw,100px);overflow:hidden;}
+.hero .eyebrow{margin-bottom:22px;}
+.hero h1{max-width:17ch;margin-bottom:24px;}
+.hero .lede{font-size:clamp(1.05rem,1.6vw,1.28rem);max-width:58ch;margin-bottom:34px;color:var(--body);}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
+.sec-head{max-width:62ch;margin-bottom:46px;}
+.sec-head .eyebrow{margin-bottom:16px;}
+.sec-head p{margin-top:14px;font-size:1.06rem;}
 
-/* language switcher */
-.lang-switch{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--surface)}
-.lang-switch button{
-  border:0;background:transparent;cursor:pointer;
-  font:inherit;font-size:12.5px;font-weight:700;color:var(--ink-soft);
-  padding:7px 13px;transition:all .25s var(--ease);
-}
-.lang-switch button:hover{color:var(--accent)}
-.lang-switch button.active{background:var(--ink);color:#fff}
+/* LOGO CLOUD */
+.logos-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card);padding:32px 0;overflow:hidden;}
+.logos-title{text-align:center;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-bottom:6px;}
+html[lang="tc"] .logos-title,html[lang="sc"] .logos-title{letter-spacing:.06em;}
+.logos-hint{text-align:center;font-size:.74rem;color:var(--muted);margin-bottom:24px;}
+.logos-track-wrap{position:relative;width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+.logos-track{display:flex;gap:34px;width:max-content;animation:scrollx 40s linear infinite;align-items:center;}
+.logos-track:hover{animation-play-state:paused;}
+@keyframes scrollx{to{transform:translateX(-50%);}}
+.logo-slot{width:200px;height:76px;border:1px dashed var(--line);border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bone);gap:3px;}
+.logo-slot .nm{font-weight:800;font-size:.98rem;letter-spacing:-.02em;color:var(--ink);}
+.logo-slot .pl{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;}
 
-.btn{
-  display:inline-flex;align-items:center;gap:9px;
-  background:var(--ink);color:#fff;border:0;cursor:pointer;
-  font:inherit;font-size:14.5px;font-weight:700;
-  padding:13px 26px;border-radius:99px;
-  transition:all .25s var(--ease);
-}
-.btn:hover{background:var(--accent);transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,59,48,.28)}
-.btn .arr{transition:transform .25s var(--ease)}
-.btn:hover .arr{transform:translateX(4px)}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.btn.ghost:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+/* WHY COMMUNITY (education) */
+.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:52px;}
+.edu{padding:30px;display:flex;flex-direction:column;}
+.edu .k{font-size:1.4rem;color:var(--red);font-weight:800;}
+.edu h4{margin:16px 0 10px;font-size:1.18rem;font-weight:800;letter-spacing:-.02em;}
+.edu p{font-size:.92rem;color:var(--body);line-height:1.6;}
+.proof-label{margin-bottom:24px;}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.proof{display:flex;gap:20px;padding:26px;}
+.proof-asset{flex:none;width:100px;height:100px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--bone);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.68rem;text-align:center;padding:6px;}
+.proof-body{display:flex;flex-direction:column;}
+.proof .quote{font-size:1.02rem;color:var(--ink);font-weight:700;letter-spacing:-.01em;line-height:1.42;margin-bottom:16px;}
+.proof .who{margin-top:auto;}
+.proof .who b{color:var(--ink);display:block;font-weight:800;}
+.proof .who span{font-size:.82rem;color:var(--muted);}
+/* audit per-area quick check */
+.atest-areas{display:flex;flex-direction:column;gap:8px;margin:16px 0 22px;}
+.atest-area{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 15px;border:1px solid #2a2a2a;border-radius:var(--radius);}
+.atest-area .an{color:#fff;font-weight:700;font-size:.9rem;}
+.atest-area .an small{color:#8f8c87;font-weight:600;}
+.atest-area .as{font-size:.74rem;font-weight:800;letter-spacing:.02em;white-space:nowrap;}
+.atest-area .as.strong{color:#7cc98a;}
+.atest-area .as.ok{color:#e9c46a;}
+.atest-area .as.weak{color:#ff6b63;}
+/* community role toggle + panels */
+.role-toggle{display:inline-flex;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);margin-bottom:34px;}
+.role-toggle button{font-family:var(--font-cjk);border:0;background:transparent;padding:12px 22px;font-weight:800;font-size:.9rem;color:var(--muted);cursor:pointer;transition:.15s;}
+.role-toggle button.on{background:var(--ink);color:#fff;}
+.comm-copy .feat .ic{font-size:1rem;}
 
-/* ============ HERO ============ */
-.hero{padding:200px 0 130px;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:60px;align-items:center}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ink-soft);margin-bottom:26px;
-}
-.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent)}
-h1{
-  font-weight:800;letter-spacing:-.03em;line-height:1.08;
-  font-size:clamp(40px,5.6vw,68px);
-}
-h1 em{font-style:normal;color:var(--accent)}
-.hero p.lead{font-size:19px;color:var(--ink-soft);max-width:520px;margin:28px 0 38px}
-.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+/* TESTIMONIALS / PROOF */
+.tst-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;}
+.tst-feature{padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;}
+.tst-feature .quote{font-size:clamp(1.18rem,2.05vw,1.55rem);color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.32;margin:20px 0 28px;}
+.tst-client{display:flex;align-items:center;gap:14px;margin-top:auto;}
+.tst-logo-slot{width:60px;height:44px;border-radius:var(--radius);border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--red);font-size:.72rem;text-align:center;background:var(--bone);line-height:1.1;padding:2px;}
+.tst-client .who b{display:block;color:var(--ink);font-weight:800;}
+.tst-client .who span{font-size:.84rem;color:var(--muted);}
+.tst-metrics{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.metric{padding:22px;display:flex;flex-direction:column;justify-content:center;}
+.metric b{font-size:clamp(1.5rem,2.5vw,2rem);color:var(--ink);font-weight:800;letter-spacing:-.03em;}
+.metric b .u{color:var(--red);}
+.metric span{font-size:.8rem;color:var(--muted);margin-top:4px;}
+.asset-slot{border:1px dashed var(--line);border-radius:var(--radius);background:var(--bone);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;text-align:center;padding:16px;}
 
-/* hero route card (visual) */
-.route-card{
-  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:30px 28px;box-shadow:0 24px 60px rgba(16,24,40,.07);
-}
-.route-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px dashed var(--line)}
-.route-row:last-child{border-bottom:0}
-.route-city{font-weight:700;font-size:15px}
-.route-city span{display:block;font-size:11.5px;font-weight:500;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase}
-.route-line{flex:1;height:2px;position:relative;background:var(--line);overflow:hidden;border-radius:2px}
-.route-line::after{
-  content:"";position:absolute;inset:0;width:42%;
-  background:linear-gradient(90deg,transparent,var(--accent));
-  animation:fly 2.6s var(--ease) infinite;
-}
-.route-row:nth-child(2) .route-line::after{animation-delay:.7s;background:linear-gradient(90deg,transparent,var(--accent-2))}
-.route-row:nth-child(3) .route-line::after{animation-delay:1.3s}
-@keyframes fly{from{transform:translateX(-110%)}to{transform:translateX(260%)}}
+/* MAP */
+.map-shell{display:grid;grid-template-columns:1.55fr 1fr;gap:26px;align-items:stretch;}
+.map-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;position:relative;overflow:hidden;}
+.map-svg{width:100%;height:auto;display:block;}
+.pin{cursor:pointer;}
+.pin .halo{fill:var(--red);opacity:.16;animation:pulse 3s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.09;}50%{opacity:.24;}}
+.pin .core{fill:var(--red);stroke:var(--bone);stroke-width:2;transition:r .15s;}
+.pin:hover .core{r:8;}
+.pin .lbl{font-family:var(--font-cjk);font-size:12.5px;font-weight:800;fill:var(--ink);}
+.pin.active .core{fill:var(--ink);r:8;}
+.map-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;}
+.map-card .flag{font-size:1.7rem;}
+.map-card h3{margin:8px 0 4px;}
+.map-card .role{font-size:.78rem;color:var(--red);font-weight:800;letter-spacing:.05em;text-transform:uppercase;}
+.map-card .desc{margin:14px 0 6px;font-size:.92rem;}
+.mc-lbl{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;margin:16px 0 9px;}
+.mc-arts{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+.mc-arts a{font-size:.88rem;font-weight:600;color:var(--ink);line-height:1.35;display:flex;gap:7px;align-items:baseline;transition:color .15s;}
+.mc-arts a:hover{color:var(--red);}
+.mc-arts a .ar{color:var(--red);font-weight:800;}
+.map-card .links{display:flex;flex-direction:column;gap:9px;margin-top:auto;}
+.map-card .links a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius);font-weight:700;font-size:.82rem;color:var(--ink);transition:border-color .15s,background .15s;}
+.map-card .links a:hover{border-color:var(--ink);background:var(--bone);}
+.map-card .links a .u{color:var(--red);}
 
-/* ============ SECTION HEADERS ============ */
-.sec-head{max-width:680px;margin-bottom:64px}
-h2{font-weight:800;letter-spacing:-.025em;line-height:1.15;font-size:clamp(30px,3.6vw,44px)}
-.sec-head p{color:var(--ink-soft);font-size:17px;margin-top:18px}
+/* AUDIT (LIVE TEST) */
+.audit-wrap{background:var(--ink);color:var(--white);border-radius:var(--radius);padding:clamp(32px,5vw,60px);position:relative;overflow:hidden;}
+.audit-wrap h2{color:var(--white);}
+.audit-test{display:flex;flex-direction:column;margin-top:6px;}
+.atest-q{padding:20px 0;border-top:1px solid #2a2a2a;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;}
+.atest-q:first-child{border-top:0;}
+.atest-q .qtxt .n{color:var(--red);font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;}
+.atest-q .qtxt h4{color:#fff;font-size:1.02rem;margin-top:6px;font-weight:800;line-height:1.3;}
+.seg{display:inline-flex;border:1px solid #4a4a4a;border-radius:var(--radius);overflow:hidden;flex:none;}
+.seg button{font-family:var(--font-cjk);background:transparent;border:0;color:#c9c6bf;padding:9px 15px;font-size:.8rem;font-weight:700;cursor:pointer;border-left:1px solid #4a4a4a;transition:.15s;white-space:nowrap;}
+.seg button:first-child{border-left:0;}
+.seg button.on{background:var(--red);color:#fff;}
+.atest-foot{margin-top:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.atest-meter{flex:1;min-width:180px;height:8px;background:#2a2a2a;border-radius:20px;overflow:hidden;}
+.atest-meter .bar{height:100%;width:0;background:var(--red);transition:width .45s ease;}
+.atest-scorelabel{color:#fff;font-weight:800;font-size:.9rem;min-width:52px;}
+.atest-hint{color:#a8a5a0;font-size:.82rem;}
+.atest-result{margin-top:28px;padding-top:26px;border-top:1px solid #2a2a2a;display:none;}
+.atest-result.show{display:block;}
+.atest-result h3{color:#fff;}
+.atest-result p{color:#c9c6bf;margin:12px 0 20px;max-width:62ch;}
+.atest-form{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.atest-form input{font-family:var(--font-cjk);border:1px solid #4a4a4a;background:#141414;color:#fff;border-radius:var(--radius);padding:13px 15px;font-size:.9rem;min-width:250px;}
+.atest-form input:focus{outline:none;border-color:var(--red);}
 
-/* ============ MARKETS ============ */
-.markets{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.m-card{
-  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
-  padding:32px 28px;transition:all .3s var(--ease);cursor:default;
-}
-.m-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 18px 44px rgba(16,24,40,.08)}
-.m-card h3{font-size:19px;font-weight:700;margin:18px 0 10px}
-.m-card p{font-size:14.5px;color:var(--ink-soft)}
-.m-flag{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--accent)}
-.m-card:hover .m-flag{color:var(--accent)}
-.m-stat{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);font-size:13px;color:var(--ink-soft)}
-.m-stat b{display:block;font-size:26px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
-.m-card:hover .m-stat b{color:var(--accent)}
+/* SERVICES */
+.svc-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px;}
+.svc-select{position:relative;}
+.svc-select select{font-family:var(--font-cjk);appearance:none;border:1px solid var(--ink);background:var(--card);border-radius:var(--radius);padding:12px 42px 12px 16px;font-weight:700;font-size:.88rem;color:var(--ink);cursor:pointer;}
+.svc-select::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--red);pointer-events:none;font-size:.8rem;}
+.svc-reqbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.svc-reqbar .count{font-size:.86rem;font-weight:700;color:var(--ink);}
+.svc-reqbar .count b{color:var(--red);}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:16px;}
+.svc-card{padding:22px;cursor:pointer;transition:transform .18s,border-color .18s,box-shadow .18s;display:flex;flex-direction:column;min-height:172px;position:relative;}
+.svc-card:hover{transform:translateY(-3px);border-color:var(--ink);}
+.svc-card.sel{border-color:var(--red);box-shadow:inset 0 0 0 1px var(--red);}
+.svc-card .num{font-size:.72rem;font-weight:800;color:var(--muted);letter-spacing:.1em;}
+.svc-card h4{margin:12px 0 8px;color:var(--ink);font-size:1.1rem;font-weight:800;letter-spacing:-.02em;}
+.svc-card p{font-size:.83rem;color:var(--body);line-height:1.5;}
+.svc-check{position:absolute;top:16px;right:16px;width:22px;height:22px;border:1.5px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.72rem;transition:.15s;}
+.svc-card.sel .svc-check{background:var(--red);border-color:var(--red);}
+.svc-card .add{margin-top:auto;padding-top:12px;font-weight:800;font-size:.78rem;color:var(--red);}
+.svc-req-bottom{display:none;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin-top:34px;padding-top:30px;border-top:1px solid var(--line);}
+.svc-req-bottom.show{display:flex;}
 
-/* ============ SERVICES ============ */
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.svc{
-  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:36px 32px;display:flex;gap:22px;transition:all .3s var(--ease);
-}
-.svc:hover{border-color:var(--ink);box-shadow:0 18px 44px rgba(16,24,40,.08)}
-.svc-num{
-  font-size:13px;font-weight:800;color:var(--accent);
-  border:1.5px solid currentColor;border-radius:99px;
-  width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;
-  transition:all .3s var(--ease);
-}
-.svc:hover .svc-num{background:var(--accent);border-color:var(--accent);color:#fff}
-.svc h3{font-size:19px;font-weight:700;margin-bottom:8px}
-.svc p{font-size:14.5px;color:var(--ink-soft)}
+/* COMMUNITY / KOL */
+.comm-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start;}
+.comm-copy .feat{display:flex;gap:14px;margin-top:20px;}
+.comm-copy .feat .ic{flex:none;width:38px;height:38px;border-radius:var(--radius);background:var(--bone);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--red);font-weight:800;}
+.comm-copy .feat b{color:var(--ink);display:block;font-weight:800;}
+.comm-copy .feat p{font-size:.9rem;}
+.kol-form{padding:clamp(24px,3.4vw,38px);}
+.kol-form h3{margin-bottom:6px;}
+.kol-form .sub{font-size:.9rem;color:var(--muted);margin-bottom:20px;}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.field{display:flex;flex-direction:column;gap:6px;}
+.field.full{grid-column:1/-1;}
+.field label{font-size:.78rem;font-weight:700;color:var(--ink);}
+.field label .req{color:var(--red);}
+.field input,.field select,.field textarea{font-family:var(--font-cjk);border:1px solid var(--line);background:var(--bone);border-radius:var(--radius);padding:11px 13px;font-size:.9rem;color:var(--ink);width:100%;transition:border-color .15s,background .15s;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink);background:var(--white);}
+.field textarea{resize:vertical;min-height:92px;}
+.field .hint{font-size:.72rem;color:var(--muted);}
+.form-note{font-size:.76rem;color:var(--muted);}
+.form-ok{display:none;padding:15px;border:1px solid var(--red);border-radius:var(--radius);background:#fff;color:var(--ink);font-weight:600;margin-top:14px;font-size:.9rem;}
+.form-ok.show{display:block;}
 
-/* ============ NETWORK MAP ============ */
-.netmap-wrap{background:var(--ink);border-radius:calc(var(--radius) + 6px);padding:54px 48px;color:#fff;position:relative;overflow:hidden}
-.netmap-wrap .sec-head{margin-bottom:30px}
-.netmap-wrap h2{color:#fff}
-.netmap-wrap .sec-head p{color:#98A2B3}
-.netmap{width:100%;height:auto;display:block}
-.city-dot{cursor:pointer}
-.city-dot circle.core{fill:#fff;transition:all .25s var(--ease)}
-.city-dot circle.halo{fill:var(--accent-2);opacity:.25;transform-origin:center;animation:pulse 2.4s ease-out infinite}
-.city-dot.west circle.halo{fill:var(--accent)}
-@keyframes pulse{0%{transform:scale(.5);opacity:.45}100%{transform:scale(2.1);opacity:0}}
-.city-dot text{fill:#98A2B3;font-family:var(--font-en);font-size:11px;font-weight:600;letter-spacing:.06em;transition:fill .25s}
-.city-dot:hover text, .city-dot.lit text{fill:#fff}
-.arc{fill:none;stroke:var(--accent);stroke-width:1.6;opacity:.16;transition:opacity .3s;stroke-linecap:round}
-.arc.lit{
-  opacity:1;stroke-width:2.2;
-  stroke-dasharray:6 8;
-  animation:dashflow 1.1s linear infinite;
-  filter:drop-shadow(0 0 6px rgba(255,59,48,.9));
-}
-@keyframes dashflow{to{stroke-dashoffset:-28}}
-.net-tip{
-  position:absolute;pointer-events:none;z-index:5;
-  background:#fff;color:var(--ink);border-radius:10px;
-  padding:12px 16px;font-size:13px;line-height:1.5;max-width:240px;
-  box-shadow:0 16px 40px rgba(0,0,0,.35);
-  opacity:0;transform:translateY(8px);transition:all .25s var(--ease);
-}
-.net-tip.show{opacity:1;transform:translateY(0)}
-.net-tip b{display:block;font-weight:800;margin-bottom:2px}
-.net-tip span{color:var(--ink-soft);font-size:12px}
+/* ABOUT */
+.about-hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.portrait-frame{aspect-ratio:4/5;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.portrait-frame .ph{color:var(--muted);font-size:.82rem;text-align:center;padding:20px;}
+.portrait-frame::after{content:"";position:absolute;left:14px;bottom:14px;width:34px;height:34px;background:url('assets/northia-mark.png') center/contain no-repeat;opacity:.5;}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px;}
+.founder{padding:28px;}
+.founder .pf{aspect-ratio:1/1;width:86px;border-radius:var(--radius);border:1px dashed var(--line);background:var(--bone);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.72rem;text-align:center;margin-bottom:18px;}
+.founder h3{margin-bottom:2px;}
+.founder .role{color:var(--red);font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px;}
+.founder p{font-size:.91rem;line-height:1.66;color:var(--body);}
+.founder p+p{margin-top:12px;}
+.milestones{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:26px;}
+.ms{padding:22px;}
+.ms b{color:var(--red);font-size:1.45rem;font-weight:800;display:block;}
+.ms span{font-size:.85rem;color:var(--body);}
+.ms .yr{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800;}
 
-/* ============ CASE STUDY — BEFORE/AFTER ============ */
-.case{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.case-grid{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:center}
+/* BOOKING BAND */
+.book-band{background:var(--ink);color:#fff;border-radius:var(--radius);padding:clamp(38px,5vw,64px);text-align:center;position:relative;overflow:hidden;}
+.book-band h2{color:#fff;max-width:24ch;margin:0 auto 16px;}
+.book-band p{color:#c9c6bf;max-width:52ch;margin:0 auto 28px;}
+.book-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
 
-.ba{
-  position:relative;border-radius:var(--radius);overflow:hidden;
-  border:1px solid var(--line);box-shadow:0 28px 70px rgba(16,24,40,.12);
-  aspect-ratio:4/4.6;user-select:none;background:var(--bg);
-  touch-action:none;
-}
-.ba-layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:34px}
-.ba-before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0);z-index:2;background:var(--bg)}
-.ba-after{background:#FFF5F4;z-index:1}
-.ba-tag{
-  position:absolute;top:16px;font-size:11px;font-weight:800;letter-spacing:.12em;
-  text-transform:uppercase;padding:6px 12px;border-radius:99px;z-index:3;
-}
-.ba-tag.l{left:16px;background:var(--ink);color:#fff}
-.ba-tag.r{right:16px;background:var(--accent);color:#fff}
-.ba-handle{
-  position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;
-  background:var(--accent);z-index:4;pointer-events:none;
-}
-.ba-handle::after{
-  content:"⟨ ⟩";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:46px;height:46px;border-radius:50%;background:var(--accent);color:#fff;
-  display:grid;place-items:center;font-size:13px;font-weight:800;letter-spacing:-1px;
-  box-shadow:0 8px 24px rgba(255,59,48,.45);
-}
-.ba input[type=range]{
-  position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;
-  -webkit-appearance:none;appearance:none;
-}
+/* FOOTER */
+footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32px;}
+.ft-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;}
+.ft-brand .hd-logo{margin-bottom:14px;}
+.ft-brand p{font-size:.9rem;max-width:40ch;}
+.ft-col h5{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:14px;}
+.ft-col a{display:block;font-size:.9rem;color:var(--body);padding:5px 0;}
+.ft-col a:hover{color:var(--red);}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:42px;padding-top:22px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);}
 
-/* mock post cards inside slider */
-.mock{
-  width:min(330px,100%);background:#fff;border-radius:16px;overflow:hidden;
-  box-shadow:0 16px 44px rgba(16,24,40,.14);font-size:13px;
-}
-.mock-img{height:160px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px;letter-spacing:.04em;text-align:center;padding:0 20px}
-.mock.na .mock-img{background:#1D2939}
-.mock.xhs .mock-img{background:linear-gradient(135deg,#FF3B30,#FF7A45)}
-.mock-body{padding:18px 20px 20px}
-.mock-body h4{font-size:15px;font-weight:800;line-height:1.35;margin-bottom:6px}
-.mock-body p{color:var(--ink-soft);font-size:12.5px}
-.mock-meta{display:flex;gap:10px;margin-top:14px;font-size:11.5px;color:var(--ink-soft);align-items:center}
-.mock-meta .pill{background:#FFF0EF;color:var(--accent);font-weight:700;padding:3px 9px;border-radius:99px}
-.mock.na .mock-meta .pill{background:#EFF3F8;color:#1D2939}
+/* FAB */
+.fab{position:fixed;right:22px;bottom:22px;z-index:70;background:var(--red);color:#fff;border:0;border-radius:var(--radius);padding:14px 20px;font-family:var(--font-cjk);font-weight:800;font-size:.9rem;cursor:pointer;box-shadow:0 12px 30px -12px rgba(230,37,29,.7);transition:transform .18s;}
+.fab:hover{transform:translateY(-3px);}
 
-/* counters */
-.counters{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}
-.counter{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;transition:border-color .25s}
-.counter:hover{border-color:var(--accent)}
-.counter b{font-size:34px;font-weight:800;letter-spacing:-.03em;display:block;line-height:1.1}
-.counter b .plus{color:var(--accent)}
-.counter span{font-size:12.5px;color:var(--ink-soft)}
-.case-copy h2{margin-bottom:18px}
-.case-copy>p{color:var(--ink-soft);font-size:16.5px}
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;z-index:140;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:.25s;}
+.modal-overlay.open{opacity:1;visibility:visible;}
+.modal{background:var(--bone);border:1px solid var(--line);border-radius:var(--radius);max-width:520px;width:100%;max-height:92vh;overflow:auto;padding:clamp(26px,4vw,40px);position:relative;}
+.modal .close{position:absolute;top:12px;right:14px;background:none;border:0;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--muted);}
+.modal h3{margin:12px 0 6px;}
+.modal .msub{font-size:.9rem;color:var(--body);margin-bottom:20px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 18px;}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:.78rem;font-weight:700;color:var(--ink);}
+.chip.empty{color:var(--muted);border-style:dashed;font-weight:600;}
+.article-reader{max-width:680px;}
+.art-body{color:var(--body);font-size:1.02rem;line-height:1.75;}
+.art-body p{margin:0 0 16px;}
+.art-body p:last-child{margin-bottom:0;}
 
-/* ============ CONTACT ============ */
-.contact .inner{
-  background:var(--surface);border:1px solid var(--line);border-radius:calc(var(--radius) + 6px);
-  padding:74px 60px;text-align:center;
-}
-.contact p{color:var(--ink-soft);max-width:520px;margin:18px auto 36px;font-size:17px}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.in{opacity:1;transform:none;}
 
-.ct-direct{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px;font-size:15px;font-weight:600}
-.ct-direct a{color:var(--ink);border-bottom:1.5px solid var(--line);transition:all .2s}
-.ct-direct a:hover{color:var(--accent);border-color:var(--accent)}
-.ct-direct span{color:var(--line)}
-.ct-divider{display:flex;align-items:center;gap:16px;max-width:420px;margin:34px auto 26px;color:var(--ink-soft);font-size:13px}
-.ct-divider::before,.ct-divider::after{content:"";flex:1;height:1px;background:var(--line)}
-.cform{max-width:520px;margin:0 auto;text-align:left}
-.cform-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.cform input,.cform textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:14px;background:var(--bg);margin-bottom:12px;transition:border-color .2s;resize:vertical}
-.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
-.cform .btn{width:100%;justify-content:center}
-@media (max-width:600px){.cform-row{grid-template-columns:1fr}}
-
-/* ============ FOOTER ============ */
-footer{padding:46px 0 60px;border-top:1px solid var(--line)}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-footer p{font-size:13px;color:var(--ink-soft)}
-
-/* ============ FAB + SLIDE-IN BOOKING PANEL ============ */
-.fab{
-  position:fixed;right:26px;bottom:26px;z-index:60;
-  background:var(--accent);color:#fff;border:0;cursor:pointer;
-  font:inherit;font-weight:800;font-size:14px;
-  padding:16px 24px;border-radius:99px;
-  box-shadow:0 14px 38px rgba(255,59,48,.4);
-  display:inline-flex;align-items:center;gap:10px;
-  transition:all .25s var(--ease);
+@media(max-width:900px){
+  .tst-grid,.map-shell,.comm-grid,.about-hero,.proof-grid{grid-template-columns:1fr;}
+  .founders{grid-template-columns:1fr;}
+  .edu-grid{grid-template-columns:1fr;}
+  nav.hd-nav{display:none;}
+  .hd-menu-btn{display:block;}
+  .ft-top{grid-template-columns:1fr;}
 }
-.fab:hover{transform:translateY(-3px) scale(1.03);background:var(--ink);box-shadow:0 18px 44px rgba(16,24,40,.35)}
-.fab .ping{width:8px;height:8px;border-radius:50%;background:#fff;position:relative}
-.fab .ping::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid #fff;animation:pulse 1.8s ease-out infinite}
-
-.scrim{
-  position:fixed;inset:0;background:rgba(16,24,40,.45);z-index:70;
-  opacity:0;pointer-events:none;transition:opacity .35s var(--ease);
-  backdrop-filter:blur(2px);
-}
-.panel{
-  position:fixed;top:0;right:0;bottom:0;width:min(440px,92vw);z-index:80;
-  background:var(--surface);box-shadow:-30px 0 80px rgba(16,24,40,.25);
-  transform:translateX(105%);transition:transform .45s var(--ease);
-  display:flex;flex-direction:column;
-}
-body.panel-open .scrim{opacity:1;pointer-events:auto}
-body.panel-open .panel{transform:translateX(0)}
-body.panel-open{overflow:hidden}
-.panel-head{display:flex;align-items:center;justify-content:space-between;padding:24px 28px;border-bottom:1px solid var(--line)}
-.panel-head h3{font-size:18px;font-weight:800}
-.panel-close{border:0;background:var(--bg);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px;transition:all .25s}
-.panel-close:hover{background:var(--accent);color:#fff;transform:rotate(90deg)}
-.panel-body{padding:28px;overflow-y:auto;flex:1}
-.panel-body p.note{font-size:13.5px;color:var(--ink-soft);margin-bottom:22px}
-.cal-embed{
-  border:1.5px dashed var(--line);border-radius:var(--radius);
-  min-height:380px;display:grid;place-items:center;text-align:center;
-  padding:30px;color:var(--ink-soft);font-size:13.5px;background:var(--bg);
-}
-.cal-embed b{display:block;color:var(--ink);font-size:15px;margin-bottom:6px}
-.panel-body .field{margin-bottom:14px}
-.panel-body label{font-size:12.5px;font-weight:700;display:block;margin-bottom:6px}
-.panel-body input,.panel-body select{
-  width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;
-  font:inherit;font-size:14px;background:var(--bg);transition:border-color .2s;
-}
-.panel-body input:focus,.panel-body select:focus{outline:none;border-color:var(--accent)}
-
-/* ============ REVEAL ON SCROLL ============ */
-.reveal{opacity:0;transform:translateY(26px);transition:all .7s var(--ease)}
-.reveal.in{opacity:1;transform:none}
-
-/* ============ THE NORTHIA SYSTEM + RESONANCE AUDIT ============ */
-.ns-intro{max-width:740px}.ns-intro .sub{color:var(--ink-soft);font-size:17px;margin-top:16px}
-.ns-stepper{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px;margin:42px 0 34px;position:relative;max-width:760px}
-.ns-stepper button{flex:1;position:relative;z-index:2;border:0;background:transparent;cursor:pointer;font:inherit;font-size:13px;font-weight:700;color:var(--ink-soft);padding:12px 8px;border-radius:99px;transition:color .3s var(--ease)}
-.ns-stepper button .ns-num{font-size:10px;font-weight:800;letter-spacing:.1em;display:block;color:var(--accent);margin-bottom:2px}.ns-stepper button.on{color:#fff}.ns-stepper button.on .ns-num{color:#FFD1CE}
-.ns-stepper .ns-pill{position:absolute;top:6px;bottom:6px;border-radius:99px;background:var(--ink);z-index:1;transition:left .45s var(--ease),width .45s var(--ease)}
-.ns-stage{display:none}.ns-stage.on{display:block;animation:ns-in .45s var(--ease)}@keyframes ns-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.ns-head{background:var(--ink);color:#fff;border-radius:18px;padding:32px 36px;margin-bottom:22px}.ns-head .ns-kicker{font-size:14px;font-weight:800;letter-spacing:.14em;color:var(--accent)}.ns-head h3{font-size:clamp(20px,2.4vw,27px);font-weight:800;letter-spacing:-.015em;margin:6px 0 9px}.ns-head p{font-size:14px;color:#98A2B3;max-width:700px}.ns-head .ns-q{margin-top:12px;padding-top:12px;border-top:1px solid #344054;font-size:14.5px;font-style:italic}.ns-head .ns-q b{color:var(--accent);font-style:normal;font-size:10px;letter-spacing:.12em;display:block;margin-bottom:3px}
-.ns-dims{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.ns-dim,.ns-phase{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);transition:all .3s var(--ease)}.ns-dim{padding:19px 17px}.ns-dim:hover,.ns-phase:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 16px 38px rgba(16,24,40,.07)}.ns-dim .d{font-size:11px;font-weight:800;color:var(--accent);margin-bottom:8px}.ns-dim h4,.ns-phase h4{font-size:14px;font-weight:800;line-height:1.3;margin-bottom:6px}.ns-dim p,.ns-phase .q{font-size:11.5px;color:var(--ink-soft)}
-.ns-route{margin-top:16px;background:#FFF0EF;border:1px solid var(--accent);border-radius:var(--radius);padding:17px 20px;font-size:13.5px}.ns-route b{color:var(--accent)}
-.ns-phases{display:grid;gap:13px}.ns-phase{padding:22px 24px;display:grid;grid-template-columns:42px 1.1fr 1fr 1fr;gap:18px;align-items:start}.ns-phase .num{width:38px;height:38px;border:1.5px solid var(--accent);border-radius:50%;display:grid;place-items:center;color:var(--accent);font-size:12px;font-weight:800}.ns-label{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px}.ns-tools,.ns-deliverable{font-size:12px;color:#344054;line-height:1.65}.ns-tag{display:inline-block;background:#FFF0EF;color:var(--accent);font-weight:700;font-size:11px;padding:2px 8px;border-radius:99px;margin:2px 2px 2px 0}.ns-gate{grid-column:1 / -1;padding-top:13px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ns-gate-badge{display:inline-flex;gap:7px;align-items:center;background:var(--ink);color:#fff;padding:6px 12px;border-radius:99px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;transition:all .25s var(--ease)}.ns-gate-badge::before{content:"◆";color:var(--accent-2);font-size:8px}.ns-gate-badge:hover{background:var(--accent);transform:scale(1.04)}.ns-gate span{font-size:12.5px;color:var(--ink-soft)}.ns-gate strong{color:var(--ink)}
-.ra-wrap{padding-top:0}.ra-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:40px 42px;box-shadow:0 24px 60px rgba(16,24,40,.06);margin-top:34px}.ra-row{display:grid;grid-template-columns:1.4fr auto;gap:20px;align-items:center;padding:17px 0;border-bottom:1px dashed var(--line)}.ra-row:last-of-type{border-bottom:0}.ra-title{font-size:15px;font-weight:700}.ra-question{font-size:12.5px;color:var(--ink-soft);margin-top:2px}.ra-seg{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--bg)}.ra-seg button{border:0;background:transparent;cursor:pointer;font:inherit;font-size:12.5px;font-weight:700;color:var(--ink-soft);padding:9px 16px;transition:all .25s var(--ease)}.ra-seg button:hover{color:var(--accent)}.ra-seg .strong{background:var(--accent-2);color:#fff}.ra-seg .mixed{background:#F2C744;color:var(--ink)}.ra-seg .weak{background:var(--accent);color:#fff}
-.ra-verdict{margin-top:26px;border:1.5px dashed var(--line);border-radius:var(--radius);padding:25px 28px;text-align:center;color:var(--ink-soft);font-size:14px}.ra-verdict.ready{background:var(--ink);border-color:var(--ink);color:#fff;text-align:left;animation:ns-in .45s var(--ease)}.ra-verdict .v-kicker{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:7px}.ra-verdict h4{font-size:20px;font-weight:800;letter-spacing:-.01em;margin-bottom:7px}.ra-verdict p{font-size:13.5px;color:#98A2B3;max-width:650px}.ra-scores{display:flex;gap:8px;margin:14px 0 18px;flex-wrap:wrap}.ra-score{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:99px;background:#1D2939;color:#98A2B3}.ra-score b{color:#fff}.ra-verdict .btn{margin-top:18px;background:var(--accent);font-size:13px;padding:11px 20px}.ra-reset{background:transparent;border:0;cursor:pointer;font:inherit;font-size:12px;font-weight:700;color:#98A2B3;margin-left:12px;text-decoration:underline}
-
-/* ============ RESPONSIVE ============ */
-@media (max-width: 980px){
-  .hero-grid,.case-grid{grid-template-columns:1fr}
-  .market-grid{grid-template-columns:1fr 1fr}
-  .svc-grid{grid-template-columns:1fr}
-  nav .nav-links{display:none}
-  .netmap-wrap{padding:34px 22px}
-  section{padding:80px 0}
-  .hero{padding:150px 0 90px}
-  .ns-dims{grid-template-columns:1fr 1fr}.ns-phase{grid-template-columns:40px 1fr}.ns-phase>div:nth-child(3),.ns-phase>div:nth-child(4){grid-column:2}.ra-row{grid-template-columns:1fr}
-}
-@media (max-width: 600px){
-  .market-grid,.counters{grid-template-columns:1fr}
-  .wrap{padding:0 20px}
-  .contact .inner{padding:50px 26px}
-  .ns-stepper{overflow-x:auto}.ns-stepper button{min-width:154px}.ra-card{padding:28px 22px}.ra-seg button{padding:8px 11px}
-}
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  html{scroll-behavior:auto}
+@media(max-width:560px){
+  .fgrid{grid-template-columns:1fr;}
+  .atest-q{grid-template-columns:1fr;}
+  .persp-switch button{padding:6px 8px;font-size:.66rem;}
+  .hd-logo .hd-eyebrow{display:none;}
 }
 </style>
 </head>
-<body data-lang="en">
+<body>
 
-<!-- ================= HEADER ================= -->
-<header id="hdr">
-  <div class="wrap">
-    <a class="logo" href="#top"><img src="assets/logo-icon.png" alt="Northia" class="logo-img">Northia</a>
-    <nav>
-      <div class="nav-links" style="display:flex;gap:30px">
-        <a href="community.html" data-i18n="nav.community">Community Building</a>
-        <a href="rebranding.html" data-i18n="nav.rebrand">Rebranding</a>
-        <a href="case-studies.html" data-i18n="nav.case">Case Studies</a>
-      </div>
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button data-setlang="en" class="active">EN</button>
-        <button data-setlang="hant">繁</button>
-        <button data-setlang="hans">简</button>
-      </div>
-      <button class="btn" data-open-panel style="padding:11px 20px;font-size:13.5px">
-        <span data-i18n="nav.book">Book a session</span><span class="arr">→</span>
-      </button>
+<!-- ============ ENTRANCE ============ -->
+<div id="entrance">
+  <div class="ent-lang">
+    <div class="lang-switch" id="entLang">
+      <button data-lang="en" class="on">EN</button>
+      <button data-lang="tc">繁中</button>
+      <button data-lang="sc">简体</button>
+    </div>
+  </div>
+  <div class="blush-wash" style="display:flex;align-items:center;justify-content:center;"></div>
+  <div class="ent-mark"><img src="assets/northia-mark.png" alt="Northia"></div>
+  <span class="eyebrow ent-eyebrow" data-i18n="ent.eyebrow">Asia ⇄ Overseas</span>
+  <h1 data-i18n="ent.h1">Which direction are you<br>building toward?</h1>
+  <p class="ent-tagline" data-i18n="ent.tag">tagline</p>
+  <div class="ent-cta-row">
+    <div class="ent-cta" data-persp="a2w" onclick="enter('a2w')">
+      <span class="arrow">⇄</span>
+      <h3 data-i18n="ent.a2w.title">Asia to the World</h3>
+      <p class="tip" data-i18n="ent.a2w.tip">tip</p>
+      <span class="go" data-i18n="ent.go">Enter this path →</span>
+    </div>
+    <div class="ent-cta" data-persp="w2a" onclick="enter('w2a')">
+      <span class="arrow">⇄</span>
+      <h3 data-i18n="ent.w2a.title">The World to Asia</h3>
+      <p class="tip" data-i18n="ent.w2a.tip">tip</p>
+      <span class="go" data-i18n="ent.go">Enter this path →</span>
+    </div>
+  </div>
+  <p class="ent-foot" data-i18n="ent.foot">You can switch direction or language anytime.</p>
+</div>
+
+<!-- ============ SITE ============ -->
+<div id="site">
+<header>
+  <div class="wrap hd">
+    <div class="hd-logo" onclick="scrollTo({top:0,behavior:'smooth'})">
+      <img src="assets/northia-mark.png" alt="Northia mark">
+      <div><div class="wm">NORTHI<b>A</b></div><div class="hd-eyebrow">Asia ⇄ Overseas</div></div>
+    </div>
+    <nav class="hd-nav">
+      <a href="#audit" data-i18n="nav.audit">Free Audit</a>
+      <a href="#services" data-i18n="nav.rebrand">Rebranding</a>
+      <a href="#community" data-i18n="nav.community">Community</a>
+      <a href="#map" data-i18n="nav.insights">Insights</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
     </nav>
+    <div class="hd-tools">
+      <div class="persp-switch" id="perspSwitch">
+        <button data-persp="a2w" class="on" data-i18n="persp.a2w.short">Asia→World</button>
+        <button data-persp="w2a" data-i18n="persp.w2a.short">World→Asia</button>
+      </div>
+      <div class="lang-switch" id="hdLang">
+        <button data-lang="en" class="on">EN</button>
+        <button data-lang="tc">繁中</button>
+        <button data-lang="sc">简体</button>
+      </div>
+      <button class="hd-menu-btn" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </div>
+  <div class="mobile-nav wrap" id="mobileNav" style="padding-bottom:12px;">
+    <a href="#audit" onclick="toggleMobileNav()" data-i18n="nav.audit">Free Audit</a>
+    <a href="#services" onclick="toggleMobileNav()" data-i18n="nav.rebrand">Rebranding</a>
+    <a href="#community" onclick="toggleMobileNav()" data-i18n="nav.community">Community</a>
+    <a href="#map" onclick="toggleMobileNav()" data-i18n="nav.insights">Insights</a>
+    <a href="#about" onclick="toggleMobileNav()" data-i18n="nav.about">About Us</a>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow" data-i18n="hero.eyebrow">Asia ⇄ Global · Brand &amp; Community Consultancy</div>
-      <h1 data-i18n="hero.title">Rebrand to <em>enter</em>. Community to <em>belong</em>.</h1>
-      <p class="lead" data-i18n="hero.lead">Whether you're a global brand entering Asia or an Asian brand going global, Northia rebuilds your positioning and identity for the new market — then surrounds it with creators who have resonance, not just reach.</p>
-      <div class="hero-cta">
-        <button class="btn" data-open-panel><span data-i18n="hero.cta1">Book a strategy session</span><span class="arr">→</span></button>
-        <a class="btn ghost" href="community.html" data-i18n="hero.cta2">See how we work</a>
-      </div>
-    </div>
-    <div class="route-card reveal">
-      <div class="route-row">
-        <div class="route-city">Vancouver<span data-i18n="hero.from">From</span></div>
-        <div class="route-line"></div>
-        <div class="route-city" style="text-align:right">Shanghai<span data-i18n="hero.to">To</span></div>
-      </div>
-      <div class="route-row">
-        <div class="route-city">Seattle<span data-i18n="hero.from2">From</span></div>
-        <div class="route-line"></div>
-        <div class="route-city" style="text-align:right">Tokyo<span data-i18n="hero.to2">To</span></div>
-      </div>
-      <div class="route-row">
-        <div class="route-city">Calgary<span data-i18n="hero.from3">From</span></div>
-        <div class="route-line"></div>
-        <div class="route-city" style="text-align:right">Hong Kong<span data-i18n="hero.to3">To</span></div>
-      </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="blush-wash"></div>
+  <div class="wrap" style="position:relative;z-index:1;">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Cross-cultural market expansion</span>
+    <h1 data-i18n="hero.title">placeholder</h1>
+    <p class="lede" data-i18n="hero.lede">placeholder</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#audit" data-i18n="hero.cta1">Take the free 5-point test</a>
+      <a class="btn btn-ghost" href="#services" data-i18n="hero.cta3">See our services</a>
+      <a class="btn btn-ghost" href="#community" data-i18n="hero.cta2">Why community matters</a>
     </div>
   </div>
 </section>
 
-
-
-<!-- ================= INTRO ================= -->
-<section style="padding:0 0 30px">
+<!-- LOGO CLOUD -->
+<div class="logos-band">
   <div class="wrap">
-    <div class="reveal" style="background:var(--surface);border:1px solid var(--line);border-radius:calc(var(--radius) + 4px);padding:44px 48px;max-width:980px">
-      <div class="eyebrow" data-i18n="intro.eb">Who we are</div>
-      <p style="font-size:18px;color:var(--ink);line-height:1.75;margin:0" data-i18n="intro.p">Most cross-border marketing rents attention: ads that stop the moment the budget stops, influencers who post once and disappear. We build the opposite — owned resonance. A brand positioned to mean something in its new market, surrounded by a community of creators and customers who advocate because they belong, not because they were paid to shout.</p>
-    </div>
+    <div class="logos-title" data-i18n="logos.title">Brands that trusted Northia</div>
+    <div class="logos-hint" data-i18n="logos.hint">Logo slots below — approved partner logos only.</div>
   </div>
-</section>
+  <div class="logos-track-wrap"><div class="logos-track" id="logoTrack"></div></div>
+</div>
 
-<!-- ================= VALUES ================= -->
-<section id="values" style="padding-top:0">
+<!-- AUDIT — LIVE 5-POINT TEST (upfront) -->
+<section class="sec-pad" id="audit">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="eyebrow" data-i18n="val.eyebrow">Our philosophy</div>
-      <h2 data-i18n="val.title">Resonance, not noise.</h2>
-    </div>
-    <div class="market-grid">
-      <div class="m-card reveal">
-        <div class="m-flag">01</div>
-        <h3 data-i18n="val.1.t">Depth over facade</h3>
-        <p data-i18n="val.1.p">True branding isn't a beautiful surface. It's deep resonance — positioning that still means something long after the visuals load.</p>
+    <div class="audit-wrap reveal">
+      <div class="sec-head" style="margin-bottom:22px;">
+        <span class="eyebrow" style="color:#fff;" data-i18n="audit.eyebrow">Free brand audit</span>
+        <h2 data-i18n="audit.title">A 5-point test: where is your brand losing the market?</h2>
+        <p style="color:#c9c6bf;" data-i18n="audit.sub">placeholder</p>
       </div>
-      <div class="m-card reveal">
-        <div class="m-flag">02</div>
-        <h3 data-i18n="val.2.t">Connection over clout</h3>
-        <p data-i18n="val.2.p">Community isn't a follower count. It's genuine engagement and shared values — creators who actually answer their audience.</p>
+      <div class="audit-test" id="auditTest"></div>
+      <div class="atest-foot">
+        <div class="atest-meter"><div class="bar" id="atestBar"></div></div>
+        <div class="atest-scorelabel" id="atestScore">0/5</div>
+        <span class="atest-hint" data-i18n="audit.hint">Answer all 5 to see your result.</span>
       </div>
-      <div class="m-card reveal">
-        <div class="m-flag">03</div>
-        <h3 data-i18n="val.3.t">With them, not at them</h3>
-        <p data-i18n="val.3.p">Traditional influencer marketing is a megaphone. We build campfires — conversations your customers gather around, and stay.</p>
+      <div class="atest-result" id="atestResult">
+        <h3 data-lead>result</h3>
+        <div class="atest-areas" id="atestAreas"></div>
+        <p data-i18n="audit.res.p">placeholder</p>
+        <form class="atest-form" id="auditForm">
+          <input type="hidden" name="Self-test answers" id="auditAnswers">
+          <input name="Work Email" type="email" required data-i18n-ph="audit.res.emailph" placeholder="Work email">
+          <button type="submit" class="btn btn-red" data-i18n="audit.res.cta">Get my full audit</button>
+        </form>
+        <p class="form-note" style="color:#a8a5a0;margin-top:12px;" data-i18n="audit.res.note">placeholder</p>
+        <div class="form-ok" id="auditOk"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services">
+<!-- MAP -->
+<section class="sec-pad" id="map">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="eyebrow" data-i18n="svc.eyebrow">What we do</div>
-      <h2 data-i18n="svc.title">Two engines. One outcome: a brand people join.</h2>
+      <span class="eyebrow" data-i18n="map.eyebrow">On the ground</span>
+      <h2 data-i18n="map.title">placeholder</h2>
+      <p data-i18n="map.sub">placeholder</p>
     </div>
-    <div class="svc-grid">
-      <div class="svc reveal">
-        <div class="svc-num">01</div>
-        <div>
-          <div style="font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:6px" data-i18n="svc.1.tag">The Community Activation Engine</div>
-          <h3 data-i18n="svc.1.t">Community Building</h3>
-          <p data-i18n="svc.1.p">Our proprietary engine replaces expensive, low-engagement influencer campaigns with something durable: culturally-fit creators, vetted for real audience connection, united into an inner circle around your brand.</p>
-          <p style="margin-top:14px;font-size:13.5px;color:var(--ink);line-height:1.9" data-i18n="svc.1.list">· Creator sourcing &amp; cultural-fit vetting<br>· Exclusive inner-circle community design<br>· Curated events, campaigns &amp; always-on advocacy</p>
-          <a class="btn ghost" href="community.html" style="margin-top:20px;padding:11px 20px;font-size:13.5px"><span data-i18n="svc.1.link">Explore Community Building</span><span class="arr">→</span></a>
-        </div>
-      </div>
-      <div class="svc reveal">
-        <div class="svc-num">02</div>
-        <div>
-          <div style="font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:6px" data-i18n="svc.2.tag">The Rebrand</div>
-          <h3 data-i18n="svc.2.t">Rebranding</h3>
-          <p data-i18n="svc.2.p">Positioning, core messaging and visual identity rebuilt for the market you're entering — whether you're an Asian brand going global, or a global brand entering Asia. Built natively, never translated.</p>
-          <p style="margin-top:14px;font-size:13.5px;color:var(--ink);line-height:1.9" data-i18n="svc.2.list">· Global → Asia: bilingual naming &amp; market-specific trust<br>· Asia → Global: global-ready voice &amp; positioning (launching 2026)<br>· Identity, naming &amp; legal protection before launch</p>
-          <a class="btn ghost" href="rebranding.html" style="margin-top:20px;padding:11px 20px;font-size:13.5px"><span data-i18n="svc.2.link">Explore Rebranding</span><span class="arr">→</span></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- network map -->
-    <div class="netmap-wrap reveal" style="margin-top:64px">
-      <div class="sec-head">
-        <h2 style="font-size:clamp(24px,2.8vw,32px)" data-i18n="net.title">Hover a city. See the connection.</h2>
-        <p data-i18n="net.sub">Live channels and media relationships we maintain across the Pacific.</p>
-      </div>
-      <svg class="netmap" viewBox="0 0 1000 380" role="img" aria-label="Network map of connections between Western North America and East Asia">
-        <g id="arcs">
-          <path class="arc" data-from="van" d="M170,120 Q500,-30 760,120"></path>
-          <path class="arc" data-from="van" d="M170,120 Q510,20 810,200"></path>
-          <path class="arc" data-from="van" d="M170,120 Q520,40 845,250"></path>
-          <path class="arc" data-from="sea" d="M185,185 Q500,60 760,120"></path>
-          <path class="arc" data-from="sea" d="M185,185 Q520,90 812,160"></path>
-          <path class="arc" data-from="sea" d="M185,185 Q540,120 880,300"></path>
-          <path class="arc" data-from="cal" d="M255,95 Q560,0 812,160"></path>
-          <path class="arc" data-from="cal" d="M255,95 Q570,30 845,250"></path>
-        </g>
-        <g class="city-dot west" data-city="van" data-tip-key="tip.van" transform="translate(170,120)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="-14" y="5" text-anchor="end">VANCOUVER</text>
-        </g>
-        <g class="city-dot west" data-city="sea" data-tip-key="tip.sea" transform="translate(185,185)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="-14" y="5" text-anchor="end">SEATTLE</text>
-        </g>
-        <g class="city-dot west" data-city="cal" data-tip-key="tip.cal" transform="translate(255,95)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="0" y="-16" text-anchor="middle">CALGARY</text>
-        </g>
-        <g class="city-dot east" data-city="tok" data-tip-key="tip.tok" transform="translate(760,120)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="14" y="5">TOKYO</text>
-        </g>
-        <g class="city-dot east" data-city="seo" data-tip-key="tip.seo" transform="translate(812,160)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="14" y="5">SEOUL</text>
-        </g>
-        <g class="city-dot east" data-city="sha" data-tip-key="tip.sha" transform="translate(810,200)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="14" y="5">SHANGHAI</text>
-        </g>
-        <g class="city-dot east" data-city="hk" data-tip-key="tip.hk" transform="translate(845,250)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="14" y="5">HONG KONG</text>
-        </g>
-        <g class="city-dot east" data-city="sgp" data-tip-key="tip.sgp" transform="translate(880,300)">
-          <circle class="halo" r="11"></circle><circle class="core" r="5.5"></circle>
-          <text x="14" y="5">SINGAPORE</text>
-        </g>
-      </svg>
-      <div class="net-tip" id="netTip"></div>
+    <div class="map-shell">
+      <div class="map-panel reveal"><svg class="map-svg" id="worldMap" viewBox="0 0 1000 520" role="img" aria-label="Northia operations map"></svg></div>
+      <div class="map-card reveal" id="mapCard"></div>
     </div>
   </div>
 </section>
 
-<!-- ================= THE NORTHIA SYSTEM ================= -->
-<section id="system">
-  <div class="wrap">
-    <div class="ns-intro reveal">
-      <div class="eyebrow" data-i18n="sys.eb">The Northia System</div>
-      <h2 data-i18n="sys.title">One method. Three stages.<br>Diagnose → Rebrand → Activate.</h2>
-      <p class="sub" data-i18n="sys.sub">A brand wins a new market in three moves: understand what it means there, rebuild what it should mean, then make the market say it for you. Every engagement has explicit decision gates, so nothing advances on vibes.</p>
+<!-- SERVICES -->
+<section class="sec-pad" id="services" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="blush-wash"></div>
+  <div class="wrap" style="position:relative;z-index:1;">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="svc.eyebrow">Rebranding</span>
+      <h2 data-i18n="svc.title">Rebrand to enter. Community to belong.</h2>
+      <p data-i18n="svc.sub">placeholder</p>
     </div>
-    <div class="ns-stepper reveal" id="nsStepper" role="tablist" aria-label="Northia System stages">
-      <div class="ns-pill" id="nsPill"></div>
-      <button class="on" data-ns-stage="0" role="tab" aria-selected="true"><span class="ns-num" data-i18n="sys.tab0num">PHASE 0 · DIAGNOSE</span><span data-i18n="sys.tab0">The Resonance Audit</span></button>
-      <button data-ns-stage="1" role="tab" aria-selected="false"><span class="ns-num" data-i18n="sys.tab1num">STAGE 1 · TRANSFORM</span><span data-i18n="sys.tab1">The Rebrand</span></button>
-      <button data-ns-stage="2" role="tab" aria-selected="false"><span class="ns-num" data-i18n="sys.tab2num">STAGE 2 · MOMENTUM</span><span data-i18n="sys.tab2">The Community Engine</span></button>
-    </div>
-    <div class="ns-stage on" id="nsStage0">
-      <div class="ns-head"><div class="ns-kicker" data-i18n="sys.audit.kicker">00 · DIAGNOSE — FREE</div><h3 data-i18n="sys.audit.title">The Resonance Audit</h3><p data-i18n="sys.audit.sub">Five MECE dimensions, scored against your target market — the diagnostic that tells you where your budget should go before you spend it.</p><div class="ns-q"><b data-i18n="sys.question">GOVERNING QUESTION</b><span data-i18n="sys.audit.q">What does your brand currently mean in this market — and to whom?</span></div></div>
-      <div class="ns-dims">
-        <div class="ns-dim"><div class="d">D1</div><h4 data-i18n="sys.d1.t">Positioning Fit</h4><p data-i18n="sys.d1.p">Does it solve a problem this market actually has?</p></div>
-        <div class="ns-dim"><div class="d">D2</div><h4 data-i18n="sys.d2.t">Language &amp; Message Fit</h4><p data-i18n="sys.d2.p">Does it read native — or imported?</p></div>
-        <div class="ns-dim"><div class="d">D3</div><h4 data-i18n="sys.d3.t">Trust Signals</h4><p data-i18n="sys.d3.p">Does it show what this market checks before buying?</p></div>
-        <div class="ns-dim"><div class="d">D4</div><h4 data-i18n="sys.d4.t">Channel–Buyer Fit</h4><p data-i18n="sys.d4.p">Is it present where these buyers research?</p></div>
-        <div class="ns-dim"><div class="d">D5</div><h4 data-i18n="sys.d5.t">Community Ownership</h4><p data-i18n="sys.d5.p">Does anyone advocate for it — unpaid?</p></div>
+    <div class="svc-toolbar reveal">
+      <div class="svc-select"><select id="svcSelect" onchange="if(this.value){toggleSvc(this.value);this.value='';}"></select></div>
+      <div class="svc-reqbar">
+        <span class="count"><b id="svcCount">0</b> <span data-i18n="svc.selcount">selected</span></span>
+        <button class="btn btn-red" id="svcReqBtn" onclick="openSvcReq()" disabled data-i18n="svc.reqbtn">Request selected services</button>
       </div>
-      <div class="ns-route" data-i18n="sys.route"><b>Routing logic:</b> weak on D1–D3 → start with <b>The Rebrand</b>. Weak on D4–D5 → start with <b>The Community Activation Engine</b>. Weak on both → the full system, in sequence. Strong across all five → you don't need us yet, and we'll say so.</div>
     </div>
-    <div class="ns-stage" id="nsStage1">
-      <div class="ns-head"><div class="ns-kicker" data-i18n="sys.rebrand.kicker">01 · TRANSFORM</div><h3 data-i18n="sys.rebrand.title">The Rebrand — four phases, four gates</h3><p data-i18n="sys.rebrand.sub">Positioning, messaging and identity rebuilt natively for the market you are entering. No creative work advances before an agreed problem statement.</p><div class="ns-q"><b data-i18n="sys.question">GOVERNING QUESTION</b><span data-i18n="sys.rebrand.q">What should this brand mean here — and can every asset carry that meaning?</span></div></div>
-      <div class="ns-route"><strong data-i18n="sys.rebrand.route">Audit → Positioning → Native identity → Launch. Each phase has a leadership-approved gate; Gate 3 is a Native Blind Test: if it reads as foreign, we revise.</strong> <a href="rebranding.html" style="color:var(--accent);font-weight:800;margin-left:8px" data-i18n="sys.explore">Explore the full method →</a></div>
-    </div>
-    <div class="ns-stage" id="nsStage2">
-      <div class="ns-head"><div class="ns-kicker" data-i18n="sys.engine.kicker">02 · MOMENTUM</div><h3 data-i18n="sys.engine.title">The Community Activation Engine</h3><p data-i18n="sys.engine.sub">Creator marketing turned into community infrastructure. Selection uses a weighted Resonance Score, and every channel faces a Day-90 Scale / Kill decision.</p><div class="ns-q"><b data-i18n="sys.question">GOVERNING QUESTION</b><span data-i18n="sys.engine.q">Who will say it for you — and will they still be saying it next year?</span></div></div>
-      <div class="ns-route"><strong data-i18n="sys.engine.route">Map culture → source for fit → form the inner circle → activate → measure. Reach is a tiebreaker, never a criterion.</strong> <a href="community.html" style="color:var(--accent);font-weight:800;margin-left:8px" data-i18n="sys.explore">Explore the full method →</a></div>
+    <div class="svc-grid" id="svcGrid"></div>
+    <div class="svc-req-bottom" id="svcReqBottom">
+      <span class="count" style="font-size:.86rem;font-weight:700;color:var(--ink);"><b id="svcCount2" style="color:var(--red)">0</b> <span data-i18n="svc.selcount">selected</span></span>
+      <button class="btn btn-red" onclick="openSvcReq()" data-i18n="svc.reqbtn">Request selected services</button>
     </div>
   </div>
 </section>
 
-<!-- ================= RESONANCE AUDIT ================= -->
-<section class="ra-wrap" id="resonance-audit">
+<!-- COMMUNITY (Why community + Community building) -->
+<section class="sec-pad" id="community" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <div class="ns-intro reveal"><div class="eyebrow" data-i18n="audit.eb">Try it yourself</div><h2 data-i18n="audit.title">Where would the audit route you?</h2><p class="sub" data-i18n="audit.sub">Rate your brand honestly for the market you want next. Sixty seconds — the routing logic below is the same one we use.</p></div>
-    <div class="ra-card reveal">
-      <div class="ra-row" data-ra-dim="1" data-ra-group="rebrand"><div><div class="ra-title" data-i18n="audit.d1.t">D1 · Positioning Fit</div><div class="ra-question" data-i18n="audit.d1.q">Does your offer solve a problem this market actually has?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
-      <div class="ra-row" data-ra-dim="2" data-ra-group="rebrand"><div><div class="ra-title" data-i18n="audit.d2.t">D2 · Language &amp; Message Fit</div><div class="ra-question" data-i18n="audit.d2.q">Would a native professional read your materials as written locally?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
-      <div class="ra-row" data-ra-dim="3" data-ra-group="rebrand"><div><div class="ra-title" data-i18n="audit.d3.t">D3 · Trust Signals</div><div class="ra-question" data-i18n="audit.d3.q">Do you show the proof this market checks before buying?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
-      <div class="ra-row" data-ra-dim="4" data-ra-group="engine"><div><div class="ra-title" data-i18n="audit.d4.t">D4 · Channel–Buyer Fit</div><div class="ra-question" data-i18n="audit.d4.q">Are you native on the platforms where these buyers research?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
-      <div class="ra-row" data-ra-dim="5" data-ra-group="engine"><div><div class="ra-title" data-i18n="audit.d5.t">D5 · Community Ownership</div><div class="ra-question" data-i18n="audit.d5.q">Does anyone advocate for your brand there without being paid?</div></div><div class="ra-seg"><button data-ra-value="2" data-i18n="audit.strong">Strong</button><button data-ra-value="1" data-i18n="audit.unsure">Unsure</button><button data-ra-value="0" data-i18n="audit.weak">Weak</button></div></div>
-      <div class="ra-verdict" id="raVerdict" data-i18n="audit.pending">Answer all five dimensions to see your routing.</div>
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="tst.eyebrow">One of Our Focuses Angle</span>
+      <h2 data-i18n="tst.title">Why community matters.</h2>
+      <p data-i18n="tst.sub">placeholder</p>
+    </div>
+    <div class="edu-grid">
+      <div class="card edu reveal"><span class="k">01</span><h4 data-i18n="edu1t"></h4><p data-i18n="edu1p"></p></div>
+      <div class="card edu reveal"><span class="k">02</span><h4 data-i18n="edu2t"></h4><p data-i18n="edu2p"></p></div>
+      <div class="card edu reveal"><span class="k">03</span><h4 data-i18n="edu3t"></h4><p data-i18n="edu3p"></p></div>
+    </div>
+    <div class="proof-label reveal"><span class="eyebrow" data-i18n="tst.proof">The proof</span></div>
+    <div class="proof-grid">
+      <div class="card proof reveal"><div class="proof-asset" data-i18n="tst.pic">[ Photo ]</div><div class="proof-body"><p class="quote" data-i18n="tst.p1.quote"></p><div class="who"><b>WingGrove</b><span data-i18n="tst.role"></span></div></div></div>
+      <div class="card proof reveal"><div class="proof-asset" data-i18n="tst.pic">[ Photo ]</div><div class="proof-body"><p class="quote" data-i18n="tst.p2.quote"></p><div class="who"><b>Liuyishou Hotpot</b><span data-i18n="tst.role"></span></div></div></div>
+      <div class="card proof reveal"><div class="proof-asset" data-i18n="tst.pic">[ Photo ]</div><div class="proof-body"><p class="quote" data-i18n="tst.p3.quote"></p><div class="who"><b>4evercare</b><span data-i18n="tst.role"></span></div></div></div>
+      <div class="card proof reveal"><div class="proof-asset" data-i18n="tst.pic">[ Photo ]</div><div class="proof-body"><p class="quote" data-i18n="tst.p4.quote"></p><div class="who"><b>excohk</b><span data-i18n="tst.role"></span></div></div></div>
+    </div>
+    <hr class="divider" style="border:0;border-top:1px solid var(--line);margin:clamp(48px,7vw,88px) 0;">
+    <div class="sec-head reveal" style="margin-bottom:26px;">
+      <span class="eyebrow" data-i18n="comm.eyebrow">Community building</span>
+      <h2 data-i18n="comm.title">placeholder</h2>
+      <p style="margin-top:14px;font-size:1.05rem;max-width:60ch;" data-i18n="comm.sub">placeholder</p>
+    </div>
+    <div class="role-toggle reveal" id="commToggle">
+      <button data-role="client" class="on" data-i18n="comm.iam.client">I'm a client</button>
+      <button data-role="influencer" data-i18n="comm.iam.inf">I'm a creator / influencer</button>
+    </div>
+
+    <!-- CLIENT PANEL -->
+    <div class="comm-grid comm-panel" id="panel-client">
+      <div class="comm-copy reveal">
+        <span class="eyebrow" data-i18n="comm.cli.eyebrow">Why community beats renting influencers</span>
+        <h3 style="margin-top:12px;font-size:1.5rem;" data-i18n="comm.cli.title">placeholder</h3>
+        <div class="feat"><div class="ic">◷</div><div><b data-i18n="comm.cli.f1t"></b><p data-i18n="comm.cli.f1p"></p></div></div>
+        <div class="feat"><div class="ic">↻</div><div><b data-i18n="comm.cli.f2t"></b><p data-i18n="comm.cli.f2p"></p></div></div>
+        <div class="feat"><div class="ic">↗</div><div><b data-i18n="comm.cli.f3t"></b><p data-i18n="comm.cli.f3p"></p></div></div>
+      </div>
+      <div class="card kol-form reveal">
+        <span class="eyebrow" data-i18n="book.eyebrow">Book a strategy session</span>
+        <h3 style="margin-top:12px;" data-i18n="comm.cli.formtitle">Book a strategy session</h3>
+        <p class="sub" data-i18n="book.p">placeholder</p>
+        <form id="clientForm">
+          <input type="hidden" name="Enquiry type" value="Client — strategy session">
+          <div class="fgrid">
+            <div class="field full"><label data-i18n="cs.name">Your name <span class="req">*</span></label><input name="Name" required></div>
+            <div class="field full"><label data-i18n="cs.web">Website or brand name <span class="req">*</span></label><input name="Website / Brand" required data-i18n-ph="cs.web.ph"></div>
+            <div class="field full"><label data-i18n="cs.email">Work email <span class="req">*</span></label><input name="Work Email" type="email" required></div>
+            <div class="field full"><label data-i18n="cs.msg">Anything we should know?</label><textarea name="Message" data-i18n-ph="cs.msg.ph"></textarea></div>
+          </div>
+          <div style="margin-top:18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-red" data-i18n="book.cta1">Book a session</button>
+            <span class="form-note" data-i18n="cs.s"></span>
+          </div>
+          <div class="form-ok" id="clientOk"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- INFLUENCER PANEL -->
+    <div class="comm-grid comm-panel" id="panel-influencer" style="display:none;">
+      <div class="comm-copy reveal">
+        <span class="eyebrow" data-i18n="comm.inf.eyebrow">Why join the Northia network</span>
+        <h3 style="margin-top:12px;font-size:1.5rem;" data-i18n="comm.inf.title">placeholder</h3>
+        <div class="feat"><div class="ic">◆</div><div><b data-i18n="comm.inf.f1t"></b><p data-i18n="comm.inf.f1p"></p></div></div>
+        <div class="feat"><div class="ic">✦</div><div><b data-i18n="comm.inf.f2t"></b><p data-i18n="comm.inf.f2p"></p></div></div>
+        <div class="feat"><div class="ic">◎</div><div><b data-i18n="comm.inf.f3t"></b><p data-i18n="comm.inf.f3p"></p></div></div>
+      </div>
+      <div class="card kol-form reveal" id="kol">
+        <span class="eyebrow" data-i18n="kol.eyebrow">KOL / Influencer network</span>
+        <h3 style="margin-top:12px;" data-i18n="kol.title">Join the Northia creator network</h3>
+        <p class="sub" data-i18n="kol.sub">placeholder</p>
+        <form id="kolForm">
+          <input type="hidden" name="Enquiry type" value="Creator — join network">
+          <div class="fgrid">
+            <div class="field full"><label data-i18n="kol.fullname">Full name <span class="req">*</span></label><input name="Full Name" required></div>
+            <div class="field"><label data-i18n="kol.ethnicity">Your identity <span class="req">*</span></label><input name="Your Identity" required></div>
+            <div class="field"><label data-i18n="kol.age">Age <span class="req">*</span></label><input name="Age" type="number" min="13" max="99" required></div>
+            <div class="field"><label data-i18n="kol.gender">Gender</label>
+              <select name="Gender"><option value="" data-i18n="kol.select">Select…</option><option data-i18n="kol.g.f">Female</option><option data-i18n="kol.g.m">Male</option><option data-i18n="kol.g.nb">Non-binary</option><option data-i18n="kol.g.na">Prefer not to say</option></select>
+            </div>
+            <div class="field"><label data-i18n="kol.tier">Total follower count <span class="req">*</span></label>
+              <select name="Follower Tier" required><option value="" data-i18n="kol.select">Select…</option><option>1k–10k</option><option>10k–50k</option><option>50k–100k</option><option>100k–500k</option><option>500k+</option></select>
+            </div>
+            <div class="field full"><label data-i18n="kol.hobbies">Hobbies / niche interests <span class="req">*</span></label><input name="Hobbies / Niche" required><span class="hint" data-i18n="kol.hobbies.hint"></span></div>
+            <div class="field full"><label data-i18n="kol.sns">Primary social media URLs <span class="req">*</span></label><input name="Social URLs" required placeholder="https://instagram.com/…  ·  https://tiktok.com/@…"></div>
+            <div class="field"><label data-i18n="kol.langs">Spoken / content languages <span class="req">*</span></label><input name="Languages" required placeholder="EN, 中文, 廣東話…"></div>
+            <div class="field"><label data-i18n="kol.market">Target audience market <span class="req">*</span></label><input name="Target Market" required placeholder="e.g. Vietnamese in Vancouver"></div>
+            <div class="field full"><label data-i18n="kol.bio">Short bio</label><textarea name="Short Bio" maxlength="1600" data-i18n-ph="kol.bio.ph"></textarea><span class="hint"><span id="bioCount">0</span> / 250 <span data-i18n="kol.words">words</span></span></div>
+          </div>
+          <div class="kol-submit" style="margin-top:18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-red" data-i18n="kol.submit">Submit application</button>
+            <span class="form-note" data-i18n="kol.note">placeholder</span>
+          </div>
+          <div class="form-ok" id="kolOk"></div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section class="contact" id="contact">
+<!-- ABOUT -->
+<section class="sec-pad" id="about" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <div class="inner reveal">
-      <div class="eyebrow" style="justify-content:center;display:inline-flex" data-i18n="ct.eyebrow">Let's talk</div>
-      <h2 data-i18n="ct.title">Thirty minutes. One map of your path into Asia.</h2>
-      <p data-i18n="ct.sub">A free strategy session: we review your product, pick your first market, and show you exactly what the first 90 days look like.</p>
-      <button class="btn" data-open-panel><span data-i18n="ct.cta">Book a strategy session</span><span class="arr">→</span></button>
-      <div class="ct-direct">
-        <a href="mailto:hello@northiamarketing.com">hello@northiamarketing.com</a>
-        <span>·</span>
-        <a href="tel:+17789985022">+1 778-998-5022</a>
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="about.eyebrow">About us — Our Story</span>
+      <h2 data-i18n="about.title">placeholder</h2>
+      <p data-i18n="about.sub">placeholder</p>
+    </div>
+    <div class="about-hero reveal">
+      <div class="portrait-frame"><span class="ph" data-i18n="about.portrait">[ Founder portrait ]</span></div>
+      <div>
+        <span class="eyebrow" data-i18n="about.why.eyebrow">Why Northia exists</span>
+        <p style="margin-top:16px;font-size:1.06rem;color:var(--body);" data-i18n="about.why1"></p>
+        <p style="margin-top:14px;font-size:1.06rem;color:var(--body);" data-i18n="about.why2"></p>
       </div>
-      <div class="ct-divider"><span data-i18n="ct.or">or send us a message</span></div>
-      <form class="cform" action="https://formsubmit.co/hello@northiamarketing.com" method="POST">
-        <input type="hidden" name="_subject" value="New inquiry — Northia website">
-        <input type="hidden" name="_template" value="table">
-        <input type="text" name="_honey" style="display:none">
-        <div class="cform-row">
-          <input type="text" name="name" required data-i18n-ph="ct.f1" placeholder="Your name">
-          <input type="email" name="email" required data-i18n-ph="ct.f2" placeholder="Work email">
+    </div>
+    <div class="milestones">
+      <div class="card ms reveal"><span class="yr">2020</span><b>excohk</b><span data-i18n="about.ms1"></span></div>
+      <div class="card ms reveal"><span class="yr">2020–24</span><b>$1M<span style="color:var(--red)">+</span></b><span data-i18n="about.ms2"></span></div>
+      <div class="card ms reveal"><span class="yr" data-i18n="about.ms3yr">Today</span><b>Northia</b><span data-i18n="about.ms3"></span></div>
+      <div class="asset-slot reveal" data-i18n="about.assetslot">asset slot</div>
+    </div>
+    <div class="founders">
+      <div class="card founder reveal">
+        <div class="pf" data-i18n="about.photo">[ Photo ]</div>
+        <h3>Maureen Ng</h3>
+        <div class="role" data-i18n="about.f1.role">Founder & Director</div>
+        <p data-i18n="about.f1.p1"></p><p data-i18n="about.f1.p2"></p><p data-i18n="about.f1.p3"></p>
+      </div>
+      <div class="card founder reveal">
+        <div class="pf" data-i18n="about.photo">[ Photo ]</div>
+        <h3>Aka Chung</h3>
+        <div class="role" data-i18n="about.f2.role">Co-Founder</div>
+        <p data-i18n="about.f2.p1"></p><p data-i18n="about.f2.p2"></p><p data-i18n="about.f2.p3"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING BAND -->
+<section class="sec-pad">
+  <div class="wrap">
+    <div class="book-band reveal">
+      <div class="blush-wash" style="opacity:.25;"></div>
+      <div style="position:relative;z-index:1;">
+        <span class="eyebrow" style="color:#fff;" data-i18n="book.eyebrow">Book a strategy session</span>
+        <h2 data-i18n="book.title">placeholder</h2>
+        <p data-i18n="book.p">placeholder</p>
+        <div class="book-cta">
+          <a class="btn btn-red" onclick="openModal('consult',event)" data-i18n="book.cta1">Book a session</a>
+          <a class="btn" style="background:transparent;border-color:#4a4a4a;color:#fff;" onclick="openModal('consult',event)" data-i18n="book.cta2">Get the free audit</a>
         </div>
-        <textarea name="message" rows="4" required data-i18n-ph="ct.f3" placeholder="Tell us about your product and the market you're considering"></textarea>
-        <button class="btn" type="submit"><span data-i18n="ct.send">Send message</span><span class="arr">→</span></button>
-      </form>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <a class="logo" href="#top"><img src="assets/logo-full.png" alt="Northia Marketing Consultancy — Bridging Markets. Building Growth." style="height:72px;width:auto"></a>
-    <p data-i18n="ft.line">© 2026 Northia Marketing Consultancy Ltd. · Canada · hello@northiamarketing.com · +1 778-998-5022</p>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <div class="hd-logo"><img src="assets/northia-mark.png" alt=""><div><div class="wm">NORTHI<b>A</b></div><div class="hd-eyebrow">Asia ⇄ Overseas</div></div></div>
+        <p data-i18n="ft.tagline">placeholder</p>
+      </div>
+      <div class="ft-col">
+        <h5 data-i18n="ft.explore">Explore</h5>
+        <a href="#audit" data-i18n="nav.audit">Free Audit</a>
+        <a href="#services" data-i18n="nav.rebrand">Rebranding</a>
+        <a href="#community" data-i18n="nav.community">Community</a>
+        <a href="#map" data-i18n="nav.insights">Insights</a>
+        <a href="#about" data-i18n="nav.about">About Us</a>
+      </div>
+      <div class="ft-col">
+        <h5 data-i18n="ft.contact">Contact</h5>
+        <a href="mailto:hello@northiamarketing.com">hello@northiamarketing.com</a>
+        <a href="tel:+17789985022">+1 778-998-5022</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 Northia Marketing Consultancy Ltd.</span>
+      <span data-i18n="ft.descriptor">A Cross-border Community-based Branding Company</span>
+    </div>
   </div>
 </footer>
+</div>
 
-<!-- ================= FAB + PANEL ================= -->
-<button class="fab" data-open-panel><span class="ping"></span><span data-i18n="fab">Book a Strategy Session</span></button>
-<div class="scrim" data-close-panel></div>
-<aside class="panel" role="dialog" aria-modal="true" aria-label="Booking panel">
-  <div class="panel-head">
-    <h3 data-i18n="pn.title">Book a strategy session</h3>
-    <button class="panel-close" data-close-panel aria-label="Close">✕</button>
-  </div>
-  <div class="panel-body">
-    <p class="note" data-i18n="pn.note">Pick a time that works for you — 30 minutes, no obligation, in English, 中文 or 廣東話.</p>
-    <div class="calendly-inline-widget" data-url="https://calendly.com/northiamarketingconsultancy/30min?hide_gdpr_banner=1&amp;primary_color=ff3b30" style="min-width:300px;height:620px"></div>
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  </div>
-</aside>
+<button class="fab" onclick="openModal('consult',event)" data-i18n="fab">Book a Strategy Session</button>
 
-<script>
-/* ================= i18n ================= */
-const I18N = {
-  en: {
-    "nav.markets":"Markets","nav.community":"Community Building",
-    "nav.rebrand":"Rebranding",
-    "nav.services":"Services","nav.case":"Case Studies","nav.insights":"Insights","nav.contact":"Contact","nav.book":"Book a session",
-    "hero.eyebrow":"Asia ⇄ Global · Brand & Community Consultancy",
-    "hero.title":"Rebrand to <em>enter</em>. Community to <em>belong</em>.",
-    "hero.lead":"Whether you're a global brand entering Asia or an Asian brand going global, Northia rebuilds your positioning and identity for the new market — then surrounds it with creators who have resonance, not just reach.",
-    "hero.cta1":"Book a strategy session","hero.cta2":"See how we work",
-    "intro.eb":"Who we are",
-    "intro.p":"Most cross-border marketing rents attention: ads that stop the moment the budget stops, influencers who post once and disappear. We build the opposite — owned resonance. A brand positioned to mean something in its new market, surrounded by a community of creators and customers who advocate because they belong, not because they were paid to shout.",
-    "svc.1.link":"Explore Community Building",
-    "svc.2.link":"Explore Rebranding",
-    "hero.from":"From","hero.to":"To","hero.from2":"From","hero.to2":"To","hero.from3":"From","hero.to3":"To",
-    "mkt.eyebrow":"Target markets","mkt.title":"East Asia is not one market. We treat it that way.",
-    "mkt.sub":"Each market has its own platforms, buying culture, and trust signals. We build a separate playbook for each one.",
-    "mkt.cn.t":"Greater China","mkt.cn.p":"Xiaohongshu (RED), WeChat & Tmall ecosystems. KOL/KOC seeding, social commerce, and B2B lead-gen behind the firewall.","mkt.cn.s":"monthly active users on Xiaohongshu",
-    "mkt.jp.t":"Japan","mkt.jp.p":"Relationship-first B2B. LINE, trade media, and distributor partnerships built with patience and the right keigo.","mkt.jp.s":"largest economy & premium B2C market",
-    "mkt.sea.t":"Korea, HK, Taiwan & Singapore","mkt.sea.p":"Fast-moving, mobile-first markets — ideal beachheads to test pricing, positioning, and creative before scaling.","mkt.sea.s":"launchpad markets, one regional strategy",
-    "val.eyebrow":"Our philosophy","val.title":"Resonance, not noise.",
-    "val.1.t":"Depth over facade","val.1.p":"True branding isn't a beautiful surface. It's deep resonance — positioning that still means something long after the visuals load.",
-    "val.2.t":"Connection over clout","val.2.p":"Community isn't a follower count. It's genuine engagement and shared values — creators who actually answer their audience.",
-    "val.3.t":"With them, not at them","val.3.p":"Traditional influencer marketing is a megaphone. We build campfires — conversations your customers gather around, and stay.",
-    "svc.eyebrow":"The two pillars","svc.title":"Two engines. One outcome: a brand people join.",
-    "svc.1.t":"Community Building","svc.1.p":"Our proprietary engine replaces expensive, low-engagement influencer campaigns with something durable: culturally-fit creators, vetted for real audience connection, united into an inner circle around your brand.",
-    "svc.2.t":"Rebranding","svc.2.p":"Positioning, core messaging and visual identity rebuilt for the market you're entering — whether you're an Asian brand going global, or a global brand entering Asia. Built natively, never translated.",
-    "svc.1.tag":"The Community Activation Engine",
-    "svc.1.list":"· Creator sourcing & cultural-fit vetting<br>· Exclusive inner-circle community design<br>· Curated events, campaigns & always-on advocacy",
-    "svc.2.tag":"The Rebrand",
-    "svc.2.list":"· Global → Asia: bilingual naming & market-specific trust<br>· Asia → Global: global-ready voice & positioning (launching 2026)<br>· Identity, naming & legal protection before launch",
-    "pp.eb":"Free custom audit",
-    "pp.t":"Where is your brand losing the market?",
-    "pp.p":"Leave your details and we'll personally audit your brand: a customized report on the problems we find, with free data analysis and insights — before you spend a dollar with us.",
-    "pp.e":"Work email",
-    "pp.w":"Your website or brand name",
-    "pp.b":"Audit my brand",
-    "pp.s":"Hand-built by our team, usually within 3 business days. No spam, ever.",
-    "net.title":"Hover a city. See the connection.","net.sub":"Live channels and media relationships we maintain across the Pacific.",
-    "tip.van":"<b>Vancouver</b><span>West Coast client hub · SaaS, consumer & industrial brands.</span>",
-    "tip.sea":"<b>Seattle</b><span>US Pacific Northwest clients · SaaS & outdoor brands.</span>",
-    "tip.cal":"<b>Calgary</b><span>Energy-tech & agri-food exporters heading to Asia.</span>",
-    "tip.tok":"<b>Tokyo</b><span>Distributor network + 3 trade media partnerships.</span>",
-    "tip.seo":"<b>Seoul</b><span>KOL agency partner · Naver & Coupang channels.</span>",
-    "tip.sha":"<b>Shanghai</b><span>Xiaohongshu MCN partner · Tmall Global TP services.</span>",
-    "tip.hk":"<b>Hong Kong</b><span>Regional finance & logistics partners · GBA access.</span>",
-    "tip.sgp":"<b>Singapore</b><span>SEA launchpad · B2B events and trade associations.</span>",
-    "case.eyebrow":"Case study 01 · Xiaohongshu","case.title":"One rebrand, two markets. Drag the slider.",
-    "case.sub":"One example of our rebranding method: a BC-based SaaS brand, relocalized for China's Xiaohongshu. The same approach applies to Japan, Korea, and every market we enter.",
-    "case.before":"Before · North America","case.after":"After · Xiaohongshu",
-    "case.c1":"marketing ROI","case.c2":"organic impressions","case.c3":"qualified channel partners",
-    "case.more":"See all case studies","ct.or":"or send us a message","ct.f1":"Your name","ct.f2":"Work email","ct.f3":"Tell us about your product and the market you're considering","ct.send":"Send message",
-    "ct.eyebrow":"Let's talk","ct.title":"Thirty minutes. One map of your path into Asia.",
-    "ct.sub":"A free strategy session: we review your product, pick your first market, and show you exactly what the first 90 days look like.",
-    "ct.cta":"Book a strategy session",
-    "ft.line":"© 2026 Northia Marketing Consultancy Ltd. · Canada · hello@northiamarketing.com · +1 778-998-5022",
-    "fab":"Book a Strategy Session",
-    "pn.title":"Book a strategy session",
-    "pn.note":"Pick a time that works for you — 30 minutes, no obligation, in English, 中文 or 廣東話."
-  },
-  hant: {
-    "nav.markets":"目標市場","nav.community":"社群建立",
-    "nav.rebrand":"品牌重塑",
-    "nav.services":"服務項目","nav.case":"成功案例","nav.insights":"市場洞察","nav.contact":"聯絡我們","nav.book":"預約諮詢",
-    "hero.eyebrow":"亞洲 ⇄ 全球 · 品牌與社群顧問",
-    "hero.title":"重塑品牌以<em>進入</em>，建立社群以<em>歸屬</em>。",
-    "hero.lead":"無論你是進入亞洲的全球品牌，還是走向世界的亞洲品牌，Northia 為新市場重建你的定位與識別，再以有共鳴而不只有流量的創作者圍繞你的品牌。",
-    "hero.cta1":"預約策略諮詢","hero.cta2":"看我們如何運作",
-    "intro.eb":"我們是誰",
-    "intro.p":"大多數跨境行銷都在租用注意力：預算一停，廣告就停；網紅發一篇帖就消失。我們建造的是相反的東西：自有的共鳴。一個在新市場真正有意義的品牌定位，加上一群因為歸屬感而發聲的創作者與顧客，而不是因為收了錢才吶喊。",
-    "svc.1.link":"了解社群建立",
-    "svc.2.link":"了解品牌重塑",
-    "hero.from":"出發","hero.to":"目的地","hero.from2":"出發","hero.to2":"目的地","hero.from3":"出發","hero.to3":"目的地",
-    "mkt.eyebrow":"目標市場","mkt.title":"東亞不是單一市場，我們也從不這樣對待它。",
-    "mkt.sub":"每個市場都有自己的平台、消費文化與信任邏輯。我們為每一個市場建立獨立的打法。",
-    "mkt.cn.t":"大中華區","mkt.cn.p":"小紅書、微信與天貓生態系。KOL/KOC 種草、社交電商，以及牆內的 B2B 名單開發。","mkt.cn.s":"小紅書月活躍用戶",
-    "mkt.jp.t":"日本","mkt.jp.p":"關係優先的 B2B 文化。透過 LINE、產業媒體與經銷商夥伴，用耐心與正確的敬語建立信任。","mkt.jp.s":"全球前三大經濟體與高端 B2C 市場",
-    "mkt.sea.t":"韓國、港台與新加坡","mkt.sea.p":"節奏快、行動優先的市場，是測試定價、定位與創意素材的最佳灘頭堡。","mkt.sea.s":"個跳板市場，一套區域策略",
-    "val.eyebrow":"我們的信念","val.title":"共鳴，而非噪音。",
-    "val.1.t":"深度，而非門面","val.1.p":"真正的品牌不是漂亮的表面，而是深層共鳴：在視覺之後，仍然對受眾有意義的定位。",
-    "val.2.t":"連結，而非流量","val.2.p":"社群不是粉絲數字，而是真實互動與共同價值：由真正會回應受眾的創作者組成。",
-    "val.3.t":"對話，而非廣播","val.3.p":"傳統網紅行銷是擴音器；我們建造營火：讓顧客願意圍坐、留下的對話。",
-    "svc.eyebrow":"兩大支柱","svc.title":"兩大引擎，一個目標：讓人願意加入的品牌。",
-    "svc.1.t":"社群建立","svc.1.p":"我們的獨家方法論取代昂貴、低互動的網紅投放：經文化契合篩選、真正連結受眾的創作者，組成圍繞你品牌的專屬核心圈。",
-    "svc.2.t":"品牌重塑","svc.2.p":"為你將進入的市場重建定位、核心訊息與視覺識別：無論是走向世界的亞洲品牌，還是進入亞洲的全球品牌。原生打造，絕非翻譯。",
-    "svc.1.tag":"社群啟動引擎",
-    "svc.1.list":"· 創作者搜尋與文化契合篩選<br>· 專屬核心圈社群設計<br>· 精選活動、企劃與長期品牌倡議",
-    "svc.2.tag":"品牌重塑",
-    "svc.2.list":"· 全球 → 亞洲：雙語命名與市場信任建立<br>· 亞洲 → 全球：國際化語調與定位（2026 啟動）<br>· 識別、命名與上市前法律保護",
-    "pp.eb":"免費客製審計",
-    "pp.t":"你的品牌正在哪裡流失市場？",
-    "pp.p":"留下資料，我們會親自為你的品牌做審計：一份客製報告，指出我們發現的問題，附免費數據分析與洞察——在你花任何一分錢之前。",
-    "pp.e":"工作信箱",
-    "pp.w":"你的網站或品牌名稱",
-    "pp.b":"為我的品牌審計",
-    "pp.s":"由團隊人手完成，通常 3 個工作天內送達。絕不濫發。",
-    "net.title":"滑過城市，看見連結。","net.sub":"我們在太平洋兩岸持續維護的通路與媒體關係。",
-    "tip.van":"<b>溫哥華</b><span>西岸客戶樞紐 · SaaS、消費與工業品牌。</span>",
-    "tip.sea":"<b>西雅圖</b><span>美國西北部客戶 · SaaS 與戶外品牌。</span>",
-    "tip.cal":"<b>卡加利</b><span>能源科技與農食品出口商，正前進亞洲。</span>",
-    "tip.tok":"<b>東京</b><span>經銷商網絡 + 3 家產業媒體合作。</span>",
-    "tip.seo":"<b>首爾</b><span>KOL 經紀夥伴 · Naver 與 Coupang 通路。</span>",
-    "tip.sha":"<b>上海</b><span>小紅書 MCN 夥伴 · 天貓國際代運營服務。</span>",
-    "tip.hk":"<b>香港</b><span>區域金融與物流夥伴 · 大灣區入口。</span>",
-    "tip.sgp":"<b>新加坡</b><span>東南亞跳板 · B2B 展會與商會資源。</span>",
-    "case.eyebrow":"案例 01 · 小紅書","case.title":"一次品牌重塑，兩個市場。拖動滑桿看看。",
-    "case.sub":"我們品牌重塑方法的其中一個案例：一家 BC 省的 SaaS 品牌，為中國的小紅書重新在地化。同樣的方法，也適用於日本、韓國與我們進入的每一個市場。",
-    "case.before":"改造前 · 北美","case.after":"改造後 · 小紅書",
-    "case.c1":"行銷投資報酬率","case.c2":"自然觸及曝光","case.c3":"合格通路夥伴",
-    "case.more":"查看全部案例","ct.or":"或直接留言給我們","ct.f1":"您的姓名","ct.f2":"工作信箱","ct.f3":"請簡述您的產品與考慮中的市場","ct.send":"送出訊息",
-    "ct.eyebrow":"聊聊吧","ct.title":"30 分鐘，畫出你進入亞洲的路線圖。",
-    "ct.sub":"免費策略諮詢：我們檢視你的產品、選定第一個市場，並具體告訴你前 90 天該怎麼走。",
-    "ct.cta":"預約策略諮詢",
-    "ft.line":"© 2026 Northia Marketing Consultancy Ltd. · 加拿大 · hello@northiamarketing.com · +1 778-998-5022",
-    "fab":"預約策略諮詢",
-    "pn.title":"預約策略諮詢",
-    "pn.note":"選一個方便的時間，30 分鐘，無任何義務，可使用英文、中文或廣東話。"
-  },
-  hans: {
-    "nav.markets":"目标市场","nav.community":"社群建立",
-    "nav.rebrand":"品牌重塑",
-    "nav.services":"服务项目","nav.case":"成功案例","nav.insights":"市场洞察","nav.contact":"联系我们","nav.book":"预约咨询",
-    "hero.eyebrow":"亚洲 ⇄ 全球 · 品牌与社群顾问",
-    "hero.title":"重塑品牌以<em>进入</em>，建立社群以<em>归属</em>。",
-    "hero.lead":"无论你是进入亚洲的全球品牌，还是走向世界的亚洲品牌，Northia 为新市场重建你的定位与识别，再以有共鸣而不只有流量的创作者围绕你的品牌。",
-    "hero.cta1":"预约策略咨询","hero.cta2":"看我们如何运作",
-    "intro.eb":"我们是谁",
-    "intro.p":"大多数跨境营销都在租用注意力：预算一停，广告就停；网红发一篇帖就消失。我们建造的是相反的东西：自有的共鸣。一个在新市场真正有意义的品牌定位，加上一群因为归属感而发声的创作者与顾客，而不是因为收了钱才呐喊。",
-    "svc.1.link":"了解社群建立",
-    "svc.2.link":"了解品牌重塑",
-    "hero.from":"出发","hero.to":"目的地","hero.from2":"出发","hero.to2":"目的地","hero.from3":"出发","hero.to3":"目的地",
-    "mkt.eyebrow":"目标市场","mkt.title":"东亚不是单一市场，我们也从不这样对待它。",
-    "mkt.sub":"每个市场都有自己的平台、消费文化与信任逻辑。我们为每一个市场建立独立的打法。",
-    "mkt.cn.t":"大中华区","mkt.cn.p":"小红书、微信与天猫生态。KOL/KOC 种草、社交电商，以及墙内的 B2B 线索开发。","mkt.cn.s":"小红书月活跃用户",
-    "mkt.jp.t":"日本","mkt.jp.p":"关系优先的 B2B 文化。通过 LINE、行业媒体与经销商伙伴，用耐心与正确的敬语建立信任。","mkt.jp.s":"全球前三大经济体与高端 B2C 市场",
-    "mkt.sea.t":"韩国、港台与新加坡","mkt.sea.p":"节奏快、移动优先的市场，是测试定价、定位与创意素材的最佳滩头堡。","mkt.sea.s":"个跳板市场，一套区域策略",
-    "val.eyebrow":"我们的信念","val.title":"共鸣，而非噪音。",
-    "val.1.t":"深度，而非门面","val.1.p":"真正的品牌不是漂亮的表面，而是深层共鸣：在视觉之后，仍然对受众有意义的定位。",
-    "val.2.t":"连结，而非流量","val.2.p":"社群不是粉丝数字，而是真实互动与共同价值：由真正会回应受众的创作者组成。",
-    "val.3.t":"对话，而非广播","val.3.p":"传统网红营销是扩音器；我们建造营火：让顾客愿意围坐、留下的对话。",
-    "svc.eyebrow":"两大支柱","svc.title":"两大引擎，一个目标：让人愿意加入的品牌。",
-    "svc.1.t":"社群建立","svc.1.p":"我们的独家方法论取代昂贵、低互动的网红投放：经文化契合筛选、真正连接受众的创作者，组成围绕你品牌的专属核心圈。",
-    "svc.2.t":"品牌重塑","svc.2.p":"为你将进入的市场重建定位、核心信息与视觉识别：无论是走向世界的亚洲品牌，还是进入亚洲的全球品牌。原生打造，绝非翻译。",
-    "svc.1.tag":"社群启动引擎",
-    "svc.1.list":"· 创作者搜寻与文化契合筛选<br>· 专属核心圈社群设计<br>· 精选活动、企划与长期品牌倡议",
-    "svc.2.tag":"品牌重塑",
-    "svc.2.list":"· 全球 → 亚洲：双语命名与市场信任建立<br>· 亚洲 → 全球：国际化语调与定位（2026 启动）<br>· 识别、命名与上市前法律保护",
-    "pp.eb":"免费定制审计",
-    "pp.t":"你的品牌正在哪里流失市场？",
-    "pp.p":"留下资料，我们会亲自为你的品牌做审计：一份定制报告，指出我们发现的问题，附免费数据分析与洞察——在你花任何一分钱之前。",
-    "pp.e":"工作邮箱",
-    "pp.w":"你的网站或品牌名称",
-    "pp.b":"为我的品牌审计",
-    "pp.s":"由团队人手完成，通常 3 个工作天内送达。绝不滥发。",
-    "net.title":"划过城市，看见连接。","net.sub":"我们在太平洋两岸持续维护的渠道与媒体关系。",
-    "tip.van":"<b>温哥华</b><span>西岸客户枢纽 · SaaS、消费与工业品牌。</span>",
-    "tip.sea":"<b>西雅图</b><span>美国西北部客户 · SaaS 与户外品牌。</span>",
-    "tip.cal":"<b>卡尔加里</b><span>能源科技与农食品出口商，正进军亚洲。</span>",
-    "tip.tok":"<b>东京</b><span>经销商网络 + 3 家行业媒体合作。</span>",
-    "tip.seo":"<b>首尔</b><span>KOL 机构伙伴 · Naver 与 Coupang 渠道。</span>",
-    "tip.sha":"<b>上海</b><span>小红书 MCN 伙伴 · 天猫国际代运营服务。</span>",
-    "tip.hk":"<b>香港</b><span>区域金融与物流伙伴 · 大湾区入口。</span>",
-    "tip.sgp":"<b>新加坡</b><span>东南亚跳板 · B2B 展会与商会资源。</span>",
-    "case.eyebrow":"案例 01 · 小红书","case.title":"一次品牌重塑，两个市场。拖动滑块看看。",
-    "case.sub":"我们品牌重塑方法的其中一个案例：一家 BC 省的 SaaS 品牌，为中国的小红书重新本地化。同样的方法，也适用于日本、韩国与我们进入的每一个市场。",
-    "case.before":"改造前 · 北美","case.after":"改造后 · 小红书",
-    "case.c1":"营销投资回报率","case.c2":"自然触达曝光","case.c3":"合格渠道伙伴",
-    "case.more":"查看全部案例","ct.or":"或直接给我们留言","ct.f1":"您的姓名","ct.f2":"工作邮箱","ct.f3":"请简述您的产品与考虑中的市场","ct.send":"发送消息",
-    "ct.eyebrow":"聊聊吧","ct.title":"30 分钟，画出你进入亚洲的路线图。",
-    "ct.sub":"免费策略咨询：我们审视你的产品、选定第一个市场，并具体告诉你前 90 天该怎么走。",
-    "ct.cta":"预约策略咨询",
-    "ft.line":"© 2026 Northia Marketing Consultancy Ltd. · 加拿大 · hello@northiamarketing.com · +1 778-998-5022",
-    "fab":"预约策略咨询",
-    "pn.title":"预约策略咨询",
-    "pn.note":"选一个方便的时间，30 分钟，没有任何义务，可使用英文、中文或粤语。"
-  }
-};
-
-Object.assign(I18N.en, {
-  "sys.eb":"The Northia System","sys.title":"One method. Three stages.<br>Diagnose → Rebrand → Activate.","sys.sub":"A brand wins a new market in three moves: understand what it means there, rebuild what it should mean, then make the market say it for you. Every engagement has explicit decision gates, so nothing advances on vibes.","sys.tab0num":"PHASE 0 · DIAGNOSE","sys.tab0":"The Resonance Audit","sys.tab1num":"STAGE 1 · TRANSFORM","sys.tab1":"The Rebrand","sys.tab2num":"STAGE 2 · MOMENTUM","sys.tab2":"The Community Engine","sys.question":"GOVERNING QUESTION","sys.audit.kicker":"00 · DIAGNOSE — FREE","sys.audit.title":"The Resonance Audit","sys.audit.sub":"Five MECE dimensions, scored against your target market — the diagnostic that tells you where your budget should go before you spend it.","sys.audit.q":"What does your brand currently mean in this market — and to whom?","sys.d1.t":"Positioning Fit","sys.d1.p":"Does it solve a problem this market actually has?","sys.d2.t":"Language & Message Fit","sys.d2.p":"Does it read native — or imported?","sys.d3.t":"Trust Signals","sys.d3.p":"Does it show what this market checks before buying?","sys.d4.t":"Channel–Buyer Fit","sys.d4.p":"Is it present where these buyers research?","sys.d5.t":"Community Ownership","sys.d5.p":"Does anyone advocate for it — unpaid?","sys.route":"<b>Routing logic:</b> weak on D1–D3 → start with <b>The Rebrand</b>. Weak on D4–D5 → start with <b>The Community Activation Engine</b>. Weak on both → the full system, in sequence. Strong across all five → you don't need us yet, and we'll say so.","sys.rebrand.kicker":"01 · TRANSFORM","sys.rebrand.title":"The Rebrand — four phases, four gates","sys.rebrand.sub":"Positioning, messaging and identity rebuilt natively for the market you are entering. No creative work advances before an agreed problem statement.","sys.rebrand.q":"What should this brand mean here — and can every asset carry that meaning?","sys.rebrand.route":"Audit → Positioning → Native identity → Launch. Each phase has a leadership-approved gate; Gate 3 is a Native Blind Test: if it reads as foreign, we revise.","sys.engine.kicker":"02 · MOMENTUM","sys.engine.title":"The Community Activation Engine","sys.engine.sub":"Creator marketing turned into community infrastructure. Selection uses a weighted Resonance Score, and every channel faces a Day-90 Scale / Kill decision.","sys.engine.q":"Who will say it for you — and will they still be saying it next year?","sys.engine.route":"Map culture → source for fit → form the inner circle → activate → measure. Reach is a tiebreaker, never a criterion.","sys.explore":"Explore the full method →","audit.eb":"Try it yourself","audit.title":"Where would the audit route you?","audit.sub":"Rate your brand honestly for the market you want next. Sixty seconds — the routing logic below is the same one we use.","audit.d1.t":"D1 · Positioning Fit","audit.d1.q":"Does your offer solve a problem this market actually has?","audit.d2.t":"D2 · Language & Message Fit","audit.d2.q":"Would a native professional read your materials as written locally?","audit.d3.t":"D3 · Trust Signals","audit.d3.q":"Do you show the proof this market checks before buying?","audit.d4.t":"D4 · Channel–Buyer Fit","audit.d4.q":"Are you native on the platforms where these buyers research?","audit.d5.t":"D5 · Community Ownership","audit.d5.q":"Does anyone advocate for your brand there without being paid?","audit.strong":"Strong","audit.unsure":"Unsure","audit.weak":"Weak","audit.pending":"Answer all five dimensions to see your routing.","audit.kicker":"Your resonance routing","audit.score1":"Brand meaning (D1–D3)","audit.score2":"Market carry (D4–D5)","audit.full.title":"Routing: the full Northia System.","audit.full.body":"The brand needs new meaning before the market can carry it. Sequence matters: activating a weak brand only amplifies the weakness.","audit.rebrand.title":"Routing: start with The Rebrand.","audit.rebrand.body":"Fix positioning, language and trust signals first; the audit will pinpoint what is costing you most.","audit.engine.title":"Routing: start with the Community Activation Engine.","audit.engine.body":"The brand holds up — but nobody is saying it for you where buyers research. That is a distribution and advocacy problem.","audit.ready.title":"Routing: you may not need us yet.","audit.ready.body":"Strong across all five is rare — and worth verifying against data rather than self-assessment. We will tell you plainly.","audit.cta":"Start with the free audit","audit.verify":"Verify with a free audit","audit.reset":"Reset","audit.remaining":" to go."
-});
-Object.assign(I18N.hant, {
-  "sys.eb":"Northia 系統","sys.title":"一套方法，三個階段。<br>診斷 → 重塑 → 啟動。","sys.sub":"品牌要在新市場勝出，只有三步：先理解它現在代表甚麼，再重建它應有的意義，最後讓市場替你說出來。每一個環節都有清晰的決策關卡，不憑感覺推進。","sys.tab0num":"階段 0 · 診斷","sys.tab0":"共鳴審計","sys.tab1num":"階段 1 · 重塑","sys.tab1":"品牌重塑","sys.tab2num":"階段 2 · 動能","sys.tab2":"社群啟動引擎","sys.question":"核心問題","sys.audit.kicker":"00 · 診斷 — 免費","sys.audit.title":"共鳴審計","sys.audit.sub":"以五個互不重疊的維度，對照你的目標市場評分；在你投入預算前，先判斷該花在哪裡。","sys.audit.q":"你的品牌目前在這個市場代表甚麼？又是對誰而言？","sys.d1.t":"定位契合度","sys.d1.p":"它是否解決了這個市場真正存在的問題？","sys.d2.t":"語言與訊息契合度","sys.d2.p":"讀起來是原生，還是外來？","sys.d3.t":"信任訊號","sys.d3.p":"它有展示這個市場購買前會查證的東西嗎？","sys.d4.t":"渠道與買家契合度","sys.d4.p":"它是否出現在買家真正會研究的地方？","sys.d5.t":"社群擁有度","sys.d5.p":"有人會不收費地為它倡議嗎？","sys.route":"<b>路由邏輯：</b>D1–D3 偏弱 → 先做<b>品牌重塑</b>；D4–D5 偏弱 → 先做<b>社群啟動引擎</b>；兩者都弱 → 按次序走完整系統。五項都強 → 你暫時未必需要我們，我們會直說。","sys.rebrand.kicker":"01 · 重塑","sys.rebrand.title":"品牌重塑 — 四個階段，四道關卡","sys.rebrand.sub":"為你將進入的市場，原生重建定位、訊息和品牌識別；未有共同確認問題前，不開始創意工作。","sys.rebrand.q":"這個品牌在這裡應代表甚麼？每一項資產都承載得到嗎？","sys.rebrand.route":"審計 → 定位 → 原生識別 → 上市。每個階段都要管理層通過；Gate 3 是原生盲測：讀起來像外來品牌，就修改。","sys.engine.kicker":"02 · 動能","sys.engine.title":"社群啟動引擎","sys.engine.sub":"把創作者行銷變成社群基建。選人用加權共鳴分數；每個渠道都要在 90 日面對擴大或停止的決定。","sys.engine.q":"誰會替你說話？明年還會繼續嗎？","sys.engine.route":"繪製文化 → 按契合度尋找 → 組成核心圈 → 啟動 → 衡量。觸及率只用來打破平手，從不是標準。","sys.explore":"查看完整方法 →","audit.eb":"自己試一次","audit.title":"審計會把你帶往哪裡？","audit.sub":"以你下一個目標市場為準，誠實評估品牌。只需一分鐘，以下就是我們同一套路由邏輯。","audit.d1.t":"D1 · 定位契合度","audit.d1.q":"你的方案是否解決了這個市場真正存在的問題？","audit.d2.t":"D2 · 語言與訊息契合度","audit.d2.q":"原生專業人士會覺得你的素材是本地寫成的嗎？","audit.d3.t":"D3 · 信任訊號","audit.d3.q":"你展示的是這個市場購買前會查證的證據嗎？","audit.d4.t":"D4 · 渠道與買家契合度","audit.d4.q":"你是否原生地出現在買家會研究的平台？","audit.d5.t":"D5 · 社群擁有度","audit.d5.q":"有人會不收費地在當地為你的品牌倡議嗎？","audit.strong":"強","audit.unsure":"未確定","audit.weak":"弱","audit.pending":"完成五項評估，即可查看路由結果。","audit.kicker":"你的共鳴路由","audit.score1":"品牌意義（D1–D3）","audit.score2":"市場承載力（D4–D5）","audit.full.title":"路由：完整 Northia 系統。","audit.full.body":"品牌要先有新的意義，市場才承載得起；啟動弱品牌，只會放大弱點。","audit.rebrand.title":"路由：先做品牌重塑。","audit.rebrand.body":"先處理定位、語言和信任訊號；審計會找出最拖後腿的一項。","audit.engine.title":"路由：先做社群啟動引擎。","audit.engine.body":"品牌本身站得住，但買家研究時沒有人替你說話；這是分發與倡議問題。","audit.ready.title":"路由：你暫時未必需要我們。","audit.ready.body":"五項全強很罕見，也值得用數據而非自評驗證；我們會直說結果。","audit.cta":"先做免費審計","audit.verify":"以免費審計驗證","audit.reset":"重設","audit.remaining":" 項未完成。"
-});
-Object.assign(I18N.hans, {
-  "sys.eb":"Northia 系统","sys.title":"一套方法，三个阶段。<br>诊断 → 重塑 → 启动。","sys.sub":"品牌要在新市场胜出，只有三步：先理解它现在代表什么，再重建它应有的意义，最后让市场替你说出来。每个环节都有清晰的决策关卡，不凭感觉推进。","sys.tab0num":"阶段 0 · 诊断","sys.tab0":"共鸣审计","sys.tab1num":"阶段 1 · 重塑","sys.tab1":"品牌重塑","sys.tab2num":"阶段 2 · 动能","sys.tab2":"社群启动引擎","sys.question":"核心问题","sys.audit.kicker":"00 · 诊断 — 免费","sys.audit.title":"共鸣审计","sys.audit.sub":"以五个互不重叠的维度，对照你的目标市场评分；在你投入预算前，先判断该花在哪里。","sys.audit.q":"你的品牌目前在这个市场代表什么？又是对谁而言？","sys.d1.t":"定位契合度","sys.d1.p":"它是否解决了这个市场真正存在的问题？","sys.d2.t":"语言与信息契合度","sys.d2.p":"读起来是原生，还是外来？","sys.d3.t":"信任信号","sys.d3.p":"它展示了这个市场购买前会查证的东西吗？","sys.d4.t":"渠道与买家契合度","sys.d4.p":"它是否出现在买家真正会研究的地方？","sys.d5.t":"社群拥有度","sys.d5.p":"有人会不收费地为它倡议吗？","sys.route":"<b>路由逻辑：</b>D1–D3 偏弱 → 先做<b>品牌重塑</b>；D4–D5 偏弱 → 先做<b>社群启动引擎</b>；两者都弱 → 按顺序走完整系统。五项都强 → 你暂时未必需要我们，我们会直说。","sys.rebrand.kicker":"01 · 重塑","sys.rebrand.title":"品牌重塑 — 四个阶段，四道关卡","sys.rebrand.sub":"为你将进入的市场，原生重建定位、信息和品牌识别；未共同确认问题前，不开始创意工作。","sys.rebrand.q":"这个品牌在这里应代表什么？每一项资产都承载得到吗？","sys.rebrand.route":"审计 → 定位 → 原生识别 → 上市。每个阶段都要管理层通过；Gate 3 是原生盲测：读起来像外来品牌，就修改。","sys.engine.kicker":"02 · 动能","sys.engine.title":"社群启动引擎","sys.engine.sub":"把创作者营销变成社群基建。选人用加权共鸣分数；每个渠道都要在 90 日面对扩大或停止的决定。","sys.engine.q":"谁会替你说话？明年还会继续吗？","sys.engine.route":"绘制文化 → 按契合度寻找 → 组成核心圈 → 启动 → 衡量。触及率只用来打破平手，从不是标准。","sys.explore":"查看完整方法 →","audit.eb":"自己试一次","audit.title":"审计会把你带往哪里？","audit.sub":"以你下一个目标市场为准，诚实评估品牌。只需一分钟，以下就是我们同一套路由逻辑。","audit.d1.t":"D1 · 定位契合度","audit.d1.q":"你的方案是否解决了这个市场真正存在的问题？","audit.d2.t":"D2 · 语言与信息契合度","audit.d2.q":"原生专业人士会觉得你的素材是本地写成的吗？","audit.d3.t":"D3 · 信任信号","audit.d3.q":"你展示的是这个市场购买前会查证的证据吗？","audit.d4.t":"D4 · 渠道与买家契合度","audit.d4.q":"你是否原生地出现在买家会研究的平台？","audit.d5.t":"D5 · 社群拥有度","audit.d5.q":"有人会不收费地在当地为你的品牌倡议吗？","audit.strong":"强","audit.unsure":"不确定","audit.weak":"弱","audit.pending":"完成五项评估，即可查看路由结果。","audit.kicker":"你的共鸣路由","audit.score1":"品牌意义（D1–D3）","audit.score2":"市场承载力（D4–D5）","audit.full.title":"路由：完整 Northia 系统。","audit.full.body":"品牌要先有新的意义，市场才承载得起；启动弱品牌，只会放大弱点。","audit.rebrand.title":"路由：先做品牌重塑。","audit.rebrand.body":"先处理定位、语言和信任信号；审计会找出最拖后腿的一项。","audit.engine.title":"路由：先做社群启动引擎。","audit.engine.body":"品牌本身站得住，但买家研究时没有人替你说话；这是分发与倡议问题。","audit.ready.title":"路由：你暂时未必需要我们。","audit.ready.body":"五项全强很罕见，也值得用数据而非自评验证；我们会直说结果。","audit.cta":"先做免费审计","audit.verify":"以免费审计验证","audit.reset":"重设","audit.remaining":" 项未完成。"
-});
-
-let currentTipKey = null;
-function setLang(lang){
-  const dict = I18N[lang];
-  document.body.classList.add('lang-fading');
-  setTimeout(() => {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) el.innerHTML = dict[key];
-    });
-    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
-      const key = el.getAttribute('data-i18n-ph');
-      if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
-    });
-    document.body.setAttribute('data-lang', lang);
-    document.documentElement.lang = lang === 'en' ? 'en' : (lang === 'hant' ? 'zh-Hant' : 'zh-Hans');
-    document.querySelectorAll('[data-setlang]').forEach(b =>
-      b.classList.toggle('active', b.getAttribute('data-setlang') === lang));
-    if (currentTipKey) tip.innerHTML = dict[currentTipKey] || '';
-    if (typeof raAnswers !== 'undefined' && Object.keys(raAnswers).length) renderRaVerdict();
-    document.body.classList.remove('lang-fading');
-  }, 280);
-}
-document.querySelectorAll('[data-setlang]').forEach(b =>
-  b.addEventListener('click', () => setLang(b.getAttribute('data-setlang'))));
-
-/* ================= sticky header ================= */
-const hdr = document.getElementById('hdr');
-addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 24), {passive:true});
-
-/* ================= booking panel ================= */
-document.querySelectorAll('[data-open-panel]').forEach(b =>
-  b.addEventListener('click', () => document.body.classList.add('panel-open')));
-document.querySelectorAll('[data-close-panel]').forEach(b =>
-  b.addEventListener('click', () => document.body.classList.remove('panel-open')));
-addEventListener('keydown', e => { if (e.key === 'Escape') document.body.classList.remove('panel-open'); });
-
-
-/* ================= network map ================= */
-const tip = document.getElementById('netTip');
-const mapWrap = document.querySelector('.netmap-wrap');
-document.querySelectorAll('.city-dot').forEach(dot => {
-  const city = dot.getAttribute('data-city');
-  const isWest = dot.classList.contains('west');
-  dot.addEventListener('mouseenter', e => {
-    document.querySelectorAll('.arc').forEach(a => {
-      const lit = isWest ? a.getAttribute('data-from') === city : a.getAttribute('d').includes(arcEndFor(dot));
-      a.classList.toggle('lit', lit);
-    });
-    dot.classList.add('lit');
-    currentTipKey = dot.getAttribute('data-tip-key');
-    tip.innerHTML = I18N[document.body.getAttribute('data-lang')][currentTipKey] || '';
-    tip.classList.add('show');
-  });
-  dot.addEventListener('mousemove', e => {
-    const r = mapWrap.getBoundingClientRect();
-    tip.style.left = Math.min(e.clientX - r.left + 18, r.width - 250) + 'px';
-    tip.style.top  = (e.clientY - r.top + 18) + 'px';
-  });
-  dot.addEventListener('mouseleave', () => {
-    document.querySelectorAll('.arc.lit').forEach(a => a.classList.remove('lit'));
-    dot.classList.remove('lit');
-    tip.classList.remove('show');
-    currentTipKey = null;
-  });
-});
-function arcEndFor(dot){
-  const t = dot.getAttribute('transform');
-  const m = t.match(/translate\((\d+),(\d+)\)/);
-  return m[1] + ',' + m[2];
-}
-
-/* ================= reveal + counters ================= */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(en => {
-    if (!en.isIntersecting) return;
-    en.target.classList.add('in');
-    io.unobserve(en.target);
-  });
-}, {threshold:.18});
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-/* ================= system stepper ================= */
-const nsStepper = document.getElementById('nsStepper');
-const nsPill = document.getElementById('nsPill');
-const nsTabs = [...nsStepper.querySelectorAll('button')];
-function placeNsPill(button){ nsPill.style.left = button.offsetLeft + 'px'; nsPill.style.width = button.offsetWidth + 'px'; }
-nsTabs.forEach(button => button.addEventListener('click', () => {
-  nsTabs.forEach(tab => { tab.classList.remove('on'); tab.setAttribute('aria-selected','false'); });
-  document.querySelectorAll('.ns-stage').forEach(stage => stage.classList.remove('on'));
-  button.classList.add('on'); button.setAttribute('aria-selected','true');
-  document.getElementById('nsStage' + button.dataset.nsStage).classList.add('on');
-  placeNsPill(button);
-}));
-addEventListener('load', () => placeNsPill(nsTabs[0]));
-addEventListener('resize', () => placeNsPill(nsStepper.querySelector('button.on')));
-
-/* ================= resonance audit ================= */
-const raAnswers = {};
-const raVerdict = document.getElementById('raVerdict');
-document.querySelectorAll('.ra-row').forEach(row => row.querySelectorAll('.ra-seg button').forEach(button => button.addEventListener('click', () => {
-  row.querySelectorAll('.ra-seg button').forEach(item => item.className = '');
-  button.classList.add(button.dataset.raValue === '2' ? 'strong' : button.dataset.raValue === '1' ? 'mixed' : 'weak');
-  raAnswers[row.dataset.raDim] = {value:+button.dataset.raValue, group:row.dataset.raGroup};
-  renderRaVerdict();
-})));
-function renderRaVerdict(){
-  const dict = I18N[document.body.dataset.lang];
-  const dims = Object.values(raAnswers);
-  if(dims.length < 5){ raVerdict.classList.remove('ready'); raVerdict.textContent = dict['audit.pending'] + ' ' + (5 - dims.length) + dict['audit.remaining']; return; }
-  const brand = dims.filter(item => item.group === 'rebrand'); const market = dims.filter(item => item.group === 'engine');
-  const brandScore = brand.reduce((sum,item) => sum + item.value,0); const marketScore = market.reduce((sum,item) => sum + item.value,0);
-  const brandWeak = brandScore <= 3 || brand.some(item => item.value === 0); const marketWeak = marketScore <= 2 || market.some(item => item.value === 0);
-  let route = 'ready'; if(brandWeak && marketWeak) route = 'full'; else if(brandWeak) route = 'rebrand'; else if(marketWeak) route = 'engine';
-  const cta = route === 'ready' ? dict['audit.verify'] : dict['audit.cta'];
-  raVerdict.classList.add('ready');
-  raVerdict.innerHTML = '<div class="v-kicker">' + dict['audit.kicker'] + '</div><h4>' + dict['audit.' + route + '.title'] + '</h4><div class="ra-scores"><span class="ra-score">' + dict['audit.score1'] + ': <b>' + brandScore + ' / 6</b></span><span class="ra-score">' + dict['audit.score2'] + ': <b>' + marketScore + ' / 4</b></span></div><p>' + dict['audit.' + route + '.body'] + '</p><a class="btn" href="https://calendly.com/northiamarketingconsultancy/30min" target="_blank" rel="noopener">' + cta + '<span class="arr">→</span></a><button class="ra-reset" id="raReset">' + dict['audit.reset'] + '</button>';
-  document.getElementById('raReset').addEventListener('click', () => { Object.keys(raAnswers).forEach(key => delete raAnswers[key]); document.querySelectorAll('.ra-seg button').forEach(button => button.className = ''); raVerdict.classList.remove('ready'); raVerdict.textContent = I18N[document.body.dataset.lang]['audit.pending']; });
-}
-
-</script>
-
-<!-- ===== Lead capture popup ===== -->
-<style>
-.np-scrim{position:fixed;inset:0;background:rgba(16,24,40,.5);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:90;display:none;align-items:center;justify-content:center;padding:20px}
-.np-scrim.on{display:flex}
-.np-card{background:#fff;border-radius:16px;max-width:430px;width:100%;padding:38px 32px 30px;position:relative;box-shadow:0 30px 80px rgba(16,24,40,.35);animation:npIn .35s cubic-bezier(.22,.8,.3,1)}
-@keyframes npIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.np-x{position:absolute;top:14px;right:14px;border:0;background:#F8F9FA;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:14px;color:#101828;transition:all .2s}
-.np-x:hover{background:#FF3B30;color:#fff;transform:rotate(90deg)}
-.np-eb{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#475467;margin-bottom:12px}
-.np-eb::before{content:"";width:22px;height:2px;background:#FF3B30}
-.np-t{font-size:22px;font-weight:800;letter-spacing:-.02em;color:#101828;line-height:1.25;margin-bottom:10px}
-.np-p{font-size:13.5px;color:#475467;line-height:1.6;margin-bottom:18px}
-.np-f input[type=email]{width:100%;padding:13px 15px;border:1px solid #E4E7EC;border-radius:10px;font:inherit;font-size:14px;background:#F8F9FA;margin-bottom:10px}
-.np-f input[type=email]:focus{outline:none;border-color:#FF3B30}
-.np-f button{width:100%;border:0;cursor:pointer;background:#FF3B30;color:#fff;font:inherit;font-size:14.5px;font-weight:700;padding:13px;border-radius:99px;transition:all .25s}
-.np-f button:hover{background:#101828;transform:translateY(-2px)}
-.np-s{font-size:11.5px;color:#98A2B3;text-align:center;margin-top:12px}
-@media (prefers-reduced-motion:reduce){.np-card{animation:none}}
-</style>
-<div class="np-scrim" id="npScrim" role="dialog" aria-modal="true" aria-label="Newsletter signup">
-  <div class="np-card">
-    <button class="np-x" id="npX" aria-label="Close">✕</button>
-    <div class="np-eb" data-i18n="pp.eb">Free custom audit</div>
-    <h3 class="np-t" data-i18n="pp.t">Where is your brand losing the market?</h3>
-    <p class="np-p" data-i18n="pp.p">Leave your details and we'll personally audit your brand: a customized report on the problems we find, with free data analysis and insights — before you spend a dollar with us.</p>
-    <form class="np-f" action="https://formsubmit.co/hello@northiamarketing.com" method="POST">
-      <input type="hidden" name="_subject" value="Custom audit request — website popup">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none">
-      <input type="text" name="website" required placeholder="Your website or brand name" data-i18n-ph="pp.w" style="width:100%;padding:13px 15px;border:1px solid #E4E7EC;border-radius:10px;font:inherit;font-size:14px;background:#F8F9FA;margin-bottom:10px">
-      <input type="email" name="email" required placeholder="Work email" data-i18n-ph="pp.e">
-      <button type="submit" data-i18n="pp.b">Audit my brand</button>
-    </form>
-    <p class="np-s" data-i18n="pp.s">Hand-built by our team, usually within 3 business days. No spam, ever.</p>
+<!-- ============ MODALS ============ -->
+<!-- Article reader (opens from the map only) -->
+<div class="modal-overlay" id="modal-article" onclick="if(event.target===this)closeModal('article')">
+  <div class="modal article-reader">
+    <button class="close" onclick="closeModal('article')" aria-label="Close">×</button>
+    <span class="eyebrow" id="artEyebrow"></span>
+    <h3 id="artTitle" style="margin:12px 0 16px;font-size:clamp(1.4rem,3vw,1.9rem);"></h3>
+    <div id="artBody" class="art-body"></div>
   </div>
 </div>
+
+<!-- Auto free-audit email capture -->
+<div class="modal-overlay" id="modal-fa" onclick="if(event.target===this)closeModal('fa')">
+  <div class="modal">
+    <button class="close" onclick="closeModal('fa')" aria-label="Close">×</button>
+    <span class="eyebrow" data-i18n="fa.eyebrow">Free brand audit</span>
+    <h3 data-i18n="fa.title">placeholder</h3>
+    <p class="msub" data-i18n="fa.p">placeholder</p>
+    <form id="faForm">
+      <div class="fgrid">
+        <div class="field full"><label data-i18n="cs.email">Work email <span class="req">*</span></label><input name="Work Email" type="email" required></div>
+        <div class="field full"><label data-i18n="cs.web">Website or brand name</label><input name="Website / Brand" data-i18n-ph="cs.web.ph"></div>
+      </div>
+      <div style="margin-top:16px;"><button type="submit" class="btn btn-red" data-i18n="fa.submit">Send me the free audit</button></div>
+      <p class="form-note" style="margin-top:10px;" data-i18n="fa.note">placeholder</p>
+      <div class="form-ok" id="faOk"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Client consultation / full audit -->
+<div class="modal-overlay" id="modal-consult" onclick="if(event.target===this)closeModal('consult')">
+  <div class="modal">
+    <button class="close" onclick="closeModal('consult')" aria-label="Close">×</button>
+    <span class="eyebrow" data-i18n="cs.eyebrow">Free custom audit</span>
+    <h3 data-i18n="cs.title">Where is your brand losing the market?</h3>
+    <p class="msub" data-i18n="cs.p">placeholder</p>
+    <form id="consultForm">
+      <div class="fgrid">
+        <div class="field full"><label data-i18n="cs.name">Your name <span class="req">*</span></label><input name="Name" required></div>
+        <div class="field full"><label data-i18n="cs.web">Website or brand name <span class="req">*</span></label><input name="Website / Brand" required data-i18n-ph="cs.web.ph"></div>
+        <div class="field full"><label data-i18n="cs.email">Work email <span class="req">*</span></label><input name="Work Email" type="email" required></div>
+        <div class="field full"><label data-i18n="cs.dir">Which direction?</label>
+          <select name="Direction"><option data-i18n="cs.dir.a2w">Asia → the World</option><option data-i18n="cs.dir.w2a">The World → Asia</option><option data-i18n="cs.dir.both">Both / not sure yet</option></select>
+        </div>
+        <div class="field full"><label data-i18n="cs.msg">Anything we should know?</label><textarea name="Message" data-i18n-ph="cs.msg.ph"></textarea></div>
+      </div>
+      <div style="margin-top:18px;"><button type="submit" class="btn btn-red" data-i18n="cs.submit">Audit my brand for FREE</button></div>
+      <p class="form-note" style="margin-top:12px;" data-i18n="cs.s">placeholder</p>
+      <div class="form-ok" id="consultOk"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Service request survey -->
+<div class="modal-overlay" id="modal-svc" onclick="if(event.target===this)closeModal('svc')">
+  <div class="modal">
+    <button class="close" onclick="closeModal('svc')" aria-label="Close">×</button>
+    <span class="eyebrow" data-i18n="sr.eyebrow">Custom proposal</span>
+    <h3 data-i18n="sr.title">Request a customised proposal</h3>
+    <p class="msub" data-i18n="sr.sub">placeholder</p>
+    <label class="field" style="font-size:.78rem;font-weight:700;color:var(--ink);"><span data-i18n="sr.selected">Selected services</span></label>
+    <div class="chips" id="svcChips"></div>
+    <form id="svcForm">
+      <input type="hidden" name="Selected Services" id="svcSelectedField">
+      <div class="fgrid">
+        <div class="field full"><label data-i18n="cs.name">Your name <span class="req">*</span></label><input name="Name" required></div>
+        <div class="field"><label data-i18n="cs.email">Work email <span class="req">*</span></label><input name="Work Email" type="email" required></div>
+        <div class="field"><label data-i18n="sr.brand">Brand / website</label><input name="Brand / Website"></div>
+        <div class="field full"><label data-i18n="sr.budget">Indicative budget</label>
+          <select name="Budget"><option data-i18n="sr.b0">Not sure yet</option><option>&lt; $5k</option><option>$5k – $20k</option><option>$20k – $50k</option><option>$50k+</option></select>
+        </div>
+        <div class="field full"><label data-i18n="sr.msg">Tell us about your goal</label><textarea name="Message" data-i18n-ph="sr.msg.ph"></textarea></div>
+      </div>
+      <div style="margin-top:18px;"><button type="submit" class="btn btn-red" data-i18n="sr.submit">Send request</button></div>
+      <p class="form-note" style="margin-top:12px;" data-i18n="sr.note">placeholder</p>
+      <div class="form-ok" id="svcOk"></div>
+    </form>
+  </div>
+</div>
+
 <script>
-(function(){
-  var KEY='npAuditDone';
-  try{ var t=localStorage.getItem(KEY); if(t && Date.now()-(+t) < 7*86400000) return; }catch(e){}
-  var el=document.getElementById('npScrim');
-  function show(){ if(document.body.classList.contains('panel-open')) return; el.classList.add('on'); }
-  function hide(){ el.classList.remove('on'); }
-  setTimeout(show, 3000);
-  document.getElementById('npX').addEventListener('click', hide);
-  el.addEventListener('click', function(e){ if(e.target===el) hide(); });
-  window.addEventListener('keydown', function(e){ if(e.key==='Escape') hide(); });
-  el.querySelector('form').addEventListener('submit', function(){ try{ localStorage.setItem(KEY, String(Date.now())); }catch(e){} });
+/* ================= STATE ================= */
+const STATE={lang:'en',persp:'a2w',mapSel:'hk',svcSel:new Set(),audit:[null,null,null,null,null],popupShown:false,entered:false,role:'client'};
+const ENDPOINT='https://formsubmit.co/ajax/hello@northiamarketing.com';
+
+/* ================= I18N ================= */
+const I18N={"ent.eyebrow":{"en":"Asia ⇄ Overseas","tc":"亞洲 ⇄ 海外","sc":"亚洲 ⇄ 海外"},"ent.h1":{"en":"Which direction are you<br>building toward?","tc":"您的品牌，<br>正朝哪個方向拓展？","sc":"您的品牌，<br>正朝哪个方向拓展？"},"ent.tag":{"en":"Asia ⇄ Overseas | Branding &amp; Community Consultancy that Helps Expanding New Markets &amp; Communities","tc":"亞洲 ⇄ 海外｜協助品牌拓展新市場與新社群的品牌與社群顧問","sc":"亚洲 ⇄ 海外｜协助品牌拓展新市场与新社群的品牌与社群顾问"},"ent.a2w.title":{"en":"Asia to the World","tc":"亞洲走向世界","sc":"亚洲走向世界"},"ent.a2w.tip":{"en":"For Asia-rooted brands and cultural concepts moving outward to the international market.","tc":"給紮根亞洲、想走出去的品牌與文化概念——精準觸及海外的離散社群與跨文化受眾。這裡的「世界」，指的是人，而不是國界。","sc":"给扎根亚洲、想走出去的品牌与文化概念——精准触及海外的离散社群与跨文化受众。这里的「世界」，指的是人，而不是国界。"},"ent.w2a.title":{"en":"The World to Asia","tc":"世界走進亞洲","sc":"世界走进亚洲"},"ent.w2a.tip":{"en":"For brands entering Asia, or any business reaching Asian communities domestically or abroad.","tc":"給進入亞洲的品牌——或任何想觸及海外亞洲社群的企業，例如溫哥華的越南裔。這裡的「亞洲」，是您服務的文化，無論它身在何處。","sc":"给进入亚洲的品牌，或想触达海外亚洲社群的生意，比如温哥华的越南人。这里的「亚洲」，是你服务的文化，不管它在哪。"},"ent.go":{"en":"Enter this path →","tc":"進入這個方向 →","sc":"进入这个方向 →"},"ent.foot":{"en":"You can switch direction or language anytime.","tc":"您可以隨時切換方向或語言。","sc":"您可以随时切换方向或语言。"},"nav.audit":{"en":"Free Audit","tc":"免費診斷","sc":"免费诊断"},"nav.rebrand":{"en":"Rebranding","tc":"品牌重塑","sc":"品牌重塑"},"nav.case":{"en":"Why Community","tc":"社群為何重要","sc":"社群为何重要"},"nav.insights":{"en":"Insights","tc":"市場洞察","sc":"市场洞察"},"nav.community":{"en":"Community","tc":"社群","sc":"社群"},"nav.about":{"en":"About Us","tc":"關於我們","sc":"关于我们"},"persp.a2w.short":{"en":"Asia→World","tc":"亞洲→世界","sc":"亚洲→世界"},"persp.w2a.short":{"en":"World→Asia","tc":"世界→亞洲","sc":"世界→亚洲"},"hero.eyebrow":{"a2w":{"en":"Asia → the World · Cross-cultural market expansion","tc":"亞洲 → 世界 · 跨文化市場拓展","sc":"亚洲 → 世界 · 跨文化市场拓展"},"w2a":{"en":"The World → Local or Overseas Asian Communities","tc":"世界 → 亞洲 · 本地或海外華人社群","sc":"世界 → 亚洲 · 本地或海外华人社群"}},"hero.title":{"a2w":{"en":"From Asia, into new<br>markets and communities.","tc":"由亞洲出發，<br>走進新的市場與社群。","sc":"由亚洲出发，<br>走进新的市场与社群。"},"w2a":{"en":"Into Asia, and the Asian<br>communities beyond it.","tc":"走進亞洲，<br>也走進本地或世界各地的亞洲社群。","sc":"走进亚洲，<br>也走进本地或世界各地的亚洲社群。"}},"hero.lede":{"a2w":{"en":"We help Asia-rooted brands and cultural concepts expand into new markets and communities abroad, reaching diaspora and cross-cultural audiences, not generic “globalisation”. We judge every brand with a clear 5-step methodology.","tc":"我們協助紮根亞洲的品牌與文化概念，拓展海外的新市場與新社群，精準觸及離散社群與跨文化受眾，而非泛泛的「全球化」。我們以一套清晰的五步方法，為每個品牌做判斷。","sc":"我们帮扎根亚洲的品牌和文化，走进海外的新市场、新社群，精准打进离散人群和跨文化受众——不是笼统的「全球化」。每个品牌，我们都用一套清晰的五步法来判断。"},"w2a":{"en":"We help brands expand into Asian markets, and into Asian communities wherever they live, including diaspora audiences overseas. We judge every brand with a clear 5-step methodology, so it belongs, not just arrives.","tc":"我們協助品牌拓展亞洲市場，並觸及本地或世界各地的亞洲社群。我們以一套清晰的五步方法為每個品牌做判斷，讓品牌真正立足於特定社群。","sc":"我们帮品牌进入亚洲市场，也帮你触达本地或海外的亚洲社群，包括离散人群。用一套清晰的五步法判断，让品牌真正落地、被接纳，而不只是「到了」。"}},"hero.cta1":{"en":"Take the free 5-point test","tc":"免費做 5 步測試","sc":"免费做 5 步测试"},"hero.cta2":{"en":"Why community matters","tc":"社群為何重要","sc":"社群为何重要"},"hero.cta3":{"en":"See our services","tc":"查看我們的服務","sc":"查看我们的服务"},"logos.title":{"en":"Brands that trusted Northia","tc":"信任 Northia 的品牌","sc":"信任 Northia 的品牌"},"logos.hint":{"en":"Logo slots, approved partner logos only.","tc":"標誌位——僅顯示已核准的夥伴標誌。","sc":"标志位——仅显示已核准的伙伴标志。"},"logos.pl":{"en":"LOGO","tc":"標誌位","sc":"标志位"},"tst.eyebrow":{"en":"One of Our Focuses Angle","tc":"我們關注的其中一個角度","sc":"我们关注的其中一个角度"},"tst.title":{"en":"Why community matters.","tc":"為什麼社群才是關鍵。","sc":"为什么社群才是关键。"},"tst.sub":{"en":"If you only rely on influencers, the traffic is rented, the day you stop paying, it stops. A market isn’t a location; it’s a community. We build the audience you actually own.","tc":"若只依賴網紅，流量只是租回來的——您一停止付費，它便會消失。市場是一個社群，而不是一個地點。我們為您建立真正屬於自己的受眾。","sc":"只靠网红，流量是租来的——不付钱，它就停。市场是一个社群，不是一个地点。我们帮你做出真正属于自己的受众。"},"edu1t":{"en":"Rented reach vs. owned community","tc":"租來的觸及 vs. 自有社群","sc":"租来的触及 vs. 自有社群"},"edu1p":{"en":"Influencers and paid media rent you attention. The moment the budget stops, so does the traffic. A community you own keeps showing up.","tc":"網紅與付費廣告租給您的只是注意力。預算一停，流量就停；但屬於您自己的社群，會一直回來。","sc":"网红与付费广告租给您的只是注意力。预算一停，流量就停；但属于您自己的社群，会一直回来。"},"edu2t":{"en":"A market is a community, not a location","tc":"市場是一個社群，而不是一個地點","sc":"市场是一个社群，而不是一个地点"},"edu2p":{"en":"You don’t win “a country”. You win a community, like the Vietnamese in Vancouver, or the Japanese who love a Hong Kong brand.","tc":"您要贏得的不是「一個國家」，而是一個社群——例如溫哥華的越南人，或喜愛某個香港品牌的日本人。","sc":"您要赢得的不是「一个国家」，而是一个社群——例如温哥华的越南人，或喜爱某个香港品牌的日本人。"},"edu3t":{"en":"Community compounds","tc":"社群會愈滾愈大","sc":"社群会越滚越大"},"edu3p":{"en":"An owned audience gets cheaper to reach and easier to sell to over time. Retention beats acquisition, that’s why we lead with belonging.","tc":"自有的受眾，隨時間會愈來愈容易觸及，也愈來愈容易成交。留住舊客，永遠比開發新客划算——所以我們以歸屬感為先。","sc":"自有的受众，随时间会越来越容易触及，也越来越容易成交。留住老客户，永远比开发新客户划算——所以我们以归属感为先。"},"tst.proof":{"en":"The proof","tc":"實證","sc":"实证"},"tst.pic":{"en":"[ Photo / logo ]","tc":"［ 相片／標誌 ］","sc":"［ 照片／标志 ］"},"tst.role":{"en":"[ Client title / market, editable ]","tc":"［ 客戶職銜／市場 — 可編輯 ］","sc":"［ 客户职衔／市场 — 可编辑 ］"},"tst.p1.quote":{"en":"“[ Add WingGrove’s approved comment here. ]”","tc":"「［ 於此加入 WingGrove 已核准嘅評語。 ］」","sc":"「［ 于此加入 WingGrove 已核准的评语。 ］」"},"tst.p2.quote":{"en":"“[ Add Liuyishou Hotpot’s approved comment here. ]”","tc":"「［ 於此加入 劉一手火鍋 已核准嘅評語。 ］」","sc":"「［ 于此加入 刘一手火锅 已核准的评语。 ］」"},"tst.p3.quote":{"en":"“[ Add 4evercare’s approved comment here. ]”","tc":"「［ 於此加入 4evercare 已核准嘅評語。 ］」","sc":"「［ 于此加入 4evercare 已核准的评语。 ］」"},"tst.p4.quote":{"en":"“[ Add excohk’s approved comment here. ]”","tc":"「［ 於此加入 excohk 已核准嘅評語。 ］」","sc":"「［ 于此加入 excohk 已核准的评语。 ］」"},"map.eyebrow":{"en":"On the ground","tc":"在地佈局","sc":"在地布局"},"map.title":{"a2w":{"en":"Where we operate, and where your audiences overseas already are.","tc":"我們的據點——也是您的海外受眾早已所在之處。","sc":"我们的据点——也是您的海外受众早已所在之处。"},"w2a":{"en":"Where we operate, and where Asia’s audiences already are.","tc":"我們的據點——也是亞洲受眾早已所在之處。","sc":"我们的据点——也是亚洲受众早已所在之处。"}},"map.sub":{"en":"Tap a location to read our latest insights and case studies for that culture, evergreen guides, market by market.","tc":"點選地點，閱讀我們針對該文化的最新洞察與案例——常青指南，逐個市場拆解。","sc":"点选地点，阅读我们针对该文化的最新洞察与案例——常青指南，逐个市场拆解。"},"map.arts":{"en":"Featured insights","tc":"精選洞察","sc":"精选洞察"},"map.allcases":{"en":"All case studies","tc":"全部成功案例","sc":"全部成功案例"},"map.allinsights":{"en":"All insights","tc":"全部市場洞察","sc":"全部市场洞察"},"audit.eyebrow":{"en":"Try it yourself","tc":"親自測試","sc":"自己测测看"},"audit.title":{"en":"Where would the audit route you?","tc":"這套診斷，會把您導向哪個方向？","sc":"测完，你会被分到哪条路线？"},"audit.sub":{"en":"Rate your brand honestly against the 5 dimensions, using the routing logic we use. About 60 seconds.","tc":"針對您的下一個目標市場，就以下五個維度誠實評分。這套分流邏輯，與我們實際採用的完全一致，約需 60 秒。","sc":"想好下一个要进的市场，对着这 5 个维度诚实打分。逻辑和我们内部用的一样，60 秒就好。"},"audit.hint":{"en":"Answer all five dimensions to see your routing.","tc":"完成五個維度的評分，即可查看分流結果。","sc":"5 个维度都打完，马上出结果。"},"audit.s1t":{"en":"Positioning Fit","tc":"定位契合度","sc":"定位匹配度"},"audit.s2t":{"en":"Language & Message Fit","tc":"語言與訊息契合度","sc":"语言与信息匹配度"},"audit.s3t":{"en":"Trust Signals","tc":"信任訊號","sc":"信任信号"},"audit.s4t":{"en":"Channel–Buyer Fit","tc":"渠道與買家契合度","sc":"渠道与买家匹配度"},"audit.s5t":{"en":"Community Ownership","tc":"社群自有程度","sc":"社群自有度"},"audit.q1":{"en":"Does your offer solve a problem this market actually has, or a problem your home market had?","tc":"您的產品或服務，解決的是這個市場真正存在的問題，還是您原有市場的問題？","sc":"你解决的，是这个市场真正有的问题，还是你老家市场的问题？"},"audit.q2":{"en":"Would a native professional read your materials as written locally?","tc":"當地的專業人士閱讀您的內容時，會覺得像本地原創，而非翻譯而成嗎？","sc":"本地行家看你的内容，会以为是本地人写的吗？"},"audit.q3":{"en":"Do you show the proof this market checks before buying?","tc":"您是否已具備當地消費者在下單前最看重的信任憑證？","sc":"本地人下单前最看重的信任凭证，你有吗？"},"audit.q4":{"en":"Are you present and native on the platforms where these buyers research?","tc":"在買家實際搜尋與研究的平台上，您是否以在地原生的姿態出現？","sc":"买家做功课的平台，你在吗？看着像本地号吗？"},"audit.q5":{"en":"Does anyone advocate for your brand there without being paid to?","tc":"在當地，除了付費合作之外，是否有人願意主動為您的品牌發聲？","sc":"除了付钱的合作，还有人自愿帮你说话吗？"},"audit.o.y":{"en":"Strong","tc":"強","sc":"强"},"audit.o.p":{"en":"Unsure","tc":"不確定","sc":"不确定"},"audit.o.n":{"en":"Weak","tc":"待加強","sc":"待加强"},"audit.res.lead":{"en":"Your routing score: {score}/10. Strengthen these first: {focus}.","tc":"您的分流分數：{score}/10。建議優先加強：{focus}。","sc":"你的得分：{score}/10。先补这几项：{focus}。"},"audit.res.allgood":{"en":"every area already looks solid","tc":"各個維度看來都相當扎實","sc":"每一项看着都挺稳"},"audit.st.strong":{"en":"Strong","tc":"表現扎實","sc":"扎实"},"audit.st.ok":{"en":"Could be stronger","tc":"仍有提升空間","sc":"有提升空间"},"audit.st.weak":{"en":"Needs work","tc":"需要加強","sc":"需加强"},"audit.res.p":{"en":"That’s exactly what the full audit digs into, a customised report on where you’re losing the market, with free data analysis, before you spend a dollar with us.","tc":"這正是完整診斷會深入的部分：一份為您度身訂造的報告，指出您正在流失市場的環節，並附上免費的數據分析，全都在您花任何一分錢之前。","sc":"这正是完整诊断要深挖的地方：一份为你定制的报告，点出你正在流失市场的地方，还附上免费的数据分析，全在你花一分钱之前。"},"audit.res.emailph":{"en":"Work email","tc":"公司電郵","sc":"工作邮箱"},"audit.res.cta":{"en":"Get my full audit","tc":"取得完整品牌診斷","sc":"领取完整品牌诊断"},"audit.res.note":{"en":"Within 3 business days. No spam, ever. Sent to hello@northiamarketing.com.","tc":"3 個工作天內送達，絕不濫發。將寄至 hello@northiamarketing.com。","sc":"3 个工作日内送达，绝不打扰。发送至 hello@northiamarketing.com。"},"audit.res.ok":{"en":"Thanks, your request is with our team. We’ll be in touch within 3 business days.","tc":"感謝您，您的需求已交到我們團隊手上，我們會在 3 個工作天內與您聯絡。","sc":"收到，需求已经到我们团队了，3 个工作日内联系你。"},"svc.eyebrow":{"en":"Rebranding","tc":"品牌重塑","sc":"品牌重塑"},"svc.title":{"en":"Rebrand to enter. Community to belong.","tc":"以重塑進場，以社群立足。","sc":"以重塑进场，以社群立足。"},"svc.sub":{"a2w":{"en":"Select the services you need for Asia-to-world expansion, then request a customised proposal. You can pick more than one.","tc":"選擇您在「亞洲走向世界」拓展中需要的服務，然後索取專屬服務建議。可複選。","sc":"选择您在「亚洲走向世界」拓展中需要的服务，然后索取专属服务方案。可多选。"},"w2a":{"en":"Select the services you need for entering Asia and its communities, then request a customised proposal. You can pick more than one.","tc":"選擇您在進入亞洲及其社群時需要的服務，然後索取專屬服務建議。可複選。","sc":"选择您在进入亚洲及其社群时需要的服务，然后索取专属服务方案。可多选。"}},"svc.selcount":{"en":"selected","tc":"項已選","sc":"项已选"},"svc.reqbtn":{"en":"Request selected services","tc":"索取所選服務建議","sc":"索取所选服务方案"},"svc.pick":{"en":"Jump to a service…","tc":"跳至服務…","sc":"跳至服务…"},"comm.eyebrow":{"en":"Community building","tc":"社群經營","sc":"社群运营"},"comm.title":{"en":"Community building, for clients and creators.","tc":"社群經營——為客戶，也為創作者。","sc":"社群运营——为客户，也为创作者。"},"comm.sub":{"en":"Tell us who you are, and we’ll show you the right path, whether you want to grow a brand with community, or join our creator network.","tc":"告訴我們您的身分，我們會為您指出合適的方向——無論您想以社群壯大品牌，還是加入我們的創作者網絡。","sc":"先告诉我们你是谁，我们帮你找对路——是想用社群把品牌做大，还是想加入我们的创作者网络。"},"comm.iam.client":{"en":"I’m a client","tc":"我是客戶","sc":"我是客户"},"comm.iam.inf":{"en":"I’m a creator / influencer","tc":"我是創作者／網紅","sc":"我是创作者／网红"},"comm.cli.eyebrow":{"en":"Why community beats renting influencers","tc":"為何社群勝過只租網紅","sc":"为何社群胜过只租网红"},"comm.cli.title":{"en":"Stop renting attention. Start owning an audience.","tc":"別再租用注意力，開始擁有自己的受眾。","sc":"别再租用注意力，开始拥有自己的受众。"},"comm.cli.f1t":{"en":"Rented traffic stops when you stop paying","tc":"流量是租來的，一停付費就消失","sc":"流量是租来的，一停付费就消失"},"comm.cli.f1p":{"en":"Influencer reach lasts only as long as the budget. A community you own keeps returning, long after the campaign ends.","tc":"網紅的觸及，只在預算持續期間有效。屬於您自己的社群，即使活動結束，仍會持續回來。","sc":"网红的触及，只在预算持续期间有效。属于您自己的社群，即使活动结束，仍会持续回来。"},"comm.cli.f2t":{"en":"Retention is cheaper than acquisition","tc":"留住舊客，遠比開發新客划算","sc":"留住老客户，远比开发新客户划算"},"comm.cli.f2p":{"en":"Keeping a customer costs a fraction of winning a new one. Community drives the repeat business paid reach rarely does.","tc":"留住一位舊客的成本，只是開發新客的一小部分。社群帶來的回購，是純付費觸及難以做到的。","sc":"留住一位老客户的成本，只是开发新客户的一小部分。社群带来的复购，是纯付费触及难以做到的。"},"comm.cli.f3t":{"en":"Community compounds over time","tc":"社群會隨時間愈滾愈大","sc":"社群会随时间越滚越大"},"comm.cli.f3p":{"en":"An owned audience grows more valuable every month, durable growth, not a one-off spike from a single post.","tc":"自有的受眾，每個月都變得更有價值——是可持續的增長，而非單一貼文帶來的一次性高峰。","sc":"自有的受众，每个月都变得更有价值——是可持续的增长，而非单一贴文带来的一次性高峰。"},"comm.cli.formtitle":{"en":"Book a strategy session","tc":"預約品牌策略諮詢","sc":"预约品牌策略咨询"},"comm.inf.eyebrow":{"en":"Why join the Northia network","tc":"為何加入 Northia 網絡","sc":"为何加入 Northia 网络"},"comm.inf.title":{"en":"Real campaigns. Real standing out. A real community.","tc":"真實的合作、真正的突出、真正的社群。","sc":"真实的合作、真正的突出、真正的社群。"},"comm.inf.f1t":{"en":"Real campaigns, real brands","tc":"真實品牌，真實合作","sc":"真实品牌，真实合作"},"comm.inf.f1p":{"en":"We run branding campaigns with real clients, so you get paid work, not just exposure.","tc":"我們與真實客戶合作進行品牌活動，讓您獲得有酬的工作，而不只是曝光。","sc":"我们与真实客户合作进行品牌活动，让您获得有酬的工作，而不只是曝光。"},"comm.inf.f2t":{"en":"Stand out from the crowd","tc":"讓您脫穎而出","sc":"让您脱颖而出"},"comm.inf.f2p":{"en":"We position you by the culture and community you speak to, so you’re not one creator lost among thousands.","tc":"我們以您所對話的文化與社群為您定位，讓您不再是萬千創作者中被淹沒的一個。","sc":"我们以您所对话的文化与社群为您定位，让您不再是万千创作者中被淹没的一个。"},"comm.inf.f3t":{"en":"A community that shows up","tc":"一個真正聚在一起的社群","sc":"一个真正聚在一起的社群"},"comm.inf.f3p":{"en":"We host activities and events, so you build genuine relationships, not just followers.","tc":"我們舉辦活動與聚會，讓您建立真實的關係，而不只是粉絲。","sc":"我们举办活动与聚会，让您建立真实的关系，而不只是粉丝。"},"kol.eyebrow":{"en":"KOL / Influencer network","tc":"KOL／網紅招募","sc":"KOL／网红招募"},"kol.title":{"en":"Join the Northia creator network","tc":"加入 Northia 創作者網絡","sc":"加入 Northia 创作者网络"},"kol.sub":{"en":"For creators only. We match you to briefs by culture and audience, it takes 2 minutes.","tc":"僅供創作者填寫。我們會依文化與受眾，把您配對到合適的專案——只需 2 分鐘。","sc":"仅供创作者填写。我们会依文化与受众，把您配对到合适的项目——只需 2 分钟。"},"kol.fullname":{"en":"Full name","tc":"全名","sc":"全名"},"kol.ethnicity":{"en":"Your identity","tc":"您的身分","sc":"您的身份"},"kol.age":{"en":"Age","tc":"年齡","sc":"年龄"},"kol.gender":{"en":"Gender","tc":"性別","sc":"性别"},"kol.select":{"en":"Select…","tc":"請選擇…","sc":"请选择…"},"kol.g.f":{"en":"Female","tc":"女","sc":"女"},"kol.g.m":{"en":"Male","tc":"男","sc":"男"},"kol.g.nb":{"en":"Non-binary","tc":"非二元","sc":"非二元"},"kol.g.na":{"en":"Prefer not to say","tc":"不願透露","sc":"不愿透露"},"kol.tier":{"en":"Total follower count","tc":"總粉絲數","sc":"总粉丝数"},"kol.hobbies":{"en":"Hobbies / niche interests","tc":"興趣／發展領域","sc":"兴趣／垂直领域"},"kol.hobbies.hint":{"en":"e.g. street food, K-beauty, fintech, hiking","tc":"例如：街頭美食、韓系美妝、金融科技、行山","sc":"例如：街头美食、韩系美妆、金融科技、徒步"},"kol.sns":{"en":"Primary social media URLs","tc":"主要社交媒體連結","sc":"主要社交媒体链接"},"kol.langs":{"en":"Spoken / content languages","tc":"口說／內容語言","sc":"口说／内容语言"},"kol.market":{"en":"Target audience market","tc":"目標受眾市場","sc":"目标受众市场"},"kol.bio":{"en":"Short bio","tc":"簡短自我介紹","sc":"简短自我介绍"},"kol.bio.ph":{"en":"Tell us about you and your community (max 250 words).","tc":"介紹一下您和您的社群（最多 250 字）。","sc":"介绍一下您和您的社群（最多 250 字）。"},"kol.words":{"en":"words","tc":"字","sc":"字"},"kol.submit":{"en":"Submit application","tc":"提交申請","sc":"提交申请"},"kol.note":{"en":"Goes straight to our team at hello@northiamarketing.com.","tc":"直接送達我們的團隊 hello@northiamarketing.com。","sc":"直接送达我们的团队 hello@northiamarketing.com。"},"kol.ok":{"en":"Thanks, your application is on its way to our team. We reply within 5 business days.","tc":"謝謝——您的申請已送出，我們會在 5 個工作天內回覆。","sc":"谢谢——您的申请已送出，我们会在 5 个工作日内回复。"},"kol.err":{"en":"Something went wrong sending the form. Please email hello@northiamarketing.com directly.","tc":"表單送出時發生問題，請直接電郵 hello@northiamarketing.com。","sc":"表单送出时发生问题，请直接邮件 hello@northiamarketing.com。"},"fa.eyebrow":{"en":"Free brand audit","tc":"免費品牌診斷","sc":"免费品牌诊断"},"fa.title":{"en":"Before you go, see where your brand is losing the market.","tc":"在離開之前——看看您的品牌正在哪裡流失商機。","sc":"在离开之前——看看您的品牌正在哪里错失市场机会。"},"fa.p":{"en":"Leave your email and we’ll send a customised brand audit within 3 business days. No spam, ever.","tc":"留下您的電郵，我們會在 3 個工作天內寄上專屬的品牌分析。絕不濫發。","sc":"留下您的邮箱，我们会在 3 个工作日内发送专属品牌分析。绝不滥发。"},"fa.submit":{"en":"Send me the free audit","tc":"寄給我免費品牌分析","sc":"发送我的免费诊断"},"fa.note":{"en":"Sent to hello@northiamarketing.com.","tc":"將寄至 hello@northiamarketing.com。","sc":"将发送至 hello@northiamarketing.com。"},"cs.eyebrow":{"en":"Free custom audit","tc":"免費品牌診斷","sc":"免费品牌诊断"},"cs.title":{"en":"Where is your brand losing the market?","tc":"您的品牌，正在哪些地方流失商機？","sc":"您的品牌，正在错失哪些市场机会？"},"cs.p":{"en":"Leave your details and we’ll personally audit your brand: a customized report on the problems we find, with free data analysis and insights, before you spend a dollar with us.","tc":"留下您的資料，我們會免費為您的品牌做一次專業檢視。我們會整理一份品牌分析報告，找出品牌目前的問題，提供數據分析及改善建議。","sc":"留下您的信息，我们将免费为您的品牌进行专业诊断。为您提供专属品牌分析报告，包含问题诊断、数据分析和市场洞察，让您在投入任何预算之前，先看清品牌的增长机会。"},"cs.name":{"en":"Your name","tc":"您的稱呼","sc":"您的称呼"},"cs.web":{"en":"Website or brand name","tc":"品牌網站或品牌名稱","sc":"品牌官网或品牌名称"},"cs.web.ph":{"en":"yourbrand.com","tc":"yourbrand.com","sc":"yourbrand.com"},"cs.email":{"en":"Work email","tc":"電郵","sc":"工作邮箱"},"cs.dir":{"en":"Which direction?","tc":"哪個方向？","sc":"哪个方向？"},"cs.dir.a2w":{"en":"Asia → the World","tc":"亞洲 → 世界","sc":"亚洲 → 世界"},"cs.dir.w2a":{"en":"The World → Asia","tc":"世界 → 亞洲","sc":"世界 → 亚洲"},"cs.dir.both":{"en":"Both / not sure yet","tc":"兩者／尚未確定","sc":"两者／尚未确定"},"cs.msg":{"en":"Anything we should know?","tc":"還有什麼想讓我們知道？","sc":"还有什么想让我们知道？"},"cs.msg.ph":{"en":"Your goal, target market or community…","tc":"您的目標、目標市場或社群……","sc":"您的目标、目标市场或社群……"},"cs.submit":{"en":"Audit my brand for FREE","tc":"免費取得品牌分析報告","sc":"免费诊断我的品牌"},"cs.s":{"en":"Customised only for you, within 3 business days. No spam, ever.","tc":"3 個工作天內提供，由團隊人手製作專屬您的品牌分析，絕不發送垃圾郵件。","sc":"3 个工作日内送达，由团队人手完成专属品牌诊断报告，绝不滥发。"},"cs.ok":{"en":"Thanks, your request is with our team. We’ll be in touch within 3 business days.","tc":"謝謝——您的需求已送達團隊，我們會在 3 個工作天內與您聯絡。","sc":"谢谢——您的需求已送达团队，我们会在 3 个工作日内与您联系。"},"sr.eyebrow":{"en":"Custom proposal","tc":"專屬方案","sc":"专属方案"},"sr.title":{"en":"Request a customised proposal","tc":"索取專屬服務建議","sc":"索取专属服务方案"},"sr.sub":{"en":"You’ve selected these services. Tell us a little more and we’ll come back with a tailored scope.","tc":"您已選擇以下服務。請補充一些資料，我們會為您回覆度身訂造的服務範圍。","sc":"您已选择以下服务。请补充一些信息，我们会为您回复量身定制的服务范围。"},"sr.selected":{"en":"Selected services","tc":"已選服務","sc":"已选服务"},"sr.brand":{"en":"Brand / website","tc":"品牌／網站","sc":"品牌／网站"},"sr.budget":{"en":"Indicative budget","tc":"預算範圍","sc":"预算范围"},"sr.b0":{"en":"Not sure yet","tc":"尚未確定","sc":"尚未确定"},"sr.msg":{"en":"Tell us about your goal","tc":"告訴我們您的目標","sc":"告诉我们您的目标"},"sr.msg.ph":{"en":"What are you trying to achieve, and by when?","tc":"您希望達成什麼？期望的時間？","sc":"您希望达成什么？期望的时间？"},"sr.submit":{"en":"Send request","tc":"送出需求","sc":"发送需求"},"sr.note":{"en":"Goes to hello@northiamarketing.com. No obligation.","tc":"將送達 hello@northiamarketing.com，無任何義務。","sc":"将发送至 hello@northiamarketing.com，无任何义务。"},"sr.empty":{"en":"Select at least one service first.","tc":"請先至少選擇一項服務。","sc":"请先至少选择一项服务。"},"sr.ok":{"en":"Thanks, your request is on its way. We’ll reply with a tailored scope shortly.","tc":"謝謝——您的需求已送出，我們會盡快回覆度身訂造的服務範圍。","sc":"谢谢——您的需求已发送，我们会尽快回复量身定制的服务范围。"},"about.eyebrow":{"en":"About us, Our Story","tc":"關於我們 — 我們的故事","sc":"关于我们 — 我们的故事"},"about.title":{"en":"Founded to help brands belong, not just arrive.","tc":"我們的成立，是為了讓品牌真正被接納——而不只是抵達。","sc":"我们的成立，是为了让品牌真正被接纳——而不只是抵达。"},"about.sub":{"en":"Northia was built on a simple conviction: crossing a border is easy; earning a culture is the work. That’s the work we do.","tc":"Northia 建立於一個簡單的信念：跨越國界很容易，贏得一個文化才是真正的功夫。而那正是我們所做的事。","sc":"Northia 建立于一个简单的信念：跨越国界很容易，赢得一个文化才是真正的功夫。而那正是我们所做的事。"},"about.portrait":{"en":"[ Founder portrait, hi-res photo frame ]","tc":"［ 創辦人肖像 — 高解析照片框 ］","sc":"［ 创办人肖像 — 高解析照片框 ］"},"about.photo":{"en":"[ Photo ]","tc":"［ 照片 ］","sc":"［ 照片 ］"},"about.why.eyebrow":{"en":"Why Northia exists","tc":"Northia 為何存在","sc":"Northia 为何存在"},"about.why1":{"en":"We kept seeing capable brands stall at the border, strong at home, invisible to the very communities that should have loved them. The problem was rarely the product. It was the gap between a brand and a culture it hadn’t learned to speak.","tc":"我們一再看到有實力的品牌卡在邊界——在本地很強，卻對本應喜愛它們的社群完全隱形。問題很少出在產品，而在於品牌與它尚未學會對話的文化之間的落差。","sc":"我们一再看到有实力的品牌卡在边界——在本地很强，却对本应喜爱它们的社群完全隐形。问题很少出在产品，而在于品牌与它尚未学会对话的文化之间的落差。"},"about.why2":{"en":"So we built a consultancy that treats expansion as a cultural problem first and a marketing problem second, with the growth mindset to move fast and the honesty to tell you when a channel isn’t earning. Method, not vibes.","tc":"於是我們打造了一間顧問公司，先把拓展視為文化問題，其次才是行銷問題——既有快速行動的增長思維，也有在渠道無效時如實相告的誠實。方法，而非感覺。","sc":"于是我们打造了一间顾问公司，先把拓展视为文化问题，其次才是营销问题——既有快速行动的增长思维，也有在渠道无效时如实相告的诚实。方法，而非感觉。"},"about.ms1":{"en":"Founded as a cultural event & community platform in Hong Kong.","tc":"於香港成立，以文化活動與社群平台起步。","sc":"于香港成立，以文化活动与社群平台起步。"},"about.ms2":{"en":"Community revenue built across events and partnerships.","tc":"透過活動與合作累積的社群營收。","sc":"通过活动与合作累积的社群营收。"},"about.ms3yr":{"en":"Today","tc":"今天","sc":"今天"},"about.ms3":{"en":"A cross-border branding & community consultancy, Asia ⇄ overseas.","tc":"一間跨境品牌與社群顧問，連結亞洲 ⇄ 海外。","sc":"一间跨境品牌与社群顾问，连结亚洲 ⇄ 海外。"},"about.assetslot":{"en":"[ Asset slot, approved brand story / milestone visuals ]","tc":"［ 素材位 — 已核准的品牌故事／里程碑視覺 ］","sc":"［ 素材位 — 已核准的品牌故事／里程碑视觉 ］"},"about.f1.role":{"en":"Founder & Director","tc":"創辦人兼總監","sc":"创办人兼总监"},"about.f1.p1":{"en":"Maureen founded Northia Marketing Ltd. to help businesses and organisations build meaningful brands, develop strategic marketing, and create lasting connections with their audiences. A graduate of the Chinese University of Hong Kong in Japanese Studies and Journalism, she has always worked at the meeting point of culture and communication.","tc":"Maureen 創立 Northia Marketing Ltd.，協助企業與機構打造有意義的品牌、發展策略性行銷，並與受眾建立長久的連結。她畢業於香港中文大學日本研究與新聞學，長期站在文化與傳播的交會點上工作。","sc":"Maureen 创立 Northia Marketing Ltd.，协助企业与机构打造有意义的品牌、发展策略性营销，并与受众建立长久的连结。她毕业于香港中文大学日本研究与新闻学，长期站在文化与传播的交会点上工作。"},"about.f1.p2":{"en":"In 2020 she founded excohk, a cultural event curation and promotion platform that grew into one of Hong Kong’s leading community platforms, generating over $1M in revenue. Awarded a full scholarship for a Master’s in Art History and Curatorial Studies, she also served as an Assistant Professor in Creative Studies, mentoring emerging creative professionals.","tc":"2020 年，她創辦 excohk，一個文化活動策劃與推廣平台，後來成長為香港領先的社群平台之一，營收逾 100 萬元。她獲全額獎學金攻讀藝術史與策展研究碩士，並曾任創意研究助理教授，指導新晉的創意專業人才。","sc":"2020 年，她创办 excohk，一个文化活动策划与推广平台，后来成长为香港领先的社群平台之一，营收逾 100 万美元。她获全额奖学金攻读艺术史与策展研究硕士，并曾任创意研究助理教授，指导新晋的创意专业人才。"},"about.f1.p3":{"en":"Her work spans Web3, business development and the non-profit sector across North America and Asia, an international, cross-industry perspective she now brings to every brand Northia helps expand.","tc":"她的經歷橫跨 Web3、業務發展與國際非牟利領域，遍及北美與亞洲；如今將國際化、跨產業的視角，注入 Northia 協助拓展的每一個品牌。","sc":"她的经历横跨 Web3、业务发展与非营利领域，遍及北美与亚洲——这份国际化、跨产业的视角，如今注入 Northia 协助拓展的每一个品牌。"},"about.f2.role":{"en":"Co-Founder","tc":"共同創辦人","sc":"共同创办人"},"about.f2.p1":{"en":"Project wizard, brand whisperer, serial creator. Aka blends the pace of startups with the heart of non-profits, and lives for marketing, building from scratch and helping brands scale, having already steered 2 startups out of their early-stage hustle.","tc":"專案高手、品牌低語者、連續創作者。Aka 把初創的節奏與非牟利的初心結合，熱愛行銷、從零打造與助品牌成長——已帶領 2 家初創走出早期的摸索階段。","sc":"项目高手、品牌低语者、连续创作者。Aka 把初创的节奏与非营利的初心结合，热爱营销、从零打造与助品牌成长——已带领 2 家初创走出早期的摸索阶段。"},"about.f2.p2":{"en":"With deep expertise in project management, she takes big visions, tames the launch chaos, and executes campaigns you can completely trust. Aka believes great branding is, at its core, communication. If you have a fresh concept or a wild idea brewing, grab a chat, she’d be delighted to brainstorm.","tc":"憑藉深厚的專案管理專長，她能把宏大願景變成可行計劃並落地執行。Aka 相信優秀品牌的核心其實就是溝通。如果您有新概念或大膽的點子，歡迎找她聊聊，她很樂意一起 brainstorm。","sc":"凭借深厚的项目管理专长，她能把宏大愿景落地，驯服上线的混乱，执行让您完全信任的活动。Aka 相信优秀的品牌，核心其实就是沟通。如果您有新概念或大胆的点子，找她聊聊——她很乐意一起头脑风暴。"},"about.f2.p3":{"en":"When she’s not scaling brands, she’s a devoted dog mom and an enthusiastic (if average) rock climber.","tc":"不忙於為品牌拼增長時，她是一位盡責的狗媽媽，也是一位攀岩（但攀得普通的）愛好者。","sc":"不在为品牌拼增长时，她是尽责的狗妈妈，也是热情（但普通）的攀岩爱好者。"},"book.eyebrow":{"en":"Book a strategy session","tc":"預約品牌策略諮詢","sc":"预约品牌策略咨询"},"book.title":{"en":"30 minutes. Your market. No obligation.","tc":"30 分鐘、完全免費的品牌策略諮詢。","sc":"30 分钟、完全免费的品牌策略咨询。"},"book.p":{"en":"Pick a time that works for you, 30 minutes, no obligation, in English, 中文 or 廣東話.","tc":"選一個方便的時間，30 分鐘，無任何義務，可流利使用英文、國語或廣東話。","sc":"选择一个适合您的时间，30 分钟免费咨询，无须绑定，支持 English、中文或粤语。"},"book.cta1":{"en":"Book a session","tc":"預約諮詢","sc":"预约咨询"},"book.cta2":{"en":"Get the free audit","tc":"取得免費診斷","sc":"获取免费诊断"},"fab":{"en":"Book a Strategy Session","tc":"預約品牌策略諮詢","sc":"预约品牌策略咨询"},"ft.tagline":{"en":"Asia ⇄ Overseas | Branding & Community Consultancy that Helps Expanding New Markets & Communities.","tc":"亞洲 ⇄ 海外｜協助品牌拓展新市場與新社群的品牌與社群顧問。","sc":"亚洲 ⇄ 海外｜协助品牌拓展新市场与新社群的品牌与社群顾问。"},"ft.explore":{"en":"Explore","tc":"瀏覽","sc":"浏览"},"ft.contact":{"en":"Contact","tc":"聯絡","sc":"联络"},"ft.descriptor":{"en":"A Cross-border Community-based Branding Company","tc":"A Cross-border Community-based Branding Company","sc":"A Cross-border Community-based Branding Company"}};
+
+/* ================= LOCATIONS (SEO blog links) ================= */
+const LOCS=[{"id":"hk","x":826,"y":210,"ls":1,"flag":"🇭🇰","cat":"hong-kong","name":{"en":"Hong Kong","tc":"香港","sc":"香港"},"role":{"en":"Cross-border brand strategy","tc":"跨境品牌策略","sc":"跨境品牌策略"},"desc":{"en":"Trilingual by default, the meeting point between Asia and overseas audiences.","tc":"預設三語——亞洲與海外受眾的交會點。","sc":"预设三语——亚洲与海外受众的交会点。"},"arts":[{"t":{"en":"How Hong Kong brands read as premium, or fall flat, abroad","tc":"香港品牌在海外，如何讀起來高級，又或瞬間失色","sc":"香港品牌在海外，如何读起来高级，又或瞬间失色"},"s":"premium-abroad","body":{"en":"Hong Kong brands carry an unusual advantage abroad: a reputation for polish, speed and East-meets-West fluency. But that reputation does not travel automatically. Overseas, “from Hong Kong” reads as premium only when the brand behaves premium in the destination’s own terms: clean typography in the local script, service that answers in the local tongue, and proof points the destination actually trusts.\n\nWhere brands fall flat is the gap between a strong home reputation and a thin local presence. A site that switches to broken machine translation the moment you leave English. Prices shown only in HKD. Testimonials from names no one abroad recognises. None of it says premium; it says “not built for you”.\n\nThe fix is not to shout “Hong Kong” louder. It is to localise the signals of quality. Lead with the destination’s own proof, such as local reviews, local partners and local press, and let the Hong Kong origin be a quiet mark of craft rather than the whole pitch. Premium is a feeling the audience decides, market by market. Give each market the evidence it needs, in the language and format it already trusts, and the Hong Kong badge becomes an asset instead of a translation problem.","tc":"香港品牌在海外，往往帶著一種難得的優勢：精緻、快速，以及中西融合的流暢感。但這份聲譽並不會自動跨越國界。在海外，「來自香港」要讀起來高級，前提是品牌以當地的標準表現得高級：以當地文字排版乾淨、以當地語言提供服務，並拿出當地真正信任的憑證。\n\n品牌之所以失色，往往在於「強大的原生聲譽」與「單薄的在地存在」之間的落差：一離開英文就切換成生硬機器翻譯的網站、只顯示港元的價格、以及海外沒有人認得的推薦名字。這些都不會傳達高級，只會說「這不是為你而做的」。\n\n解方不是把「香港」喊得更大聲，而是把品質的訊號在地化。以當地的憑證作先鋒，例如當地評價、當地夥伴與當地媒體，讓「來自香港」成為低調的工藝印記，而非全部賣點。高級是受眾逐個市場決定的感受。用每個市場需要的證據、以它早已信任的語言與格式呈現，香港這塊招牌，就會由翻譯難題變成資產。","sc":"香港品牌在海外，往往带着一种难得的优势：精致、快速，以及中西融合的流畅感。但这份声誉并不会自动跨越国界。在海外，「来自香港」要读起来高级，前提是品牌以当地的标准表现得高级：以当地文字排版干净、以当地语言提供服务，并拿出当地真正信任的凭证。\n\n品牌之所以失色，往往在于「强大的原生声誉」与「单薄的在地存在」之间的落差：一离开英文就切换成生硬机器翻译的网站、只显示港元的价格、以及海外没有人认得的推荐名字。这些都不会传达高级，只会说「这不是为你而做的」。\n\n解法不是把「香港」喊得更大声，而是把品质的信号在地化。以当地的凭证作先锋，例如当地评价、当地伙伴与当地媒体，让「来自香港」成为低调的工艺印记，而非全部卖点。高级是受众逐个市场决定的感受。用每个市场需要的证据、以它早已信任的语言与格式呈现，香港这块招牌，就会由翻译难题变成资产。"}}]},{"id":"jp","x":902,"y":184,"ls":1,"flag":"🇯🇵","cat":"japan","name":{"en":"Japan","tc":"日本","sc":"日本"},"role":{"en":"Brand & positioning","tc":"品牌與定位","sc":"品牌与定位"},"desc":{"en":"Precision positioning for a market that rewards restraint.","tc":"為講究克制的市場，做精準定位。","sc":"为讲究克制的市场，做精准定位。"},"arts":[{"t":{"en":"Why restraint sells in Japan: positioning without shouting","tc":"為何克制在日本更好賣：不喧嘩的定位","sc":"为何克制在日本更好卖：不喧哗的定位"},"s":"restraint","body":{"en":"In many markets, louder wins. In Japan, restraint often does. Japanese audiences tend to reward brands that demonstrate rather than declare: precise detail, consistent quality, and claims that never outrun the evidence. A headline that screams “revolutionary” or “number one” can read as unserious, even suspicious.\n\nPositioning for Japan starts by removing superlatives and adding specifics: what exactly the product does, how it is made, and who stands behind it. Trust is built slowly and lost quickly, so consistency across every touchpoint matters more than a single bold campaign. Packaging, customer service and after-sales care are part of the message, not afterthoughts.\n\nA soft launch, a small and careful entry that lets a few customers and partners vouch for you, usually beats a loud arrival. Let the product’s quality and the details of your service carry the argument. In Japan, the brands that whisper credibly are often heard more clearly than the ones that shout. Position by proof, pace yourself, and let restraint signal confidence.","tc":"在許多市場，聲量大者勝出；但在日本，克制往往才是致勝之道。日本受眾傾向獎勵「展示」多於「宣稱」的品牌：精準的細節、穩定的品質，以及從不超出證據的主張。一句高喊「革命性」或「第一」的標題，可能顯得不夠嚴謹，甚至令人懷疑。\n\n為日本做定位，先從刪去最高級形容詞、加入具體事實開始：產品究竟能做什麼、如何製造、由誰負責。信任建立得慢、失去得快，因此每一個接觸點的一致性，比單一次大膽的宣傳更重要。包裝、客戶服務與售後照顧，都是訊息的一部分，而非事後補上。\n\n一次「軟啟動」，也就是謹慎而小規模的進場，讓少數客戶與夥伴為你背書，通常勝過大張旗鼓的登場。讓產品品質與服務細節替你說話。在日本，能可信地「低聲細語」的品牌，往往比大聲叫喊的更被聽見。以證據定位、放慢節奏，讓克制傳達出自信。","sc":"在许多市场，声量大者胜出；但在日本，克制往往才是致胜之道。日本受众倾向奖励「展示」多于「宣称」的品牌：精准的细节、稳定的品质，以及从不超出证据的主张。一句高喊「革命性」或「第一」的标题，可能显得不够严谨，甚至令人怀疑。\n\n为日本做定位，先从删去最高级形容词、加入具体事实开始：产品究竟能做什么、如何制造、由谁负责。信任建立得慢、失去得快，因此每一个接触点的一致性，比单一次大胆的宣传更重要。包装、客户服务与售后照顾，都是信息的一部分，而非事后补上。\n\n一次「软启动」，也就是谨慎而小规模的进场，让少数客户与伙伴为你背书，通常胜过大张旗鼓的登场。让产品品质与服务细节替你说话。在日本，能可信地「低声细语」的品牌，往往比大声叫喊的更被听见。以证据定位、放慢节奏，让克制传达出自信。"}}]},{"id":"kr","x":868,"y":168,"ls":1,"flag":"🇰🇷","cat":"korea","name":{"en":"South Korea","tc":"南韓","sc":"韩国"},"role":{"en":"Content & KOL","tc":"內容與 KOL","sc":"内容与 KOL"},"desc":{"en":"Platform-native content and creator work for a fast-moving social market.","tc":"為節奏快速的社群市場，打造平台原生內容與創作者合作。","sc":"为节奏快速的社群市场，打造平台原生内容与创作者合作。"},"arts":[{"t":{"en":"Korea’s comment culture: turning replies into community","tc":"韓國的留言文化：把回覆變成社群","sc":"韩国的评论文化：把回复变成社群"},"s":"comment-culture","body":{"en":"In Korea, the comment section is not an afterthought; it is where brand reputation is made. Audiences read replies as carefully as posts, and a lively, well-managed comment thread signals that a brand is present, responsive and worth trusting.\n\nThe opportunity is to treat comments as a two-way channel rather than a moderation task. Reply quickly, in a natural local voice, and reward the regulars who show up. Feature user comments in your own content. Turn recurring questions into posts. When people see that their replies are read and valued, they return, and returning audiences become a community you own rather than reach you rent.\n\nKorean platforms move fast, and trends can turn overnight, so the brands that win are the ones that show up consistently, not just during campaigns. Being present between launches, answering honestly, and letting your most engaged followers shape the conversation is what converts a following into belonging. In Korea, the reply is the relationship.","tc":"在韓國，留言區並非事後才想到的角落，而是品牌聲譽形成之處。受眾閱讀回覆的用心，不亞於閱讀貼文；一條熱絡、經營良好的留言串，本身就在傳達：這個品牌在場、願意回應，值得信任。\n\n機會在於把留言視為雙向的渠道，而不是需要管理的工作。以自然的在地語氣快速回覆，並善待那些常來的熟面孔。把用戶留言放進自己的內容裡，把重複出現的問題變成貼文。當人們看到自己的留言被閱讀、被重視，他們就會回來；而會回來的受眾，便成為你「擁有」的社群，而非「租來」的觸及。\n\n韓國的平台節奏快，趨勢可能一夜翻轉，因此致勝的品牌，是那些持續在場、而不只在宣傳期出現的品牌。在兩次上線之間仍然在場、誠實回應，並讓最投入的追隨者共同塑造話題，正是把「追蹤」轉化為「歸屬」的關鍵。在韓國，回覆本身就是關係。","sc":"在韩国，评论区并非事后才想到的角落，而是品牌声誉形成之处。受众阅读回复的用心，不亚于阅读贴文；一条热络、经营良好的评论串，本身就在传达：这个品牌在场、愿意回应，值得信任。\n\n机会在于把评论视为双向的渠道，而不是需要管理的工作。以自然的在地语气快速回复，并善待那些常来的熟面孔。把用户评论放进自己的内容里，把重复出现的问题变成贴文。当人们看到自己的评论被阅读、被重视，他们就会回来；而会回来的受众，便成为你「拥有」的社群，而非「租来」的触及。\n\n韩国的平台节奏快，趋势可能一夜翻转，因此致胜的品牌，是那些持续在场、而不只在宣传期出现的品牌。在两次上线之间仍然在场、诚实回应，并让最投入的追随者共同塑造话题，正是把「关注」转化为「归属」的关键。在韩国，回复本身就是关系。"}}]},{"id":"vn","x":790,"y":236,"ls":0,"flag":"🇻🇳","cat":"vietnam","name":{"en":"Vietnam","tc":"越南","sc":"越南"},"role":{"en":"Growth & community","tc":"增長與社群","sc":"增长与社群"},"desc":{"en":"Emerging-market growth, at home and among the Vietnamese diaspora abroad.","tc":"新興市場的增長——涵蓋本地與海外的越南裔離散社群。","sc":"新兴市场的增长——涵盖本地与海外的越南裔离散社群。"},"arts":[{"t":{"en":"Reaching the Vietnamese diaspora, market by market","tc":"逐個市場，觸及越南裔離散社群","sc":"逐个市场，触及越南裔离散社群"},"s":"diaspora","body":{"en":"“The Vietnamese diaspora” is not one audience. A Vietnamese community in Vancouver differs from one in California, Sydney or Paris in generation, language mix, media habits and the brands they already trust. Treating them as a single segment is the fastest way to reach none of them well.\n\nThe better approach is market by market. Learn where each community gathers online and offline, which language they prefer for which topics, and which local voices they listen to. First-generation audiences may prefer Vietnamese-language content and community events; later generations may switch fluidly between languages and expect a brand to do the same.\n\nPartner with creators and organisations that already belong to the specific community, rather than buying broad reach and hoping it lands. Show up at the moments that matter to that community, in the language they use for them. Expansion into a diaspora is not translation; it is a series of local relationships, built one community at a time. Precision beats scale here, every time.","tc":"「越南裔離散社群」並不是單一受眾。溫哥華的越南社群，與加州、雪梨或巴黎的並不相同：世代不同、語言組合不同、媒體習慣不同，連他們早已信任的品牌也不同。把他們當成單一區隔，是最快讓每一群都觸及不到的做法。\n\n更好的做法是逐個市場經營。了解每個社群在線上與線下聚集的地方、他們在不同話題偏好的語言，以及他們願意聆聽的在地聲音。第一代受眾也許偏好越南語內容與社群活動；較年輕的世代則可能在語言之間自在切換，並期待品牌也能如此。\n\n與早已屬於該社群的創作者及組織合作，而不是購買廣泛觸及、再期望它剛好命中。在對這個社群真正重要的時刻現身，用他們在那些時刻使用的語言。走進離散社群不是翻譯，而是一連串在地關係，一次一個社群地建立。在這裡，精準永遠勝過規模。","sc":"「越南裔离散社群」并不是单一受众。温哥华的越南社群，与加州、悉尼或巴黎的并不相同：世代不同、语言组合不同、媒体习惯不同，连他们早已信任的品牌也不同。把他们当成单一区隔，是最快让每一群都触及不到的做法。\n\n更好的做法是逐个市场经营。了解每个社群在线上与线下聚集的地方、他们在不同话题偏好的语言，以及他们愿意聆听的在地声音。第一代受众也许偏好越南语内容与社群活动；较年轻的世代则可能在语言之间自在切换，并期待品牌也能如此。\n\n与早已属于该社群的创作者及组织合作，而不是购买广泛触及、再期望它刚好命中。在对这个社群真正重要的时刻现身，用他们在那些时刻使用的语言。走进离散社群不是翻译，而是一连串在地关系，一次一个社群地建立。在这里，精准永远胜过规模。"}}]},{"id":"th","x":804,"y":252,"ls":1,"flag":"🇹🇭","cat":"thailand","name":{"en":"Thailand","tc":"泰國","sc":"泰国"},"role":{"en":"Campaigns & activations","tc":"活動與體驗","sc":"活动与体验"},"desc":{"en":"Culture-first campaigns and on-the-ground activations.","tc":"以文化為先的活動與在地體驗。","sc":"以文化为先的活动与在地体验。"},"arts":[{"t":{"en":"Thailand runs on culture-first campaigns: here’s why","tc":"泰國靠文化優先的活動運轉：原因在此","sc":"泰国靠文化优先的活动运转：原因在此"},"s":"culture-first","body":{"en":"Thailand’s social feeds move fast and reward brands that feel native rather than imported. Humour, warmth and a light touch travel further than polished corporate messaging, and campaigns that tap into local moments, from festivals to memes to everyday life, earn attention that paid reach alone cannot buy.\n\nThe lesson is to lead with culture, not the product. Start from what the audience already cares about and laughs about, then let the brand play a genuine role in that story. Local creators are central: they know the references, the timing and the tone, and audiences trust them to keep brands honest.\n\nOn-the-ground activations, such as events, pop-ups and experiences people can share, turn attention into belonging and give a campaign a second life across social. A message that lands the same in Thai as it does in English is not a translation; it is written for Thailand from the start. In a market this social and this fast, culture-first is not a style choice. It is how brands earn a place in the conversation.","tc":"泰國的社群動態節奏飛快，並且獎勵那些「像本地、而非舶來」的品牌。幽默、溫度與輕盈的手法，比精緻的企業式訊息傳得更遠；懂得借力在地時刻的活動，從節慶、迷因到日常生活，能贏得純靠付費難以買到的注意力。\n\n關鍵是以文化為先，而非以產品為先。從受眾早已在意、會心一笑的事物出發，再讓品牌在那個故事裡扮演真實的角色。在地創作者是核心：他們懂梗、懂時機、懂語氣，而受眾也信任他們替品牌把關。\n\n在地體驗，例如活動、快閃與可供分享的體驗，能把注意力轉化為歸屬，並讓一場活動在社群上獲得第二次生命。一則在泰文與英文中同樣到位的訊息，不是翻譯，而是從一開始就為泰國而寫。在這樣一個高度社群化、節奏飛快的市場，「文化優先」並非風格選擇，而是品牌贏得話語權的方式。","sc":"泰国的社群动态节奏飞快，并且奖励那些「像本地、而非舶来」的品牌。幽默、温度与轻盈的手法，比精致的企业式信息传得更远；懂得借力在地时刻的活动，从节庆、梗图到日常生活，能赢得纯靠付费难以买到的注意力。\n\n关键是以文化为先，而非以产品为先。从受众早已在意、会心一笑的事物出发，再让品牌在那个故事里扮演真实的角色。在地创作者是核心：他们懂梗、懂时机、懂语气，而受众也信任他们替品牌把关。\n\n在地体验，例如活动、快闪与可供分享的体验，能把注意力转化为归属，并让一场活动在社群上获得第二次生命。一则在泰文与英文中同样到位的信息，不是翻译，而是从一开始就为泰国而写。在这样一个高度社群化、节奏飞快的市场，「文化优先」并非风格选择，而是品牌赢得话语权的方式。"}}]},{"id":"sg","x":792,"y":280,"ls":0,"flag":"🇸🇬","cat":"singapore","name":{"en":"Singapore","tc":"新加坡","sc":"新加坡"},"role":{"en":"Southeast Asia expansion","tc":"東南亞拓展","sc":"东南亚拓展"},"desc":{"en":"Multilingual by default, the gateway to the region’s many communities.","tc":"預設多語——通往區內眾多社群的門戶。","sc":"预设多语——通往区内众多社群的门户。"},"arts":[{"t":{"en":"Singapore is not one market: expanding community by community","tc":"新加坡不是單一市場：逐個社群拓展","sc":"新加坡不是单一市场：逐个社群拓展"},"s":"by-community","body":{"en":"Singapore looks small on a map and large in complexity. Within one city sit multiple languages, cultures and communities, each with its own media habits and trusted voices. A single “Singapore campaign” in one language and tone will always reach some communities and miss others.\n\nThe more effective path is to expand community by community. Decide which communities matter most for your brand, learn how each one prefers to be spoken to, and build presence in each rather than broadcasting to an average that fits no one. Multilingual is the default, not a bonus, and localisation means more than translation; it means the right references, the right platforms and the right partners for each group.\n\nBecause Singapore is also a gateway to the wider region, the discipline you build here, serving distinct communities well, is the same discipline that scales across Southeast Asia. Win the communities, not “the country”. That is how brands turn a small, diverse market into a launchpad.","tc":"新加坡在地圖上看似很小，複雜度卻很大。一座城市之內，並存著多種語言、文化與社群，各有各的媒體習慣與可信的聲音。一場以單一語言與語氣進行的「新加坡活動」，永遠只會觸及部分社群，錯過其餘。\n\n更有效的做法，是逐個社群拓展。先決定哪些社群對品牌最重要，了解每一群偏好的溝通方式，並在每一群中建立存在，而不是向一個誰都不貼合的平均值廣播。多語是預設，而非加分項；在地化也不只是翻譯，而是為每一群找到對的梗、對的平台與對的夥伴。\n\n由於新加坡同時是通往整個區域的門戶，你在這裡建立的紀律，也就是把不同社群服務好，正是能夠擴展到整個東南亞的同一套紀律。要贏的是社群，而非「國家」。這正是品牌把一個小而多元的市場，變成起飛跑道的方法。","sc":"新加坡在地图上看似很小，复杂度却很大。一座城市之内，并存着多种语言、文化与社群，各有各的媒体习惯与可信的声音。一场以单一语言与语气进行的「新加坡活动」，永远只会触及部分社群，错过其余。\n\n更有效的做法，是逐个社群拓展。先决定哪些社群对品牌最重要，了解每一群偏好的沟通方式，并在每一群中建立存在，而不是向一个谁都不贴合的平均值广播。多语是预设，而非加分项；在地化也不只是翻译，而是为每一群找到对的梗、对的平台与对的伙伴。\n\n由于新加坡同时是通往整个区域的门户，你在这里建立的纪律，也就是把不同社群服务好，正是能够扩展到整个东南亚的同一套纪律。要赢的是社群，而非「国家」。这正是品牌把一个小而多元的市场，变成起飞跑道的方法。"}}]},{"id":"me","x":648,"y":196,"ls":0,"flag":"🇦🇪","cat":"middle-east","name":{"en":"Middle East","tc":"中東","sc":"中东"},"role":{"en":"Gulf ⇄ Asia brand bridge","tc":"海灣 ⇄ 亞洲品牌橋樑","sc":"海湾 ⇄ 亚洲品牌桥梁"},"desc":{"en":"A Dubai-based partner network bridging Asian brands and Gulf audiences, both ways.","tc":"以杜拜為基地的合作網絡，雙向連接亞洲品牌與海灣受眾。","sc":"以迪拜为基地的合作网络，双向连接亚洲品牌与海湾受众。"},"arts":[{"t":{"en":"Bridging Gulf audiences and Asian brands, both ways","tc":"雙向連接海灣受眾與亞洲品牌","sc":"双向连接海湾受众与亚洲品牌"},"s":"bridge","body":{"en":"The Gulf and Asia trade constantly, but brands crossing between them still stumble on culture. Asian brands entering the Gulf often underestimate how much local trust, relationships and cultural fit shape a purchase; Gulf brands reaching Asian audiences can miss how differently each Asian market reads value and prestige.\n\nBridging the two is a two-way translation of more than language. It means understanding local calendars and moments; Ramadan, for example, reshapes timing, tone and media consumption. It means respecting the norms that govern how business is done and how brands are expected to behave. And it means choosing partners who are trusted inside each community and letting them vouch for you.\n\nIt also means adapting proof: the trust signals that persuade a buyer in the Gulf are not the same as those that persuade one in Tokyo or Ho Chi Minh City. Done well, the bridge runs both directions, carrying Asian brands into Gulf communities and Gulf brands into Asian ones, on a foundation of cultural fluency rather than assumption.","tc":"海灣與亞洲之間貿易頻繁，但在兩地之間往來的品牌，仍常在文化上絆倒。進入海灣的亞洲品牌，往往低估了在地信任、人脈關係與文化契合對一筆購買的影響；而觸及亞洲受眾的海灣品牌，也可能忽略每個亞洲市場對「價值」與「尊貴」的解讀有多不同。\n\n連接兩地，是一場超越語言的雙向轉譯。它意味著理解在地的節令與時刻，例如齋戒月會重塑時機、語氣與媒體消費；意味著尊重那些左右商業往來、以及品牌應如何自處的規範；也意味著選擇在每個社群內部真正被信任的夥伴，並讓他們替你背書。\n\n它同時意味著調整「憑證」：能說服海灣買家的信任訊號，與能說服東京或胡志明市買家的並不相同。做得好，這座橋樑便能雙向通行，把亞洲品牌帶進海灣社群，也把海灣品牌帶進亞洲社群，靠的是文化的流暢，而非想當然的假設。","sc":"海湾与亚洲之间贸易频繁，但在两地之间往来的品牌，仍常在文化上绊倒。进入海湾的亚洲品牌，往往低估了在地信任、人脉关系与文化契合对一笔购买的影响；而触及亚洲受众的海湾品牌，也可能忽略每个亚洲市场对「价值」与「尊贵」的解读有多不同。\n\n连接两地，是一场超越语言的双向转译。它意味着理解在地的节令与时刻，例如斋戒月会重塑时机、语气与媒体消费；意味着尊重那些左右商业往来、以及品牌应如何自处的规范；也意味着选择在每个社群内部真正被信任的伙伴，并让他们替你背书。\n\n它同时意味着调整「凭证」：能说服海湾买家的信任信号，与能说服东京或胡志明市买家的并不相同。做得好，这座桥梁便能双向通行，把亚洲品牌带进海湾社群，也把海湾品牌带进亚洲社群，靠的是文化的流畅，而非想当然的假设。"}}]},{"id":"ca","x":158,"y":150,"ls":1,"flag":"🇨🇦","cat":"canada","name":{"en":"Canada","tc":"加拿大","sc":"加拿大"},"role":{"en":"Diaspora & community","tc":"離散社群","sc":"离散社群"},"desc":{"en":"Textbook community work, e.g. reaching local Vietnamese and Chinese communities in Vancouver.","tc":"教科書級的社群實作——例如觸及溫哥華在地的越南與華人社群。","sc":"教科书级的社群实作——例如触及温哥华在地的越南与华人社群。"},"arts":[{"t":{"en":"Reaching local Vietnamese and Chinese communities in Vancouver","tc":"觸及溫哥華在地的越南與華人社群","sc":"触及温哥华在地的越南与华人社群"},"s":"vancouver-communities","body":{"en":"Vancouver is a textbook case for community-first marketing. Large, established Vietnamese and Chinese communities live here, each with its own languages, media, festivals and trusted local figures, and reaching them looks nothing like a generic national campaign.\n\nThe starting point is respect for difference. The Chinese community spans Cantonese and Mandarin speakers, recent arrivals and long-settled families, each with different platforms and preferences; the Vietnamese community has its own gathering places, language habits and voices. Broad, English-only advertising skims over all of it.\n\nWhat works is presence inside the community: content in the right language, partnerships with local businesses and creators, and a genuine role in the events and spaces where the community already gathers. This is “the world to Asia” on Canadian soil, reaching Asian communities where they actually live rather than treating “Asian” as one box. The reward is loyalty. Communities that feel genuinely seen become the audience a brand owns, and word of mouth inside a tight community outperforms almost any paid channel.","tc":"溫哥華是「社群優先」行銷的教科書案例。這裡住著龐大而成熟的越南與華人社群，各有各的語言、媒體、節慶與可信的在地人物，觸及他們的方式，與一場籠統的全國性活動截然不同。\n\n起點是尊重差異。華人社群涵蓋說廣東話與國語的人、新移民與落地已久的家庭，各有不同的平台與偏好；越南社群也有自己的聚會場所、語言習慣與聲音。廣泛、只用英文的廣告，會把這一切都略過。\n\n真正有效的，是走進社群內部：以對的語言製作內容、與在地商家及創作者合作，並在社群早已聚集的活動與場域中扮演真實的角色。這正是落在加拿大土地上的「世界走進亞洲」，在亞洲社群真正生活的地方觸及他們，而不是把「亞洲」當成單一格子。回報是忠誠。真正被看見的社群，會成為品牌「擁有」的受眾；而在一個緊密社群內部的口碑，幾乎勝過任何付費渠道。","sc":"温哥华是「社群优先」营销的教科书案例。这里住着庞大而成熟的越南与华人社群，各有各的语言、媒体、节庆与可信的在地人物，触及他们的方式，与一场笼统的全国性活动截然不同。\n\n起点是尊重差异。华人社群涵盖说粤语与普通话的人、新移民与落地已久的家庭，各有不同的平台与偏好；越南社群也有自己的聚会场所、语言习惯与声音。广泛、只用英文的广告，会把这一切都略过。\n\n真正有效的，是走进社群内部：以对的语言制作内容、与在地商家及创作者合作，并在社群早已聚集的活动与场域中扮演真实的角色。这正是落在加拿大土地上的「世界走进亚洲」，在亚洲社群真正生活的地方触及他们，而不是把「亚洲」当成单一格子。回报是忠诚。真正被看见的社群，会成为品牌「拥有」的受众；而在一个紧密社群内部的口碑，几乎胜过任何付费渠道。"}}]},{"id":"us","x":180,"y":198,"ls":0,"flag":"🇺🇸","cat":"usa","name":{"en":"USA","tc":"美國","sc":"美国"},"role":{"en":"Asian-American communities","tc":"亞裔美國人社群","sc":"亚裔美国人社群"},"desc":{"en":"The World-to-Asia model on US soil, precision over broad reach.","tc":"「世界走進亞洲」模式落地美國——精準勝過廣泛觸及。","sc":"「世界走进亚洲」模式落地美国——精准胜过广泛触及。"},"arts":[{"t":{"en":"Asian-American communities: precision over broad reach","tc":"亞裔美國人社群：精準勝過廣泛觸及","sc":"亚裔美国人社群：精准胜过广泛触及"},"s":"communities","body":{"en":"“Asian-American” covers dozens of distinct communities, including Chinese, Vietnamese, Korean, Filipino and Indian, spread across very different regions, generations and media habits. Marketing to the label instead of the community is how budgets get spent without being felt.\n\nPrecision wins here. Choose the specific communities that matter to your brand, learn where they gather and whom they trust, and build for those audiences rather than an “Asian-American” average that represents no one. Language matters, but so does context: a second-generation audience may move fluidly between English and a heritage language and expect a brand to understand both worlds.\n\nLocal creators, community organisations and in-language platforms reach people that broad national buys never touch. The pattern that works overseas works here too: treat each community as a community, not a demographic checkbox, and let trusted local voices carry the brand. Narrow, well-served reach beats wide, shallow reach, because belonging, not impressions, is what turns an audience into customers who stay.","tc":"「亞裔美國人」涵蓋數十個各不相同的社群，包括華人、越南裔、韓裔、菲律賓裔與印度裔，分佈於截然不同的地區、世代與媒體習慣。對著標籤而非社群做行銷，正是預算花了卻毫無感覺的原因。\n\n在這裡，精準才會贏。挑選對品牌真正重要的具體社群，了解他們聚集的地方與信任的對象，並為那些受眾而建，而不是為一個誰都代表不了的「亞裔美國人」平均值而建。語言重要，脈絡同樣重要：第二代受眾也許在英語與母語之間自在切換，並期待品牌同時理解這兩個世界。\n\n在地創作者、社群組織與母語平台，能觸及廣泛的全國性投放永遠碰不到的人。在海外行得通的模式，在這裡同樣行得通：把每個社群當成社群，而非人口統計上的一個勾選框，並讓可信的在地聲音承載品牌。精準而服務到位的觸及，勝過廣泛而淺薄的觸及，因為讓受眾成為長期顧客的，是歸屬感，而非曝光數。","sc":"「亚裔美国人」涵盖数十个各不相同的社群，包括华人、越南裔、韩裔、菲律宾裔与印度裔，分布于截然不同的地区、世代与媒体习惯。对着标签而非社群做营销，正是预算花了却毫无感觉的原因。\n\n在这里，精准才会赢。挑选对品牌真正重要的具体社群，了解他们聚集的地方与信任的对象，并为那些受众而建，而不是为一个谁都代表不了的「亚裔美国人」平均值而建。语言重要，脉络同样重要：第二代受众也许在英语与母语之间自在切换，并期待品牌同时理解这两个世界。\n\n在地创作者、社群组织与母语平台，能触及广泛的全国性投放永远碰不到的人。在海外行得通的模式，在这里同样行得通：把每个社群当成社群，而非人口统计上的一个勾选框，并让可信的在地声音承载品牌。精准而服务到位的触及，胜过广泛而浅薄的触及，因为让受众成为长期顾客的，是归属感，而非曝光数。"}}]}];
+
+/* ================= SERVICES (11) ================= */
+const SVCS=[{"n":"01","name":{"en":"Marketing & Growth Strategy","tc":"行銷與增長策略","sc":"营销与增长策略"},"d":{"en":"One system connecting brand, channel and community, with numbers, not vibes.","tc":"串連品牌、渠道與社群的一套系統——用數字，而非感覺。","sc":"串联品牌、渠道与社群的一套系统——用数字，而非感觉。"}},{"n":"02","name":{"en":"Brand / Positioning","tc":"品牌與定位","sc":"品牌与定位"},"d":{"en":"Own a clear place in the mind of the culture you’re entering.","tc":"在您進入的文化心中，佔據清晰的位置。","sc":"在您进入的文化心中，占据清晰的位置。"}},{"n":"03","name":{"en":"Customer Acquisition & Retention","tc":"客戶獲取與留存","sc":"客户获取与留存"},"d":{"en":"Win the first purchase, then earn the second. Conversion rate to belonging.","tc":"贏得首次購買，再贏得第二次。從轉換率到歸屬感。","sc":"赢得首次购买，再赢得第二次。从转化率到归属感。"}},{"n":"04","name":{"en":"Customer / Market Research","tc":"客戶與市場研究","sc":"客户与市场研究"},"d":{"en":"Understand the community before you spend against it.","tc":"在投入之前，先讀懂那個社群。","sc":"在投入之前，先读懂那个社群。"}},{"n":"05","name":{"en":"Campaigns & Promotions","tc":"營銷活動與推廣","sc":"营销活动与推广"},"d":{"en":"Culture-first campaigns that land the same in three languages.","tc":"以文化為先的活動，在三種語言中傳達一致。","sc":"以文化为先的活动，在三种语言中传达一致。"}},{"n":"06","name":{"en":"Social Media & Content","tc":"社交媒體與內容","sc":"社交媒体与内容"},"d":{"en":"Platform-native content for the audiences you actually want.","tc":"為您真正想要的受眾而生的平台原生內容。","sc":"为您真正想要的受众而生的平台原生内容。"}},{"n":"07","name":{"en":"Influencer / KOL","tc":"網紅／KOL","sc":"网红／KOL"},"d":{"en":"Creators matched by culture and audience, not follower count alone.","tc":"以文化與受眾配對創作者——而不只是看粉絲數。","sc":"以文化与受众配对创作者——而不只是看粉丝数。"}},{"n":"08","name":{"en":"Community Building","tc":"社群經營","sc":"社群运营"},"d":{"en":"Spaces people return to, so growth compounds over time.","tc":"人們願意回訪的空間，讓增長隨時間累積。","sc":"人们愿意回访的空间，让增长随时间累积。"}},{"n":"09","name":{"en":"PR / Media","tc":"公關／媒體","sc":"公关／媒体"},"d":{"en":"Earned coverage in the outlets your community actually reads.","tc":"在您的社群真正閱讀的媒體上取得報導。","sc":"在您的社群真正阅读的媒体上取得报道。"}},{"n":"10","name":{"en":"Events & Activations","tc":"活動與體驗","sc":"活动与体验"},"d":{"en":"On-the-ground moments that turn attention into belonging.","tc":"在地的體驗時刻，把注意力轉化為歸屬感。","sc":"在地的体验时刻，把注意力转化为归属感。"}},{"n":"11","name":{"en":"Paid Media","tc":"付費媒體","sc":"付费媒体"},"d":{"en":"Spend that’s accountable, if a channel isn’t earning by day 90, we say so first.","tc":"負責任的投放——若渠道在第 90 天仍未見效，我們會率先說出來。","sc":"负责任的投放——若渠道在第 90 天仍未见效，我们会率先说出来。"}},{"n":"12","name":{"en":"E-commerce & Marketplace Entry","tc":"電商與平台進駐","sc":"电商与平台入驻"},"d":{"en":"Launch and grow on Amazon, Shopify, 小紅書 (RED) mall, Tmall and more, set up for each platform's own rules.","tc":"在 Amazon、Shopify、小紅書商城、天貓等平台上架並成長，依各平台規則量身設定。","sc":"在 Amazon、Shopify、小红书商城、天猫等平台上架并成长，依各平台规则量身设置。"}},{"n":"13","name":{"en":"IP & Market-Entry Legal Advisory","tc":"智慧財產與市場進入法律諮詢","sc":"知识产权与市场进入法律咨询"},"d":{"en":"Trademark and IP protection, plus regulatory and legal guidance for entering a new market cleanly.","tc":"商標與智慧財產保護，以及進入新市場所需的法規與法律指引。","sc":"商标与知识产权保护，以及进入新市场所需的法规与法律指引。"}}];
+const BRANDS=["Liuyishou Hotpot","4evercare","WingGrove","excohk"];
+
+/* ================= RENDER ================= */
+function t(key){const e=I18N[key];if(!e)return key;const node=(e.a2w||e.w2a)?e[STATE.persp]:e;return (node&&(node[STATE.lang]||node.en))||key;}
+function applyI18n(){
+  document.documentElement.setAttribute('lang',STATE.lang);
+  document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=t(el.getAttribute('data-i18n'));});
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.setAttribute('placeholder',t(el.getAttribute('data-i18n-ph')));});
+  buildLogos();buildServices();buildSvcSelect();buildMap();renderMapCard(STATE.mapSel);renderSvcChips();buildAudit();
+  document.querySelectorAll('#hdLang button,#entLang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===STATE.lang));
+  document.querySelectorAll('#perspSwitch button').forEach(b=>b.classList.toggle('on',b.dataset.persp===STATE.persp));
+}
+function setLang(l){STATE.lang=l;applyI18n();}
+function setPersp(p){STATE.persp=p;applyI18n();}
+
+function buildLogos(){const track=document.getElementById('logoTrack');if(!track)return;const unit=[...BRANDS,...BRANDS,...BRANDS].map(b=>`<div class="logo-slot"><span class="nm">${b}</span><span class="pl">${t('logos.pl')}</span></div>`).join('');track.innerHTML=unit+unit;}
+function buildServices(){const g=document.getElementById('svcGrid');if(!g)return;g.innerHTML=SVCS.map(s=>{const sel=STATE.svcSel.has(s.n)?' sel':'';return `<div class="card svc-card${sel}" data-n="${s.n}" onclick="toggleSvc('${s.n}')"><div class="svc-check">✓</div><div class="num">${s.n}</div><h4>${s.name[STATE.lang]}</h4><p>${s.d[STATE.lang]}</p><span class="add">${STATE.svcSel.has(s.n)?'✓':'+'} ${t('svc.reqbtn').split(' ')[0]}</span></div>`;}).join('');}
+function buildSvcSelect(){const sel=document.getElementById('svcSelect');if(!sel)return;sel.innerHTML=`<option value="">${t('svc.pick')}</option>`+SVCS.map(s=>`<option value="${s.n}">${s.n} · ${s.name[STATE.lang]}</option>`).join('');}
+function toggleSvc(n){if(STATE.svcSel.has(n))STATE.svcSel.delete(n);else STATE.svcSel.add(n);updateSvcBar();buildServices();}
+function updateSvcBar(){const c=document.getElementById('svcCount');if(c)c.textContent=STATE.svcSel.size;const c2=document.getElementById('svcCount2');if(c2)c2.textContent=STATE.svcSel.size;const btn=document.getElementById('svcReqBtn');if(btn)btn.disabled=STATE.svcSel.size===0;const bottom=document.getElementById('svcReqBottom');if(bottom)bottom.classList.toggle('show',STATE.svcSel.size>0);}
+function selectedSvcNames(){return SVCS.filter(s=>STATE.svcSel.has(s.n)).map(s=>s.name[STATE.lang]);}
+function renderSvcChips(){const box=document.getElementById('svcChips');if(!box)return;const names=selectedSvcNames();box.innerHTML=names.length?names.map(n=>`<span class="chip">${n}</span>`).join(''):`<span class="chip empty">${t('sr.empty')}</span>`;const field=document.getElementById('svcSelectedField');if(field)field.value=names.join(', ');}
+
+/* MAP */
+function buildMap(){
+  const svg=document.getElementById('worldMap');if(!svg)return;
+  let s=`<defs><radialGradient id="oc" cx="50%" cy="45%" r="75%"><stop offset="0%" stop-color="#F8F6F0"/><stop offset="100%" stop-color="#F0ECE3"/></radialGradient></defs>`;
+  s+=`<rect x="0" y="0" width="1000" height="520" rx="6" fill="url(#oc)"/>`;
+  for(let gx=0;gx<=1000;gx+=83.3)s+=`<line x1="${gx}" y1="0" x2="${gx}" y2="520" stroke="#E3DFD6" stroke-width="1"/>`;
+  for(let gy=0;gy<=520;gy+=52)s+=`<line x1="0" y1="${gy}" x2="1000" y2="${gy}" stroke="#E3DFD6" stroke-width="1"/>`;
+  const land='#E7E3DA';s+=`<g fill="${land}">`;
+  s+=`<path d="M120,120 q60,-40 130,-20 q40,30 10,70 q30,40 -20,70 q-40,50 -90,30 q-40,-30 -30,-80 q-40,-40 -10,-70 z"/>`;
+  s+=`<path d="M230,310 q40,-20 60,20 q20,60 -20,110 q-30,40 -50,-10 q-20,-70 10,-120 z"/>`;
+  s+=`<path d="M500,150 q50,-30 90,-5 q30,20 10,55 q40,60 0,130 q-30,70 -70,20 q-30,-50 -10,-90 q-40,-40 -20,-95 q-10,-5 -0,-10 z"/>`;
+  s+=`<path d="M620,120 q120,-40 250,-10 q60,30 40,80 q-30,40 -90,30 q-60,20 -140,-10 q-70,-20 -80,-60 q-20,-30 20,-30 z"/>`;
+  s+=`<path d="M840,360 q40,-15 70,10 q10,30 -25,45 q-45,10 -55,-25 q-5,-25 10,-30 z"/>`;s+=`</g>`;
+  LOCS.forEach(l=>{const left=l.ls===1;const lx=l.x+(left?-11:11);const anc=left?'end':'start';
+    s+=`<g class="pin${l.id===STATE.mapSel?' active':''}" id="pin-${l.id}" onclick="selectLoc('${l.id}')"><circle class="halo" cx="${l.x}" cy="${l.y}" r="16"/><circle class="core" cx="${l.x}" cy="${l.y}" r="6"/><text class="lbl" x="${lx}" y="${l.y+4}" text-anchor="${anc}">${l.name[STATE.lang]}</text></g>`;});
+  svg.innerHTML=s;
+}
+function selectLoc(id){STATE.mapSel=id;document.querySelectorAll('.pin').forEach(p=>p.classList.remove('active'));const pin=document.getElementById('pin-'+id);if(pin)pin.classList.add('active');renderMapCard(id);}
+function renderMapCard(id){
+  const card=document.getElementById('mapCard');if(!card)return;
+  const l=LOCS.find(x=>x.id===id)||LOCS[0];STATE.mapSel=l.id;
+  const arts=l.arts.map((a,ai)=>`<a href="#" onclick="openArticle('${l.id}',${ai});return false;"><span class="ar">›</span> ${a.t[STATE.lang]}</a>`).join('');
+  card.innerHTML=`<div class="flag">${l.flag}</div><div class="role">${l.role[STATE.lang]}</div><h3>${l.name[STATE.lang]}</h3><p class="desc">${l.desc[STATE.lang]}</p><div class="mc-lbl">${t('map.arts')}</div><div class="mc-arts">${arts}</div>`;
+}
+function openArticle(id,ai){
+  const l=LOCS.find(x=>x.id===id);if(!l||!l.arts[ai])return;
+  const a=l.arts[ai];const lang=STATE.lang;
+  document.getElementById('artEyebrow').textContent=l.flag+' '+l.name[lang];
+  document.getElementById('artTitle').textContent=a.t[lang];
+  const body=(a.body&&a.body[lang])||'';
+  document.getElementById('artBody').innerHTML=body.split(/\n\n+/).map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`).join('');
+  document.getElementById('modal-article').scrollTop=0;
+  openModal('article');
+}
+
+/* AUDIT LIVE TEST */
+const AUDIT_DIM=['audit.s1t','audit.s2t','audit.s3t','audit.s4t','audit.s5t'];
+const AUDIT_Q=['audit.q1','audit.q2','audit.q3','audit.q4','audit.q5'];
+function buildAudit(){
+  const box=document.getElementById('auditTest');if(!box)return;
+  box.innerHTML=AUDIT_Q.map((q,i)=>`<div class="atest-q"><div class="qtxt"><span class="n">D${i+1} · ${t(AUDIT_DIM[i])}</span><h4>${t(q)}</h4></div><div class="seg"><button type="button" onclick="answer(${i},2,this)" class="${STATE.audit[i]===2?'on':''}">${t('audit.o.y')}</button><button type="button" onclick="answer(${i},1,this)" class="${STATE.audit[i]===1?'on':''}">${t('audit.o.p')}</button><button type="button" onclick="answer(${i},0,this)" class="${STATE.audit[i]===0?'on':''}">${t('audit.o.n')}</button></div></div>`).join('');
+  updateAuditMeter();
+}
+function answer(i,v,btn){STATE.audit[i]=v;const seg=btn.parentElement;seg.querySelectorAll('button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');updateAuditMeter();}
+function updateAuditMeter(){
+  const answered=STATE.audit.filter(x=>x!==null).length;
+  const score=STATE.audit.reduce((a,b)=>a+(b||0),0);
+  const bar=document.getElementById('atestBar');if(bar)bar.style.width=(score/10*100)+'%';
+  const lbl=document.getElementById('atestScore');if(lbl)lbl.textContent=answered<5?answered+'/5':score+'/10';
+  if(answered===5)showAuditResult(score);
+}
+function showAuditResult(score){
+  const res=document.getElementById('atestResult');if(!res)return;
+  const box=document.getElementById('atestAreas');
+  const labels=[t('audit.st.weak'),t('audit.st.ok'),t('audit.st.strong')];
+  const cls=['weak','ok','strong'];
+  if(box)box.innerHTML=STATE.audit.map((v,i)=>`<div class="atest-area"><span class="an">D${i+1} · ${t(AUDIT_DIM[i])}</span><span class="as ${cls[v]}">${labels[v]}</span></div>`).join('');
+  const sep=STATE.lang==='en'?', ':'、';
+  const weak=STATE.audit.map((v,i)=>({v,i})).filter(o=>o.v<2).sort((a,b)=>a.v-b.v).map(o=>t(AUDIT_DIM[o.i]));
+  const focus=weak.length?`<span class="red">${weak.join(sep)}</span>`:t('audit.res.allgood');
+  res.querySelector('[data-lead]').innerHTML=t('audit.res.lead').replace('{score}',score).replace('{focus}',focus);
+  res.classList.add('show');
+}
+function setRole(r){STATE.role=r;document.getElementById('panel-client').style.display=r==='client'?'':'none';document.getElementById('panel-influencer').style.display=r==='influencer'?'':'none';document.querySelectorAll('#commToggle button').forEach(b=>b.classList.toggle('on',b.dataset.role===r));}
+
+/* ENTRANCE / NAV */
+function enter(persp){STATE.persp=persp;STATE.entered=true;applyI18n();document.getElementById('entrance').classList.add('hidden');document.getElementById('site').classList.add('shown');setTimeout(()=>{document.getElementById('entrance').style.display='none';},650);}
+function toggleMobileNav(){const m=document.getElementById('mobileNav');m.style.display=m.style.display==='block'?'none':'block';}
+
+/* MODALS */
+function openModal(id,e){if(e)e.preventDefault();if(id==='svc'){if(STATE.svcSel.size===0)return;renderSvcChips();}document.getElementById('modal-'+id).classList.add('open');document.body.classList.add('lock');}
+function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.classList.remove('lock');}
+function openSvcReq(){openModal('svc');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.modal-overlay.open').forEach(m=>m.classList.remove('open'));document.body.classList.remove('lock');}});
+
+/* Auto free-audit popup: shows once — on scroll depth, on exit-intent, or after a delay */
+function maybePopup(){if(STATE.popupShown||!STATE.entered)return;if(document.querySelector('.modal-overlay.open'))return;STATE.popupShown=true;openModal('fa');}
+window.addEventListener('scroll',()=>{if(STATE.entered&&!STATE.popupShown){const sc=(window.scrollY+window.innerHeight)/(document.body.scrollHeight||1);if(sc>0.45)maybePopup();}},{passive:true});
+document.addEventListener('mouseout',e=>{if(!e.relatedTarget&&e.clientY<=0)maybePopup();});
+window.addEventListener('load',()=>setTimeout(maybePopup,20000));
+
+/* FORMS */
+async function submitForm(form,okEl,okKey){
+  const data=new FormData(form);const btn=form.querySelector('button[type=submit]');const orig=btn.textContent;btn.textContent='…';btn.disabled=true;
+  try{const res=await fetch(ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:data});if(!res.ok)throw new Error('bad');okEl.textContent=t(okKey);okEl.classList.add('show');okEl.style.borderColor='';form.reset();return true;}
+  catch(err){okEl.textContent=t('kol.err');okEl.classList.add('show');okEl.style.borderColor='#E6251D';return false;}
+  finally{btn.textContent=orig;btn.disabled=false;}
+}
+function initForms(){
+  const kol=document.getElementById('kolForm');const bio=kol.querySelector('[name="Short Bio"]');const counter=document.getElementById('bioCount');
+  bio.addEventListener('input',()=>{const w=bio.value.trim()?bio.value.trim().split(/\s+/).length:0;counter.textContent=w;counter.style.color=w>250?'#E6251D':'';});
+  kol.addEventListener('submit',async e=>{e.preventDefault();const ok=await submitForm(kol,document.getElementById('kolOk'),'kol.ok');if(ok)counter.textContent='0';});
+  const cs=document.getElementById('consultForm');cs.addEventListener('submit',async e=>{e.preventDefault();await submitForm(cs,document.getElementById('consultOk'),'cs.ok');});
+  const fa=document.getElementById('faForm');fa.addEventListener('submit',async e=>{e.preventDefault();const ok=await submitForm(fa,document.getElementById('faOk'),'cs.ok');if(ok)setTimeout(()=>closeModal('fa'),1800);});
+  const au=document.getElementById('auditForm');au.addEventListener('submit',async e=>{e.preventDefault();document.getElementById('auditAnswers').value=AUDIT_DIM.map((d,i)=>t(d)+': '+(STATE.audit[i]===2?'Yes':STATE.audit[i]===1?'Somewhat':'Not yet')).join(' | ');await submitForm(au,document.getElementById('auditOk'),'audit.res.ok');});
+  const sv=document.getElementById('svcForm');sv.addEventListener('submit',async e=>{e.preventDefault();document.getElementById('svcSelectedField').value=selectedSvcNames().join(', ');const ok=await submitForm(sv,document.getElementById('svcOk'),'sr.ok');if(ok){STATE.svcSel.clear();updateSvcBar();buildServices();renderSvcChips();}});
+  const cl=document.getElementById('clientForm');cl.addEventListener('submit',async e=>{e.preventDefault();await submitForm(cl,document.getElementById('clientOk'),'cs.ok');});
+}
+
+/* REVEAL */
+function initReveal(){const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));}
+
+/* WIRING */
+document.querySelectorAll('#entLang button,#hdLang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+document.querySelectorAll('#perspSwitch button').forEach(b=>b.addEventListener('click',()=>setPersp(b.dataset.persp)));
+document.querySelectorAll('#commToggle button').forEach(b=>b.addEventListener('click',()=>setRole(b.dataset.role)));
+
+/* CONTENT LOADING — copy is editable in content.xlsx → content.json.
+   If content.json is present (e.g. on GitHub Pages / a local server) it overrides
+   the embedded defaults below. Opened directly via file:// it falls back to these. */
+async function loadContent(){
+  try{
+    const res=await fetch('content.json',{cache:'no-store'});
+    if(!res.ok)return;
+    const c=await res.json();
+    if(c.i18n)for(const k in c.i18n)I18N[k]=c.i18n[k];
+    if(Array.isArray(c.services)&&c.services.length)SVCS.splice(0,SVCS.length,...c.services);
+    if(Array.isArray(c.locations)&&c.locations.length)LOCS.splice(0,LOCS.length,...c.locations);
+    if(Array.isArray(c.brands)&&c.brands.length)BRANDS.splice(0,BRANDS.length,...c.brands);
+  }catch(e){/* offline or file:// — embedded defaults are used */}
+}
+
+/* INIT */
+(async()=>{
+  await loadContent();
+  applyI18n();
+  if(!LOCS.find(l=>l.id===STATE.mapSel))STATE.mapSel=LOCS[0]&&LOCS[0].id;
+  selectLoc(STATE.mapSel);
+  updateSvcBar();
+  initForms();
+  initReveal();
 })();
 </script>
 </body>

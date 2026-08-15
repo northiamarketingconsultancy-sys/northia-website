@@ -1,0 +1,1525 @@
+{
+  "i18n": {
+    "ent.eyebrow": {
+      "en": "Asia ⇄ Overseas",
+      "tc": "亞洲 ⇄ 海外",
+      "sc": "亚洲 ⇄ 海外"
+    },
+    "ent.h1": {
+      "en": "Which direction are you<br>building toward?",
+      "tc": "您的品牌，<br>正朝哪個方向拓展？",
+      "sc": "您的品牌，<br>正朝哪个方向拓展？"
+    },
+    "ent.tag": {
+      "en": "Asia ⇄ Overseas | Branding &amp; Community Consultancy that Helps Expanding New Markets &amp; Communities",
+      "tc": "亞洲 ⇄ 海外｜協助品牌拓展新市場與新社群的品牌與社群顧問",
+      "sc": "亚洲 ⇄ 海外｜协助品牌拓展新市场与新社群的品牌与社群顾问"
+    },
+    "ent.a2w.title": {
+      "en": "Asia to the World",
+      "tc": "亞洲走向世界",
+      "sc": "亚洲走向世界"
+    },
+    "ent.a2w.tip": {
+      "en": "For Asia-rooted brands and cultural concepts moving outward to the international market.",
+      "tc": "給紮根亞洲、想走出去的品牌與文化概念——精準觸及海外的離散社群與跨文化受眾。這裡的「世界」，指的是人，而不是國界。",
+      "sc": "给扎根亚洲、想走出去的品牌与文化概念——精准触及海外的离散社群与跨文化受众。这里的「世界」，指的是人，而不是国界。"
+    },
+    "ent.w2a.title": {
+      "en": "The World to Asia",
+      "tc": "世界走進亞洲",
+      "sc": "世界走进亚洲"
+    },
+    "ent.w2a.tip": {
+      "en": "For brands entering Asia, or any business reaching Asian communities domestically or abroad.",
+      "tc": "給進入亞洲的品牌——或任何想觸及海外亞洲社群的企業，例如溫哥華的越南裔。這裡的「亞洲」，是您服務的文化，無論它身在何處。",
+      "sc": "给进入亚洲的品牌，或想触达海外亚洲社群的生意，比如温哥华的越南人。这里的「亚洲」，是你服务的文化，不管它在哪。"
+    },
+    "ent.go": {
+      "en": "Enter this path →",
+      "tc": "進入這個方向 →",
+      "sc": "进入这个方向 →"
+    },
+    "ent.foot": {
+      "en": "You can switch direction or language anytime.",
+      "tc": "您可以隨時切換方向或語言。",
+      "sc": "您可以随时切换方向或语言。"
+    },
+    "nav.audit": {
+      "en": "Free Audit",
+      "tc": "免費診斷",
+      "sc": "免费诊断"
+    },
+    "nav.rebrand": {
+      "en": "Rebranding",
+      "tc": "品牌重塑",
+      "sc": "品牌重塑"
+    },
+    "nav.case": {
+      "en": "Why Community",
+      "tc": "社群為何重要",
+      "sc": "社群为何重要"
+    },
+    "nav.insights": {
+      "en": "Insights",
+      "tc": "市場洞察",
+      "sc": "市场洞察"
+    },
+    "nav.community": {
+      "en": "Community",
+      "tc": "社群",
+      "sc": "社群"
+    },
+    "nav.about": {
+      "en": "About Us",
+      "tc": "關於我們",
+      "sc": "关于我们"
+    },
+    "persp.a2w.short": {
+      "en": "Asia→World",
+      "tc": "亞洲→世界",
+      "sc": "亚洲→世界"
+    },
+    "persp.w2a.short": {
+      "en": "World→Asia",
+      "tc": "世界→亞洲",
+      "sc": "世界→亚洲"
+    },
+    "hero.eyebrow": {
+      "a2w": {
+        "en": "Asia → the World · Cross-cultural market expansion",
+        "tc": "亞洲 → 世界 · 跨文化市場拓展",
+        "sc": "亚洲 → 世界 · 跨文化市场拓展"
+      },
+      "w2a": {
+        "en": "The World → Local or Overseas Asian Communities",
+        "tc": "世界 → 亞洲 · 本地或海外華人社群",
+        "sc": "世界 → 亚洲 · 本地或海外华人社群"
+      }
+    },
+    "hero.title": {
+      "a2w": {
+        "en": "From Asia, into new<br>markets and communities.",
+        "tc": "由亞洲出發，<br>走進新的市場與社群。",
+        "sc": "由亚洲出发，<br>走进新的市场与社群。"
+      },
+      "w2a": {
+        "en": "Into Asia, and the Asian<br>communities beyond it.",
+        "tc": "走進亞洲，<br>也走進本地或世界各地的亞洲社群。",
+        "sc": "走进亚洲，<br>也走进本地或世界各地的亚洲社群。"
+      }
+    },
+    "hero.lede": {
+      "a2w": {
+        "en": "We help Asia-rooted brands and cultural concepts expand into new markets and communities abroad, reaching diaspora and cross-cultural audiences, not generic “globalisation”. We judge every brand with a clear 5-step methodology.",
+        "tc": "我們協助紮根亞洲的品牌與文化概念，拓展海外的新市場與新社群，精準觸及離散社群與跨文化受眾，而非泛泛的「全球化」。我們以一套清晰的五步方法，為每個品牌做判斷。",
+        "sc": "我们帮扎根亚洲的品牌和文化，走进海外的新市场、新社群，精准打进离散人群和跨文化受众——不是笼统的「全球化」。每个品牌，我们都用一套清晰的五步法来判断。"
+      },
+      "w2a": {
+        "en": "We help brands expand into Asian markets, and into Asian communities wherever they live, including diaspora audiences overseas. We judge every brand with a clear 5-step methodology, so it belongs, not just arrives.",
+        "tc": "我們協助品牌拓展亞洲市場，並觸及本地或世界各地的亞洲社群。我們以一套清晰的五步方法為每個品牌做判斷，讓品牌真正立足於特定社群。",
+        "sc": "我们帮品牌进入亚洲市场，也帮你触达本地或海外的亚洲社群，包括离散人群。用一套清晰的五步法判断，让品牌真正落地、被接纳，而不只是「到了」。"
+      }
+    },
+    "hero.cta1": {
+      "en": "Take the free 5-point test",
+      "tc": "免費做 5 步測試",
+      "sc": "免费做 5 步测试"
+    },
+    "hero.cta2": {
+      "en": "Why community matters",
+      "tc": "社群為何重要",
+      "sc": "社群为何重要"
+    },
+    "hero.cta3": {
+      "en": "See our services",
+      "tc": "查看我們的服務",
+      "sc": "查看我们的服务"
+    },
+    "logos.title": {
+      "en": "Brands that trusted Northia",
+      "tc": "信任 Northia 的品牌",
+      "sc": "信任 Northia 的品牌"
+    },
+    "logos.hint": {
+      "en": "Logo slots, approved partner logos only.",
+      "tc": "標誌位——僅顯示已核准的夥伴標誌。",
+      "sc": "标志位——仅显示已核准的伙伴标志。"
+    },
+    "logos.pl": {
+      "en": "LOGO",
+      "tc": "標誌位",
+      "sc": "标志位"
+    },
+    "tst.eyebrow": {
+      "en": "One of Our Focuses Angle",
+      "tc": "我們關注的其中一個角度",
+      "sc": "我们关注的其中一个角度"
+    },
+    "tst.title": {
+      "en": "Why community matters.",
+      "tc": "為什麼社群才是關鍵。",
+      "sc": "为什么社群才是关键。"
+    },
+    "tst.sub": {
+      "en": "If you only rely on influencers, the traffic is rented, the day you stop paying, it stops. A market isn’t a location; it’s a community. We build the audience you actually own.",
+      "tc": "若只依賴網紅，流量只是租回來的——您一停止付費，它便會消失。市場是一個社群，而不是一個地點。我們為您建立真正屬於自己的受眾。",
+      "sc": "只靠网红，流量是租来的——不付钱，它就停。市场是一个社群，不是一个地点。我们帮你做出真正属于自己的受众。"
+    },
+    "edu1t": {
+      "en": "Rented reach vs. owned community",
+      "tc": "租來的觸及 vs. 自有社群",
+      "sc": "租来的触及 vs. 自有社群"
+    },
+    "edu1p": {
+      "en": "Influencers and paid media rent you attention. The moment the budget stops, so does the traffic. A community you own keeps showing up.",
+      "tc": "網紅與付費廣告租給您的只是注意力。預算一停，流量就停；但屬於您自己的社群，會一直回來。",
+      "sc": "网红与付费广告租给您的只是注意力。预算一停，流量就停；但属于您自己的社群，会一直回来。"
+    },
+    "edu2t": {
+      "en": "A market is a community, not a location",
+      "tc": "市場是一個社群，而不是一個地點",
+      "sc": "市场是一个社群，而不是一个地点"
+    },
+    "edu2p": {
+      "en": "You don’t win “a country”. You win a community, like the Vietnamese in Vancouver, or the Japanese who love a Hong Kong brand.",
+      "tc": "您要贏得的不是「一個國家」，而是一個社群——例如溫哥華的越南人，或喜愛某個香港品牌的日本人。",
+      "sc": "您要赢得的不是「一个国家」，而是一个社群——例如温哥华的越南人，或喜爱某个香港品牌的日本人。"
+    },
+    "edu3t": {
+      "en": "Community compounds",
+      "tc": "社群會愈滾愈大",
+      "sc": "社群会越滚越大"
+    },
+    "edu3p": {
+      "en": "An owned audience gets cheaper to reach and easier to sell to over time. Retention beats acquisition, that’s why we lead with belonging.",
+      "tc": "自有的受眾，隨時間會愈來愈容易觸及，也愈來愈容易成交。留住舊客，永遠比開發新客划算——所以我們以歸屬感為先。",
+      "sc": "自有的受众，随时间会越来越容易触及，也越来越容易成交。留住老客户，永远比开发新客户划算——所以我们以归属感为先。"
+    },
+    "tst.proof": {
+      "en": "The proof",
+      "tc": "實證",
+      "sc": "实证"
+    },
+    "tst.pic": {
+      "en": "[ Photo / logo ]",
+      "tc": "［ 相片／標誌 ］",
+      "sc": "［ 照片／标志 ］"
+    },
+    "tst.role": {
+      "en": "[ Client title / market, editable ]",
+      "tc": "［ 客戶職銜／市場 — 可編輯 ］",
+      "sc": "［ 客户职衔／市场 — 可编辑 ］"
+    },
+    "tst.p1.quote": {
+      "en": "“[ Add WingGrove’s approved comment here. ]”",
+      "tc": "「［ 於此加入 WingGrove 已核准嘅評語。 ］」",
+      "sc": "「［ 于此加入 WingGrove 已核准的评语。 ］」"
+    },
+    "tst.p2.quote": {
+      "en": "“[ Add Liuyishou Hotpot’s approved comment here. ]”",
+      "tc": "「［ 於此加入 劉一手火鍋 已核准嘅評語。 ］」",
+      "sc": "「［ 于此加入 刘一手火锅 已核准的评语。 ］」"
+    },
+    "tst.p3.quote": {
+      "en": "“[ Add 4evercare’s approved comment here. ]”",
+      "tc": "「［ 於此加入 4evercare 已核准嘅評語。 ］」",
+      "sc": "「［ 于此加入 4evercare 已核准的评语。 ］」"
+    },
+    "tst.p4.quote": {
+      "en": "“[ Add excohk’s approved comment here. ]”",
+      "tc": "「［ 於此加入 excohk 已核准嘅評語。 ］」",
+      "sc": "「［ 于此加入 excohk 已核准的评语。 ］」"
+    },
+    "map.eyebrow": {
+      "en": "On the ground",
+      "tc": "在地佈局",
+      "sc": "在地布局"
+    },
+    "map.title": {
+      "a2w": {
+        "en": "Where we operate, and where your audiences overseas already are.",
+        "tc": "我們的據點——也是您的海外受眾早已所在之處。",
+        "sc": "我们的据点——也是您的海外受众早已所在之处。"
+      },
+      "w2a": {
+        "en": "Where we operate, and where Asia’s audiences already are.",
+        "tc": "我們的據點——也是亞洲受眾早已所在之處。",
+        "sc": "我们的据点——也是亚洲受众早已所在之处。"
+      }
+    },
+    "map.sub": {
+      "en": "Tap a location to read our latest insights and case studies for that culture, evergreen guides, market by market.",
+      "tc": "點選地點，閱讀我們針對該文化的最新洞察與案例——常青指南，逐個市場拆解。",
+      "sc": "点选地点，阅读我们针对该文化的最新洞察与案例——常青指南，逐个市场拆解。"
+    },
+    "map.arts": {
+      "en": "Featured insights",
+      "tc": "精選洞察",
+      "sc": "精选洞察"
+    },
+    "map.allcases": {
+      "en": "All case studies",
+      "tc": "全部成功案例",
+      "sc": "全部成功案例"
+    },
+    "map.allinsights": {
+      "en": "All insights",
+      "tc": "全部市場洞察",
+      "sc": "全部市场洞察"
+    },
+    "audit.eyebrow": {
+      "en": "Try it yourself",
+      "tc": "親自測試",
+      "sc": "自己测测看"
+    },
+    "audit.title": {
+      "en": "Where would the audit route you?",
+      "tc": "這套診斷，會把您導向哪個方向？",
+      "sc": "测完，你会被分到哪条路线？"
+    },
+    "audit.sub": {
+      "en": "Rate your brand honestly against the 5 dimensions, using the routing logic we use. About 60 seconds.",
+      "tc": "針對您的下一個目標市場，就以下五個維度誠實評分。這套分流邏輯，與我們實際採用的完全一致，約需 60 秒。",
+      "sc": "想好下一个要进的市场，对着这 5 个维度诚实打分。逻辑和我们内部用的一样，60 秒就好。"
+    },
+    "audit.hint": {
+      "en": "Answer all five dimensions to see your routing.",
+      "tc": "完成五個維度的評分，即可查看分流結果。",
+      "sc": "5 个维度都打完，马上出结果。"
+    },
+    "audit.s1t": {
+      "en": "Positioning Fit",
+      "tc": "定位契合度",
+      "sc": "定位匹配度"
+    },
+    "audit.s2t": {
+      "en": "Language & Message Fit",
+      "tc": "語言與訊息契合度",
+      "sc": "语言与信息匹配度"
+    },
+    "audit.s3t": {
+      "en": "Trust Signals",
+      "tc": "信任訊號",
+      "sc": "信任信号"
+    },
+    "audit.s4t": {
+      "en": "Channel–Buyer Fit",
+      "tc": "渠道與買家契合度",
+      "sc": "渠道与买家匹配度"
+    },
+    "audit.s5t": {
+      "en": "Community Ownership",
+      "tc": "社群自有程度",
+      "sc": "社群自有度"
+    },
+    "audit.q1": {
+      "en": "Does your offer solve a problem this market actually has, or a problem your home market had?",
+      "tc": "您的產品或服務，解決的是這個市場真正存在的問題，還是您原有市場的問題？",
+      "sc": "你解决的，是这个市场真正有的问题，还是你老家市场的问题？"
+    },
+    "audit.q2": {
+      "en": "Would a native professional read your materials as written locally?",
+      "tc": "當地的專業人士閱讀您的內容時，會覺得像本地原創，而非翻譯而成嗎？",
+      "sc": "本地行家看你的内容，会以为是本地人写的吗？"
+    },
+    "audit.q3": {
+      "en": "Do you show the proof this market checks before buying?",
+      "tc": "您是否已具備當地消費者在下單前最看重的信任憑證？",
+      "sc": "本地人下单前最看重的信任凭证，你有吗？"
+    },
+    "audit.q4": {
+      "en": "Are you present and native on the platforms where these buyers research?",
+      "tc": "在買家實際搜尋與研究的平台上，您是否以在地原生的姿態出現？",
+      "sc": "买家做功课的平台，你在吗？看着像本地号吗？"
+    },
+    "audit.q5": {
+      "en": "Does anyone advocate for your brand there without being paid to?",
+      "tc": "在當地，除了付費合作之外，是否有人願意主動為您的品牌發聲？",
+      "sc": "除了付钱的合作，还有人自愿帮你说话吗？"
+    },
+    "audit.o.y": {
+      "en": "Strong",
+      "tc": "強",
+      "sc": "强"
+    },
+    "audit.o.p": {
+      "en": "Unsure",
+      "tc": "不確定",
+      "sc": "不确定"
+    },
+    "audit.o.n": {
+      "en": "Weak",
+      "tc": "待加強",
+      "sc": "待加强"
+    },
+    "audit.res.lead": {
+      "en": "Your routing score: {score}/10. Strengthen these first: {focus}.",
+      "tc": "您的分流分數：{score}/10。建議優先加強：{focus}。",
+      "sc": "你的得分：{score}/10。先补这几项：{focus}。"
+    },
+    "audit.res.allgood": {
+      "en": "every area already looks solid",
+      "tc": "各個維度看來都相當扎實",
+      "sc": "每一项看着都挺稳"
+    },
+    "audit.st.strong": {
+      "en": "Strong",
+      "tc": "表現扎實",
+      "sc": "扎实"
+    },
+    "audit.st.ok": {
+      "en": "Could be stronger",
+      "tc": "仍有提升空間",
+      "sc": "有提升空间"
+    },
+    "audit.st.weak": {
+      "en": "Needs work",
+      "tc": "需要加強",
+      "sc": "需加强"
+    },
+    "audit.res.p": {
+      "en": "That’s exactly what the full audit digs into, a customised report on where you’re losing the market, with free data analysis, before you spend a dollar with us.",
+      "tc": "這正是完整診斷會深入的部分：一份為您度身訂造的報告，指出您正在流失市場的環節，並附上免費的數據分析，全都在您花任何一分錢之前。",
+      "sc": "这正是完整诊断要深挖的地方：一份为你定制的报告，点出你正在流失市场的地方，还附上免费的数据分析，全在你花一分钱之前。"
+    },
+    "audit.res.emailph": {
+      "en": "Work email",
+      "tc": "公司電郵",
+      "sc": "工作邮箱"
+    },
+    "audit.res.cta": {
+      "en": "Get my full audit",
+      "tc": "取得完整品牌診斷",
+      "sc": "领取完整品牌诊断"
+    },
+    "audit.res.note": {
+      "en": "Within 3 business days. No spam, ever. Sent to hello@northiamarketing.com.",
+      "tc": "3 個工作天內送達，絕不濫發。將寄至 hello@northiamarketing.com。",
+      "sc": "3 个工作日内送达，绝不打扰。发送至 hello@northiamarketing.com。"
+    },
+    "audit.res.ok": {
+      "en": "Thanks, your request is with our team. We’ll be in touch within 3 business days.",
+      "tc": "感謝您，您的需求已交到我們團隊手上，我們會在 3 個工作天內與您聯絡。",
+      "sc": "收到，需求已经到我们团队了，3 个工作日内联系你。"
+    },
+    "svc.eyebrow": {
+      "en": "Rebranding",
+      "tc": "品牌重塑",
+      "sc": "品牌重塑"
+    },
+    "svc.title": {
+      "en": "Rebrand to enter. Community to belong.",
+      "tc": "以重塑進場，以社群立足。",
+      "sc": "以重塑进场，以社群立足。"
+    },
+    "svc.sub": {
+      "a2w": {
+        "en": "Select the services you need for Asia-to-world expansion, then request a customised proposal. You can pick more than one.",
+        "tc": "選擇您在「亞洲走向世界」拓展中需要的服務，然後索取專屬服務建議。可複選。",
+        "sc": "选择您在「亚洲走向世界」拓展中需要的服务，然后索取专属服务方案。可多选。"
+      },
+      "w2a": {
+        "en": "Select the services you need for entering Asia and its communities, then request a customised proposal. You can pick more than one.",
+        "tc": "選擇您在進入亞洲及其社群時需要的服務，然後索取專屬服務建議。可複選。",
+        "sc": "选择您在进入亚洲及其社群时需要的服务，然后索取专属服务方案。可多选。"
+      }
+    },
+    "svc.selcount": {
+      "en": "selected",
+      "tc": "項已選",
+      "sc": "项已选"
+    },
+    "svc.reqbtn": {
+      "en": "Request selected services",
+      "tc": "索取所選服務建議",
+      "sc": "索取所选服务方案"
+    },
+    "svc.pick": {
+      "en": "Jump to a service…",
+      "tc": "跳至服務…",
+      "sc": "跳至服务…"
+    },
+    "comm.eyebrow": {
+      "en": "Community building",
+      "tc": "社群經營",
+      "sc": "社群运营"
+    },
+    "comm.title": {
+      "en": "Community building, for clients and creators.",
+      "tc": "社群經營——為客戶，也為創作者。",
+      "sc": "社群运营——为客户，也为创作者。"
+    },
+    "comm.sub": {
+      "en": "Tell us who you are, and we’ll show you the right path, whether you want to grow a brand with community, or join our creator network.",
+      "tc": "告訴我們您的身分，我們會為您指出合適的方向——無論您想以社群壯大品牌，還是加入我們的創作者網絡。",
+      "sc": "先告诉我们你是谁，我们帮你找对路——是想用社群把品牌做大，还是想加入我们的创作者网络。"
+    },
+    "comm.iam.client": {
+      "en": "I’m a client",
+      "tc": "我是客戶",
+      "sc": "我是客户"
+    },
+    "comm.iam.inf": {
+      "en": "I’m a creator / influencer",
+      "tc": "我是創作者／網紅",
+      "sc": "我是创作者／网红"
+    },
+    "comm.cli.eyebrow": {
+      "en": "Why community beats renting influencers",
+      "tc": "為何社群勝過只租網紅",
+      "sc": "为何社群胜过只租网红"
+    },
+    "comm.cli.title": {
+      "en": "Stop renting attention. Start owning an audience.",
+      "tc": "別再租用注意力，開始擁有自己的受眾。",
+      "sc": "别再租用注意力，开始拥有自己的受众。"
+    },
+    "comm.cli.f1t": {
+      "en": "Rented traffic stops when you stop paying",
+      "tc": "流量是租來的，一停付費就消失",
+      "sc": "流量是租来的，一停付费就消失"
+    },
+    "comm.cli.f1p": {
+      "en": "Influencer reach lasts only as long as the budget. A community you own keeps returning, long after the campaign ends.",
+      "tc": "網紅的觸及，只在預算持續期間有效。屬於您自己的社群，即使活動結束，仍會持續回來。",
+      "sc": "网红的触及，只在预算持续期间有效。属于您自己的社群，即使活动结束，仍会持续回来。"
+    },
+    "comm.cli.f2t": {
+      "en": "Retention is cheaper than acquisition",
+      "tc": "留住舊客，遠比開發新客划算",
+      "sc": "留住老客户，远比开发新客户划算"
+    },
+    "comm.cli.f2p": {
+      "en": "Keeping a customer costs a fraction of winning a new one. Community drives the repeat business paid reach rarely does.",
+      "tc": "留住一位舊客的成本，只是開發新客的一小部分。社群帶來的回購，是純付費觸及難以做到的。",
+      "sc": "留住一位老客户的成本，只是开发新客户的一小部分。社群带来的复购，是纯付费触及难以做到的。"
+    },
+    "comm.cli.f3t": {
+      "en": "Community compounds over time",
+      "tc": "社群會隨時間愈滾愈大",
+      "sc": "社群会随时间越滚越大"
+    },
+    "comm.cli.f3p": {
+      "en": "An owned audience grows more valuable every month, durable growth, not a one-off spike from a single post.",
+      "tc": "自有的受眾，每個月都變得更有價值——是可持續的增長，而非單一貼文帶來的一次性高峰。",
+      "sc": "自有的受众，每个月都变得更有价值——是可持续的增长，而非单一贴文带来的一次性高峰。"
+    },
+    "comm.cli.formtitle": {
+      "en": "Book a strategy session",
+      "tc": "預約品牌策略諮詢",
+      "sc": "预约品牌策略咨询"
+    },
+    "comm.inf.eyebrow": {
+      "en": "Why join the Northia network",
+      "tc": "為何加入 Northia 網絡",
+      "sc": "为何加入 Northia 网络"
+    },
+    "comm.inf.title": {
+      "en": "Real campaigns. Real standing out. A real community.",
+      "tc": "真實的合作、真正的突出、真正的社群。",
+      "sc": "真实的合作、真正的突出、真正的社群。"
+    },
+    "comm.inf.f1t": {
+      "en": "Real campaigns, real brands",
+      "tc": "真實品牌，真實合作",
+      "sc": "真实品牌，真实合作"
+    },
+    "comm.inf.f1p": {
+      "en": "We run branding campaigns with real clients, so you get paid work, not just exposure.",
+      "tc": "我們與真實客戶合作進行品牌活動，讓您獲得有酬的工作，而不只是曝光。",
+      "sc": "我们与真实客户合作进行品牌活动，让您获得有酬的工作，而不只是曝光。"
+    },
+    "comm.inf.f2t": {
+      "en": "Stand out from the crowd",
+      "tc": "讓您脫穎而出",
+      "sc": "让您脱颖而出"
+    },
+    "comm.inf.f2p": {
+      "en": "We position you by the culture and community you speak to, so you’re not one creator lost among thousands.",
+      "tc": "我們以您所對話的文化與社群為您定位，讓您不再是萬千創作者中被淹沒的一個。",
+      "sc": "我们以您所对话的文化与社群为您定位，让您不再是万千创作者中被淹没的一个。"
+    },
+    "comm.inf.f3t": {
+      "en": "A community that shows up",
+      "tc": "一個真正聚在一起的社群",
+      "sc": "一个真正聚在一起的社群"
+    },
+    "comm.inf.f3p": {
+      "en": "We host activities and events, so you build genuine relationships, not just followers.",
+      "tc": "我們舉辦活動與聚會，讓您建立真實的關係，而不只是粉絲。",
+      "sc": "我们举办活动与聚会，让您建立真实的关系，而不只是粉丝。"
+    },
+    "kol.eyebrow": {
+      "en": "KOL / Influencer network",
+      "tc": "KOL／網紅招募",
+      "sc": "KOL／网红招募"
+    },
+    "kol.title": {
+      "en": "Join the Northia creator network",
+      "tc": "加入 Northia 創作者網絡",
+      "sc": "加入 Northia 创作者网络"
+    },
+    "kol.sub": {
+      "en": "For creators only. We match you to briefs by culture and audience, it takes 2 minutes.",
+      "tc": "僅供創作者填寫。我們會依文化與受眾，把您配對到合適的專案——只需 2 分鐘。",
+      "sc": "仅供创作者填写。我们会依文化与受众，把您配对到合适的项目——只需 2 分钟。"
+    },
+    "kol.fullname": {
+      "en": "Full name",
+      "tc": "全名",
+      "sc": "全名"
+    },
+    "kol.ethnicity": {
+      "en": "Your identity",
+      "tc": "您的身分",
+      "sc": "您的身份"
+    },
+    "kol.age": {
+      "en": "Age",
+      "tc": "年齡",
+      "sc": "年龄"
+    },
+    "kol.gender": {
+      "en": "Gender",
+      "tc": "性別",
+      "sc": "性别"
+    },
+    "kol.select": {
+      "en": "Select…",
+      "tc": "請選擇…",
+      "sc": "请选择…"
+    },
+    "kol.g.f": {
+      "en": "Female",
+      "tc": "女",
+      "sc": "女"
+    },
+    "kol.g.m": {
+      "en": "Male",
+      "tc": "男",
+      "sc": "男"
+    },
+    "kol.g.nb": {
+      "en": "Non-binary",
+      "tc": "非二元",
+      "sc": "非二元"
+    },
+    "kol.g.na": {
+      "en": "Prefer not to say",
+      "tc": "不願透露",
+      "sc": "不愿透露"
+    },
+    "kol.tier": {
+      "en": "Total follower count",
+      "tc": "總粉絲數",
+      "sc": "总粉丝数"
+    },
+    "kol.hobbies": {
+      "en": "Hobbies / niche interests",
+      "tc": "興趣／發展領域",
+      "sc": "兴趣／垂直领域"
+    },
+    "kol.hobbies.hint": {
+      "en": "e.g. street food, K-beauty, fintech, hiking",
+      "tc": "例如：街頭美食、韓系美妝、金融科技、行山",
+      "sc": "例如：街头美食、韩系美妆、金融科技、徒步"
+    },
+    "kol.sns": {
+      "en": "Primary social media URLs",
+      "tc": "主要社交媒體連結",
+      "sc": "主要社交媒体链接"
+    },
+    "kol.langs": {
+      "en": "Spoken / content languages",
+      "tc": "口說／內容語言",
+      "sc": "口说／内容语言"
+    },
+    "kol.market": {
+      "en": "Target audience market",
+      "tc": "目標受眾市場",
+      "sc": "目标受众市场"
+    },
+    "kol.bio": {
+      "en": "Short bio",
+      "tc": "簡短自我介紹",
+      "sc": "简短自我介绍"
+    },
+    "kol.bio.ph": {
+      "en": "Tell us about you and your community (max 250 words).",
+      "tc": "介紹一下您和您的社群（最多 250 字）。",
+      "sc": "介绍一下您和您的社群（最多 250 字）。"
+    },
+    "kol.words": {
+      "en": "words",
+      "tc": "字",
+      "sc": "字"
+    },
+    "kol.submit": {
+      "en": "Submit application",
+      "tc": "提交申請",
+      "sc": "提交申请"
+    },
+    "kol.note": {
+      "en": "Goes straight to our team at hello@northiamarketing.com.",
+      "tc": "直接送達我們的團隊 hello@northiamarketing.com。",
+      "sc": "直接送达我们的团队 hello@northiamarketing.com。"
+    },
+    "kol.ok": {
+      "en": "Thanks, your application is on its way to our team. We reply within 5 business days.",
+      "tc": "謝謝——您的申請已送出，我們會在 5 個工作天內回覆。",
+      "sc": "谢谢——您的申请已送出，我们会在 5 个工作日内回复。"
+    },
+    "kol.err": {
+      "en": "Something went wrong sending the form. Please email hello@northiamarketing.com directly.",
+      "tc": "表單送出時發生問題，請直接電郵 hello@northiamarketing.com。",
+      "sc": "表单送出时发生问题，请直接邮件 hello@northiamarketing.com。"
+    },
+    "fa.eyebrow": {
+      "en": "Free brand audit",
+      "tc": "免費品牌診斷",
+      "sc": "免费品牌诊断"
+    },
+    "fa.title": {
+      "en": "Before you go, see where your brand is losing the market.",
+      "tc": "在離開之前——看看您的品牌正在哪裡流失商機。",
+      "sc": "在离开之前——看看您的品牌正在哪里错失市场机会。"
+    },
+    "fa.p": {
+      "en": "Leave your email and we’ll send a customised brand audit within 3 business days. No spam, ever.",
+      "tc": "留下您的電郵，我們會在 3 個工作天內寄上專屬的品牌分析。絕不濫發。",
+      "sc": "留下您的邮箱，我们会在 3 个工作日内发送专属品牌分析。绝不滥发。"
+    },
+    "fa.submit": {
+      "en": "Send me the free audit",
+      "tc": "寄給我免費品牌分析",
+      "sc": "发送我的免费诊断"
+    },
+    "fa.note": {
+      "en": "Sent to hello@northiamarketing.com.",
+      "tc": "將寄至 hello@northiamarketing.com。",
+      "sc": "将发送至 hello@northiamarketing.com。"
+    },
+    "cs.eyebrow": {
+      "en": "Free custom audit",
+      "tc": "免費品牌診斷",
+      "sc": "免费品牌诊断"
+    },
+    "cs.title": {
+      "en": "Where is your brand losing the market?",
+      "tc": "您的品牌，正在哪些地方流失商機？",
+      "sc": "您的品牌，正在错失哪些市场机会？"
+    },
+    "cs.p": {
+      "en": "Leave your details and we’ll personally audit your brand: a customized report on the problems we find, with free data analysis and insights, before you spend a dollar with us.",
+      "tc": "留下您的資料，我們會免費為您的品牌做一次專業檢視。我們會整理一份品牌分析報告，找出品牌目前的問題，提供數據分析及改善建議。",
+      "sc": "留下您的信息，我们将免费为您的品牌进行专业诊断。为您提供专属品牌分析报告，包含问题诊断、数据分析和市场洞察，让您在投入任何预算之前，先看清品牌的增长机会。"
+    },
+    "cs.name": {
+      "en": "Your name",
+      "tc": "您的稱呼",
+      "sc": "您的称呼"
+    },
+    "cs.web": {
+      "en": "Website or brand name",
+      "tc": "品牌網站或品牌名稱",
+      "sc": "品牌官网或品牌名称"
+    },
+    "cs.web.ph": {
+      "en": "yourbrand.com",
+      "tc": "yourbrand.com",
+      "sc": "yourbrand.com"
+    },
+    "cs.email": {
+      "en": "Work email",
+      "tc": "電郵",
+      "sc": "工作邮箱"
+    },
+    "cs.dir": {
+      "en": "Which direction?",
+      "tc": "哪個方向？",
+      "sc": "哪个方向？"
+    },
+    "cs.dir.a2w": {
+      "en": "Asia → the World",
+      "tc": "亞洲 → 世界",
+      "sc": "亚洲 → 世界"
+    },
+    "cs.dir.w2a": {
+      "en": "The World → Asia",
+      "tc": "世界 → 亞洲",
+      "sc": "世界 → 亚洲"
+    },
+    "cs.dir.both": {
+      "en": "Both / not sure yet",
+      "tc": "兩者／尚未確定",
+      "sc": "两者／尚未确定"
+    },
+    "cs.msg": {
+      "en": "Anything we should know?",
+      "tc": "還有什麼想讓我們知道？",
+      "sc": "还有什么想让我们知道？"
+    },
+    "cs.msg.ph": {
+      "en": "Your goal, target market or community…",
+      "tc": "您的目標、目標市場或社群……",
+      "sc": "您的目标、目标市场或社群……"
+    },
+    "cs.submit": {
+      "en": "Audit my brand for FREE",
+      "tc": "免費取得品牌分析報告",
+      "sc": "免费诊断我的品牌"
+    },
+    "cs.s": {
+      "en": "Customised only for you, within 3 business days. No spam, ever.",
+      "tc": "3 個工作天內提供，由團隊人手製作專屬您的品牌分析，絕不發送垃圾郵件。",
+      "sc": "3 个工作日内送达，由团队人手完成专属品牌诊断报告，绝不滥发。"
+    },
+    "cs.ok": {
+      "en": "Thanks, your request is with our team. We’ll be in touch within 3 business days.",
+      "tc": "謝謝——您的需求已送達團隊，我們會在 3 個工作天內與您聯絡。",
+      "sc": "谢谢——您的需求已送达团队，我们会在 3 个工作日内与您联系。"
+    },
+    "sr.eyebrow": {
+      "en": "Custom proposal",
+      "tc": "專屬方案",
+      "sc": "专属方案"
+    },
+    "sr.title": {
+      "en": "Request a customised proposal",
+      "tc": "索取專屬服務建議",
+      "sc": "索取专属服务方案"
+    },
+    "sr.sub": {
+      "en": "You’ve selected these services. Tell us a little more and we’ll come back with a tailored scope.",
+      "tc": "您已選擇以下服務。請補充一些資料，我們會為您回覆度身訂造的服務範圍。",
+      "sc": "您已选择以下服务。请补充一些信息，我们会为您回复量身定制的服务范围。"
+    },
+    "sr.selected": {
+      "en": "Selected services",
+      "tc": "已選服務",
+      "sc": "已选服务"
+    },
+    "sr.brand": {
+      "en": "Brand / website",
+      "tc": "品牌／網站",
+      "sc": "品牌／网站"
+    },
+    "sr.budget": {
+      "en": "Indicative budget",
+      "tc": "預算範圍",
+      "sc": "预算范围"
+    },
+    "sr.b0": {
+      "en": "Not sure yet",
+      "tc": "尚未確定",
+      "sc": "尚未确定"
+    },
+    "sr.msg": {
+      "en": "Tell us about your goal",
+      "tc": "告訴我們您的目標",
+      "sc": "告诉我们您的目标"
+    },
+    "sr.msg.ph": {
+      "en": "What are you trying to achieve, and by when?",
+      "tc": "您希望達成什麼？期望的時間？",
+      "sc": "您希望达成什么？期望的时间？"
+    },
+    "sr.submit": {
+      "en": "Send request",
+      "tc": "送出需求",
+      "sc": "发送需求"
+    },
+    "sr.note": {
+      "en": "Goes to hello@northiamarketing.com. No obligation.",
+      "tc": "將送達 hello@northiamarketing.com，無任何義務。",
+      "sc": "将发送至 hello@northiamarketing.com，无任何义务。"
+    },
+    "sr.empty": {
+      "en": "Select at least one service first.",
+      "tc": "請先至少選擇一項服務。",
+      "sc": "请先至少选择一项服务。"
+    },
+    "sr.ok": {
+      "en": "Thanks, your request is on its way. We’ll reply with a tailored scope shortly.",
+      "tc": "謝謝——您的需求已送出，我們會盡快回覆度身訂造的服務範圍。",
+      "sc": "谢谢——您的需求已发送，我们会尽快回复量身定制的服务范围。"
+    },
+    "about.eyebrow": {
+      "en": "About us, Our Story",
+      "tc": "關於我們 — 我們的故事",
+      "sc": "关于我们 — 我们的故事"
+    },
+    "about.title": {
+      "en": "Founded to help brands belong, not just arrive.",
+      "tc": "我們的成立，是為了讓品牌真正被接納——而不只是抵達。",
+      "sc": "我们的成立，是为了让品牌真正被接纳——而不只是抵达。"
+    },
+    "about.sub": {
+      "en": "Northia was built on a simple conviction: crossing a border is easy; earning a culture is the work. That’s the work we do.",
+      "tc": "Northia 建立於一個簡單的信念：跨越國界很容易，贏得一個文化才是真正的功夫。而那正是我們所做的事。",
+      "sc": "Northia 建立于一个简单的信念：跨越国界很容易，赢得一个文化才是真正的功夫。而那正是我们所做的事。"
+    },
+    "about.portrait": {
+      "en": "[ Founder portrait, hi-res photo frame ]",
+      "tc": "［ 創辦人肖像 — 高解析照片框 ］",
+      "sc": "［ 创办人肖像 — 高解析照片框 ］"
+    },
+    "about.photo": {
+      "en": "[ Photo ]",
+      "tc": "［ 照片 ］",
+      "sc": "［ 照片 ］"
+    },
+    "about.why.eyebrow": {
+      "en": "Why Northia exists",
+      "tc": "Northia 為何存在",
+      "sc": "Northia 为何存在"
+    },
+    "about.why1": {
+      "en": "We kept seeing capable brands stall at the border, strong at home, invisible to the very communities that should have loved them. The problem was rarely the product. It was the gap between a brand and a culture it hadn’t learned to speak.",
+      "tc": "我們一再看到有實力的品牌卡在邊界——在本地很強，卻對本應喜愛它們的社群完全隱形。問題很少出在產品，而在於品牌與它尚未學會對話的文化之間的落差。",
+      "sc": "我们一再看到有实力的品牌卡在边界——在本地很强，却对本应喜爱它们的社群完全隐形。问题很少出在产品，而在于品牌与它尚未学会对话的文化之间的落差。"
+    },
+    "about.why2": {
+      "en": "So we built a consultancy that treats expansion as a cultural problem first and a marketing problem second, with the growth mindset to move fast and the honesty to tell you when a channel isn’t earning. Method, not vibes.",
+      "tc": "於是我們打造了一間顧問公司，先把拓展視為文化問題，其次才是行銷問題——既有快速行動的增長思維，也有在渠道無效時如實相告的誠實。方法，而非感覺。",
+      "sc": "于是我们打造了一间顾问公司，先把拓展视为文化问题，其次才是营销问题——既有快速行动的增长思维，也有在渠道无效时如实相告的诚实。方法，而非感觉。"
+    },
+    "about.ms1": {
+      "en": "Founded as a cultural event & community platform in Hong Kong.",
+      "tc": "於香港成立，以文化活動與社群平台起步。",
+      "sc": "于香港成立，以文化活动与社群平台起步。"
+    },
+    "about.ms2": {
+      "en": "Community revenue built across events and partnerships.",
+      "tc": "透過活動與合作累積的社群營收。",
+      "sc": "通过活动与合作累积的社群营收。"
+    },
+    "about.ms3yr": {
+      "en": "Today",
+      "tc": "今天",
+      "sc": "今天"
+    },
+    "about.ms3": {
+      "en": "A cross-border branding & community consultancy, Asia ⇄ overseas.",
+      "tc": "一間跨境品牌與社群顧問，連結亞洲 ⇄ 海外。",
+      "sc": "一间跨境品牌与社群顾问，连结亚洲 ⇄ 海外。"
+    },
+    "about.assetslot": {
+      "en": "[ Asset slot, approved brand story / milestone visuals ]",
+      "tc": "［ 素材位 — 已核准的品牌故事／里程碑視覺 ］",
+      "sc": "［ 素材位 — 已核准的品牌故事／里程碑视觉 ］"
+    },
+    "about.f1.role": {
+      "en": "Founder & Director",
+      "tc": "創辦人兼總監",
+      "sc": "创办人兼总监"
+    },
+    "about.f1.p1": {
+      "en": "Maureen founded Northia Marketing Ltd. to help businesses and organisations build meaningful brands, develop strategic marketing, and create lasting connections with their audiences. A graduate of the Chinese University of Hong Kong in Japanese Studies and Journalism, she has always worked at the meeting point of culture and communication.",
+      "tc": "Maureen 創立 Northia Marketing Ltd.，協助企業與機構打造有意義的品牌、發展策略性行銷，並與受眾建立長久的連結。她畢業於香港中文大學日本研究與新聞學，長期站在文化與傳播的交會點上工作。",
+      "sc": "Maureen 创立 Northia Marketing Ltd.，协助企业与机构打造有意义的品牌、发展策略性营销，并与受众建立长久的连结。她毕业于香港中文大学日本研究与新闻学，长期站在文化与传播的交会点上工作。"
+    },
+    "about.f1.p2": {
+      "en": "In 2020 she founded excohk, a cultural event curation and promotion platform that grew into one of Hong Kong’s leading community platforms, generating over $1M in revenue. Awarded a full scholarship for a Master’s in Art History and Curatorial Studies, she also served as an Assistant Professor in Creative Studies, mentoring emerging creative professionals.",
+      "tc": "2020 年，她創辦 excohk，一個文化活動策劃與推廣平台，後來成長為香港領先的社群平台之一，營收逾 100 萬元。她獲全額獎學金攻讀藝術史與策展研究碩士，並曾任創意研究助理教授，指導新晉的創意專業人才。",
+      "sc": "2020 年，她创办 excohk，一个文化活动策划与推广平台，后来成长为香港领先的社群平台之一，营收逾 100 万美元。她获全额奖学金攻读艺术史与策展研究硕士，并曾任创意研究助理教授，指导新晋的创意专业人才。"
+    },
+    "about.f1.p3": {
+      "en": "Her work spans Web3, business development and the non-profit sector across North America and Asia, an international, cross-industry perspective she now brings to every brand Northia helps expand.",
+      "tc": "她的經歷橫跨 Web3、業務發展與國際非牟利領域，遍及北美與亞洲；如今將國際化、跨產業的視角，注入 Northia 協助拓展的每一個品牌。",
+      "sc": "她的经历横跨 Web3、业务发展与非营利领域，遍及北美与亚洲——这份国际化、跨产业的视角，如今注入 Northia 协助拓展的每一个品牌。"
+    },
+    "about.f2.role": {
+      "en": "Co-Founder",
+      "tc": "共同創辦人",
+      "sc": "共同创办人"
+    },
+    "about.f2.p1": {
+      "en": "Project wizard, brand whisperer, serial creator. Aka blends the pace of startups with the heart of non-profits, and lives for marketing, building from scratch and helping brands scale, having already steered 2 startups out of their early-stage hustle.",
+      "tc": "專案高手、品牌低語者、連續創作者。Aka 把初創的節奏與非牟利的初心結合，熱愛行銷、從零打造與助品牌成長——已帶領 2 家初創走出早期的摸索階段。",
+      "sc": "项目高手、品牌低语者、连续创作者。Aka 把初创的节奏与非营利的初心结合，热爱营销、从零打造与助品牌成长——已带领 2 家初创走出早期的摸索阶段。"
+    },
+    "about.f2.p2": {
+      "en": "With deep expertise in project management, she takes big visions, tames the launch chaos, and executes campaigns you can completely trust. Aka believes great branding is, at its core, communication. If you have a fresh concept or a wild idea brewing, grab a chat, she’d be delighted to brainstorm.",
+      "tc": "憑藉深厚的專案管理專長，她能把宏大願景變成可行計劃並落地執行。Aka 相信優秀品牌的核心其實就是溝通。如果您有新概念或大膽的點子，歡迎找她聊聊，她很樂意一起 brainstorm。",
+      "sc": "凭借深厚的项目管理专长，她能把宏大愿景落地，驯服上线的混乱，执行让您完全信任的活动。Aka 相信优秀的品牌，核心其实就是沟通。如果您有新概念或大胆的点子，找她聊聊——她很乐意一起头脑风暴。"
+    },
+    "about.f2.p3": {
+      "en": "When she’s not scaling brands, she’s a devoted dog mom and an enthusiastic (if average) rock climber.",
+      "tc": "不忙於為品牌拼增長時，她是一位盡責的狗媽媽，也是一位攀岩（但攀得普通的）愛好者。",
+      "sc": "不在为品牌拼增长时，她是尽责的狗妈妈，也是热情（但普通）的攀岩爱好者。"
+    },
+    "book.eyebrow": {
+      "en": "Book a strategy session",
+      "tc": "預約品牌策略諮詢",
+      "sc": "预约品牌策略咨询"
+    },
+    "book.title": {
+      "en": "30 minutes. Your market. No obligation.",
+      "tc": "30 分鐘、完全免費的品牌策略諮詢。",
+      "sc": "30 分钟、完全免费的品牌策略咨询。"
+    },
+    "book.p": {
+      "en": "Pick a time that works for you, 30 minutes, no obligation, in English, 中文 or 廣東話.",
+      "tc": "選一個方便的時間，30 分鐘，無任何義務，可流利使用英文、國語或廣東話。",
+      "sc": "选择一个适合您的时间，30 分钟免费咨询，无须绑定，支持 English、中文或粤语。"
+    },
+    "book.cta1": {
+      "en": "Book a session",
+      "tc": "預約諮詢",
+      "sc": "预约咨询"
+    },
+    "book.cta2": {
+      "en": "Get the free audit",
+      "tc": "取得免費診斷",
+      "sc": "获取免费诊断"
+    },
+    "fab": {
+      "en": "Book a Strategy Session",
+      "tc": "預約品牌策略諮詢",
+      "sc": "预约品牌策略咨询"
+    },
+    "ft.tagline": {
+      "en": "Asia ⇄ Overseas | Branding & Community Consultancy that Helps Expanding New Markets & Communities.",
+      "tc": "亞洲 ⇄ 海外｜協助品牌拓展新市場與新社群的品牌與社群顧問。",
+      "sc": "亚洲 ⇄ 海外｜协助品牌拓展新市场与新社群的品牌与社群顾问。"
+    },
+    "ft.explore": {
+      "en": "Explore",
+      "tc": "瀏覽",
+      "sc": "浏览"
+    },
+    "ft.contact": {
+      "en": "Contact",
+      "tc": "聯絡",
+      "sc": "联络"
+    },
+    "ft.descriptor": {
+      "en": "A Cross-border Community-based Branding Company",
+      "tc": "A Cross-border Community-based Branding Company",
+      "sc": "A Cross-border Community-based Branding Company"
+    }
+  },
+  "services": [
+    {
+      "n": "01",
+      "name": {
+        "en": "Marketing & Growth Strategy",
+        "tc": "行銷與增長策略",
+        "sc": "营销与增长策略"
+      },
+      "d": {
+        "en": "One system connecting brand, channel and community, with numbers, not vibes.",
+        "tc": "串連品牌、渠道與社群的一套系統——用數字，而非感覺。",
+        "sc": "串联品牌、渠道与社群的一套系统——用数字，而非感觉。"
+      }
+    },
+    {
+      "n": "02",
+      "name": {
+        "en": "Brand / Positioning",
+        "tc": "品牌與定位",
+        "sc": "品牌与定位"
+      },
+      "d": {
+        "en": "Own a clear place in the mind of the culture you’re entering.",
+        "tc": "在您進入的文化心中，佔據清晰的位置。",
+        "sc": "在您进入的文化心中，占据清晰的位置。"
+      }
+    },
+    {
+      "n": "03",
+      "name": {
+        "en": "Customer Acquisition & Retention",
+        "tc": "客戶獲取與留存",
+        "sc": "客户获取与留存"
+      },
+      "d": {
+        "en": "Win the first purchase, then earn the second. Conversion rate to belonging.",
+        "tc": "贏得首次購買，再贏得第二次。從轉換率到歸屬感。",
+        "sc": "赢得首次购买，再赢得第二次。从转化率到归属感。"
+      }
+    },
+    {
+      "n": "04",
+      "name": {
+        "en": "Customer / Market Research",
+        "tc": "客戶與市場研究",
+        "sc": "客户与市场研究"
+      },
+      "d": {
+        "en": "Understand the community before you spend against it.",
+        "tc": "在投入之前，先讀懂那個社群。",
+        "sc": "在投入之前，先读懂那个社群。"
+      }
+    },
+    {
+      "n": "05",
+      "name": {
+        "en": "Campaigns & Promotions",
+        "tc": "營銷活動與推廣",
+        "sc": "营销活动与推广"
+      },
+      "d": {
+        "en": "Culture-first campaigns that land the same in three languages.",
+        "tc": "以文化為先的活動，在三種語言中傳達一致。",
+        "sc": "以文化为先的活动，在三种语言中传达一致。"
+      }
+    },
+    {
+      "n": "06",
+      "name": {
+        "en": "Social Media & Content",
+        "tc": "社交媒體與內容",
+        "sc": "社交媒体与内容"
+      },
+      "d": {
+        "en": "Platform-native content for the audiences you actually want.",
+        "tc": "為您真正想要的受眾而生的平台原生內容。",
+        "sc": "为您真正想要的受众而生的平台原生内容。"
+      }
+    },
+    {
+      "n": "07",
+      "name": {
+        "en": "Influencer / KOL",
+        "tc": "網紅／KOL",
+        "sc": "网红／KOL"
+      },
+      "d": {
+        "en": "Creators matched by culture and audience, not follower count alone.",
+        "tc": "以文化與受眾配對創作者——而不只是看粉絲數。",
+        "sc": "以文化与受众配对创作者——而不只是看粉丝数。"
+      }
+    },
+    {
+      "n": "08",
+      "name": {
+        "en": "Community Building",
+        "tc": "社群經營",
+        "sc": "社群运营"
+      },
+      "d": {
+        "en": "Spaces people return to, so growth compounds over time.",
+        "tc": "人們願意回訪的空間，讓增長隨時間累積。",
+        "sc": "人们愿意回访的空间，让增长随时间累积。"
+      }
+    },
+    {
+      "n": "09",
+      "name": {
+        "en": "PR / Media",
+        "tc": "公關／媒體",
+        "sc": "公关／媒体"
+      },
+      "d": {
+        "en": "Earned coverage in the outlets your community actually reads.",
+        "tc": "在您的社群真正閱讀的媒體上取得報導。",
+        "sc": "在您的社群真正阅读的媒体上取得报道。"
+      }
+    },
+    {
+      "n": "10",
+      "name": {
+        "en": "Events & Activations",
+        "tc": "活動與體驗",
+        "sc": "活动与体验"
+      },
+      "d": {
+        "en": "On-the-ground moments that turn attention into belonging.",
+        "tc": "在地的體驗時刻，把注意力轉化為歸屬感。",
+        "sc": "在地的体验时刻，把注意力转化为归属感。"
+      }
+    },
+    {
+      "n": "11",
+      "name": {
+        "en": "Paid Media",
+        "tc": "付費媒體",
+        "sc": "付费媒体"
+      },
+      "d": {
+        "en": "Spend that’s accountable, if a channel isn’t earning by day 90, we say so first.",
+        "tc": "負責任的投放——若渠道在第 90 天仍未見效，我們會率先說出來。",
+        "sc": "负责任的投放——若渠道在第 90 天仍未见效，我们会率先说出来。"
+      }
+    },
+    {
+      "n": "12",
+      "name": {
+        "en": "E-commerce & Marketplace Entry",
+        "tc": "電商與平台進駐",
+        "sc": "电商与平台入驻"
+      },
+      "d": {
+        "en": "Launch and grow on Amazon, Shopify, 小紅書 (RED) mall, Tmall and more, set up for each platform's own rules.",
+        "tc": "在 Amazon、Shopify、小紅書商城、天貓等平台上架並成長，依各平台規則量身設定。",
+        "sc": "在 Amazon、Shopify、小红书商城、天猫等平台上架并成长，依各平台规则量身设置。"
+      }
+    },
+    {
+      "n": "13",
+      "name": {
+        "en": "IP & Market-Entry Legal Advisory",
+        "tc": "智慧財產與市場進入法律諮詢",
+        "sc": "知识产权与市场进入法律咨询"
+      },
+      "d": {
+        "en": "Trademark and IP protection, plus regulatory and legal guidance for entering a new market cleanly.",
+        "tc": "商標與智慧財產保護，以及進入新市場所需的法規與法律指引。",
+        "sc": "商标与知识产权保护，以及进入新市场所需的法规与法律指引。"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "hk",
+      "x": 826,
+      "y": 210,
+      "ls": 1,
+      "flag": "🇭🇰",
+      "cat": "hong-kong",
+      "name": {
+        "en": "Hong Kong",
+        "tc": "香港",
+        "sc": "香港"
+      },
+      "role": {
+        "en": "Cross-border brand strategy",
+        "tc": "跨境品牌策略",
+        "sc": "跨境品牌策略"
+      },
+      "desc": {
+        "en": "Trilingual by default, the meeting point between Asia and overseas audiences.",
+        "tc": "預設三語——亞洲與海外受眾的交會點。",
+        "sc": "预设三语——亚洲与海外受众的交会点。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "How Hong Kong brands read as premium, or fall flat, abroad",
+            "tc": "香港品牌在海外，如何讀起來高級，又或瞬間失色",
+            "sc": "香港品牌在海外，如何读起来高级，又或瞬间失色"
+          },
+          "s": "premium-abroad",
+          "body": {
+            "en": "Hong Kong brands carry an unusual advantage abroad: a reputation for polish, speed and East-meets-West fluency. But that reputation does not travel automatically. Overseas, “from Hong Kong” reads as premium only when the brand behaves premium in the destination’s own terms: clean typography in the local script, service that answers in the local tongue, and proof points the destination actually trusts.\n\nWhere brands fall flat is the gap between a strong home reputation and a thin local presence. A site that switches to broken machine translation the moment you leave English. Prices shown only in HKD. Testimonials from names no one abroad recognises. None of it says premium; it says “not built for you”.\n\nThe fix is not to shout “Hong Kong” louder. It is to localise the signals of quality. Lead with the destination’s own proof, such as local reviews, local partners and local press, and let the Hong Kong origin be a quiet mark of craft rather than the whole pitch. Premium is a feeling the audience decides, market by market. Give each market the evidence it needs, in the language and format it already trusts, and the Hong Kong badge becomes an asset instead of a translation problem.",
+            "tc": "香港品牌在海外，往往帶著一種難得的優勢：精緻、快速，以及中西融合的流暢感。但這份聲譽並不會自動跨越國界。在海外，「來自香港」要讀起來高級，前提是品牌以當地的標準表現得高級：以當地文字排版乾淨、以當地語言提供服務，並拿出當地真正信任的憑證。\n\n品牌之所以失色，往往在於「強大的原生聲譽」與「單薄的在地存在」之間的落差：一離開英文就切換成生硬機器翻譯的網站、只顯示港元的價格、以及海外沒有人認得的推薦名字。這些都不會傳達高級，只會說「這不是為你而做的」。\n\n解方不是把「香港」喊得更大聲，而是把品質的訊號在地化。以當地的憑證作先鋒，例如當地評價、當地夥伴與當地媒體，讓「來自香港」成為低調的工藝印記，而非全部賣點。高級是受眾逐個市場決定的感受。用每個市場需要的證據、以它早已信任的語言與格式呈現，香港這塊招牌，就會由翻譯難題變成資產。",
+            "sc": "香港品牌在海外，往往带着一种难得的优势：精致、快速，以及中西融合的流畅感。但这份声誉并不会自动跨越国界。在海外，「来自香港」要读起来高级，前提是品牌以当地的标准表现得高级：以当地文字排版干净、以当地语言提供服务，并拿出当地真正信任的凭证。\n\n品牌之所以失色，往往在于「强大的原生声誉」与「单薄的在地存在」之间的落差：一离开英文就切换成生硬机器翻译的网站、只显示港元的价格、以及海外没有人认得的推荐名字。这些都不会传达高级，只会说「这不是为你而做的」。\n\n解法不是把「香港」喊得更大声，而是把品质的信号在地化。以当地的凭证作先锋，例如当地评价、当地伙伴与当地媒体，让「来自香港」成为低调的工艺印记，而非全部卖点。高级是受众逐个市场决定的感受。用每个市场需要的证据、以它早已信任的语言与格式呈现，香港这块招牌，就会由翻译难题变成资产。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jp",
+      "x": 902,
+      "y": 184,
+      "ls": 1,
+      "flag": "🇯🇵",
+      "cat": "japan",
+      "name": {
+        "en": "Japan",
+        "tc": "日本",
+        "sc": "日本"
+      },
+      "role": {
+        "en": "Brand & positioning",
+        "tc": "品牌與定位",
+        "sc": "品牌与定位"
+      },
+      "desc": {
+        "en": "Precision positioning for a market that rewards restraint.",
+        "tc": "為講究克制的市場，做精準定位。",
+        "sc": "为讲究克制的市场，做精准定位。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Why restraint sells in Japan: positioning without shouting",
+            "tc": "為何克制在日本更好賣：不喧嘩的定位",
+            "sc": "为何克制在日本更好卖：不喧哗的定位"
+          },
+          "s": "restraint",
+          "body": {
+            "en": "In many markets, louder wins. In Japan, restraint often does. Japanese audiences tend to reward brands that demonstrate rather than declare: precise detail, consistent quality, and claims that never outrun the evidence. A headline that screams “revolutionary” or “number one” can read as unserious, even suspicious.\n\nPositioning for Japan starts by removing superlatives and adding specifics: what exactly the product does, how it is made, and who stands behind it. Trust is built slowly and lost quickly, so consistency across every touchpoint matters more than a single bold campaign. Packaging, customer service and after-sales care are part of the message, not afterthoughts.\n\nA soft launch, a small and careful entry that lets a few customers and partners vouch for you, usually beats a loud arrival. Let the product’s quality and the details of your service carry the argument. In Japan, the brands that whisper credibly are often heard more clearly than the ones that shout. Position by proof, pace yourself, and let restraint signal confidence.",
+            "tc": "在許多市場，聲量大者勝出；但在日本，克制往往才是致勝之道。日本受眾傾向獎勵「展示」多於「宣稱」的品牌：精準的細節、穩定的品質，以及從不超出證據的主張。一句高喊「革命性」或「第一」的標題，可能顯得不夠嚴謹，甚至令人懷疑。\n\n為日本做定位，先從刪去最高級形容詞、加入具體事實開始：產品究竟能做什麼、如何製造、由誰負責。信任建立得慢、失去得快，因此每一個接觸點的一致性，比單一次大膽的宣傳更重要。包裝、客戶服務與售後照顧，都是訊息的一部分，而非事後補上。\n\n一次「軟啟動」，也就是謹慎而小規模的進場，讓少數客戶與夥伴為你背書，通常勝過大張旗鼓的登場。讓產品品質與服務細節替你說話。在日本，能可信地「低聲細語」的品牌，往往比大聲叫喊的更被聽見。以證據定位、放慢節奏，讓克制傳達出自信。",
+            "sc": "在许多市场，声量大者胜出；但在日本，克制往往才是致胜之道。日本受众倾向奖励「展示」多于「宣称」的品牌：精准的细节、稳定的品质，以及从不超出证据的主张。一句高喊「革命性」或「第一」的标题，可能显得不够严谨，甚至令人怀疑。\n\n为日本做定位，先从删去最高级形容词、加入具体事实开始：产品究竟能做什么、如何制造、由谁负责。信任建立得慢、失去得快，因此每一个接触点的一致性，比单一次大胆的宣传更重要。包装、客户服务与售后照顾，都是信息的一部分，而非事后补上。\n\n一次「软启动」，也就是谨慎而小规模的进场，让少数客户与伙伴为你背书，通常胜过大张旗鼓的登场。让产品品质与服务细节替你说话。在日本，能可信地「低声细语」的品牌，往往比大声叫喊的更被听见。以证据定位、放慢节奏，让克制传达出自信。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kr",
+      "x": 868,
+      "y": 168,
+      "ls": 1,
+      "flag": "🇰🇷",
+      "cat": "korea",
+      "name": {
+        "en": "South Korea",
+        "tc": "南韓",
+        "sc": "韩国"
+      },
+      "role": {
+        "en": "Content & KOL",
+        "tc": "內容與 KOL",
+        "sc": "内容与 KOL"
+      },
+      "desc": {
+        "en": "Platform-native content and creator work for a fast-moving social market.",
+        "tc": "為節奏快速的社群市場，打造平台原生內容與創作者合作。",
+        "sc": "为节奏快速的社群市场，打造平台原生内容与创作者合作。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Korea’s comment culture: turning replies into community",
+            "tc": "韓國的留言文化：把回覆變成社群",
+            "sc": "韩国的评论文化：把回复变成社群"
+          },
+          "s": "comment-culture",
+          "body": {
+            "en": "In Korea, the comment section is not an afterthought; it is where brand reputation is made. Audiences read replies as carefully as posts, and a lively, well-managed comment thread signals that a brand is present, responsive and worth trusting.\n\nThe opportunity is to treat comments as a two-way channel rather than a moderation task. Reply quickly, in a natural local voice, and reward the regulars who show up. Feature user comments in your own content. Turn recurring questions into posts. When people see that their replies are read and valued, they return, and returning audiences become a community you own rather than reach you rent.\n\nKorean platforms move fast, and trends can turn overnight, so the brands that win are the ones that show up consistently, not just during campaigns. Being present between launches, answering honestly, and letting your most engaged followers shape the conversation is what converts a following into belonging. In Korea, the reply is the relationship.",
+            "tc": "在韓國，留言區並非事後才想到的角落，而是品牌聲譽形成之處。受眾閱讀回覆的用心，不亞於閱讀貼文；一條熱絡、經營良好的留言串，本身就在傳達：這個品牌在場、願意回應，值得信任。\n\n機會在於把留言視為雙向的渠道，而不是需要管理的工作。以自然的在地語氣快速回覆，並善待那些常來的熟面孔。把用戶留言放進自己的內容裡，把重複出現的問題變成貼文。當人們看到自己的留言被閱讀、被重視，他們就會回來；而會回來的受眾，便成為你「擁有」的社群，而非「租來」的觸及。\n\n韓國的平台節奏快，趨勢可能一夜翻轉，因此致勝的品牌，是那些持續在場、而不只在宣傳期出現的品牌。在兩次上線之間仍然在場、誠實回應，並讓最投入的追隨者共同塑造話題，正是把「追蹤」轉化為「歸屬」的關鍵。在韓國，回覆本身就是關係。",
+            "sc": "在韩国，评论区并非事后才想到的角落，而是品牌声誉形成之处。受众阅读回复的用心，不亚于阅读贴文；一条热络、经营良好的评论串，本身就在传达：这个品牌在场、愿意回应，值得信任。\n\n机会在于把评论视为双向的渠道，而不是需要管理的工作。以自然的在地语气快速回复，并善待那些常来的熟面孔。把用户评论放进自己的内容里，把重复出现的问题变成贴文。当人们看到自己的评论被阅读、被重视，他们就会回来；而会回来的受众，便成为你「拥有」的社群，而非「租来」的触及。\n\n韩国的平台节奏快，趋势可能一夜翻转，因此致胜的品牌，是那些持续在场、而不只在宣传期出现的品牌。在两次上线之间仍然在场、诚实回应，并让最投入的追随者共同塑造话题，正是把「关注」转化为「归属」的关键。在韩国，回复本身就是关系。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vn",
+      "x": 790,
+      "y": 236,
+      "ls": 0,
+      "flag": "🇻🇳",
+      "cat": "vietnam",
+      "name": {
+        "en": "Vietnam",
+        "tc": "越南",
+        "sc": "越南"
+      },
+      "role": {
+        "en": "Growth & community",
+        "tc": "增長與社群",
+        "sc": "增长与社群"
+      },
+      "desc": {
+        "en": "Emerging-market growth, at home and among the Vietnamese diaspora abroad.",
+        "tc": "新興市場的增長——涵蓋本地與海外的越南裔離散社群。",
+        "sc": "新兴市场的增长——涵盖本地与海外的越南裔离散社群。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Reaching the Vietnamese diaspora, market by market",
+            "tc": "逐個市場，觸及越南裔離散社群",
+            "sc": "逐个市场，触及越南裔离散社群"
+          },
+          "s": "diaspora",
+          "body": {
+            "en": "“The Vietnamese diaspora” is not one audience. A Vietnamese community in Vancouver differs from one in California, Sydney or Paris in generation, language mix, media habits and the brands they already trust. Treating them as a single segment is the fastest way to reach none of them well.\n\nThe better approach is market by market. Learn where each community gathers online and offline, which language they prefer for which topics, and which local voices they listen to. First-generation audiences may prefer Vietnamese-language content and community events; later generations may switch fluidly between languages and expect a brand to do the same.\n\nPartner with creators and organisations that already belong to the specific community, rather than buying broad reach and hoping it lands. Show up at the moments that matter to that community, in the language they use for them. Expansion into a diaspora is not translation; it is a series of local relationships, built one community at a time. Precision beats scale here, every time.",
+            "tc": "「越南裔離散社群」並不是單一受眾。溫哥華的越南社群，與加州、雪梨或巴黎的並不相同：世代不同、語言組合不同、媒體習慣不同，連他們早已信任的品牌也不同。把他們當成單一區隔，是最快讓每一群都觸及不到的做法。\n\n更好的做法是逐個市場經營。了解每個社群在線上與線下聚集的地方、他們在不同話題偏好的語言，以及他們願意聆聽的在地聲音。第一代受眾也許偏好越南語內容與社群活動；較年輕的世代則可能在語言之間自在切換，並期待品牌也能如此。\n\n與早已屬於該社群的創作者及組織合作，而不是購買廣泛觸及、再期望它剛好命中。在對這個社群真正重要的時刻現身，用他們在那些時刻使用的語言。走進離散社群不是翻譯，而是一連串在地關係，一次一個社群地建立。在這裡，精準永遠勝過規模。",
+            "sc": "「越南裔离散社群」并不是单一受众。温哥华的越南社群，与加州、悉尼或巴黎的并不相同：世代不同、语言组合不同、媒体习惯不同，连他们早已信任的品牌也不同。把他们当成单一区隔，是最快让每一群都触及不到的做法。\n\n更好的做法是逐个市场经营。了解每个社群在线上与线下聚集的地方、他们在不同话题偏好的语言，以及他们愿意聆听的在地声音。第一代受众也许偏好越南语内容与社群活动；较年轻的世代则可能在语言之间自在切换，并期待品牌也能如此。\n\n与早已属于该社群的创作者及组织合作，而不是购买广泛触及、再期望它刚好命中。在对这个社群真正重要的时刻现身，用他们在那些时刻使用的语言。走进离散社群不是翻译，而是一连串在地关系，一次一个社群地建立。在这里，精准永远胜过规模。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "th",
+      "x": 804,
+      "y": 252,
+      "ls": 1,
+      "flag": "🇹🇭",
+      "cat": "thailand",
+      "name": {
+        "en": "Thailand",
+        "tc": "泰國",
+        "sc": "泰国"
+      },
+      "role": {
+        "en": "Campaigns & activations",
+        "tc": "活動與體驗",
+        "sc": "活动与体验"
+      },
+      "desc": {
+        "en": "Culture-first campaigns and on-the-ground activations.",
+        "tc": "以文化為先的活動與在地體驗。",
+        "sc": "以文化为先的活动与在地体验。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Thailand runs on culture-first campaigns: here’s why",
+            "tc": "泰國靠文化優先的活動運轉：原因在此",
+            "sc": "泰国靠文化优先的活动运转：原因在此"
+          },
+          "s": "culture-first",
+          "body": {
+            "en": "Thailand’s social feeds move fast and reward brands that feel native rather than imported. Humour, warmth and a light touch travel further than polished corporate messaging, and campaigns that tap into local moments, from festivals to memes to everyday life, earn attention that paid reach alone cannot buy.\n\nThe lesson is to lead with culture, not the product. Start from what the audience already cares about and laughs about, then let the brand play a genuine role in that story. Local creators are central: they know the references, the timing and the tone, and audiences trust them to keep brands honest.\n\nOn-the-ground activations, such as events, pop-ups and experiences people can share, turn attention into belonging and give a campaign a second life across social. A message that lands the same in Thai as it does in English is not a translation; it is written for Thailand from the start. In a market this social and this fast, culture-first is not a style choice. It is how brands earn a place in the conversation.",
+            "tc": "泰國的社群動態節奏飛快，並且獎勵那些「像本地、而非舶來」的品牌。幽默、溫度與輕盈的手法，比精緻的企業式訊息傳得更遠；懂得借力在地時刻的活動，從節慶、迷因到日常生活，能贏得純靠付費難以買到的注意力。\n\n關鍵是以文化為先，而非以產品為先。從受眾早已在意、會心一笑的事物出發，再讓品牌在那個故事裡扮演真實的角色。在地創作者是核心：他們懂梗、懂時機、懂語氣，而受眾也信任他們替品牌把關。\n\n在地體驗，例如活動、快閃與可供分享的體驗，能把注意力轉化為歸屬，並讓一場活動在社群上獲得第二次生命。一則在泰文與英文中同樣到位的訊息，不是翻譯，而是從一開始就為泰國而寫。在這樣一個高度社群化、節奏飛快的市場，「文化優先」並非風格選擇，而是品牌贏得話語權的方式。",
+            "sc": "泰国的社群动态节奏飞快，并且奖励那些「像本地、而非舶来」的品牌。幽默、温度与轻盈的手法，比精致的企业式信息传得更远；懂得借力在地时刻的活动，从节庆、梗图到日常生活，能赢得纯靠付费难以买到的注意力。\n\n关键是以文化为先，而非以产品为先。从受众早已在意、会心一笑的事物出发，再让品牌在那个故事里扮演真实的角色。在地创作者是核心：他们懂梗、懂时机、懂语气，而受众也信任他们替品牌把关。\n\n在地体验，例如活动、快闪与可供分享的体验，能把注意力转化为归属，并让一场活动在社群上获得第二次生命。一则在泰文与英文中同样到位的信息，不是翻译，而是从一开始就为泰国而写。在这样一个高度社群化、节奏飞快的市场，「文化优先」并非风格选择，而是品牌赢得话语权的方式。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sg",
+      "x": 792,
+      "y": 280,
+      "ls": 0,
+      "flag": "🇸🇬",
+      "cat": "singapore",
+      "name": {
+        "en": "Singapore",
+        "tc": "新加坡",
+        "sc": "新加坡"
+      },
+      "role": {
+        "en": "Southeast Asia expansion",
+        "tc": "東南亞拓展",
+        "sc": "东南亚拓展"
+      },
+      "desc": {
+        "en": "Multilingual by default, the gateway to the region’s many communities.",
+        "tc": "預設多語——通往區內眾多社群的門戶。",
+        "sc": "预设多语——通往区内众多社群的门户。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Singapore is not one market: expanding community by community",
+            "tc": "新加坡不是單一市場：逐個社群拓展",
+            "sc": "新加坡不是单一市场：逐个社群拓展"
+          },
+          "s": "by-community",
+          "body": {
+            "en": "Singapore looks small on a map and large in complexity. Within one city sit multiple languages, cultures and communities, each with its own media habits and trusted voices. A single “Singapore campaign” in one language and tone will always reach some communities and miss others.\n\nThe more effective path is to expand community by community. Decide which communities matter most for your brand, learn how each one prefers to be spoken to, and build presence in each rather than broadcasting to an average that fits no one. Multilingual is the default, not a bonus, and localisation means more than translation; it means the right references, the right platforms and the right partners for each group.\n\nBecause Singapore is also a gateway to the wider region, the discipline you build here, serving distinct communities well, is the same discipline that scales across Southeast Asia. Win the communities, not “the country”. That is how brands turn a small, diverse market into a launchpad.",
+            "tc": "新加坡在地圖上看似很小，複雜度卻很大。一座城市之內，並存著多種語言、文化與社群，各有各的媒體習慣與可信的聲音。一場以單一語言與語氣進行的「新加坡活動」，永遠只會觸及部分社群，錯過其餘。\n\n更有效的做法，是逐個社群拓展。先決定哪些社群對品牌最重要，了解每一群偏好的溝通方式，並在每一群中建立存在，而不是向一個誰都不貼合的平均值廣播。多語是預設，而非加分項；在地化也不只是翻譯，而是為每一群找到對的梗、對的平台與對的夥伴。\n\n由於新加坡同時是通往整個區域的門戶，你在這裡建立的紀律，也就是把不同社群服務好，正是能夠擴展到整個東南亞的同一套紀律。要贏的是社群，而非「國家」。這正是品牌把一個小而多元的市場，變成起飛跑道的方法。",
+            "sc": "新加坡在地图上看似很小，复杂度却很大。一座城市之内，并存着多种语言、文化与社群，各有各的媒体习惯与可信的声音。一场以单一语言与语气进行的「新加坡活动」，永远只会触及部分社群，错过其余。\n\n更有效的做法，是逐个社群拓展。先决定哪些社群对品牌最重要，了解每一群偏好的沟通方式，并在每一群中建立存在，而不是向一个谁都不贴合的平均值广播。多语是预设，而非加分项；在地化也不只是翻译，而是为每一群找到对的梗、对的平台与对的伙伴。\n\n由于新加坡同时是通往整个区域的门户，你在这里建立的纪律，也就是把不同社群服务好，正是能够扩展到整个东南亚的同一套纪律。要赢的是社群，而非「国家」。这正是品牌把一个小而多元的市场，变成起飞跑道的方法。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "me",
+      "x": 648,
+      "y": 196,
+      "ls": 0,
+      "flag": "🇦🇪",
+      "cat": "middle-east",
+      "name": {
+        "en": "Middle East",
+        "tc": "中東",
+        "sc": "中东"
+      },
+      "role": {
+        "en": "Gulf ⇄ Asia brand bridge",
+        "tc": "海灣 ⇄ 亞洲品牌橋樑",
+        "sc": "海湾 ⇄ 亚洲品牌桥梁"
+      },
+      "desc": {
+        "en": "A Dubai-based partner network bridging Asian brands and Gulf audiences, both ways.",
+        "tc": "以杜拜為基地的合作網絡，雙向連接亞洲品牌與海灣受眾。",
+        "sc": "以迪拜为基地的合作网络，双向连接亚洲品牌与海湾受众。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Bridging Gulf audiences and Asian brands, both ways",
+            "tc": "雙向連接海灣受眾與亞洲品牌",
+            "sc": "双向连接海湾受众与亚洲品牌"
+          },
+          "s": "bridge",
+          "body": {
+            "en": "The Gulf and Asia trade constantly, but brands crossing between them still stumble on culture. Asian brands entering the Gulf often underestimate how much local trust, relationships and cultural fit shape a purchase; Gulf brands reaching Asian audiences can miss how differently each Asian market reads value and prestige.\n\nBridging the two is a two-way translation of more than language. It means understanding local calendars and moments; Ramadan, for example, reshapes timing, tone and media consumption. It means respecting the norms that govern how business is done and how brands are expected to behave. And it means choosing partners who are trusted inside each community and letting them vouch for you.\n\nIt also means adapting proof: the trust signals that persuade a buyer in the Gulf are not the same as those that persuade one in Tokyo or Ho Chi Minh City. Done well, the bridge runs both directions, carrying Asian brands into Gulf communities and Gulf brands into Asian ones, on a foundation of cultural fluency rather than assumption.",
+            "tc": "海灣與亞洲之間貿易頻繁，但在兩地之間往來的品牌，仍常在文化上絆倒。進入海灣的亞洲品牌，往往低估了在地信任、人脈關係與文化契合對一筆購買的影響；而觸及亞洲受眾的海灣品牌，也可能忽略每個亞洲市場對「價值」與「尊貴」的解讀有多不同。\n\n連接兩地，是一場超越語言的雙向轉譯。它意味著理解在地的節令與時刻，例如齋戒月會重塑時機、語氣與媒體消費；意味著尊重那些左右商業往來、以及品牌應如何自處的規範；也意味著選擇在每個社群內部真正被信任的夥伴，並讓他們替你背書。\n\n它同時意味著調整「憑證」：能說服海灣買家的信任訊號，與能說服東京或胡志明市買家的並不相同。做得好，這座橋樑便能雙向通行，把亞洲品牌帶進海灣社群，也把海灣品牌帶進亞洲社群，靠的是文化的流暢，而非想當然的假設。",
+            "sc": "海湾与亚洲之间贸易频繁，但在两地之间往来的品牌，仍常在文化上绊倒。进入海湾的亚洲品牌，往往低估了在地信任、人脉关系与文化契合对一笔购买的影响；而触及亚洲受众的海湾品牌，也可能忽略每个亚洲市场对「价值」与「尊贵」的解读有多不同。\n\n连接两地，是一场超越语言的双向转译。它意味着理解在地的节令与时刻，例如斋戒月会重塑时机、语气与媒体消费；意味着尊重那些左右商业往来、以及品牌应如何自处的规范；也意味着选择在每个社群内部真正被信任的伙伴，并让他们替你背书。\n\n它同时意味着调整「凭证」：能说服海湾买家的信任信号，与能说服东京或胡志明市买家的并不相同。做得好，这座桥梁便能双向通行，把亚洲品牌带进海湾社群，也把海湾品牌带进亚洲社群，靠的是文化的流畅，而非想当然的假设。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ca",
+      "x": 158,
+      "y": 150,
+      "ls": 1,
+      "flag": "🇨🇦",
+      "cat": "canada",
+      "name": {
+        "en": "Canada",
+        "tc": "加拿大",
+        "sc": "加拿大"
+      },
+      "role": {
+        "en": "Diaspora & community",
+        "tc": "離散社群",
+        "sc": "离散社群"
+      },
+      "desc": {
+        "en": "Textbook community work, e.g. reaching local Vietnamese and Chinese communities in Vancouver.",
+        "tc": "教科書級的社群實作——例如觸及溫哥華在地的越南與華人社群。",
+        "sc": "教科书级的社群实作——例如触及温哥华在地的越南与华人社群。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Reaching local Vietnamese and Chinese communities in Vancouver",
+            "tc": "觸及溫哥華在地的越南與華人社群",
+            "sc": "触及温哥华在地的越南与华人社群"
+          },
+          "s": "vancouver-communities",
+          "body": {
+            "en": "Vancouver is a textbook case for community-first marketing. Large, established Vietnamese and Chinese communities live here, each with its own languages, media, festivals and trusted local figures, and reaching them looks nothing like a generic national campaign.\n\nThe starting point is respect for difference. The Chinese community spans Cantonese and Mandarin speakers, recent arrivals and long-settled families, each with different platforms and preferences; the Vietnamese community has its own gathering places, language habits and voices. Broad, English-only advertising skims over all of it.\n\nWhat works is presence inside the community: content in the right language, partnerships with local businesses and creators, and a genuine role in the events and spaces where the community already gathers. This is “the world to Asia” on Canadian soil, reaching Asian communities where they actually live rather than treating “Asian” as one box. The reward is loyalty. Communities that feel genuinely seen become the audience a brand owns, and word of mouth inside a tight community outperforms almost any paid channel.",
+            "tc": "溫哥華是「社群優先」行銷的教科書案例。這裡住著龐大而成熟的越南與華人社群，各有各的語言、媒體、節慶與可信的在地人物，觸及他們的方式，與一場籠統的全國性活動截然不同。\n\n起點是尊重差異。華人社群涵蓋說廣東話與國語的人、新移民與落地已久的家庭，各有不同的平台與偏好；越南社群也有自己的聚會場所、語言習慣與聲音。廣泛、只用英文的廣告，會把這一切都略過。\n\n真正有效的，是走進社群內部：以對的語言製作內容、與在地商家及創作者合作，並在社群早已聚集的活動與場域中扮演真實的角色。這正是落在加拿大土地上的「世界走進亞洲」，在亞洲社群真正生活的地方觸及他們，而不是把「亞洲」當成單一格子。回報是忠誠。真正被看見的社群，會成為品牌「擁有」的受眾；而在一個緊密社群內部的口碑，幾乎勝過任何付費渠道。",
+            "sc": "温哥华是「社群优先」营销的教科书案例。这里住着庞大而成熟的越南与华人社群，各有各的语言、媒体、节庆与可信的在地人物，触及他们的方式，与一场笼统的全国性活动截然不同。\n\n起点是尊重差异。华人社群涵盖说粤语与普通话的人、新移民与落地已久的家庭，各有不同的平台与偏好；越南社群也有自己的聚会场所、语言习惯与声音。广泛、只用英文的广告，会把这一切都略过。\n\n真正有效的，是走进社群内部：以对的语言制作内容、与在地商家及创作者合作，并在社群早已聚集的活动与场域中扮演真实的角色。这正是落在加拿大土地上的「世界走进亚洲」，在亚洲社群真正生活的地方触及他们，而不是把「亚洲」当成单一格子。回报是忠诚。真正被看见的社群，会成为品牌「拥有」的受众；而在一个紧密社群内部的口碑，几乎胜过任何付费渠道。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "us",
+      "x": 180,
+      "y": 198,
+      "ls": 0,
+      "flag": "🇺🇸",
+      "cat": "usa",
+      "name": {
+        "en": "USA",
+        "tc": "美國",
+        "sc": "美国"
+      },
+      "role": {
+        "en": "Asian-American communities",
+        "tc": "亞裔美國人社群",
+        "sc": "亚裔美国人社群"
+      },
+      "desc": {
+        "en": "The World-to-Asia model on US soil, precision over broad reach.",
+        "tc": "「世界走進亞洲」模式落地美國——精準勝過廣泛觸及。",
+        "sc": "「世界走进亚洲」模式落地美国——精准胜过广泛触及。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Asian-American communities: precision over broad reach",
+            "tc": "亞裔美國人社群：精準勝過廣泛觸及",
+            "sc": "亚裔美国人社群：精准胜过广泛触及"
+          },
+          "s": "communities",
+          "body": {
+            "en": "“Asian-American” covers dozens of distinct communities, including Chinese, Vietnamese, Korean, Filipino and Indian, spread across very different regions, generations and media habits. Marketing to the label instead of the community is how budgets get spent without being felt.\n\nPrecision wins here. Choose the specific communities that matter to your brand, learn where they gather and whom they trust, and build for those audiences rather than an “Asian-American” average that represents no one. Language matters, but so does context: a second-generation audience may move fluidly between English and a heritage language and expect a brand to understand both worlds.\n\nLocal creators, community organisations and in-language platforms reach people that broad national buys never touch. The pattern that works overseas works here too: treat each community as a community, not a demographic checkbox, and let trusted local voices carry the brand. Narrow, well-served reach beats wide, shallow reach, because belonging, not impressions, is what turns an audience into customers who stay.",
+            "tc": "「亞裔美國人」涵蓋數十個各不相同的社群，包括華人、越南裔、韓裔、菲律賓裔與印度裔，分佈於截然不同的地區、世代與媒體習慣。對著標籤而非社群做行銷，正是預算花了卻毫無感覺的原因。\n\n在這裡，精準才會贏。挑選對品牌真正重要的具體社群，了解他們聚集的地方與信任的對象，並為那些受眾而建，而不是為一個誰都代表不了的「亞裔美國人」平均值而建。語言重要，脈絡同樣重要：第二代受眾也許在英語與母語之間自在切換，並期待品牌同時理解這兩個世界。\n\n在地創作者、社群組織與母語平台，能觸及廣泛的全國性投放永遠碰不到的人。在海外行得通的模式，在這裡同樣行得通：把每個社群當成社群，而非人口統計上的一個勾選框，並讓可信的在地聲音承載品牌。精準而服務到位的觸及，勝過廣泛而淺薄的觸及，因為讓受眾成為長期顧客的，是歸屬感，而非曝光數。",
+            "sc": "「亚裔美国人」涵盖数十个各不相同的社群，包括华人、越南裔、韩裔、菲律宾裔与印度裔，分布于截然不同的地区、世代与媒体习惯。对着标签而非社群做营销，正是预算花了却毫无感觉的原因。\n\n在这里，精准才会赢。挑选对品牌真正重要的具体社群，了解他们聚集的地方与信任的对象，并为那些受众而建，而不是为一个谁都代表不了的「亚裔美国人」平均值而建。语言重要，脉络同样重要：第二代受众也许在英语与母语之间自在切换，并期待品牌同时理解这两个世界。\n\n在地创作者、社群组织与母语平台，能触及广泛的全国性投放永远碰不到的人。在海外行得通的模式，在这里同样行得通：把每个社群当成社群，而非人口统计上的一个勾选框，并让可信的在地声音承载品牌。精准而服务到位的触及，胜过广泛而浅薄的触及，因为让受众成为长期顾客的，是归属感，而非曝光数。"
+          }
+        }
+      ]
+    }
+  ],
+  "brands": [
+    "Liuyishou Hotpot",
+    "4evercare",
+    "WingGrove",
+    "excohk"
+  ]
+}

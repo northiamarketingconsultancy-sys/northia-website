@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /article-template.html
-
-Sitemap: https://northiamarketing.com/sitemap.xml

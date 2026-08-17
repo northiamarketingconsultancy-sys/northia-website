@@ -822,7 +822,7 @@ const BRANDS=["Liuyishou Hotpot","4evercare","WingGrove","excohk"];
 function t(key){const e=I18N[key];if(!e)return key;const node=(e.a2w||e.w2a)?e[STATE.persp]:e;return (node&&(node[STATE.lang]||node.en))||key;}
 function applyI18n(){
   document.documentElement.setAttribute('lang',STATE.lang);
-  document.querySelectorAll('[data-i18n]').forEach(el=>{const v=t(el.getAttribute('data-i18n'));const bare=v.replace(/^[“”"'\s]+|[“”"'\s]+$/g,'');if(/^\[[\s\S]*\]$/.test(bare)){el.innerHTML='';el.classList.add('is-placeholder');}else{el.innerHTML=v;el.classList.remove('is-placeholder');}});
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const v=t(el.getAttribute('data-i18n'));const bare=v.replace(/^[“”"'「」『』\s]+|[“”"'「」『』\s]+$/g,'');if(/^[\[［][\s\S]*[\]］]$/.test(bare)){el.innerHTML='';el.classList.add('is-placeholder');}else{el.innerHTML=v;el.classList.remove('is-placeholder');}});
   document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.setAttribute('placeholder',t(el.getAttribute('data-i18n-ph')));});
   buildLogos();buildServices();buildSvcSelect();buildMap();renderMapCard(STATE.mapSel);renderSvcChips();buildAudit();
   document.querySelectorAll('#hdLang button,#entLang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===STATE.lang));

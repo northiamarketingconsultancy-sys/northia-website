@@ -47,9 +47,10 @@ html[lang="tc"] .eyebrow,html[lang="sc"] .eyebrow{letter-spacing:.06em;}
 .sec-pad{padding:clamp(64px,9vw,120px) 0;}
 
 /* ENTRANCE */
-#entrance{position:fixed;inset:0;z-index:1000;background:var(--bone);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;transition:opacity .6s ease,visibility .6s ease;}
+#entrance{position:fixed;inset:0;z-index:1000;background:var(--bone);display:flex;flex-direction:column;text-align:center;padding:40px 24px;overflow-y:auto;-webkit-overflow-scrolling:touch;transition:opacity .6s ease,visibility .6s ease;}
+.ent-inner{margin:auto;width:100%;max-width:800px;display:flex;flex-direction:column;align-items:center;}
 #entrance.hidden{opacity:0;visibility:hidden;}
-.ent-lang{position:absolute;top:26px;right:clamp(20px,5vw,48px);display:flex;gap:4px;z-index:2;}
+.ent-lang{position:fixed;top:26px;right:clamp(20px,5vw,48px);display:flex;gap:4px;z-index:2;}
 .ent-mark{width:88px;height:88px;margin-bottom:22px;}
 .ent-mark img{width:100%;height:100%;object-fit:contain;}
 .ent-eyebrow{margin-bottom:18px;}
@@ -356,25 +357,27 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
     </div>
   </div>
   <div class="blush-wash" style="display:flex;align-items:center;justify-content:center;"></div>
-  <div class="ent-mark"><img src="assets/northia-mark.png" alt="Northia"></div>
-  <span class="eyebrow ent-eyebrow" data-i18n="ent.eyebrow">Asia ⇄ Overseas</span>
-  <h1 data-i18n="ent.h1">Which direction are you<br>building toward?</h1>
-  <p class="ent-tagline" data-i18n="ent.tag">tagline</p>
-  <div class="ent-cta-row">
-    <div class="ent-cta" data-persp="a2w" onclick="enter('a2w')">
-      <span class="arrow">⇄</span>
-      <h3 data-i18n="ent.a2w.title">Asia to the World</h3>
-      <p class="tip" data-i18n="ent.a2w.tip">tip</p>
-      <span class="go" data-i18n="ent.go">Enter this path →</span>
+  <div class="ent-inner">
+    <div class="ent-mark"><img src="assets/northia-mark.png" alt="Northia"></div>
+    <span class="eyebrow ent-eyebrow" data-i18n="ent.eyebrow">Asia ⇄ Overseas</span>
+    <h1 data-i18n="ent.h1">Which direction are you<br>building toward?</h1>
+    <p class="ent-tagline" data-i18n="ent.tag">tagline</p>
+    <div class="ent-cta-row">
+      <div class="ent-cta" data-persp="a2w" onclick="enter('a2w')">
+        <span class="arrow">⇄</span>
+        <h3 data-i18n="ent.a2w.title">Asia to the World</h3>
+        <p class="tip" data-i18n="ent.a2w.tip">tip</p>
+        <span class="go" data-i18n="ent.go">Enter this path →</span>
+      </div>
+      <div class="ent-cta" data-persp="w2a" onclick="enter('w2a')">
+        <span class="arrow">⇄</span>
+        <h3 data-i18n="ent.w2a.title">The World to Asia</h3>
+        <p class="tip" data-i18n="ent.w2a.tip">tip</p>
+        <span class="go" data-i18n="ent.go">Enter this path →</span>
+      </div>
     </div>
-    <div class="ent-cta" data-persp="w2a" onclick="enter('w2a')">
-      <span class="arrow">⇄</span>
-      <h3 data-i18n="ent.w2a.title">The World to Asia</h3>
-      <p class="tip" data-i18n="ent.w2a.tip">tip</p>
-      <span class="go" data-i18n="ent.go">Enter this path →</span>
-    </div>
+    <p class="ent-foot" data-i18n="ent.foot">You can switch direction or language anytime.</p>
   </div>
-  <p class="ent-foot" data-i18n="ent.foot">You can switch direction or language anytime.</p>
 </div>
 
 <!-- ============ SITE ============ -->

@@ -316,6 +316,13 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
 .reveal.in{opacity:1;transform:none;}
 
+/* Hide internal hints on the public site (bracketed placeholders + logo-slot note) */
+.is-placeholder{display:none !important;}
+.logos-hint{display:none;}
+
+/* Perspective switch inside the mobile menu (hidden on desktop) */
+.mobile-nav .persp-switch{display:none;margin-bottom:10px;}
+
 @media(max-width:900px){
   .tst-grid,.map-shell,.comm-grid,.about-hero,.proof-grid{grid-template-columns:1fr;}
   .founders{grid-template-columns:1fr;}
@@ -323,12 +330,17 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
   nav.hd-nav{display:none;}
   .hd-menu-btn{display:block;}
   .ft-top{grid-template-columns:1fr;}
+  /* Move the perspective toggle out of the tight header bar and into the menu */
+  header .hd-tools .persp-switch{display:none;}
+  .mobile-nav .persp-switch{display:inline-flex;}
 }
 @media(max-width:560px){
   .fgrid{grid-template-columns:1fr;}
   .atest-q{grid-template-columns:1fr;}
-  .persp-switch button{padding:6px 8px;font-size:.66rem;}
   .hd-logo .hd-eyebrow{display:none;}
+  .hd{gap:10px;}
+  .hd-tools{gap:6px;}
+  .lang-switch button{padding:7px 9px;}
 }
 </style>
 </head>
@@ -394,6 +406,10 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
     </div>
   </div>
   <div class="mobile-nav wrap" id="mobileNav" style="padding-bottom:12px;">
+    <div class="persp-switch">
+      <button data-persp="a2w" class="on" data-i18n="persp.a2w.short">Asia→World</button>
+      <button data-persp="w2a" data-i18n="persp.w2a.short">World→Asia</button>
+    </div>
     <a href="#audit" onclick="toggleMobileNav()" data-i18n="nav.audit">Free Audit</a>
     <a href="#services" onclick="toggleMobileNav()" data-i18n="nav.rebrand">Rebranding</a>
     <a href="#community" onclick="toggleMobileNav()" data-i18n="nav.community">Community</a>
@@ -803,11 +819,11 @@ const BRANDS=["Liuyishou Hotpot","4evercare","WingGrove","excohk"];
 function t(key){const e=I18N[key];if(!e)return key;const node=(e.a2w||e.w2a)?e[STATE.persp]:e;return (node&&(node[STATE.lang]||node.en))||key;}
 function applyI18n(){
   document.documentElement.setAttribute('lang',STATE.lang);
-  document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=t(el.getAttribute('data-i18n'));});
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const v=t(el.getAttribute('data-i18n'));const bare=v.replace(/^[“”"'\s]+|[“”"'\s]+$/g,'');if(/^\[[\s\S]*\]$/.test(bare)){el.innerHTML='';el.classList.add('is-placeholder');}else{el.innerHTML=v;el.classList.remove('is-placeholder');}});
   document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.setAttribute('placeholder',t(el.getAttribute('data-i18n-ph')));});
   buildLogos();buildServices();buildSvcSelect();buildMap();renderMapCard(STATE.mapSel);renderSvcChips();buildAudit();
   document.querySelectorAll('#hdLang button,#entLang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===STATE.lang));
-  document.querySelectorAll('#perspSwitch button').forEach(b=>b.classList.toggle('on',b.dataset.persp===STATE.persp));
+  document.querySelectorAll('.persp-switch button').forEach(b=>b.classList.toggle('on',b.dataset.persp===STATE.persp));
 }
 function setLang(l){STATE.lang=l;applyI18n();}
 function setPersp(p){STATE.persp=p;applyI18n();}
@@ -924,7 +940,7 @@ function initReveal(){const io=new IntersectionObserver(es=>{es.forEach(en=>{if(
 
 /* WIRING */
 document.querySelectorAll('#entLang button,#hdLang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
-document.querySelectorAll('#perspSwitch button').forEach(b=>b.addEventListener('click',()=>setPersp(b.dataset.persp)));
+document.querySelectorAll('.persp-switch button').forEach(b=>b.addEventListener('click',()=>setPersp(b.dataset.persp)));
 document.querySelectorAll('#commToggle button').forEach(b=>b.addEventListener('click',()=>setRole(b.dataset.role)));
 
 /* CONTENT LOADING — copy is editable in content.xlsx → content.json.

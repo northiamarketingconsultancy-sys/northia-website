@@ -8,7 +8,8 @@
 <link rel="canonical" href="https://northiamarketing.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/northia-mark.png" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 <style>
 /* ============ BRAND TOKENS (Northia Brand Guidelines v2.0) ============ */
 :root{
@@ -302,6 +303,9 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
 .ft-col h5{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:14px;}
 .ft-col a{display:block;font-size:.9rem;color:var(--body);padding:5px 0;}
 .ft-col a:hover{color:var(--red);}
+.social-links{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:2px;}
+.social-links a{display:inline-flex;align-items:center;gap:4px;padding:4px 0;}
+.social-links a::after{content:'↗';color:var(--red);font-size:.72em;}
 .ft-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:42px;padding-top:22px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);}
 
 /* FAB */
@@ -367,7 +371,7 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
   </div>
   <div class="blush-wash" style="display:flex;align-items:center;justify-content:center;"></div>
   <div class="ent-inner">
-    <div class="ent-mark"><img src="assets/northia-mark.png" alt="Northia"></div>
+    <div class="ent-mark"><img src="assets/northia-mark.png" alt="Northia" width="88" height="88" fetchpriority="high" decoding="async"></div>
     <span class="eyebrow ent-eyebrow" data-i18n="ent.eyebrow">Asia ⇄ Overseas</span>
     <h1 data-i18n="ent.h1">Which direction are you<br>building toward?</h1>
     <p class="ent-tagline" data-i18n="ent.tag">tagline</p>
@@ -544,10 +548,10 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
     </div>
     <div class="proof-label reveal"><span class="eyebrow" data-i18n="tst.proof">The proof</span></div>
     <div class="proof-grid">
-      <div class="card proof reveal"><div class="proof-asset has-img"><img src="assets/partners/winggrove.png" alt="WingGrove"></div><div class="proof-body"><p class="quote" data-i18n="tst.p1.quote"></p><div class="who"><b>WingGrove</b><span data-i18n="tst.role"></span></div></div></div>
-      <div class="card proof reveal"><div class="proof-asset has-img"><img src="assets/partners/liuyishou-hotpot.png" alt="Liuyishou Hotpot"></div><div class="proof-body"><p class="quote" data-i18n="tst.p2.quote"></p><div class="who"><b>Liuyishou Hotpot</b><span data-i18n="tst.role"></span></div></div></div>
+      <div class="card proof reveal"><div class="proof-asset has-img"><img src="assets/partners/winggrove.webp" alt="WingGrove" loading="lazy" decoding="async" width="100" height="100"></div><div class="proof-body"><p class="quote" data-i18n="tst.p1.quote"></p><div class="who"><b>WingGrove</b><span data-i18n="tst.role"></span></div></div></div>
+      <div class="card proof reveal"><div class="proof-asset has-img"><img src="assets/partners/liuyishou-hotpot.webp" alt="Liuyishou Hotpot" loading="lazy" decoding="async" width="100" height="100"></div><div class="proof-body"><p class="quote" data-i18n="tst.p2.quote"></p><div class="who"><b>Liuyishou Hotpot</b><span data-i18n="tst.role"></span></div></div></div>
       <div class="card proof reveal"><div class="proof-asset" data-i18n="tst.pic">[ Photo ]</div><div class="proof-body"><p class="quote" data-i18n="tst.p3.quote"></p><div class="who"><b>4evercare</b><span data-i18n="tst.role"></span></div></div></div>
-      <div class="card proof reveal"><div class="proof-asset has-img"><img src="assets/partners/excohk.png" alt="excohk"></div><div class="proof-body"><p class="quote" data-i18n="tst.p4.quote"></p><div class="who"><b>excohk</b><span data-i18n="tst.role"></span></div></div></div>
+      <div class="card proof reveal"><div class="proof-asset has-img"><img src="assets/partners/excohk.webp" alt="excohk" loading="lazy" decoding="async" width="100" height="100"></div><div class="proof-body"><p class="quote" data-i18n="tst.p4.quote"></p><div class="who"><b>excohk</b><span data-i18n="tst.role"></span></div></div></div>
     </div>
     <hr class="divider" style="border:0;border-top:1px solid var(--line);margin:clamp(48px,7vw,88px) 0;">
     <div class="sec-head reveal" style="margin-bottom:26px;">
@@ -641,7 +645,7 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
       <p data-i18n="about.sub">placeholder</p>
     </div>
     <div class="about-hero reveal">
-      <div class="portrait-frame"><img class="portrait-img" src="assets/about/northia-why-exists.png" alt="Abstract forms representing Northia's cross-cultural brand strategy"></div>
+      <div class="portrait-frame"><img class="portrait-img" src="assets/about/northia-why-exists.webp" alt="Abstract forms representing Northia's cross-cultural brand strategy" loading="lazy" decoding="async" width="800" height="1000"></div>
       <div>
         <span class="eyebrow" data-i18n="about.why.eyebrow">Why Northia exists</span>
         <p style="margin-top:16px;font-size:1.06rem;color:var(--body);" data-i18n="about.why1"></p>
@@ -656,13 +660,13 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
     </div>
     <div class="founders">
       <div class="card founder reveal">
-        <div class="pf has-img"><img src="assets/team/maureen-ng.jpg" alt="Maureen Ng"></div>
+        <div class="pf has-img"><img src="assets/team/maureen-ng.webp" alt="Maureen Ng" loading="lazy" decoding="async" width="300" height="300"></div>
         <h3>Maureen Ng</h3>
         <div class="role" data-i18n="about.f1.role">Founder & Director</div>
         <p data-i18n="about.f1.p1"></p><p data-i18n="about.f1.p2"></p><p data-i18n="about.f1.p3"></p>
       </div>
       <div class="card founder reveal">
-        <div class="pf has-img"><img src="assets/team/aka-chung.jpg" alt="Aka Chung"></div>
+        <div class="pf has-img"><img src="assets/team/aka-chung.webp" alt="Aka Chung" loading="lazy" decoding="async" width="300" height="300"></div>
         <h3>Aka Chung</h3>
         <div class="role" data-i18n="about.f2.role">Co-Founder</div>
         <p data-i18n="about.f2.p1"></p><p data-i18n="about.f2.p2"></p><p data-i18n="about.f2.p3"></p>
@@ -721,6 +725,12 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
         <h5 style="margin-top:18px;" data-i18n="ft.contact">Contact</h5>
         <a href="mailto:hello@northiamarketing.com">hello@northiamarketing.com</a>
         <a href="tel:+17789985022">+1 778-998-5022</a>
+        <h5 style="margin-top:18px;" data-i18n="ft.follow">Follow Northia</h5>
+        <div class="social-links">
+          <a href="https://www.instagram.com/northiamarketing/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/northia-marketing-consultancy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="http://xhslink.com/o/2T26xDWQywT" target="_blank" rel="noopener noreferrer" data-i18n="ft.xhs">Little Red Book</a>
+        </div>
       </div>
     </div>
     <div class="ft-bottom">
@@ -824,14 +834,14 @@ const ENDPOINT='https://formsubmit.co/ajax/hello@northiamarketing.com';
    Any partner/founder NOT listed here keeps its dashed placeholder. */
 const ASSETS={
   partners:{
-    'Liuyishou Hotpot':'assets/partners/liuyishou-hotpot.png',
-    'WingGrove':'assets/partners/winggrove.png',
-    'excohk':'assets/partners/excohk.png'
+    'Liuyishou Hotpot':'assets/partners/liuyishou-hotpot.webp',
+    'WingGrove':'assets/partners/winggrove.webp',
+    'excohk':'assets/partners/excohk.webp'
     /* '4evercare':'assets/partners/4evercare.png'  <- add when you have it */
   },
   founders:{
-    'Maureen Ng':'assets/team/maureen-ng.jpg',
-    'Aka Chung':'assets/team/aka-chung.jpg'
+    'Maureen Ng':'assets/team/maureen-ng.webp',
+    'Aka Chung':'assets/team/aka-chung.webp'
   }
 };
 
@@ -853,6 +863,8 @@ Object.assign(I18N,{
   "ft.communitymarketing":{"en":"Community Marketing","tc":"社群行銷","sc":"社群营销"},
   "ft.kol":{"en":"KOL & Influencer Marketing","tc":"KOL／網紅行銷","sc":"KOL／达人营销"},
   "ft.communitybuilding":{"en":"Community Building","tc":"社群經營","sc":"社群运营"}
+  ,"ft.follow":{"en":"Follow Northia","tc":"關注 Northia","sc":"关注 Northia"}
+  ,"ft.xhs":{"en":"Little Red Book","tc":"小紅書","sc":"小红书"}
 });
 
 /* ================= SERVICES (11) ================= */
@@ -880,7 +892,7 @@ function setPersp(p){
   if(STATE.entered&&map&&document.activeElement?.closest('.map-path-tabs'))map.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-function buildLogos(){const track=document.getElementById('logoTrack');if(!track)return;const unit=[...BRANDS,...BRANDS,...BRANDS].map(b=>{const src=ASSETS.partners[b];return `<div class="logo-slot${src?' has-img':''}">${src?`<img class="logo-img" src="${src}" alt="${b}">`:`<span class="nm">${b}</span><span class="pl">${t('logos.pl')}</span>`}</div>`;}).join('');track.innerHTML=unit+unit;}
+function buildLogos(){const track=document.getElementById('logoTrack');if(!track)return;const unit=BRANDS.map(b=>{const src=ASSETS.partners[b];return `<div class="logo-slot${src?' has-img':''}">${src?`<img class="logo-img" src="${src}" alt="${b}" loading="lazy" decoding="async">`:`<span class="nm">${b}</span><span class="pl">${t('logos.pl')}</span>`}</div>`;}).join('');track.innerHTML=unit+unit;}
 function buildServices(){const g=document.getElementById('svcGrid');if(!g)return;g.innerHTML=SVCS.map(s=>{const sel=STATE.svcSel.has(s.n)?' sel':'';return `<div class="card svc-card${sel}" data-n="${s.n}" onclick="toggleSvc('${s.n}')"><div class="svc-check">✓</div><div class="num">${s.n}</div><h4>${s.name[STATE.lang]}</h4><p>${s.d[STATE.lang]}</p><span class="add">${STATE.svcSel.has(s.n)?'✓':'+'} ${t('svc.reqbtn').split(' ')[0]}</span></div>`;}).join('');}
 function buildSvcSelect(){const sel=document.getElementById('svcSelect');if(!sel)return;sel.innerHTML=`<option value="">${t('svc.pick')}</option>`+SVCS.map(s=>`<option value="${s.n}">${s.n} · ${s.name[STATE.lang]}</option>`).join('');}
 function toggleSvc(n){if(STATE.svcSel.has(n))STATE.svcSel.delete(n);else STATE.svcSel.add(n);updateSvcBar();buildServices();}
@@ -1006,7 +1018,7 @@ document.querySelectorAll('#commToggle button').forEach(b=>b.addEventListener('c
    the embedded defaults below. Opened directly via file:// it falls back to these. */
 async function loadContent(){
   try{
-    const res=await fetch('content.json',{cache:'no-store'});
+    const res=await fetch('content.json',{cache:'default'});
     if(!res.ok)return;
     const c=await res.json();
     if(c.i18n)for(const k in c.i18n)I18N[k]=c.i18n[k];

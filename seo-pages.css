@@ -3,3 +3,4 @@
 .language-tabs{display:flex;gap:4px;margin-left:auto}.language-tabs a{border:1px solid var(--line);padding:6px 9px;font-size:.7rem;font-weight:800;color:var(--ink)}.language-tabs a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 html[lang="zh-Hant"] body,html[lang="zh-Hans"] body{font-family:'Noto Sans TC','Noto Sans SC','Plus Jakarta Sans',system-ui,sans-serif}
 @media(max-width:980px){.language-tabs{margin-left:auto}.cta-small{display:none}}
+.social-links{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:10px}.social-links a{display:inline-flex;align-items:center;gap:4px;margin:0}.social-links a:after{content:'↗';color:var(--red);font-size:.72em}

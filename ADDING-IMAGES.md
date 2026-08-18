@@ -14,6 +14,8 @@ assets/
 │   └── excohk.png
 └── team/                     founder / team photos
     └── maureen-ng.jpg
+├── about/
+│   └── northia-why-exists.png
 ```
 
 ## What's already wired
@@ -23,7 +25,8 @@ assets/
 | `partners/winggrove.png` | logo carousel + WingGrove proof card |
 | `partners/liuyishou-hotpot.png` | logo carousel + Liuyishou proof card |
 | `partners/excohk.png` | logo carousel + excohk proof card |
-| `team/maureen-ng.jpg` | "Our Story" portrait + Maureen's founder card |
+| `about/northia-why-exists.png` | "Why Northia exists" feature image |
+| `team/maureen-ng.jpg` | Maureen's founder card |
 
 Anything not yet supplied (the **4evercare** logo, **Aka Chung**'s photo) keeps a dashed
 placeholder until you add it.

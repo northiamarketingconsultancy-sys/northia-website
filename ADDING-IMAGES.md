@@ -13,7 +13,8 @@ assets/
 │   ├── winggrove.png
 │   └── excohk.png
 └── team/                     founder / team photos
-    └── maureen-ng.jpg
+    ├── maureen-ng.jpg
+    └── aka-chung.jpg
 ├── about/
 │   └── northia-why-exists.png
 ```
@@ -27,9 +28,10 @@ assets/
 | `partners/excohk.png` | logo carousel + excohk proof card |
 | `about/northia-why-exists.png` | "Why Northia exists" feature image |
 | `team/maureen-ng.jpg` | Maureen's founder card |
+| `team/aka-chung.jpg` | Aka's founder card |
 
-Anything not yet supplied (the **4evercare** logo, **Aka Chung**'s photo) keeps a dashed
-placeholder until you add it.
+Anything not yet supplied (such as the **4evercare** logo) keeps a dashed placeholder
+until you add it.
 
 ---
 

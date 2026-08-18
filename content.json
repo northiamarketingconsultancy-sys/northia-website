@@ -1514,6 +1514,234 @@
           }
         }
       ]
+    },
+    {
+      "id": "cn",
+      "x": 838,
+      "y": 196,
+      "ls": 1,
+      "flag": "🇨🇳",
+      "cat": "mainland-china",
+      "name": {
+        "en": "Mainland China",
+        "tc": "中國內地",
+        "sc": "中国大陆"
+      },
+      "role": {
+        "en": "Platform & KOL strategy",
+        "tc": "平台與 KOL 策略",
+        "sc": "平台与 KOL 策略"
+      },
+      "desc": {
+        "en": "A distinct platform, commerce and content ecosystem requiring Mainland-specific strategy.",
+        "tc": "獨特的平台、電商與內容生態，需要中國內地專屬策略。",
+        "sc": "独特的平台、电商与内容生态，需要中国大陆专属策略。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Mainland China market entry: platform, KOL and community strategy",
+            "tc": "中國內地市場拓展：平台、KOL 與社群策略",
+            "sc": "中国大陆市场拓展：平台、KOL 与社群策略"
+          },
+          "s": "market-entry",
+          "body": {
+            "en": "Successful market entry begins with a specific audience, local proof and the channels that audience already trusts. Northia combines positioning, localization, creator partnerships and community strategy so expansion is built market by market rather than copied from a regional template.",
+            "tc": "成功的市場拓展，始於清晰的受眾、在地可信憑證，以及該受眾本來已經信任的渠道。Northia 結合定位、在地化、創作者合作與社群策略，逐個市場建立拓展方案，而非複製同一套區域模板。",
+            "sc": "成功的市场拓展，始于清晰的受众、当地可信凭证，以及该受众本来已经信任的渠道。Northia 结合定位、本地化、创作者合作与社群策略，逐个市场建立拓展方案，而不是复制同一套区域模板。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tw",
+      "x": 850,
+      "y": 226,
+      "ls": 0,
+      "flag": "🇹🇼",
+      "cat": "taiwan",
+      "name": {
+        "en": "Taiwan",
+        "tc": "台灣",
+        "sc": "台湾"
+      },
+      "role": {
+        "en": "Localization & community trust",
+        "tc": "在地化與社群信任",
+        "sc": "本地化与社群信任"
+      },
+      "desc": {
+        "en": "Traditional Chinese localization and community credibility shaped for Taiwan.",
+        "tc": "針對台灣市場建立繁體中文在地化與社群公信力。",
+        "sc": "针对台湾市场建立繁体中文本地化与社群公信力。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Taiwan market entry: localization and community credibility",
+            "tc": "台灣市場拓展：在地化與社群公信力",
+            "sc": "台湾市场拓展：本地化与社群公信力"
+          },
+          "s": "market-entry",
+          "body": {
+            "en": "Successful market entry begins with a specific audience, local proof and the channels that audience already trusts. Northia combines positioning, localization, creator partnerships and community strategy so expansion is built market by market rather than copied from a regional template.",
+            "tc": "成功的市場拓展，始於清晰的受眾、在地可信憑證，以及該受眾本來已經信任的渠道。Northia 結合定位、在地化、創作者合作與社群策略，逐個市場建立拓展方案，而非複製同一套區域模板。",
+            "sc": "成功的市场拓展，始于清晰的受众、当地可信凭证，以及该受众本来已经信任的渠道。Northia 结合定位、本地化、创作者合作与社群策略，逐个市场建立拓展方案，而不是复制同一套区域模板。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "my",
+      "x": 780,
+      "y": 292,
+      "ls": 1,
+      "flag": "🇲🇾",
+      "cat": "malaysia",
+      "name": {
+        "en": "Malaysia",
+        "tc": "馬來西亞",
+        "sc": "马来西亚"
+      },
+      "role": {
+        "en": "Multicultural market strategy",
+        "tc": "多元文化市場策略",
+        "sc": "多元文化市场策略"
+      },
+      "desc": {
+        "en": "Community-level segmentation across Malay, Chinese and Indian audiences.",
+        "tc": "針對馬來裔、華裔與印度裔受眾進行社群層級細分。",
+        "sc": "针对马来裔、华裔与印度裔受众进行社群层级细分。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Malaysia market entry: community-level multicultural marketing",
+            "tc": "馬來西亞市場拓展：社群層級的多元文化行銷",
+            "sc": "马来西亚市场拓展：社群层级的多元文化营销"
+          },
+          "s": "market-entry",
+          "body": {
+            "en": "Successful market entry begins with a specific audience, local proof and the channels that audience already trusts. Northia combines positioning, localization, creator partnerships and community strategy so expansion is built market by market rather than copied from a regional template.",
+            "tc": "成功的市場拓展，始於清晰的受眾、在地可信憑證，以及該受眾本來已經信任的渠道。Northia 結合定位、在地化、創作者合作與社群策略，逐個市場建立拓展方案，而非複製同一套區域模板。",
+            "sc": "成功的市场拓展，始于清晰的受众、当地可信凭证，以及该受众本来已经信任的渠道。Northia 结合定位、本地化、创作者合作与社群策略，逐个市场建立拓展方案，而不是复制同一套区域模板。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uk",
+      "x": 455,
+      "y": 150,
+      "ls": 1,
+      "flag": "🇬🇧",
+      "cat": "united-kingdom",
+      "name": {
+        "en": "United Kingdom",
+        "tc": "英國",
+        "sc": "英国"
+      },
+      "role": {
+        "en": "Asia-to-UK expansion",
+        "tc": "亞洲品牌拓展英國",
+        "sc": "亚洲品牌拓展英国"
+      },
+      "desc": {
+        "en": "Positioning Asian brands for UK buyers and multicultural communities.",
+        "tc": "為英國消費者及多元文化社群重新定位亞洲品牌。",
+        "sc": "为英国消费者及多元文化社群重新定位亚洲品牌。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "How Asia-rooted brands enter the UK market",
+            "tc": "亞洲品牌如何拓展英國市場",
+            "sc": "亚洲品牌如何拓展英国市场"
+          },
+          "s": "market-entry",
+          "body": {
+            "en": "Successful market entry begins with a specific audience, local proof and the channels that audience already trusts. Northia combines positioning, localization, creator partnerships and community strategy so expansion is built market by market rather than copied from a regional template.",
+            "tc": "成功的市場拓展，始於清晰的受眾、在地可信憑證，以及該受眾本來已經信任的渠道。Northia 結合定位、在地化、創作者合作與社群策略，逐個市場建立拓展方案，而非複製同一套區域模板。",
+            "sc": "成功的市场拓展，始于清晰的受众、当地可信凭证，以及该受众本来已经信任的渠道。Northia 结合定位、本地化、创作者合作与社群策略，逐个市场建立拓展方案，而不是复制同一套区域模板。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eu",
+      "x": 520,
+      "y": 165,
+      "ls": 0,
+      "flag": "🇪🇺",
+      "cat": "europe",
+      "name": {
+        "en": "Europe",
+        "tc": "歐洲",
+        "sc": "欧洲"
+      },
+      "role": {
+        "en": "Market-by-market European entry",
+        "tc": "逐個歐洲市場拓展",
+        "sc": "逐个欧洲市场拓展"
+      },
+      "desc": {
+        "en": "European expansion planned by country, language and customer community.",
+        "tc": "按國家、語言與顧客社群規劃歐洲市場拓展。",
+        "sc": "按国家、语言与顾客社群规划欧洲市场拓展。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "European market entry for Asia-rooted brands",
+            "tc": "亞洲品牌拓展歐洲市場",
+            "sc": "亚洲品牌拓展欧洲市场"
+          },
+          "s": "market-entry",
+          "body": {
+            "en": "Successful market entry begins with a specific audience, local proof and the channels that audience already trusts. Northia combines positioning, localization, creator partnerships and community strategy so expansion is built market by market rather than copied from a regional template.",
+            "tc": "成功的市場拓展，始於清晰的受眾、在地可信憑證，以及該受眾本來已經信任的渠道。Northia 結合定位、在地化、創作者合作與社群策略，逐個市場建立拓展方案，而非複製同一套區域模板。",
+            "sc": "成功的市场拓展，始于清晰的受众、当地可信凭证，以及该受众本来已经信任的渠道。Northia 结合定位、本地化、创作者合作与社群策略，逐个市场建立拓展方案，而不是复制同一套区域模板。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "au",
+      "x": 872,
+      "y": 388,
+      "ls": 1,
+      "flag": "🇦🇺",
+      "cat": "australia",
+      "name": {
+        "en": "Australia",
+        "tc": "澳洲",
+        "sc": "澳大利亚"
+      },
+      "role": {
+        "en": "Brand & diaspora growth",
+        "tc": "品牌與離散社群增長",
+        "sc": "品牌与离散社群增长"
+      },
+      "desc": {
+        "en": "Connecting Asia-rooted brands with Australian buyers and diaspora communities.",
+        "tc": "連結亞洲品牌、澳洲消費者與離散社群。",
+        "sc": "连接亚洲品牌、澳大利亚消费者与离散社群。"
+      },
+      "arts": [
+        {
+          "t": {
+            "en": "Australia market entry and diaspora community marketing",
+            "tc": "澳洲市場拓展與離散社群行銷",
+            "sc": "澳大利亚市场拓展与离散社群营销"
+          },
+          "s": "market-entry",
+          "body": {
+            "en": "Successful market entry begins with a specific audience, local proof and the channels that audience already trusts. Northia combines positioning, localization, creator partnerships and community strategy so expansion is built market by market rather than copied from a regional template.",
+            "tc": "成功的市場拓展，始於清晰的受眾、在地可信憑證，以及該受眾本來已經信任的渠道。Northia 結合定位、在地化、創作者合作與社群策略，逐個市場建立拓展方案，而非複製同一套區域模板。",
+            "sc": "成功的市场拓展，始于清晰的受众、当地可信凭证，以及该受众本来已经信任的渠道。Northia 结合定位、本地化、创作者合作与社群策略，逐个市场建立拓展方案，而不是复制同一套区域模板。"
+          }
+        }
+      ]
     }
   ],
   "brands": [

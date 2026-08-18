@@ -705,20 +705,19 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
         <a href="#about" data-i18n="nav.about">About Us</a>
       </div>
       <div class="ft-col">
-        <h5>Market Entry</h5>
-        <a href="asia-to-world-marketing.html">Asia to the World</a>
-        <a href="asia-market-entry-marketing.html">The World to Asia</a>
-        <a href="japan-market-entry-marketing.html">Japan</a>
-        <a href="mainland-china-market-entry-marketing.html">Mainland China</a>
-        <a href="hong-kong-market-entry-marketing.html">Hong Kong</a>
-        <a href="taiwan-market-entry-marketing.html">Taiwan</a>
-        <a href="singapore-market-entry-marketing.html">Singapore + more</a>
+        <h5 data-i18n="ft.marketentry">Market Entry</h5>
+        <a data-seo-slug="asia-to-world-marketing" data-i18n="persp.a2w.long" href="asia-to-world-marketing.html">Asia to the World</a>
+        <a data-seo-slug="asia-market-entry-marketing" data-i18n="persp.w2a.long" href="asia-market-entry-marketing.html">The World to Asia</a>
+        <a data-seo-slug="japan-market-entry-marketing" data-i18n="ft.market.jp" href="japan-market-entry-marketing.html">Japan</a>
+        <a data-seo-slug="mainland-china-market-entry-marketing" data-i18n="ft.market.cn" href="mainland-china-market-entry-marketing.html">Mainland China</a>
+        <a data-seo-slug="hong-kong-market-entry-marketing" data-i18n="ft.market.hk" href="hong-kong-market-entry-marketing.html">Hong Kong</a>
+        <a data-seo-slug="taiwan-market-entry-marketing" data-i18n="ft.market.tw" href="taiwan-market-entry-marketing.html">Taiwan</a>
+        <a data-seo-slug="singapore-market-entry-marketing" data-i18n="ft.market.sgmore" href="singapore-market-entry-marketing.html">Singapore + more</a>
       </div>
       <div class="ft-col">
-        <h5>Community Marketing</h5>
-        <a href="kol-marketing-asia.html">KOL Marketing</a>
-        <a href="influencer-marketing-asian-communities.html">Influencer Marketing</a>
-        <a href="community-marketing-services.html">Community Building</a>
+        <h5 data-i18n="ft.communitymarketing">Community Marketing</h5>
+        <a data-seo-slug="kol-influencer-marketing-asia" data-i18n="ft.kol" href="kol-influencer-marketing-asia.html">KOL &amp; Influencer Marketing</a>
+        <a data-seo-slug="community-marketing-services" data-i18n="ft.communitybuilding" href="community-marketing-services.html">Community Building</a>
         <h5 style="margin-top:18px;" data-i18n="ft.contact">Contact</h5>
         <a href="mailto:hello@northiamarketing.com">hello@northiamarketing.com</a>
         <a href="tel:+17789985022">+1 778-998-5022</a>
@@ -844,7 +843,16 @@ const LOCS=[{"id":"hk","x":826,"y":210,"ls":1,"flag":"🇭🇰","cat":"hong-kong
 
 Object.assign(I18N,{
   "persp.a2w.long":{"en":"Asia to the World","tc":"亞洲走向世界","sc":"亚洲走向世界"},
-  "persp.w2a.long":{"en":"The World to Asia","tc":"世界走進亞洲","sc":"世界走进亚洲"}
+  "persp.w2a.long":{"en":"The World to Asia","tc":"世界走進亞洲","sc":"世界走进亚洲"},
+  "ft.marketentry":{"en":"Market Entry","tc":"市場拓展","sc":"市场进入"},
+  "ft.market.jp":{"en":"Japan","tc":"日本","sc":"日本"},
+  "ft.market.cn":{"en":"Mainland China","tc":"中國內地","sc":"中国大陆"},
+  "ft.market.hk":{"en":"Hong Kong","tc":"香港","sc":"中国香港"},
+  "ft.market.tw":{"en":"Taiwan","tc":"台灣","sc":"中国台湾"},
+  "ft.market.sgmore":{"en":"Singapore + more","tc":"新加坡及其他市場","sc":"新加坡及更多市场"},
+  "ft.communitymarketing":{"en":"Community Marketing","tc":"社群行銷","sc":"社群营销"},
+  "ft.kol":{"en":"KOL & Influencer Marketing","tc":"KOL／網紅行銷","sc":"KOL／达人营销"},
+  "ft.communitybuilding":{"en":"Community Building","tc":"社群經營","sc":"社群运营"}
 });
 
 /* ================= SERVICES (11) ================= */
@@ -857,6 +865,7 @@ function applyI18n(){
   document.documentElement.setAttribute('lang',STATE.lang);
   document.querySelectorAll('[data-i18n]').forEach(el=>{const v=t(el.getAttribute('data-i18n'));const bare=v.replace(/^[“”"'「」『』\s]+|[“”"'「」『』\s]+$/g,'');if(/^[\[［][\s\S]*[\]］]$/.test(bare)){el.innerHTML='';el.classList.add('is-placeholder');}else{el.innerHTML=v;el.classList.remove('is-placeholder');}});
   document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.setAttribute('placeholder',t(el.getAttribute('data-i18n-ph')));});
+  document.querySelectorAll('[data-seo-slug]').forEach(el=>{const suffix=STATE.lang==='tc'?'-zh-hk':STATE.lang==='sc'?'-zh-cn':'';el.href=el.dataset.seoSlug+suffix+'.html';});
   buildLogos();buildServices();buildSvcSelect();buildMap();buildMarketTabs();renderMapCard(STATE.mapSel);renderSvcChips();buildAudit();
   document.querySelectorAll('#hdLang button,#entLang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===STATE.lang));
   document.querySelectorAll('.persp-switch button').forEach(b=>b.classList.toggle('on',b.dataset.persp===STATE.persp));

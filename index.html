@@ -435,7 +435,7 @@ footer{background:var(--card);border-top:1px solid var(--line);padding:58px 0 32
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="blush-wash"></div>
   <div class="wrap" style="position:relative;z-index:1;">
     <span class="eyebrow" data-i18n="hero.eyebrow">Cross-cultural market expansion</span>
@@ -973,7 +973,7 @@ function showAuditResult(score){
 function setRole(r){STATE.role=r;document.getElementById('panel-client').style.display=r==='client'?'':'none';document.getElementById('panel-influencer').style.display=r==='influencer'?'':'none';document.querySelectorAll('#commToggle button').forEach(b=>b.classList.toggle('on',b.dataset.role===r));}
 
 /* ENTRANCE / NAV */
-function enter(persp){STATE.persp=persp;STATE.entered=true;applyI18n();document.getElementById('entrance').classList.add('hidden');document.getElementById('site').classList.add('shown');setTimeout(()=>{document.getElementById('entrance').style.display='none';},650);}
+function enter(persp){STATE.persp=persp;STATE.entered=true;try{sessionStorage.setItem('northia-perspective',persp);}catch(e){}applyI18n();document.getElementById('entrance').classList.add('hidden');document.getElementById('site').classList.add('shown');setTimeout(()=>{document.getElementById('entrance').style.display='none';},650);}
 function toggleMobileNav(){const m=document.getElementById('mobileNav');m.style.display=m.style.display==='block'?'none':'block';}
 
 /* MODALS */
@@ -1038,6 +1038,12 @@ async function loadContent(){
   updateSvcBar();
   initForms();
   initReveal();
+  const params=new URLSearchParams(location.search);
+  const requested=params.get('direction');
+  let returning=false;
+  try{returning=!!document.referrer&&new URL(document.referrer).origin===location.origin;}catch(e){}
+  if(requested==='a2w'||requested==='w2a')enter(requested);
+  else if(returning){let saved='a2w';try{saved=sessionStorage.getItem('northia-perspective')||'a2w';}catch(e){}enter(saved==='w2a'?'w2a':'a2w');}
 })();
 </script>
 </body>

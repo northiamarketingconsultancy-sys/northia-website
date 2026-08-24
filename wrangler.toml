@@ -1,0 +1,9 @@
+name = "northia-marketing"
+compatibility_date = "2026-08-24"
+main = "./_worker.js"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+run_worker_first = true
+not_found_handling = "404-page"

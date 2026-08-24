@@ -65,3 +65,11 @@ class AgentReadinessStaticTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+def test_homepage_search_snippet_is_brand_led():
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert "Northia — Asia ⇄ Overseas | Branding &amp; Community Consultancy" in html
+    assert "Chinese market entry" in html
+    assert "Asian community marketing in North America" in html
+    assert '<div class="founders" data-nosnippet>' in html

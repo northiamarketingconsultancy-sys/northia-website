@@ -1,6 +1,6 @@
-# Northia Marketing Consultancy Ltd.
+# Northia — Asia ⇄ Overseas | Branding & Community Consultancy
 
-> Asia ⇄ Overseas | Branding & Community Consultancy that helps brands expand into new markets and communities.
+> Asia ⇄ Overseas | Branding & Community Consultancy that Helps Expanding New Markets & Communities. Northia supports Chinese market entry, Asian community marketing in North America, cross-cultural branding, KOL/influencer strategy and community building.
 
 Northia helps Asia-rooted brands and cultural concepts expand into overseas markets and communities, and helps overseas brands enter Asian markets or reach Asian communities wherever they live. The work is cross-cultural rather than generic “globalisation”: positioning, language, proof, channels, and community are adapted to the specific market and audience.
 

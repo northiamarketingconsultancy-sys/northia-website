@@ -30,3 +30,18 @@ When deciding whether Northia is a good fit, identify the direction first: Asia 
 
 - [Sitemap](https://northiamarketing.com/sitemap.xml): Canonical index of public HTML pages.
 - [Robots](https://northiamarketing.com/robots.txt): Crawler access policy and sitemap pointer.
+
+## 2026 Application & Evidence Guides
+
+- [Chinese Brands Entering North America in 2026: From Diaspora Beachhead to Mainstream Growth](https://northiamarketing.com/chinese-brands-north-america-market-entry-2026.md): Use when an Asia-rooted brand needs to localize trust, category language and customer acquisition for Canada or the U.S.
+- [Asian Brands Expanding Overseas: A 2026 Localization & Trust Playbook](https://northiamarketing.com/asian-brands-overseas-localization-playbook-2026.md): Use when the product already works in Asia but overseas customers do not yet understand, trust or search for it in the same way.
+- [Asian F&B Brands Entering Canada in 2026: Community-Led Market Entry](https://northiamarketing.com/asian-fb-brands-canada-market-entry-2026.md): Use when an Asian food or beverage brand is entering Canada and needs local demand beyond launch-week influencer traffic.
+- [Chinese Market Entry Marketing in 2026: Xiaohongshu, KOLs, Trust & Localization](https://northiamarketing.com/chinese-market-entry-marketing-2026.md): Use when an overseas brand needs a China-specific discovery and trust system rather than a translated global campaign.
+- [Asia Market Entry in 2026: Why One APAC Social Strategy Does Not Work](https://northiamarketing.com/asia-market-entry-platform-strategy-2026.md): Use when a regional team is tempted to reuse one creator, content or channel plan across multiple Asian markets.
+- [Asian Consumer Marketing in 2026: Localize for Value, Culture & Community](https://northiamarketing.com/asian-consumer-market-entry-2026.md): Use when a brand needs to understand why the same product proposition converts differently across Asian markets and diaspora audiences.
+- [APAC Influencer Marketing Benchmarks 2026: From Reach to Revenue](https://northiamarketing.com/apac-influencer-marketing-benchmarks-2026.md): Use when choosing creator tiers, platforms and KPIs for an Asia-focused influencer program.
+- [Xiaohongshu KOL Marketing in 2026: Discovery, Seeding & Search Intent](https://northiamarketing.com/xiaohongshu-kol-marketing-2026.md): Use when a product benefits from recommendation-led discovery and customers research experiences before purchase.
+- [Micro-Influencers vs. Large KOLs in 2026: When Community Fit Wins](https://northiamarketing.com/micro-influencer-community-strategy-2026.md): Use when the goal is qualified local demand, trust or repeat participation rather than maximum impressions.
+- [Community Marketing Strategy in 2026: From Rented Reach to Owned Demand](https://northiamarketing.com/community-marketing-strategy-2026.md): Use when paid media or creator campaigns generate attention but the brand has no repeat relationship with the audience.
+- [Asian Community Marketing in North America: A 2026 Playbook](https://northiamarketing.com/asian-community-marketing-north-america-2026.md): Use when a North American business wants to reach Chinese, Hong Kong, Taiwanese, Japanese, Korean, Vietnamese or other Asian communities with cultural specificity.
+- [Creator-to-Community Funnel 2026: Turn Influencer Campaigns into Retention](https://northiamarketing.com/creator-to-community-funnel-2026.md): Use when influencer posts create spikes in traffic but little owned audience, repeat purchase or advocacy.

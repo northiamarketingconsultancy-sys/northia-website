@@ -73,3 +73,41 @@ def test_homepage_search_snippet_is_brand_led():
     assert "Chinese market entry" in html
     assert "Asian community marketing in North America" in html
     assert '<div class="founders" data-nosnippet>' in html
+
+ARTICLE_SLUGS = [
+    'chinese-brands-north-america-market-entry-2026','asian-brands-overseas-localization-playbook-2026','asian-fb-brands-canada-market-entry-2026',
+    'chinese-market-entry-marketing-2026','asia-market-entry-platform-strategy-2026','asian-consumer-market-entry-2026',
+    'apac-influencer-marketing-benchmarks-2026','xiaohongshu-kol-marketing-2026','micro-influencer-community-strategy-2026',
+    'community-marketing-strategy-2026','asian-community-marketing-north-america-2026','creator-to-community-funnel-2026'
+]
+
+def test_new_articles_are_agent_and_seo_ready():
+    for slug in ARTICLE_SLUGS:
+        html = (ROOT / f'{slug}.html').read_text(encoding='utf-8')
+        soup = BeautifulSoup(html, 'html.parser')
+        assert len(soup.find_all('h1')) == 1
+        assert len(' '.join(soup.stripped_strings)) > 500
+        assert soup.find('meta', attrs={'name':'description'}).get('content')
+        assert soup.find('link', attrs={'rel':'canonical'}).get('href').endswith(f'/{slug}.html')
+        assert soup.find('script', attrs={'type':'application/ld+json'})
+        assert soup.find('a', string=lambda x: x and 'Request a free audit' in x)
+        people_label = soup.find('strong', string='People')
+        assert people_label and people_label.find_next('span').get_text(strip=True)
+        audience_section = soup.find('h2', string='People this guide is for')
+        assert audience_section
+        ld = json.loads(soup.find('script', attrs={'type':'application/ld+json'}).string)
+        assert ld.get('audience', {}).get('audienceType')
+        assert (ROOT / f'{slug}.md').exists()
+
+def test_pillar_pages_have_three_guides_and_consultation_cta():
+    for name in ['asia-to-world-marketing.html','asia-market-entry-marketing.html','kol-influencer-marketing-asia.html','community-marketing-services.html']:
+        soup = BeautifulSoup((ROOT/name).read_text(encoding='utf-8'), 'html.parser')
+        assert len(soup.select('.insight-card')) == 3
+        assert soup.select_one('.consult-band a[href="index.html#contact"]')
+
+def test_sitemap_and_llms_include_new_guides():
+    sitemap=(ROOT/'sitemap.xml').read_text(encoding='utf-8')
+    llms=(ROOT/'llms.txt').read_text(encoding='utf-8')
+    for slug in ARTICLE_SLUGS:
+        assert f'https://northiamarketing.com/{slug}.html' in sitemap
+        assert f'https://northiamarketing.com/{slug}.md' in llms

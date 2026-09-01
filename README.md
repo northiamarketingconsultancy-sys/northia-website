@@ -172,3 +172,15 @@ curl -fsS https://northiamarketing.com/robots.txt
 ```
 
 Expected results after the Cloudflare edge layer is active: unknown path `404`; Markdown request `200` with `Content-Type: text/markdown; charset=utf-8` and `Vary` containing `Accept`; HTML request `200` with `Content-Type: text/html; charset=utf-8`; unsupported document-only request `406`.
+
+## Mandatory instructions for future SEO articles
+
+Every new SEO article must be delivered as one complete trilingual set in the same change:
+
+- English: `slug.html` and `slug.md`
+- Traditional Chinese, independently localized for Hong Kong business readers: `slug-zh-hk.html` and `slug-zh-hk.md`
+- Simplified Chinese, independently localized for Mainland Chinese business readers: `slug-zh-cn.html` and `slug-zh-cn.md`
+
+Do not publish an English-only article and do not use mechanical character conversion as translation. Each language must preserve the same strategy while using natural local terminology. Every set must include reciprocal `hreflang` links (`en`, `zh-Hant`, `zh-Hans`, and `x-default`), self-referencing canonicals, Article structured data, one H1, a meta description, an HTML/Markdown alternate, and entries in both `sitemap.xml` and `llms.txt`.
+
+The opening content and Article schema must explicitly identify **People, Scenario, Year, Industry, and Application Situation**. Add localized internal links from the corresponding existing English, Traditional Chinese and Simplified Chinese pillar pages in the same update. Do not create a new pillar page, navigation category, footer column, or automation unless separately approved.

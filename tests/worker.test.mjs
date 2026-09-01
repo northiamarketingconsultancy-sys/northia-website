@@ -2,6 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import worker, { negotiate } from '../_worker.js';
 
+test('legacy KOL aliases permanently redirect to the canonical page', async () => {
+  const response = await worker.fetch(new Request('https://northiamarketing.com/kol-marketing-asia.html'), { ASSETS: { fetch: async () => new Response('unused') } });
+  assert.equal(response.status, 301);
+  assert.equal(response.headers.get('location'), 'https://northiamarketing.com/kol-influencer-marketing-asia.html');
+});
+
 const files = new Map([
   ['/', { body: '<!doctype html><h1>Home</h1>', type: 'text/html; charset=utf-8' }],
   ['/index.md', { body: '# Home\n\nAgent markdown.', type: 'text/markdown; charset=utf-8' }],

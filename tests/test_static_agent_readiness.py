@@ -78,7 +78,8 @@ ARTICLE_SLUGS = [
     'chinese-brands-north-america-market-entry-2026','asian-brands-overseas-localization-playbook-2026','asian-fb-brands-canada-market-entry-2026',
     'chinese-market-entry-marketing-2026','asia-market-entry-platform-strategy-2026','asian-consumer-market-entry-2026',
     'apac-influencer-marketing-benchmarks-2026','xiaohongshu-kol-marketing-2026','micro-influencer-community-strategy-2026',
-    'community-marketing-strategy-2026','asian-community-marketing-north-america-2026','creator-to-community-funnel-2026'
+    'community-marketing-strategy-2026','asian-community-marketing-north-america-2026','creator-to-community-funnel-2026',
+    'chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026'
 ]
 
 def test_new_articles_are_agent_and_seo_ready():
@@ -99,11 +100,42 @@ def test_new_articles_are_agent_and_seo_ready():
         assert ld.get('audience', {}).get('audienceType')
         assert (ROOT / f'{slug}.md').exists()
 
-def test_pillar_pages_have_three_guides_and_consultation_cta():
+def test_pillar_pages_have_guides_and_consultation_cta():
     for name in ['asia-to-world-marketing.html','asia-market-entry-marketing.html','kol-influencer-marketing-asia.html','community-marketing-services.html']:
         soup = BeautifulSoup((ROOT/name).read_text(encoding='utf-8'), 'html.parser')
-        assert len(soup.select('.insight-card')) == 3
+        assert len(soup.select('.insight-card')) >= 3
         assert soup.select_one('.consult-band a[href="index.html#contact"]')
+
+def test_new_guides_are_linked_from_requested_pages():
+    slugs = ['chinese-restaurant-brands-north-america-2026.html','xiaohongshu-north-american-local-business-2026.html']
+    for name in ['asia-to-world-marketing.html','asia-market-entry-marketing.html','mainland-china-market-entry-marketing.html']:
+        soup = BeautifulSoup((ROOT/name).read_text(encoding='utf-8'), 'html.parser')
+        hrefs = {a.get('href') for a in soup.find_all('a')}
+        for slug in slugs:
+            assert slug in hrefs
+
+def test_latest_guides_have_complete_trilingual_sets():
+    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026']
+    variants = [('', 'en'), ('-zh-hk', 'zh-Hant'), ('-zh-cn', 'zh-Hans')]
+    for base in bases:
+        for suffix, lang in variants:
+            html_path = ROOT/f'{base}{suffix}.html'
+            md_path = ROOT/f'{base}{suffix}.md'
+            assert html_path.exists() and md_path.exists()
+            soup = BeautifulSoup(html_path.read_text(encoding='utf-8'), 'html.parser')
+            assert soup.html.get('lang') == lang
+            assert len(soup.find_all('h1')) == 1
+            assert soup.find('link', attrs={'rel':'canonical'}).get('href').endswith(f'/{base}{suffix}.html')
+            hreflangs = {x.get('hreflang') for x in soup.find_all('link', attrs={'rel':'alternate'}) if x.get('hreflang')}
+            assert {'en','zh-Hant','zh-Hans','x-default'} <= hreflangs
+
+def test_localized_guides_are_linked_from_localized_requested_pages():
+    for suffix in ['-zh-hk','-zh-cn']:
+        slugs = [f'chinese-restaurant-brands-north-america-2026{suffix}.html', f'xiaohongshu-north-american-local-business-2026{suffix}.html']
+        for base in ['asia-to-world-marketing','asia-market-entry-marketing','mainland-china-market-entry-marketing']:
+            soup = BeautifulSoup((ROOT/f'{base}{suffix}.html').read_text(encoding='utf-8'), 'html.parser')
+            hrefs = {a.get('href') for a in soup.find_all('a')}
+            assert all(slug in hrefs for slug in slugs)
 
 def test_sitemap_and_llms_include_new_guides():
     sitemap=(ROOT/'sitemap.xml').read_text(encoding='utf-8')

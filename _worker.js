@@ -1,4 +1,8 @@
 const PRODUCES = ['text/html', 'text/markdown'];
+const PERMANENT_REDIRECTS = new Map([
+  ['/influencer-marketing-asian-communities.html', '/kol-influencer-marketing-asia.html'],
+  ['/kol-marketing-asia.html', '/kol-influencer-marketing-asia.html']
+]);
 
 function parseAccept(header) {
   if (!header || !header.trim()) return [{ type: '*/*', q: 1, order: 0 }];
@@ -78,6 +82,8 @@ export default {
   async fetch(request, env) {
     if (!['GET', 'HEAD'].includes(request.method)) return env.ASSETS.fetch(request);
     const url = new URL(request.url);
+    const redirectPath = PERMANENT_REDIRECTS.get(url.pathname);
+    if (redirectPath) return Response.redirect(new URL(redirectPath, url), 301);
     const asset = await assetFetch(env, request);
 
     if (asset.status === 404) {

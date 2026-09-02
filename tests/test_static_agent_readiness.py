@@ -79,7 +79,8 @@ ARTICLE_SLUGS = [
     'chinese-market-entry-marketing-2026','asia-market-entry-platform-strategy-2026','asian-consumer-market-entry-2026',
     'apac-influencer-marketing-benchmarks-2026','xiaohongshu-kol-marketing-2026','micro-influencer-community-strategy-2026',
     'community-marketing-strategy-2026','asian-community-marketing-north-america-2026','creator-to-community-funnel-2026',
-    'chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026'
+    'chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026',
+    'chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026'
 ]
 
 def test_new_articles_are_agent_and_seo_ready():
@@ -115,7 +116,7 @@ def test_new_guides_are_linked_from_requested_pages():
             assert slug in hrefs
 
 def test_latest_guides_have_complete_trilingual_sets():
-    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026']
+    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026','chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026']
     variants = [('', 'en'), ('-zh-hk', 'zh-Hant'), ('-zh-cn', 'zh-Hans')]
     for base in bases:
         for suffix, lang in variants:
@@ -132,6 +133,14 @@ def test_latest_guides_have_complete_trilingual_sets():
 def test_localized_guides_are_linked_from_localized_requested_pages():
     for suffix in ['-zh-hk','-zh-cn']:
         slugs = [f'chinese-restaurant-brands-north-america-2026{suffix}.html', f'xiaohongshu-north-american-local-business-2026{suffix}.html']
+        for base in ['asia-to-world-marketing','asia-market-entry-marketing','mainland-china-market-entry-marketing']:
+            soup = BeautifulSoup((ROOT/f'{base}{suffix}.html').read_text(encoding='utf-8'), 'html.parser')
+            hrefs = {a.get('href') for a in soup.find_all('a')}
+            assert all(slug in hrefs for slug in slugs)
+
+def test_september_2_guides_are_linked_from_all_requested_pages():
+    for suffix in ['', '-zh-hk', '-zh-cn']:
+        slugs = [f'chinese-beauty-brands-canada-2026{suffix}.html', f'xiaohongshu-account-strategy-north-america-2026{suffix}.html']
         for base in ['asia-to-world-marketing','asia-market-entry-marketing','mainland-china-market-entry-marketing']:
             soup = BeautifulSoup((ROOT/f'{base}{suffix}.html').read_text(encoding='utf-8'), 'html.parser')
             hrefs = {a.get('href') for a in soup.find_all('a')}

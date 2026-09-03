@@ -116,7 +116,7 @@ def test_new_guides_are_linked_from_requested_pages():
             assert slug in hrefs
 
 def test_latest_guides_have_complete_trilingual_sets():
-    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026','chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026']
+    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026','chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026','influencer-vs-community-building-2026','ai-search-asian-brands-north-america-2026']
     variants = [('', 'en'), ('-zh-hk', 'zh-Hant'), ('-zh-cn', 'zh-Hans')]
     for base in bases:
         for suffix, lang in variants:

@@ -80,7 +80,9 @@ ARTICLE_SLUGS = [
     'apac-influencer-marketing-benchmarks-2026','xiaohongshu-kol-marketing-2026','micro-influencer-community-strategy-2026',
     'community-marketing-strategy-2026','asian-community-marketing-north-america-2026','creator-to-community-funnel-2026',
     'chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026',
-    'chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026'
+    'chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026',
+    'influencer-vs-community-building-2026','ai-search-asian-brands-north-america-2026',
+    'chinese-brands-north-america-pricing-strategy-2026','cross-cultural-marketing-chinese-brands-north-america-2026'
 ]
 
 def test_new_articles_are_agent_and_seo_ready():
@@ -116,7 +118,7 @@ def test_new_guides_are_linked_from_requested_pages():
             assert slug in hrefs
 
 def test_latest_guides_have_complete_trilingual_sets():
-    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026','chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026','influencer-vs-community-building-2026','ai-search-asian-brands-north-america-2026']
+    bases = ['chinese-restaurant-brands-north-america-2026','xiaohongshu-north-american-local-business-2026','chinese-beauty-brands-canada-2026','xiaohongshu-account-strategy-north-america-2026','influencer-vs-community-building-2026','ai-search-asian-brands-north-america-2026','chinese-brands-north-america-pricing-strategy-2026','cross-cultural-marketing-chinese-brands-north-america-2026']
     variants = [('', 'en'), ('-zh-hk', 'zh-Hant'), ('-zh-cn', 'zh-Hans')]
     for base in bases:
         for suffix, lang in variants:
@@ -152,3 +154,11 @@ def test_sitemap_and_llms_include_new_guides():
     for slug in ARTICLE_SLUGS:
         assert f'https://northiamarketing.com/{slug}.html' in sitemap
         assert f'https://northiamarketing.com/{slug}.md' in llms
+
+
+def test_september_4_guides_are_linked_from_asia_to_world():
+    for suffix in ['', '-zh-hk', '-zh-cn']:
+        slugs = [f'chinese-brands-north-america-pricing-strategy-2026{suffix}.html', f'cross-cultural-marketing-chinese-brands-north-america-2026{suffix}.html']
+        soup = BeautifulSoup((ROOT/f'asia-to-world-marketing{suffix}.html').read_text(encoding='utf-8'), 'html.parser')
+        hrefs = {a.get('href') for a in soup.find_all('a')}
+        assert all(slug in hrefs for slug in slugs)

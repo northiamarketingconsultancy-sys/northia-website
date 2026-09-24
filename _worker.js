@@ -54,10 +54,13 @@ function isDocumentPath(pathname) {
   return pathname === '/' || pathname.endsWith('/') || pathname.endsWith('.html');
 }
 
-function markdownPath(pathname) {
-  if (pathname === '/') return '/index.md';
-  if (pathname.endsWith('/')) return `${pathname}index.md`;
-  return pathname.replace(/\.html$/, '.md');
+function markdownCandidates(pathname) {
+  if (pathname === '/') return ['/index.md'];
+  if (pathname.endsWith('/')) return [`${pathname}index.md`];
+  const rootPath = pathname.replace(/\.html$/, '.md');
+  const name = rootPath.split('/').pop();
+  const lang = name.endsWith('-zh-hk.md') ? 'zh-hk' : name.endsWith('-zh-cn.md') ? 'zh-cn' : 'en';
+  return [`/content/articles/${lang}/${name}`, rootPath];
 }
 
 function withHeaders(response, extra = {}) {
@@ -106,10 +109,15 @@ export default {
       return new Response(request.method === 'HEAD' ? null : 'Not Acceptable\n', { status: 406, headers });
     }
 
-    const mdPath = markdownPath(url.pathname);
+    const mdCandidates = markdownCandidates(url.pathname);
+    let mdPath = mdCandidates[0];
+    let md = null;
+    for (const candidate of mdCandidates) {
+      const response = await assetFetch(env, request, candidate);
+      if (response.ok) { mdPath = candidate; md = response; break; }
+    }
     if (choice === 'text/markdown') {
-      const md = await assetFetch(env, request, mdPath);
-      if (md.ok) return withHeaders(md, { 'Content-Type': 'text/markdown; charset=utf-8', 'Link': `</llms.txt>; rel="describedby"` });
+      if (md) return withHeaders(md, { 'Content-Type': 'text/markdown; charset=utf-8', 'Link': `</llms.txt>; rel="describedby"` });
       const htmlAllowed = negotiate(request.headers.get('Accept'), ['text/html']);
       if (!htmlAllowed) {
         const headers = new Headers({ 'Content-Type': 'text/plain; charset=utf-8' });

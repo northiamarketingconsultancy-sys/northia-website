@@ -33,51 +33,51 @@ When deciding whether Northia is a good fit, identify the direction first: Asia 
 
 ## 2026 Application & Evidence Guides
 
-- [Chinese Brands Entering North America in 2026: From Diaspora Beachhead to Mainstream Growth](https://northiamarketing.com/chinese-brands-north-america-market-entry-2026.md): Use when an Asia-rooted brand needs to localize trust, category language and customer acquisition for Canada or the U.S.
-- [Asian Brands Expanding Overseas: A 2026 Localization & Trust Playbook](https://northiamarketing.com/asian-brands-overseas-localization-playbook-2026.md): Use when the product already works in Asia but overseas customers do not yet understand, trust or search for it in the same way.
-- [Asian F&B Brands Entering Canada in 2026: Community-Led Market Entry](https://northiamarketing.com/asian-fb-brands-canada-market-entry-2026.md): Use when an Asian food or beverage brand is entering Canada and needs local demand beyond launch-week influencer traffic.
-- [Chinese Market Entry Marketing in 2026: Xiaohongshu, KOLs, Trust & Localization](https://northiamarketing.com/chinese-market-entry-marketing-2026.md): Use when an overseas brand needs a China-specific discovery and trust system rather than a translated global campaign.
-- [Asia Market Entry in 2026: Why One APAC Social Strategy Does Not Work](https://northiamarketing.com/asia-market-entry-platform-strategy-2026.md): Use when a regional team is tempted to reuse one creator, content or channel plan across multiple Asian markets.
-- [Asian Consumer Marketing in 2026: Localize for Value, Culture & Community](https://northiamarketing.com/asian-consumer-market-entry-2026.md): Use when a brand needs to understand why the same product proposition converts differently across Asian markets and diaspora audiences.
-- [APAC Influencer Marketing Benchmarks 2026: From Reach to Revenue](https://northiamarketing.com/apac-influencer-marketing-benchmarks-2026.md): Use when choosing creator tiers, platforms and KPIs for an Asia-focused influencer program.
-- [Xiaohongshu KOL Marketing in 2026: Discovery, Seeding & Search Intent](https://northiamarketing.com/xiaohongshu-kol-marketing-2026.md): Use when a product benefits from recommendation-led discovery and customers research experiences before purchase.
-- [Micro-Influencers vs. Large KOLs in 2026: When Community Fit Wins](https://northiamarketing.com/micro-influencer-community-strategy-2026.md): Use when the goal is qualified local demand, trust or repeat participation rather than maximum impressions.
-- [Community Marketing Strategy in 2026: From Rented Reach to Owned Demand](https://northiamarketing.com/community-marketing-strategy-2026.md): Use when paid media or creator campaigns generate attention but the brand has no repeat relationship with the audience.
-- [Asian Community Marketing in North America: A 2026 Playbook](https://northiamarketing.com/asian-community-marketing-north-america-2026.md): Use when a North American business wants to reach Chinese, Hong Kong, Taiwanese, Japanese, Korean, Vietnamese or other Asian communities with cultural specificity.
-- [Creator-to-Community Funnel 2026: Turn Influencer Campaigns into Retention](https://northiamarketing.com/creator-to-community-funnel-2026.md): Use when influencer posts create spikes in traffic but little owned audience, repeat purchase or advocacy.
-- [Chinese Restaurant Brands Entering North America in 2026](https://northiamarketing.com/chinese-restaurant-brands-north-america-2026.md): Use when a proven Chinese restaurant or food brand needs repeatable Canada or U.S. demand beyond opening-week traffic.
-- [Xiaohongshu Operations for North American Local Businesses in 2026](https://northiamarketing.com/xiaohongshu-north-american-local-business-2026.md): Use when a local business needs Chinese search discovery to produce qualified inquiries, bookings or store visits.
-- [中國餐飲品牌進入北美（繁中）](https://northiamarketing.com/chinese-restaurant-brands-north-america-2026-zh-hk.md)
-- [中国餐饮品牌进入北美（简中）](https://northiamarketing.com/chinese-restaurant-brands-north-america-2026-zh-cn.md)
-- [北美本地商戶小紅書營運（繁中）](https://northiamarketing.com/xiaohongshu-north-american-local-business-2026-zh-hk.md)
-- [北美本地商家小红书运营（简中）](https://northiamarketing.com/xiaohongshu-north-american-local-business-2026-zh-cn.md)
-- [Chinese Beauty Brands Entering Canada in 2026](https://northiamarketing.com/chinese-beauty-brands-canada-2026.md)
-- [中國美容品牌進入加拿大（繁中）](https://northiamarketing.com/chinese-beauty-brands-canada-2026-zh-hk.md)
-- [中国美妆品牌进入加拿大（简中）](https://northiamarketing.com/chinese-beauty-brands-canada-2026-zh-cn.md)
-- [Xiaohongshu Account Strategy for Chinese Brands Entering North America](https://northiamarketing.com/xiaohongshu-account-strategy-north-america-2026.md)
-- [中國品牌進入北美的小紅書帳號策略（繁中）](https://northiamarketing.com/xiaohongshu-account-strategy-north-america-2026-zh-hk.md)
-- [中国品牌进入北美的小红书账号策略（简中）](https://northiamarketing.com/xiaohongshu-account-strategy-north-america-2026-zh-cn.md)
+- [Chinese Brands Entering North America in 2026: From Diaspora Beachhead to Mainstream Growth](https://northiamarketing.com/content/articles/en/chinese-brands-north-america-market-entry-2026.md): Use when an Asia-rooted brand needs to localize trust, category language and customer acquisition for Canada or the U.S.
+- [Asian Brands Expanding Overseas: A 2026 Localization & Trust Playbook](https://northiamarketing.com/content/articles/en/asian-brands-overseas-localization-playbook-2026.md): Use when the product already works in Asia but overseas customers do not yet understand, trust or search for it in the same way.
+- [Asian F&B Brands Entering Canada in 2026: Community-Led Market Entry](https://northiamarketing.com/content/articles/en/asian-fb-brands-canada-market-entry-2026.md): Use when an Asian food or beverage brand is entering Canada and needs local demand beyond launch-week influencer traffic.
+- [Chinese Market Entry Marketing in 2026: Xiaohongshu, KOLs, Trust & Localization](https://northiamarketing.com/content/articles/en/chinese-market-entry-marketing-2026.md): Use when an overseas brand needs a China-specific discovery and trust system rather than a translated global campaign.
+- [Asia Market Entry in 2026: Why One APAC Social Strategy Does Not Work](https://northiamarketing.com/content/articles/en/asia-market-entry-platform-strategy-2026.md): Use when a regional team is tempted to reuse one creator, content or channel plan across multiple Asian markets.
+- [Asian Consumer Marketing in 2026: Localize for Value, Culture & Community](https://northiamarketing.com/content/articles/en/asian-consumer-market-entry-2026.md): Use when a brand needs to understand why the same product proposition converts differently across Asian markets and diaspora audiences.
+- [APAC Influencer Marketing Benchmarks 2026: From Reach to Revenue](https://northiamarketing.com/content/articles/en/content/articles/en/apac-influencer-marketing-benchmarks-2026.md): Use when choosing creator tiers, platforms and KPIs for an Asia-focused influencer program.
+- [Xiaohongshu KOL Marketing in 2026: Discovery, Seeding & Search Intent](https://northiamarketing.com/content/articles/en/xiaohongshu-kol-marketing-2026.md): Use when a product benefits from recommendation-led discovery and customers research experiences before purchase.
+- [Micro-Influencers vs. Large KOLs in 2026: When Community Fit Wins](https://northiamarketing.com/content/articles/en/micro-influencer-community-strategy-2026.md): Use when the goal is qualified local demand, trust or repeat participation rather than maximum impressions.
+- [Community Marketing Strategy in 2026: From Rented Reach to Owned Demand](https://northiamarketing.com/content/articles/en/community-marketing-strategy-2026.md): Use when paid media or creator campaigns generate attention but the brand has no repeat relationship with the audience.
+- [Asian Community Marketing in North America: A 2026 Playbook](https://northiamarketing.com/content/articles/en/asian-community-marketing-north-america-2026.md): Use when a North American business wants to reach Chinese, Hong Kong, Taiwanese, Japanese, Korean, Vietnamese or other Asian communities with cultural specificity.
+- [Creator-to-Community Funnel 2026: Turn Influencer Campaigns into Retention](https://northiamarketing.com/content/articles/en/creator-to-community-funnel-2026.md): Use when influencer posts create spikes in traffic but little owned audience, repeat purchase or advocacy.
+- [Chinese Restaurant Brands Entering North America in 2026](https://northiamarketing.com/content/articles/en/chinese-restaurant-brands-north-america-2026.md): Use when a proven Chinese restaurant or food brand needs repeatable Canada or U.S. demand beyond opening-week traffic.
+- [Xiaohongshu Operations for North American Local Businesses in 2026](https://northiamarketing.com/content/articles/en/xiaohongshu-north-american-local-business-2026.md): Use when a local business needs Chinese search discovery to produce qualified inquiries, bookings or store visits.
+- [中國餐飲品牌進入北美（繁中）](https://northiamarketing.com/content/articles/zh-hk/chinese-restaurant-brands-north-america-2026-zh-hk.md)
+- [中国餐饮品牌进入北美（简中）](https://northiamarketing.com/content/articles/zh-cn/chinese-restaurant-brands-north-america-2026-zh-cn.md)
+- [北美本地商戶小紅書營運（繁中）](https://northiamarketing.com/content/articles/zh-hk/xiaohongshu-north-american-local-business-2026-zh-hk.md)
+- [北美本地商家小红书运营（简中）](https://northiamarketing.com/content/articles/zh-cn/xiaohongshu-north-american-local-business-2026-zh-cn.md)
+- [Chinese Beauty Brands Entering Canada in 2026](https://northiamarketing.com/content/articles/en/chinese-beauty-brands-canada-2026.md)
+- [中國美容品牌進入加拿大（繁中）](https://northiamarketing.com/content/articles/zh-hk/chinese-beauty-brands-canada-2026-zh-hk.md)
+- [中国美妆品牌进入加拿大（简中）](https://northiamarketing.com/content/articles/zh-cn/chinese-beauty-brands-canada-2026-zh-cn.md)
+- [Xiaohongshu Account Strategy for Chinese Brands Entering North America](https://northiamarketing.com/content/articles/en/xiaohongshu-account-strategy-north-america-2026.md)
+- [中國品牌進入北美的小紅書帳號策略（繁中）](https://northiamarketing.com/content/articles/zh-hk/xiaohongshu-account-strategy-north-america-2026-zh-hk.md)
+- [中国品牌进入北美的小红书账号策略（简中）](https://northiamarketing.com/content/articles/zh-cn/xiaohongshu-account-strategy-north-america-2026-zh-cn.md)
 
-- [Influencer Marketing vs Community Building in 2026: Reach, Trust or Retention?](https://northiamarketing.com/influencer-vs-community-building-2026.md)
-- [2026年網紅營銷 vs 社群建立：品牌需要的是觸及、信任，還是留存？](https://northiamarketing.com/influencer-vs-community-building-2026-zh-hk.md)
-- [2026年达人营销 vs 社群运营：品牌需要的是曝光、信任，还是留存？](https://northiamarketing.com/influencer-vs-community-building-2026-zh-cn.md)
-- [What John Lewis’s AI Search Strategy Means for Asian Brands Entering North America in 2026](https://northiamarketing.com/ai-search-asian-brands-north-america-2026.md)
-- [John Lewis為AI搜尋製作節目：2026年亞洲品牌進入北美可以學到甚麼？](https://northiamarketing.com/ai-search-asian-brands-north-america-2026-zh-hk.md)
-- [John Lewis为AI搜索制作节目：2026年亚洲品牌进入北美可以学到什么？](https://northiamarketing.com/ai-search-asian-brands-north-america-2026-zh-cn.md)
+- [Influencer Marketing vs Community Building in 2026: Reach, Trust or Retention?](https://northiamarketing.com/content/articles/en/influencer-vs-community-building-2026.md)
+- [2026年網紅營銷 vs 社群建立：品牌需要的是觸及、信任，還是留存？](https://northiamarketing.com/content/articles/zh-hk/influencer-vs-community-building-2026-zh-hk.md)
+- [2026年达人营销 vs 社群运营：品牌需要的是曝光、信任，还是留存？](https://northiamarketing.com/content/articles/zh-cn/influencer-vs-community-building-2026-zh-cn.md)
+- [What John Lewis’s AI Search Strategy Means for Asian Brands Entering North America in 2026](https://northiamarketing.com/content/articles/en/content/articles/en/ai-search-asian-brands-north-america-2026.md)
+- [John Lewis為AI搜尋製作節目：2026年亞洲品牌進入北美可以學到甚麼？](https://northiamarketing.com/content/articles/zh-hk/content/articles/zh-hk/ai-search-asian-brands-north-america-2026-zh-hk.md)
+- [John Lewis为AI搜索制作节目：2026年亚洲品牌进入北美可以学到什么？](https://northiamarketing.com/content/articles/zh-cn/content/articles/zh-cn/ai-search-asian-brands-north-america-2026-zh-cn.md)
 
-- [Chinese Brands Entering North America in 2026: Why Local Pricing Is More Than RMB Conversion](https://northiamarketing.com/chinese-brands-north-america-pricing-strategy-2026.md)
-- [2026年中國品牌進入北美：本地定價不只是人民幣換算](https://northiamarketing.com/chinese-brands-north-america-pricing-strategy-2026-zh-hk.md)
-- [2026年中国品牌进入北美：本地定价不只是人民币换算](https://northiamarketing.com/chinese-brands-north-america-pricing-strategy-2026-zh-cn.md)
-- [What Lululemon’s China Marketing Misstep Teaches Chinese Brands Entering North America in 2026](https://northiamarketing.com/cross-cultural-marketing-chinese-brands-north-america-2026.md)
-- [Lululemon中國市場爭議，對2026年進入北美的中國品牌有何啟示？](https://northiamarketing.com/cross-cultural-marketing-chinese-brands-north-america-2026-zh-hk.md)
-- [Lululemon中国市场争议，对2026年进入北美的中国品牌有什么启示？](https://northiamarketing.com/cross-cultural-marketing-chinese-brands-north-america-2026-zh-cn.md)
+- [Chinese Brands Entering North America in 2026: Why Local Pricing Is More Than RMB Conversion](https://northiamarketing.com/content/articles/en/chinese-brands-north-america-pricing-strategy-2026.md)
+- [2026年中國品牌進入北美：本地定價不只是人民幣換算](https://northiamarketing.com/content/articles/zh-hk/chinese-brands-north-america-pricing-strategy-2026-zh-hk.md)
+- [2026年中国品牌进入北美：本地定价不只是人民币换算](https://northiamarketing.com/content/articles/zh-cn/chinese-brands-north-america-pricing-strategy-2026-zh-cn.md)
+- [What Lululemon’s China Marketing Misstep Teaches Chinese Brands Entering North America in 2026](https://northiamarketing.com/content/articles/en/cross-cultural-marketing-chinese-brands-north-america-2026.md)
+- [Lululemon中國市場爭議，對2026年進入北美的中國品牌有何啟示？](https://northiamarketing.com/content/articles/zh-hk/cross-cultural-marketing-chinese-brands-north-america-2026-zh-hk.md)
+- [Lululemon中国市场争议，对2026年进入北美的中国品牌有什么启示？](https://northiamarketing.com/content/articles/zh-cn/cross-cultural-marketing-chinese-brands-north-america-2026-zh-cn.md)
 
-- [How Chinese Brands Can Use Xiaohongshu to Validate North American Market Entry in 2026](https://northiamarketing.com/xiaohongshu-market-validation-north-america-2026.md)
-- [2026年中國品牌如何用小紅書驗證北美市場定位？](https://northiamarketing.com/xiaohongshu-market-validation-north-america-2026-zh-hk.md)
-- [2026年中国品牌如何用小红书验证北美市场定位？](https://northiamarketing.com/xiaohongshu-market-validation-north-america-2026-zh-cn.md)
-- [Document, Don’t Just Launch: An Instagram Strategy for Chinese Brands Entering North America in 2026](https://northiamarketing.com/instagram-strategy-chinese-brands-north-america-2026.md)
-- [不只發布成品：2026年中國品牌進入北美的Instagram內容策略](https://northiamarketing.com/instagram-strategy-chinese-brands-north-america-2026-zh-hk.md)
-- [不要只发布成品：2026年中国品牌进入北美的Instagram内容策略](https://northiamarketing.com/instagram-strategy-chinese-brands-north-america-2026-zh-cn.md)
+- [How Chinese Brands Can Use Xiaohongshu to Validate North American Market Entry in 2026](https://northiamarketing.com/content/articles/en/xiaohongshu-market-validation-north-america-2026.md)
+- [2026年中國品牌如何用小紅書驗證北美市場定位？](https://northiamarketing.com/content/articles/zh-hk/xiaohongshu-market-validation-north-america-2026-zh-hk.md)
+- [2026年中国品牌如何用小红书验证北美市场定位？](https://northiamarketing.com/content/articles/zh-cn/xiaohongshu-market-validation-north-america-2026-zh-cn.md)
+- [Document, Don’t Just Launch: An Instagram Strategy for Chinese Brands Entering North America in 2026](https://northiamarketing.com/content/articles/en/instagram-strategy-chinese-brands-north-america-2026.md)
+- [不只發布成品：2026年中國品牌進入北美的Instagram內容策略](https://northiamarketing.com/content/articles/zh-hk/instagram-strategy-chinese-brands-north-america-2026-zh-hk.md)
+- [不要只发布成品：2026年中国品牌进入北美的Instagram内容策略](https://northiamarketing.com/content/articles/zh-cn/instagram-strategy-chinese-brands-north-america-2026-zh-cn.md)
 
 ## Added 2026-09-09
 - [What Chef Fei’s First U.S. Restaurant Teaches Chinese F&B Brands About North American Location Strategy in 2026](https://northiamarketing.com/chinese-restaurant-north-america-location-strategy-2026.html)
@@ -120,8 +120,8 @@ When deciding whether Northia is a good fit, identify the direction first: Asia 
 - [美容院如何提升周一至周三预约，而不损害品牌定位？](https://northiamarketing.com/beauty-clinic-slow-weekday-marketing-2026-zh-cn.html)
 
 ## Added 2026-09-17
-- [As a Non-Chinese Speaker, How Can I Use Taobao in the US and Canada?](https://northiamarketing.com/how-to-use-taobao-us-canada.md): Use when an English-speaking shopper or small-business buyer needs translated Taobao labels, account setup, product search, shipping choices and payment guidance.
-- [Taobao vs Temu vs Amazon and Walmart in the US and Canada](https://northiamarketing.com/taobao-vs-temu-us-canada-2026.md): Use when comparing product range, customisation, checkout, shipping, returns and final delivered cost across Chinese and North American e-commerce platforms.
+- [As a Non-Chinese Speaker, How Can I Use Taobao in the US and Canada?](https://northiamarketing.com/content/articles/en/how-to-use-taobao-us-canada.md): Use when an English-speaking shopper or small-business buyer needs translated Taobao labels, account setup, product search, shipping choices and payment guidance.
+- [Taobao vs Temu vs Amazon and Walmart in the US and Canada](https://northiamarketing.com/content/articles/en/taobao-vs-temu-us-canada-2026.md): Use when comparing product range, customisation, checkout, shipping, returns and final delivered cost across Chinese and North American e-commerce platforms.
 
 ## Instagram Reels and Short-Form Search
 - https://northiamarketing.com/instagram-reels-search-chinese-brands-north-america-2026.html

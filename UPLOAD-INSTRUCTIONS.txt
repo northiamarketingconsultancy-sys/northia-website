@@ -1,0 +1,29 @@
+NORTHIA WEBSITE UPDATE — 2026-09-24
+
+This package is a complete replacement copy of the website repository.
+
+Important:
+1. Back up the current repository.
+2. Replace the repository contents with this package rather than copying only
+   individual files. This ensures old root-level article Markdown files are
+   removed after being moved into content/articles/.
+3. Keep the existing .git folder if you are replacing files in a local Git
+   checkout. The package does not include .git.
+4. Review the changes, then commit and push to GitHub.
+
+Public HTML article URLs have not changed.
+
+Article source structure:
+- content/articles/en/
+- content/articles/zh-hk/
+- content/articles/zh-cn/
+
+Included fixes:
+- Article-list pagination is limited to 9 unique articles per page.
+- Pagination hreflang references were corrected where equivalent language
+  pages exist and removed where no equivalent page exists.
+- Open Graph and Twitter share metadata were added to public pages.
+- A 1200 x 630 Northia social share image was added.
+- Homepage image dimensions were completed.
+- Worker Markdown negotiation now supports the organized article folders and
+  falls back to existing root-level Markdown for non-article pages.

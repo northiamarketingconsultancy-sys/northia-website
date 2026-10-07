@@ -13,6 +13,8 @@ const files = new Map([
   ['/index.md', { body: '# Home\n\nAgent markdown.', type: 'text/markdown; charset=utf-8' }],
   ['/about.html', { body: '<h1>About</h1>', type: 'text/html; charset=utf-8' }],
   ['/about.md', { body: '# About', type: 'text/markdown; charset=utf-8' }],
+  ['/guide.html', { body: '<h1>Guide</h1>', type: 'text/html; charset=utf-8' }],
+  ['/content/articles/en/guide.md', { body: '# Guide', type: 'text/markdown; charset=utf-8' }],
 ]);
 
 const env = {
@@ -53,6 +55,12 @@ test('canonical URL serves HTML and advertises markdown + llms.txt', async () =>
   assert.match(res.headers.get('content-type'), /^text\/html; charset=utf-8/i);
   assert.match(res.headers.get('link'), /<\/about.md>; rel="alternate"; type="text\/markdown"/);
   assert.match(res.headers.get('link'), /<\/llms.txt>; rel="describedby"/);
+});
+
+test('organized article URL serves Markdown from the language folder', async () => {
+  const res = await worker.fetch(req('/guide.html', 'text/markdown'), env);
+  assert.equal(res.status, 200);
+  assert.equal(await res.text(), '# Guide');
 });
 
 test('unsupported document representation returns 406', async () => {
